@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Lorenzo Delana</Authors>
+    <PackageLicenseUrl>https://github.com/devel0/netcore-util/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/devel0/netcore-util</PackageProjectUrl>
+    <RepositoryType />
+    <PackageTags>netcore</PackageTags>
+    <Description>net core utilities</Description>
+  </PropertyGroup>
+
+  <ItemGroup>    
+  </ItemGroup>
+
+</Project>
