@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using System.Dynamic;
-namespace SearchAThing.NETCoreUtil
+namespace SearchAThing
 {
 
     public static partial class Util
