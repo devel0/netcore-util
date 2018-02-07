@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SearchAThing
+namespace SearchAThing.NETCoreUtil
 {
 
     public static partial class Util
