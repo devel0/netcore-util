@@ -9,7 +9,7 @@ namespace SearchAThing.NETCoreUtil
         /// <summary>
         /// if given dt has unspecified kind rectifies to UTC without any conversion
         /// </summary>        
-        internal static DateTime UnspecifiedAsUTCDateTime(this DateTime dt)
+        public static DateTime UnspecifiedAsUTCDateTime(this DateTime dt)
         {
             if (dt.Kind == DateTimeKind.Unspecified)
                 return DateTime.SpecifyKind(dt, DateTimeKind.Utc);
