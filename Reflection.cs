@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
+using System.Reflection;
 
 namespace SearchAThing.NETCoreUtil
 {
@@ -7,17 +9,33 @@ namespace SearchAThing.NETCoreUtil
     {
 
         /// <summary>
-        /// copy properties from other object excluding given list of property names
+        /// copy properties from other object ; if match functor specified it copies only matched properties
         /// </summary>        
-        public static T CopyFrom<T>(this T obj, T other, params string[] exclude)
+        public static T CopyFrom<T>(this T obj, T other, Func<PropertyInfo, bool> match = null)
         {
             var type = typeof(T);
 
-            foreach (var p in type.GetProperties().Where(x => !exclude.Contains(x.Name)))
+            foreach (var p in type.GetProperties().Where(x => match == null ? true : match(x)))
                 p.SetValue(obj, p.GetValue(other));
 
             return obj;
-        }        
+        }
+
+        /// <summary>
+        /// copy properties from other object excluding those with given names
+        /// </summary>        
+        public static T CopyFromExclude<T>(this T obj, T other, params string[] exclude_names)
+        {
+            return obj.CopyFrom(other, (p) => !exclude_names.Any(exclude_name => exclude_name == p.Name));
+        }
+
+        /// <summary>
+        /// copy properties from other object including only those with given names
+        /// </summary>        
+        public static T CopyFromInclude<T>(this T obj, T other, params string[] include_names)
+        {
+            return obj.CopyFrom(other, (p) => include_names.Any(include_name => include_name == p.Name));
+        }
 
     }
 
