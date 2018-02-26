@@ -30,6 +30,20 @@ namespace SearchAThing.NETCoreUtil
                 return (IDictionary<string, object>)obj;
         }
 
+        /// <summary>
+        /// create an expando object by copying given src
+        /// </summary>        
+        public static ExpandoObject ToExpando(this object src)
+        {
+            IDictionary<string, object> expando = new ExpandoObject();
+
+            var type = src.GetType();
+
+            foreach (var property in type.GetProperties()) expando.Add(property.Name, property.GetValue(src));
+
+            return expando as ExpandoObject;
+        }
+
     }
 
 }
