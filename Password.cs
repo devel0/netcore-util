@@ -18,6 +18,9 @@ namespace SearchAThing.NETCoreUtil
             public int Length { get; set; } = 12;
         }
 
+        /// <summary>
+        /// Generate random password using defaults ( allow numbers, lowercase, uppercase, 12 of length, no special symbol )
+        /// </summary>        
         public static string RandomPassword(RandomPasswordOptions opts = null)
         {
             if (opts == null) opts = new RandomPasswordOptions();
