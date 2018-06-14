@@ -291,6 +291,29 @@ namespace SearchAThing.NETCoreUtil
             return Regex.Matches(s, pattern, opt).Count;
         }
 
+        /// <summary>
+        /// Checks whatever fields matches given filter all words in any of inputs.
+        /// ex. fields={ "abc", "de" } filter="a" results: true
+        /// ex. fields={ "abc", "de" } filter="a d" results: true
+        /// ex. fields={ "abc", "de" } filter="a f" results: false
+        /// returns true if filter empty
+        /// </summary>        
+        public static bool MatchesFilter(this IEnumerable<string> fields, string filter, bool ignoreCase = true)
+        {
+            if (string.IsNullOrEmpty(filter)) return true;
+
+            var ss = filter.Split(' ').Select(w => w.Trim()).ToList();
+
+            var matches = 0;
+            foreach (var x in fields)
+            {
+                if (ignoreCase && ss.Any(w => x.ContainsIgnoreCase(w))) ++matches;
+                if (matches == filter.Length) return true;
+            }
+
+            return false;
+        }
+
     }
 
     public class StringWrapperLineReader
