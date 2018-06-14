@@ -310,7 +310,7 @@ namespace SearchAThing.NETCoreUtil
             {
                 if (x == null) continue;
                 if (ss.Any(w => ignoreCase ? x.ContainsIgnoreCase(w) : x.Contains(w))) ++matches;
-                if (matches == filter.Length) return true;
+                if (matches == ss.Count) return true;
             }
 
             return false;
