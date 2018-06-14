@@ -296,6 +296,7 @@ namespace SearchAThing.NETCoreUtil
         /// ex. fields={ "abc", "de" } filter="a" results: true
         /// ex. fields={ "abc", "de" } filter="a d" results: true
         /// ex. fields={ "abc", "de" } filter="a f" results: false
+        /// autoskips null fields check;
         /// returns true if filter empty
         /// </summary>        
         public static bool MatchesFilter(this IEnumerable<string> fields, string filter, bool ignoreCase = true)
@@ -307,7 +308,8 @@ namespace SearchAThing.NETCoreUtil
             var matches = 0;
             foreach (var x in fields)
             {
-                if (ignoreCase && ss.Any(w => x.ContainsIgnoreCase(w))) ++matches;
+                if (x == null) continue;
+                if (ss.Any(w => ignoreCase ? x.ContainsIgnoreCase(w) : x.Contains(w))) ++matches;
                 if (matches == filter.Length) return true;
             }
 
