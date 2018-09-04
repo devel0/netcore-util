@@ -13,9 +13,8 @@ namespace SearchAThing.NETCoreUtil
         /// </summary>        
         public static bool EqualsAutoTol(this double x, double y, double precision = 1e-6)
         {
-            return Abs(x - y) < Min(x, y) * precision;
+            return Abs(x - y) < Abs(Min(x, y) * precision);
         }
-
 
         /// <summary>
         /// Round the given value using the multiple basis
@@ -97,6 +96,9 @@ namespace SearchAThing.NETCoreUtil
             return double.Parse(str, CultureInfo.InvariantCulture);
         }
 
+        /// <summary>
+        /// Mean of given numbers
+        /// </summary>  
         public static double Mean(this IEnumerable<double> set)
         {
             var v = 0.0;
@@ -105,20 +107,18 @@ namespace SearchAThing.NETCoreUtil
             return v / cnt;
         }
 
+        /// <summary>
+        /// format number so that show given significant digits. (eg. 2.03 with significantDigits=4 create "2.0300")
+        /// </summary>  
         public static string ToString(this double d, int significantDigits)
         {
-            var decfmt = "#".Repeat(significantDigits);
+            var decfmt = "0".Repeat(significantDigits);
             return string.Format(CultureInfo.InvariantCulture, "{0:0." + decfmt + "}", d);
         }
 
         public static bool EqualsTol(this double x, double tol, double y)
         {
             return Abs(x - y) <= tol;
-        }
-
-        public static bool EqualsAutoTol(this double x, double y)
-        {
-            return x.EqualsTol(Abs(x * 1e-6), y);
         }
 
         public static bool GreatThanTol(this double x, double tol, double y)
