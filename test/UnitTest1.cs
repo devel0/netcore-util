@@ -20,12 +20,6 @@ namespace SearchAThing.NETCoreUtil
             Assert.True(dynobj.b.GetType() == typeof(double));
         }
 
-	[Fact]
-	public void DummyFalse()
-	{
-		Assert.True(false);
-	}
-
     }
 }
 
