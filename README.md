@@ -4,8 +4,11 @@
 
 .NET core utilities
 
-- dynamic
-- JObject
+- [Date](src/Date.cs)
+- [Dynamic](src/Dynamic.cs)
+- [Number](src/Number.cs)
+- [Password](src/Password.cs)
+- [String](src/String.cs)
 
 ## install and usage
 
@@ -17,7 +20,7 @@ browse [myget istructions](https://www.myget.org/feed/devel0/package/nuget/netco
 
 ## how this project was built
 
-```
+```sh
 mkdir netcore-util
 cd netcore-util
 dotnet new sln
