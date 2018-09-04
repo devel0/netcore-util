@@ -7,17 +7,15 @@
 - dynamic
 - JObject
 
-## install
+## install and usage
 
-browse [install command](https://www.myget.org/feed/devel0/package/nuget/netcore-util)
+browse [myget istructions](https://www.myget.org/feed/devel0/package/nuget/netcore-util)
 
-## using extensions
+## debugging unit tests
 
-```csharp
-using SearchAThing.NetCoreUtil;
-```
+- from vscode just run debug test from code lens balloon
 
-## how this project was build
+## how this project was built
 
 ```
 mkdir netcore-util
@@ -37,4 +35,3 @@ dotnet restore
 dotnet build
 dotnet test test/test.csproj
 ```
-
