@@ -9,12 +9,32 @@
 
 ## install
 
-```
-dotnet add package netcore-util --version 1.0.0-CI00021 --source https://www.myget.org/F/devel0/api/v3/index.json
-```
+browse [install command](https://www.myget.org/feed/devel0/package/nuget/netcore-util)
 
 ## using extensions
 
 ```csharp
 using SearchAThing.NetCoreUtil;
 ```
+
+## how this project was build
+
+```
+mkdir netcore-util
+cd netcore-util
+dotnet new sln
+cd src
+dotnet new classlib
+dotnet add package Newtonsoft.Json --version 11.0.2
+dotnet add package Microsoft.CSharp --version 4.5.0
+cd ../test
+dotnet new xunit
+dotnet add reference ../src/src.csproj
+cd ..
+dotnet sln netcore-util.sln add src/src.csproj
+dotnet sln netcore-util.sln add test/test.csproj 
+dotnet restore
+dotnet build
+dotnet test test/test.csproj
+```
+
