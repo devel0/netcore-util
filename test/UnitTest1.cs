@@ -126,7 +126,7 @@ namespace SearchAThing.Util
         [Fact]
         public void NumberTest8()
         {
-            Assert.True(2.03d.ToString(4) == "2.0300");
+            Assert.True(2.031d.ToString(2) == "2.03");
         }
 
         [Fact]
