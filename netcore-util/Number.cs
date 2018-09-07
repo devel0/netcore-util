@@ -112,7 +112,7 @@ namespace SearchAThing.Util
         /// </summary>  
         public static string ToString(this double d, int significantDigits)
         {
-            var decfmt = "0".Repeat(significantDigits);
+            var decfmt = "#".Repeat(significantDigits);
             return string.Format(CultureInfo.InvariantCulture, "{0:0." + decfmt + "}", d);
         }
 
