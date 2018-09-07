@@ -21,7 +21,7 @@ browse [myget istructions](https://www.myget.org/feed/devel0/package/nuget/netco
 ## how this project was built
 
 ```sh
-mkdir netcore-util
+mkdir -p netcore-util/{src,test}
 cd netcore-util
 dotnet new sln
 cd src
