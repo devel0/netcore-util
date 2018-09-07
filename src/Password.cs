@@ -2,7 +2,7 @@
 using System;
 using System.Text;
 
-namespace SearchAThing.NETCoreUtil
+namespace SearchAThing.Util
 {
 
     public static partial class Util

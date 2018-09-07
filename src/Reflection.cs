@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Reflection;
 
-namespace SearchAThing.NETCoreUtil
+namespace SearchAThing.Util
 {
 
     public static partial class Util

@@ -8,7 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using static System.FormattableString;
 
-namespace SearchAThing.NETCoreUtil
+namespace SearchAThing.Util
 {
 
     public static partial class Util

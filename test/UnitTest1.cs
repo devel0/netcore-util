@@ -6,7 +6,7 @@ using System.Globalization;
 using System.Linq;
 using System.Dynamic;
 
-namespace SearchAThing.NETCoreUtil
+namespace SearchAThing.Util
 {
     public class UnitTest1
     {
