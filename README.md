@@ -31,7 +31,6 @@ dotnet add package Microsoft.CSharp --version 4.5.0
 cd ../test
 dotnet new xunit
 dotnet add reference ../src/src.csproj
-cd ..
 dotnet sln netcore-util.sln add src/src.csproj
 dotnet sln netcore-util.sln add test/test.csproj 
 dotnet restore
