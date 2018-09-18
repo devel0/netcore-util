@@ -12,7 +12,8 @@ namespace mytest
                 AtLeastOneNumber = true,
                 AtLeastOneSpecial = false,
                 AtLeastOneUppercase = true,
-                Length = 8
+                Length = 8,
+                AvoidChars = new[] { 'l', 'I', 'O', '0' }
             };
             var pass = Util.RandomPassword(opts);
             System.Console.WriteLine($"pass [{pass}] in {opts.LoopCount} loop count");

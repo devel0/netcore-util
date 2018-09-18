@@ -1,6 +1,6 @@
-
 using System;
 using System.Text;
+using System.Linq;
 
 namespace SearchAThing.Util
 {
@@ -16,6 +16,10 @@ namespace SearchAThing.Util
             public bool AllowSpecial { get; set; } = false;
             public int MaxSpecial { get; set; } = 1;
             public int Length { get; set; } = 12;
+            /// <summary>
+            /// avoid ambigous chars
+            /// for example : new[] { 'l', 'I', 'O', '0' }
+            /// </summary>            
             public char[] AvoidChars { get; set; } = null;
             public bool AtLeastOneNumber { get; set; } = true;
             public bool AtLeastOneUppercase { get; set; } = true;
@@ -41,7 +45,7 @@ namespace SearchAThing.Util
                 if (loopCount > 100) throw new Exception($"unable to find suitable password in {loopCount} step");
 
                 ++opts.LoopCount;
-                
+
                 sb.Clear();
 
                 var specialCount = 0;
@@ -52,6 +56,8 @@ namespace SearchAThing.Util
                 {
                     var n = rnd.Next(48, 122);
                     var c = Convert.ToChar(n);
+
+                    if (opts.AvoidChars != null && opts.AvoidChars.Any(a => c == a)) continue;
 
                     if (char.IsNumber(c) && (opts.AllowNumber || (opts.AtLeastOneNumber && numberCount == 0)))
                     {
