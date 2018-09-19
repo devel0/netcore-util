@@ -13,21 +13,65 @@ namespace SearchAThing.Util
         /// </summary>
         public class RandomPasswordOptions
         {
+            /// <summary>
+            /// default: true
+            /// </summary>            
             public bool AllowNumber { get; set; } = true;
+
+            /// <summary>
+            /// default: true
+            /// </summary>            
             public bool AllowLetter { get; set; } = true;
+
+            /// <summary>
+            /// default: true
+            /// </summary>            
             public bool AllowLowercase { get; set; } = true;
+
+            /// <summary>
+            /// default: true
+            /// </summary>            
             public bool AllowUppercase { get; set; } = true;
+
+            /// <summary>
+            /// default: false
+            /// </summary>            
             public bool AllowSpecial { get; set; } = false;
+
+            /// <summary>
+            /// default: 1
+            /// </summary>            
             public int MaxSpecial { get; set; } = 1;
+
+            /// <summary>
+            /// default: 12
+            /// </summary>            
             public int Length { get; set; } = 12;
             /// <summary>
             /// avoid ambigous chars
             /// for example : new[] { 'l', 'I', 'O', '0' }
+            /// default: null
             /// </summary>            
             public char[] AvoidChars { get; set; } = null;
+
+            /// <summary>
+            /// default: true
+            /// </summary>            
             public bool AtLeastOneNumber { get; set; } = true;
+
+            /// <summary>
+            /// default: true
+            /// </summary>            
             public bool AtLeastOneUppercase { get; set; } = true;
+
+            /// <summary>
+            /// default: false
+            /// </summary>            
             public bool AtLeastOneSpecial { get; set; } = false;
+
+            /// <summary>
+            /// default: 0
+            /// </summary>            
             public int LoopCount { get; internal set; } = 0;
         }
 
