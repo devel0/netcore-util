@@ -11,6 +11,7 @@ namespace SearchAThing.Util
         public class RandomPasswordOptions
         {
             public bool AllowNumber { get; set; } = true;
+            public bool AllowLetter { get; set; } = true;
             public bool AllowLowercase { get; set; } = true;
             public bool AllowUppercase { get; set; } = true;
             public bool AllowSpecial { get; set; } = false;
@@ -64,7 +65,7 @@ namespace SearchAThing.Util
                         sb.Append(c);
                         ++numberCount;
                     }
-                    else if (char.IsLetter(c))
+                    else if (char.IsLetter(c) && opts.AllowLetter)
                     {
                         if (char.IsLower(c) && opts.AllowLowercase) sb.Append(c);
                         else if (opts.AllowUppercase || (opts.AtLeastOneUppercase && uppercaseCount == 0))
