@@ -8,6 +8,9 @@ namespace SearchAThing.Util
     public static partial class Util
     {
 
+        /// <summary>
+        /// to generate a pin use follow config ( AllowLetter = false, AtLeastOneUppercase = false, Length = 4 )
+        /// </summary>
         public class RandomPasswordOptions
         {
             public bool AllowNumber { get; set; } = true;
