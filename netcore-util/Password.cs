@@ -88,6 +88,15 @@ namespace SearchAThing.Util
 
             var loopCount = 0;
 
+            {
+                var cntRequired = 0;
+                if (opts.AtLeastOneNumber) ++cntRequired;
+                if (opts.AtLeastOneSpecial) ++cntRequired;
+                if (opts.AtLeastOneUppercase) ++cntRequired;
+                if (cntRequired > opts.Length) throw new ArgumentException($"invalid length not enough for required at least {cntRequired} characters");
+                if (opts.Length == 0) throw new ArgumentException($"invalid 0 length");
+            }
+
             while (true)
             {
                 if (loopCount > 100) throw new Exception($"unable to find suitable password in {loopCount} step");
