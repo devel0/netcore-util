@@ -4,11 +4,11 @@
 
 .NET core utilities
 
-- [Date](src/Date.cs)
-- [Dynamic](src/Dynamic.cs)
-- [Number](src/Number.cs)
-- [Password](src/Password.cs)
-- [String](src/String.cs)
+- [Date](netcore-util/Date.cs)
+- [Dynamic](netcore-util/Dynamic.cs)
+- [Number](netcore-util/Number.cs)
+- [Password](netcore-util/Password.cs)
+- [String](netcore-util/String.cs)
 
 ## install and usage
 
