@@ -12,7 +12,7 @@
 
 ## install and usage
 
-browse [myget istructions](https://www.myget.org/feed/devel0/package/nuget/netcore-util)
+browse [myget instructions](https://www.myget.org/feed/devel0/package/nuget/netcore-util)
 
 add `nuget.config` where your solution or csproj that refer this library in order to allow other to restore correcly myget dependencies.
 
