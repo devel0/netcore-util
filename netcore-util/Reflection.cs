@@ -11,10 +11,11 @@ namespace SearchAThing.Util
         /// <summary>
         /// assign public properties of src to dst object
         /// </summary>        
-        public static void Assign<T>(this T src, T dst)
+        public static void Assign<T>(this T src, T dst, Func<PropertyInfo, bool> exclude = null)
         {
             foreach (var item in src.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.GetProperty))
             {
+                if (exclude != null && exclude(item)) continue;
                 if (!item.CanRead || !item.CanWrite) continue;
                 item.SetValue(dst, item.GetValue(src, null), null);
             }
