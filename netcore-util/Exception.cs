@@ -28,35 +28,38 @@ namespace SearchAThing
 
     }
 
-    public static partial class Extensions
+    namespace Util
     {
 
-        public static string Details(this Exception ex)
+        public static partial class Extensions
         {
-            return DetailsObject(ex).ToString();
-        }
 
-        public static ErrorInfo DetailsObject(this Exception ex)
-        {
-            var res = new ErrorInfo();
-
-            try
+            public static string Details(this Exception ex)
             {
-                res.Message = ex.Message;
-                res.ExceptionType = ex.GetType().ToString();
-                res.Stacktrace = ex.StackTrace.ToString();
+                return DetailsObject(ex).ToString();
+            }
 
-                var sb = new StringBuilder();
+            public static ErrorInfo DetailsObject(this Exception ex)
+            {
+                var res = new ErrorInfo();
 
-                Func<Exception, string> inner_detail = null;
-                inner_detail = (e) =>
+                try
                 {
-                    if (e is Npgsql.PostgresException)
-                    {
-                        var pex = e as Npgsql.PostgresException;
+                    res.Message = ex.Message;
+                    res.ExceptionType = ex.GetType().ToString();
+                    res.Stacktrace = ex.StackTrace.ToString();
 
-                        sb.AppendLine($"npgsql statement [{pex.Statement}]");
-                    }
+                    var sb = new StringBuilder();
+
+                    Func<Exception, string> inner_detail = null;
+                    inner_detail = (e) =>
+                    {
+                        if (e is Npgsql.PostgresException)
+                        {
+                            var pex = e as Npgsql.PostgresException;
+
+                            sb.AppendLine($"npgsql statement [{pex.Statement}]");
+                        }
 
                     // TODO https://stackoverflow.com/questions/46430619/net-core-2-ef-core-error-handling-save-changes
                     /*
@@ -76,28 +79,30 @@ namespace SearchAThing
                         }
                     }*/
 
-                    if (e.InnerException != null)
-                    {
-                        sb.AppendLine($"inner exception : {e.InnerException.Message}");
+                        if (e.InnerException != null)
+                        {
+                            sb.AppendLine($"inner exception : {e.InnerException.Message}");
 
-                        inner_detail(e.InnerException);
-                    }
-                    return "";
-                };
+                            inner_detail(e.InnerException);
+                        }
+                        return "";
+                    };
 
-                inner_detail(ex);
+                    inner_detail(ex);
 
-                if (sb.Length > 0)
-                    res.InnerException = sb.ToString();
+                    if (sb.Length > 0)
+                        res.InnerException = sb.ToString();
+
+                    return res;
+                }
+                catch (Exception ex0)
+                {
+                    res.Message = $"exception generating ex detail : {ex0?.Message}";
+                }
 
                 return res;
             }
-            catch (Exception ex0)
-            {
-                res.Message = $"exception generating ex detail : {ex0?.Message}";
-            }
 
-            return res;
         }
 
     }
