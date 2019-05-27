@@ -13,7 +13,7 @@ namespace SearchAThing.Util
         /// </summary>        
         public static bool EqualsAutoTol(this double x, double y, double precision = 1e-6)
         {
-            return Abs(x - y) < Abs(Min(x, y) * precision);
+            return Abs(x - y) <= Abs(Min(x, y) * precision);
         }
 
         /// <summary>

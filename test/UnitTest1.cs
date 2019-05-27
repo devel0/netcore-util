@@ -67,6 +67,7 @@ namespace SearchAThing.Util
         [Fact]
         public void NumberTest1()
         {
+            Assert.True(0d.EqualsAutoTol(0d));            
             Assert.True((-1d).EqualsAutoTol(-1));
 
             Assert.False(1.4d.EqualsAutoTol(1.39999));
