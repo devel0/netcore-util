@@ -9,6 +9,19 @@ namespace SearchAThing.Util
     {
 
         /// <summary>
+        /// assign public properties of src to dst object
+        /// </summary>        
+        public static void Assign<T>(this T src, T dst, Func<PropertyInfo, bool> exclude = null)
+        {
+            foreach (var item in src.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.GetProperty))
+            {
+                if (exclude != null && exclude(item)) continue;
+                if (!item.CanRead || !item.CanWrite) continue;
+                item.SetValue(dst, item.GetValue(src, null), null);
+            }
+        }
+
+        /// <summary>
         /// copy properties from other object ; if match functor specified it copies only matched properties
         /// </summary>        
         public static T CopyFrom<T>(this T obj, T other, Func<PropertyInfo, bool> match = null)
