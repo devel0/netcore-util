@@ -150,6 +150,23 @@ namespace SearchAThing.Util
             Assert.True((-0.45).Sign().EqualsAutoTol(-1.0));
         }
 
+        [Fact]
+        public void NumberTest11()
+        {
+            Assert.True("1.2".SmartDoubleParse().EqualsAutoTol(1.2));
+            Assert.True("1,2".SmartDoubleParse().EqualsAutoTol(1.2));
+            var exceptionCnt = 0;
+            try
+            {
+                "1,200.40".SmartDoubleParse();
+            }
+            catch
+            {
+                ++exceptionCnt;
+            }
+            Assert.True(exceptionCnt == 1);
+        }
+
         #endregion
     }
 }

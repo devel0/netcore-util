@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using static System.Math;
 
@@ -94,6 +95,28 @@ namespace SearchAThing.Util
         public static double InvDoubleParse(this string str)
         {
             return double.Parse(str, CultureInfo.InvariantCulture);
+        }
+
+        /// <summary>
+        /// parse string that represent number without knowing current culture
+        /// so that it can parse "1.2" or "1,2" equivalent to 1.2
+        /// it will throw error more than one dot or comma found
+        /// </summary>        
+        public static double SmartDoubleParse(this string str)
+        {
+            int dotCnt = 0;
+            int commaCnt = 0;
+
+            for (int i = 0; i < str.Length; ++i)
+            {
+                var c = str[i];
+                if (c == '.') ++dotCnt;
+                else if (c == ',') ++commaCnt;
+            }
+            if (dotCnt == 0 && commaCnt == 0) return double.Parse(str, CultureInfo.InvariantCulture);
+            if (dotCnt == 1 && commaCnt == 0) return double.Parse(str, CultureInfo.InvariantCulture);
+            if (commaCnt == 1 && dotCnt == 0) return double.Parse(str.Replace(',', '.'), CultureInfo.InvariantCulture);
+            throw new Exception($"unable to smart parse double from string \"{str}\"");
         }
 
         /// <summary>
