@@ -12,7 +12,7 @@
 
 ## install
 
-install [nuget package](https://www.nuget.org/packages/netcore-util/)
+- [nuget package](https://www.nuget.org/packages/netcore-util/)
 
 ## debugging unit tests
 
