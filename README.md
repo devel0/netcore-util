@@ -1,6 +1,6 @@
 # netcore-util
 
-[![devel0 MyGet Build Status](https://www.myget.org/BuildSource/Badge/devel0?identifier=bf42235b-95d6-4b7e-8e2c-4ed4a9075c15)](https://www.myget.org/)
+[![NuGet Badge](https://buildstats.info/nuget/netcore-util)](https://www.nuget.org/packages/netcore-util/)
 
 .NET core utilities
 
@@ -10,11 +10,9 @@
 - [Password](netcore-util/Password.cs)
 - [String](netcore-util/String.cs)
 
-## install and usage
+## install
 
-browse [myget instructions](https://www.myget.org/feed/devel0/package/nuget/netcore-util)
-
-add `nuget.config` where your solution or csproj that refer this library in order to allow other to restore correcly myget dependencies.
+- [nuget package](https://www.nuget.org/packages/netcore-util/)
 
 ## debugging unit tests
 
