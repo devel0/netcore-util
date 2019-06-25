@@ -5,6 +5,7 @@ using System.Threading;
 using System.Globalization;
 using System.Linq;
 using System.Dynamic;
+using System.Collections.ObjectModel;
 
 namespace SearchAThing.Util
 {
@@ -57,17 +58,17 @@ namespace SearchAThing.Util
         {
             var dynobj = Util.MakeDynamic(("a", 10), ("b", 10.2));
             var expobj = ((object)dynobj).ToExpando();
-            Assert.True(expobj.GetType() == typeof(ExpandoObject));     
+            Assert.True(expobj.GetType() == typeof(ExpandoObject));
         }
 
         #endregion
 
-        #region Number
+        #region Number        
 
         [Fact]
         public void NumberTest1()
         {
-            Assert.True(0d.EqualsAutoTol(0d));            
+            Assert.True(0d.EqualsAutoTol(0d));
             Assert.True((-1d).EqualsAutoTol(-1));
 
             Assert.False(1.4d.EqualsAutoTol(1.39999));
@@ -151,6 +152,27 @@ namespace SearchAThing.Util
         }
 
         #endregion
+
+        #region ObserableCollection
+
+        [Fact]
+        public void ObserableCollectionTest1()
+        {
+            var obc = new ObservableCollection<int>(new[] { 3, 1, 4 });
+
+            var obc1 = obc;
+            obc.Sort((x) => x);
+            Assert.True(obc == obc1);
+            Assert.True(obc.ToList().SequenceEqual(new[] { 1, 3, 4 }));
+
+            var obc2 = obc;
+            obc.Sort((x) => x, descending: true);
+            Assert.True(obc == obc2);
+            Assert.True(obc.ToList().SequenceEqual(new[] { 4, 3, 1 }));
+        }
+        #endregion
+
     }
+
 }
 
