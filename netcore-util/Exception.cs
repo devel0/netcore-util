@@ -28,81 +28,76 @@ namespace SearchAThing
 
     }
 
-    namespace Util
+    public static partial class UtilExt
     {
 
-        public static partial class Extensions
+        public static string Details(this Exception ex)
         {
+            return DetailsObject(ex).ToString();
+        }
 
-            public static string Details(this Exception ex)
+        public static ErrorInfo DetailsObject(this Exception ex)
+        {
+            var res = new ErrorInfo();
+
+            try
             {
-                return DetailsObject(ex).ToString();
-            }
+                res.Message = ex.Message;
+                res.ExceptionType = ex.GetType().ToString();
+                res.Stacktrace = ex.StackTrace.ToString();
 
-            public static ErrorInfo DetailsObject(this Exception ex)
-            {
-                var res = new ErrorInfo();
+                var sb = new StringBuilder();
 
-                try
+                Func<Exception, string> inner_detail = null;
+                inner_detail = (e) =>
                 {
-                    res.Message = ex.Message;
-                    res.ExceptionType = ex.GetType().ToString();
-                    res.Stacktrace = ex.StackTrace.ToString();
-
-                    var sb = new StringBuilder();
-
-                    Func<Exception, string> inner_detail = null;
-                    inner_detail = (e) =>
+                    if (e is Npgsql.PostgresException)
                     {
-                        if (e is Npgsql.PostgresException)
+                        var pex = e as Npgsql.PostgresException;
+
+                        sb.AppendLine($"npgsql statement [{pex.Statement}]");
+                    }
+
+                        // TODO https://stackoverflow.com/questions/46430619/net-core-2-ef-core-error-handling-save-changes
+                        /*
+                        if (e is System.Data.Entity.Validation.DbEntityValidationException)
                         {
-                            var pex = e as Npgsql.PostgresException;
+                            var dex = e as System.Data.Entity.Validation.DbEntityValidationException;
 
-                            sb.AppendLine($"npgsql statement [{pex.Statement}]");
-                        }
-
-                    // TODO https://stackoverflow.com/questions/46430619/net-core-2-ef-core-error-handling-save-changes
-                    /*
-                    if (e is System.Data.Entity.Validation.DbEntityValidationException)
-                    {
-                        var dex = e as System.Data.Entity.Validation.DbEntityValidationException;
-
-                        foreach (var deve in dex.EntityValidationErrors)
-                        {
-                            sb.Append($"db validation error entry : [{deve.Entry}]");
-
-                            foreach (var k in deve.ValidationErrors)
+                            foreach (var deve in dex.EntityValidationErrors)
                             {
-                                sb.Append($" {k.ErrorMessage}");
+                                sb.Append($"db validation error entry : [{deve.Entry}]");
+
+                                foreach (var k in deve.ValidationErrors)
+                                {
+                                    sb.Append($" {k.ErrorMessage}");
+                                }
+                                sb.AppendLine();
                             }
-                            sb.AppendLine();
-                        }
-                    }*/
+                        }*/
 
-                        if (e.InnerException != null)
-                        {
-                            sb.AppendLine($"inner exception : {e.InnerException.Message}");
+                    if (e.InnerException != null)
+                    {
+                        sb.AppendLine($"inner exception : {e.InnerException.Message}");
 
-                            inner_detail(e.InnerException);
-                        }
-                        return "";
-                    };
+                        inner_detail(e.InnerException);
+                    }
+                    return "";
+                };
 
-                    inner_detail(ex);
+                inner_detail(ex);
 
-                    if (sb.Length > 0)
-                        res.InnerException = sb.ToString();
-
-                    return res;
-                }
-                catch (Exception ex0)
-                {
-                    res.Message = $"exception generating ex detail : {ex0?.Message}";
-                }
+                if (sb.Length > 0)
+                    res.InnerException = sb.ToString();
 
                 return res;
             }
+            catch (Exception ex0)
+            {
+                res.Message = $"exception generating ex detail : {ex0?.Message}";
+            }
 
+            return res;
         }
 
     }
