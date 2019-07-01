@@ -6,6 +6,7 @@ using System.Globalization;
 using System.Linq;
 using System.Dynamic;
 using System.Collections.ObjectModel;
+using static SearchAThing.Util.Toolkit;
 
 namespace SearchAThing.Util
 {
@@ -27,7 +28,7 @@ namespace SearchAThing.Util
         [Fact]
         public void DynamicTest1()
         {
-            var dynobj = Util.MakeDynamic(("a", 10), ("b", 10.2));
+            var dynobj = MakeDynamic(("a", 10), ("b", 10.2));
 
             Assert.True(dynobj.a.GetType() == typeof(int));
             Assert.True(dynobj.b.GetType() == typeof(double));
@@ -36,7 +37,7 @@ namespace SearchAThing.Util
         [Fact]
         public void DynamicTest2()
         {
-            var dynobj = Util.MakeDynamic(("a", 10), ("b", 10.2));
+            var dynobj = MakeDynamic(("a", 10), ("b", 10.2));
 
             Assert.True(dynobj.a.GetType() == typeof(int));
             Assert.True(dynobj.b.GetType() == typeof(double));
@@ -44,9 +45,9 @@ namespace SearchAThing.Util
 
         [Fact]
         public void DynamicTest3()
-        {
-            var dynobj = Util.MakeDynamic(("a", 10), ("b", 10.2));
-            var dyndict = Util.DynamicMakeDictionary((object)dynobj);
+        {            
+            var dynobj = MakeDynamic(("a", 10), ("b", 10.2));
+            var dyndict = DynamicMakeDictionary((object)dynobj);
             Assert.True(dyndict.ContainsKey("a"));
             Assert.True((int)dyndict["a"] == 10);
             Assert.True(dyndict.ContainsKey("b"));
@@ -56,7 +57,7 @@ namespace SearchAThing.Util
         [Fact]
         public void DynamicTest4()
         {
-            var dynobj = Util.MakeDynamic(("a", 10), ("b", 10.2));
+            var dynobj = MakeDynamic(("a", 10), ("b", 10.2));
             var expobj = ((object)dynobj).ToExpando();
             Assert.True(expobj.GetType() == typeof(ExpandoObject));
         }

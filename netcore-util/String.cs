@@ -8,10 +8,10 @@ using System.Text;
 using System.Text.RegularExpressions;
 using static System.FormattableString;
 
-namespace SearchAThing.Util
+namespace SearchAThing
 {
 
-    public static partial class Util
+    public static partial class UtilExt
     {
 
         /// <summary>

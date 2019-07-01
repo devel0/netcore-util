@@ -1,5 +1,7 @@
 ﻿using System;
+using SearchAThing;
 using SearchAThing.Util;
+using static SearchAThing.Util.Toolkit;
 
 namespace mytest
 {
@@ -8,7 +10,7 @@ namespace mytest
         static void Main(string[] args)
         {
             {
-                var opts = new Util.RandomPasswordOptions()
+                var opts = new RandomPasswordOptions()
                 {
                     AtLeastOneNumber = true,
                     AtLeastOneSpecial = false,
@@ -16,18 +18,18 @@ namespace mytest
                     Length = 8,
                     AvoidChars = new[] { 'l', 'I', 'O', '0' }
                 };
-                var pass = Util.RandomPassword(opts);
+                var pass = RandomPassword(opts);
                 System.Console.WriteLine($"pass [{pass}] in {opts.LoopCount} loop count");
             }
 
             {
-                var opts = new Util.RandomPasswordOptions()
+                var opts = new RandomPasswordOptions()
                 {
                     AllowLetter = false,
                     AtLeastOneUppercase = false,
                     Length = 4
                 };
-                var pass = Util.RandomPassword(opts);
+                var pass = RandomPassword(opts);
                 System.Console.WriteLine($"pin [{pass}] in {opts.LoopCount} loop count");
             }
         }

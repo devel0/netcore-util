@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 
-namespace SearchAThing.Util
+namespace SearchAThing
 {
 
-    public static partial class Util
+    public static partial class UtilExt
     {
 
         /// <summary>

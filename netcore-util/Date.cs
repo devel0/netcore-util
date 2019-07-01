@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace SearchAThing.Util
+namespace SearchAThing
 {
 
-    public static partial class Util
+    public static partial class UtilExt
     {
 
         /// <summary>

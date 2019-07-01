@@ -8,7 +8,7 @@ using System.Reflection;
 namespace SearchAThing.Util
 {
 
-    public static class EmbeddedResource
+    public static partial class Toolkit
     {
 
         /// <summary>
