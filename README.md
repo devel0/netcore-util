@@ -4,11 +4,23 @@
 
 .NET core utilities
 
-- [Date](netcore-util/Date.cs)
-- [Dynamic](netcore-util/Dynamic.cs)
-- [Number](netcore-util/Number.cs)
-- [Password](netcore-util/Password.cs)
-- [String](netcore-util/String.cs)
+<hr/>
+
+- [API Documentation](#api-documentation)
+- [install](#install)
+- [debugging unit tests](#debugging-unit-tests)
+- [how this project was built](#how-this-project-was-built)
+
+<hr/>
+
+## API Documentation
+
+- [Extensions](doc/api/UtilExt.md)
+- [Path](doc/api/Util/Path.md)
+- [Toolkit](doc/api/Util/Toolkit.md)
+    - [RandomPasswordOptions](doc/api/Util/RandomPasswordOptions.md)
+- [String Wrapper](doc/api/StringWrapper.md)
+- [Error info](doc/api/ErrorInfo.md)
 
 ## install
 
