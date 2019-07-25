@@ -12,10 +12,10 @@ public static class UtilExt
 ## Methods
 |**Name**|**Summary**|
 |---|---|
-|[Assign](UtilExt/Assign.md) (static)||
+|[Assign](UtilExt/Assign.md) (static)|assign public properties of src to dst object|
 |[CompareTol](UtilExt/CompareTol.md) (static)||
 |[ContainsIgnoreCase](UtilExt/ContainsIgnoreCase.md) (static)|check if given string contains the part ( ignoring case )|
-|[CopyFrom](UtilExt/CopyFrom.md) (static)||
+|[CopyFrom](UtilExt/CopyFrom.md) (static)|copy properties from other object ; if match functor specified it copies only matched properties|
 |[CopyFromExclude](UtilExt/CopyFromExclude.md) (static)||
 |[CopyFromInclude](UtilExt/CopyFromInclude.md) (static)||
 |[Details](UtilExt/Details.md) (static)||
@@ -55,7 +55,7 @@ public static class UtilExt
 |[Sign](UtilExt/Sign.md) (static)|returns 1.0 if n>=0<br/>            -1 otherwise|
 |[Sign](UtilExt/Sign.md#signdouble) (static)|returns 1.0 if n>=0<br/>            -1 otherwise|
 |[SmartDoubleParse](UtilExt/SmartDoubleParse.md) (static)|parse string that represent number without knowing current culture<br/>            so that it can parse "1.2" or "1,2" equivalent to 1.2<br/>            it will throw error more than one dot or comma found|
-|[Sort](UtilExt/Sort.md) (static)||
+|[Sort](UtilExt/Sort.md) (static)|sort obc|
 |[Split](UtilExt/Split.md) (static)|split string with given separator string|
 |[Stringify](UtilExt/Stringify.md) (static)||
 |[StripBegin](UtilExt/StripBegin.md) (static)|Returns the given string stripped from the given part if exists at beginning.|
@@ -73,6 +73,6 @@ public static class UtilExt
 |[UnspecifiedAsUTCDateTime](UtilExt/UnspecifiedAsUTCDateTime.md) (static)|if given dt has unspecified kind rectifies to UTC without any conversion|
 |[WildcardMatch](UtilExt/WildcardMatch.md) (static)|return true if given string matches the given pattern<br/>            the asterisk '*' character replace any group of chars<br/>            the question '?' character replace any single character|
 |[WildcardToRegex](UtilExt/WildcardToRegex.md) (static)|convert wildcard pattern to regex<br/>            the asterisk '*' character replace any group of chars<br/>            the question '?' character replace any single character|
-|[WithIndex](UtilExt/WithIndex.md) (static)||
-|[WithIndexIsLast](UtilExt/WithIndexIsLast.md) (static)||
+|[WithIndex](UtilExt/WithIndex.md) (static)|enumerable extension to enumerate itself into an (item, idx) set|
+|[WithIndexIsLast](UtilExt/WithIndexIsLast.md) (static)|enumerable extension to enumerate itself into an (item, idx, isLast) set|
 ## Conversions
