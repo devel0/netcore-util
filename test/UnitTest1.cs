@@ -45,7 +45,7 @@ namespace SearchAThing.Util
 
         [Fact]
         public void DynamicTest3()
-        {            
+        {
             var dynobj = MakeDynamic(("a", 10), ("b", 10.2));
             var dyndict = DynamicMakeDictionary((object)dynobj);
             Assert.True(dyndict.ContainsKey("a"));
@@ -187,6 +187,31 @@ namespace SearchAThing.Util
             obc.Sort((x) => x, descending: true);
             Assert.True(obc == obc2);
             Assert.True(obc.ToList().SequenceEqual(new[] { 4, 3, 1 }));
+        }
+        #endregion
+
+        #region ObserableCollection
+
+        [Fact]
+        public void PrecisionDifferenceTest()
+        {
+            var q = 111111111111111d.PrecisionDifference(111111011111111d);            
+            Assert.True(q == 1.000000000139778E-06);
+
+            q = 111111111111111d.PrecisionDifference(111111111111111d);
+            Assert.True(q == 0);
+
+            q = 111111111111111d.PrecisionDifference(191111111111111d);
+            Assert.True(q == 0.8);
+
+            q = 111111111111111d.PrecisionDifference(111111111111119d);
+            Assert.True(q == 7.9936057773011271E-14);
+
+            q = 1.23e-210.PrecisionDifference(1.23001e-210);
+            Assert.True(q == 9.9999999998434674E-06);
+
+            q = 21.23e-210.PrecisionDifference(1.23001e-210);
+            Assert.True(q == 10.892990000000001);
         }
         #endregion
 
