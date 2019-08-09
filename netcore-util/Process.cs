@@ -14,6 +14,10 @@ namespace SearchAThing
         public static partial class Toolkit
         {
 
+            // TODO: enable NETSTANDARD2_0 too but requires an extension to convert argument to single string with appropriate escaping if any
+
+#if NETSTANDARD2_1
+
             /// <summary>
             /// start a process in background redirecting standard output, error;
             /// a cancellation token can be supplied to cancel underlying process
@@ -104,6 +108,8 @@ namespace SearchAThing
 
                 return await task;
             }
+
+#endif
 
         }
 
