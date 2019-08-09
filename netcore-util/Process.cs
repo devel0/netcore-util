@@ -31,8 +31,7 @@ namespace SearchAThing
                 IEnumerable<string> args, CancellationToken ct, bool sudo = false, bool redirectStdout = true, bool redirectStderr = true)
             {
                 var task = Task<(int exitcode, string output, string error)>.Run(async () =>
-                {
-                    System.Console.WriteLine($"executing [{cmd} {string.Join(" ", args)}");
+                {                    
                     var p = new Process();
                     p.StartInfo.UseShellExecute = !redirectStdout && !redirectStderr;
                     p.StartInfo.RedirectStandardOutput = redirectStdout;
