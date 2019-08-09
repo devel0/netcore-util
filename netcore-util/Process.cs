@@ -55,12 +55,9 @@ namespace SearchAThing
                     if (redirectStdout)
                     {
                         p.OutputDataReceived += async (s, e) =>
-                        {
-                            await Task.Delay(1000);
-
+                        {                            
                             lock (lckstdout)
-                            {
-                                System.Console.WriteLine($"--> recv [{e.Data}]");
+                            {                                
                                 sbOut.AppendLine(e.Data);
                             }
                         };
@@ -85,8 +82,7 @@ namespace SearchAThing
                     while (!ct.IsCancellationRequested)
                     {
                         if (p.WaitForExit(200))
-                        {
-                            p.WaitForExit();
+                        {                            
                             break;
                         }
                     }
@@ -102,14 +98,7 @@ namespace SearchAThing
                         }
                     }
 
-                    var o = sbOut.ToString();
-                    System.Console.WriteLine($"out=[{sbOut.ToString()}]");
-                    if (string.IsNullOrEmpty(o))
-                    {
-                        System.Console.WriteLine($"empty out waiting");
-                        await Task.Delay(1000);
-                    }
-                    System.Console.WriteLine($"now out [{sbOut.ToString()}]");
+                    p.WaitForExit(); // flush async                                        
 
                     return (p.ExitCode, sbOut.ToString(), sbErr.ToString());
                 });
