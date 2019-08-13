@@ -1,6 +1,7 @@
 # netcore-util
 
 [![NuGet Badge](https://buildstats.info/nuget/netcore-util)](https://www.nuget.org/packages/netcore-util/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdevel0%2Fnetcore-util.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdevel0%2Fnetcore-util?ref=badge_shield)
 
 .NET core utilities
 
@@ -55,3 +56,7 @@ dotnet restore
 dotnet build
 dotnet test test/test.csproj
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdevel0%2Fnetcore-util.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdevel0%2Fnetcore-util?ref=badge_large)
