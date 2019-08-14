@@ -7,12 +7,126 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using static System.FormattableString;
+using static System.Math;
 
 namespace SearchAThing
 {
 
+    public enum ColumnAlignment { left, center, right };
+
     public static partial class UtilExt
     {
+
+        /// <summary>
+        /// align given string into given size with alignment specified.
+        /// resulting string will fit into given size with spaces or truncated if not enough for given size vs str length
+        /// </summary>
+        public static string Align(this string str, int size, ColumnAlignment align)
+        {
+            var l = str.Length;
+
+            switch (align)
+            {
+                case ColumnAlignment.left:
+                    {
+                        if (l > size) str = str.Substring(0, size);
+                        else str = str + " ".Repeat(size - l);
+                    }
+                    break;
+
+                case ColumnAlignment.center:
+                    {
+                        if (l > size) str = str.Substring(0, size);
+                        else
+                        {
+                            var hs = (size - l) / 2;
+                            str = " ".Repeat(hs) + str + " ".Repeat((size - l % 2 == 0) ? hs : (hs + 1));
+                        }
+                    }
+                    break;
+
+                case ColumnAlignment.right:
+                    {
+                        if (l > size) str = str.Substring(0, size);
+                        else str = " ".Repeat(size - l) + str;
+                    }
+                    break;
+            }
+
+            return str;
+        }
+
+        /// <summary>
+        /// formats given rows into a table aligning by columns.
+        /// optional column headers and alignment can be specified.
+        /// </summary>
+        public static string TableFormat(this IEnumerable<IEnumerable<string>> src,
+            IEnumerable<string> headers = null,
+            IEnumerable<ColumnAlignment> aligns = null,
+            int headerSpacing = 3)
+        {
+            var sb = new StringBuilder();
+            var widths = new List<int>();
+
+            // gather max widths
+            foreach (var row in src)
+            {
+                foreach (var (_cell, idx) in row.WithIndex())
+                {
+                    var cell = (_cell == null) ? "" : _cell;
+                    var l = cell.Length;
+                    if (widths.Count - 1 < idx) widths.Add(l);
+                    else widths[idx] = Max(widths[idx], l);
+                }
+            }
+            if (headers != null)
+            {
+                foreach (var (cell, idx) in headers.WithIndex())
+                {
+                    var l = cell.Length;
+                    if (widths.Count - 1 < idx) widths.Add(l);
+                    else widths[idx] = Max(widths[idx], l);
+                }
+            }
+
+            // default align left
+            List<ColumnAlignment> a = null;
+            if (aligns == null)
+            {
+                a = new List<ColumnAlignment>();
+                for (int i = 0; i < widths.Count; ++i) a.Add(ColumnAlignment.left);
+                aligns = a;
+            }
+            else a = aligns.ToList();
+
+            var ws = widths.Sum();
+
+            // output header if any
+            if (headers != null)
+            {
+                foreach (var (hdr, idx) in headers.WithIndex())
+                {
+                    if (idx > 0 && headerSpacing > 0) sb.Append(" ".Repeat(headerSpacing));
+                    sb.Append(hdr.Align(widths[idx], a[idx]));
+                }
+                sb.AppendLine();
+                sb.AppendLine("-".Repeat(ws + headerSpacing * (widths.Count - 1)));
+            }
+
+            // output data
+            foreach (var row in src)
+            {
+                foreach (var (_cell, idx) in row.WithIndex())
+                {
+                    if (idx > 0 && headerSpacing > 0) sb.Append(" ".Repeat(headerSpacing));
+                    var cell = (_cell == null) ? "" : _cell;
+                    sb.Append(cell.Align(widths[idx], a[idx]));
+                }
+                sb.AppendLine();
+            }
+
+            return sb.ToString();
+        }
 
         /// <summary>
         /// Returns the given string stripped from the given part if exists at beginning.
