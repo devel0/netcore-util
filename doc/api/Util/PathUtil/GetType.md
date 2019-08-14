@@ -1,4 +1,4 @@
-# SearchAThing.Util.Path.GetType method
+# SearchAThing.Util.PathUtil.GetType method
 ## GetType()
 ### Signature
 ```csharp

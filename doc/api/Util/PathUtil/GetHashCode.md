@@ -1,4 +1,4 @@
-# SearchAThing.Util.Path.GetHashCode method
+# SearchAThing.Util.PathUtil.GetHashCode method
 ## GetHashCode()
 ### Signature
 ```csharp

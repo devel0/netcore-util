@@ -1,4 +1,4 @@
-# SearchAThing.Util.Path.ToString method
+# SearchAThing.Util.PathUtil.ToString method
 ## ToString()
 ### Signature
 ```csharp

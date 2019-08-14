@@ -1,4 +1,4 @@
-# SearchAThing.Util.Path.SearchInPath method
+# SearchAThing.Util.PathUtil.SearchInPath method
 ## SearchInPath(string)
 Search given filename in the PATH
 

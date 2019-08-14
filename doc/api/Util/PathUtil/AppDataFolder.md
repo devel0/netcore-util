@@ -1,4 +1,4 @@
-# SearchAThing.Util.Path.AppDataFolder method
+# SearchAThing.Util.PathUtil.AppDataFolder method
 ## AppDataFolder(string)
 {AppData}/{namespace}/{assembly_name}
 

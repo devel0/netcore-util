@@ -1,4 +1,4 @@
-# SearchAThing.Util.Path.Equals method
+# SearchAThing.Util.PathUtil.Equals method
 ## Equals(object)
 ### Signature
 ```csharp

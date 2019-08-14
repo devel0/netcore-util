@@ -1,4 +1,4 @@
-# SearchAThing.Util.Path.EnsureFolder method
+# SearchAThing.Util.PathUtil.EnsureFolder method
 ## EnsureFolder(string)
 Ensure given folder path exists.
 
