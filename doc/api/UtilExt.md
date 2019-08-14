@@ -12,6 +12,7 @@ public static class UtilExt
 ## Methods
 |**Name**|**Summary**|
 |---|---|
+|[Align](UtilExt/Align.md) (static)|align given string into given size with alignment specified.<br/>            resulting string will fit into given size with spaces or truncated if not enough for given size vs str length|
 |[Assign](UtilExt/Assign.md) (static)|assign public properties of src to dst object|
 |[CompareTol](UtilExt/CompareTol.md) (static)||
 |[ContainsIgnoreCase](UtilExt/ContainsIgnoreCase.md) (static)|check if given string contains the part ( ignoring case )|
@@ -23,6 +24,7 @@ public static class UtilExt
 |[Equals](UtilExt/Equals.md)||
 |[EqualsAutoTol](UtilExt/EqualsAutoTol.md) (static)|Returns true if two numbers are equals using a default tolerance of 1e-6 about the smaller one.|
 |[EqualsTol](UtilExt/EqualsTol.md) (static)||
+|[Eval](UtilExt/Eval.md) (static)||
 |[Export](UtilExt/Export.md) (static)|export to a string ( invariant ) comma separated|
 |[GetHashCode](UtilExt/GetHashCode.md)||
 |[GetJsonArray](UtilExt/GetJsonArray.md) (static)|return dynamic array from given [[xx],[yy],...] json array|
@@ -63,6 +65,7 @@ public static class UtilExt
 |[StripBegin](UtilExt/StripBegin.md#stripbeginstring-string-bool) (static)|Returns the given string stripped from the given part if exists at beginning.|
 |[StripEnd](UtilExt/StripEnd.md) (static)|Returns the given string stripped from the given part if exists at end.|
 |[StripEnd](UtilExt/StripEnd.md#stripendstring-string-bool) (static)|Returns the given string stripped from the given part if exists at end.|
+|[TableFormat](UtilExt/TableFormat.md) (static)|formats given rows into a table aligning by columns.<br/>            optional column headers and alignment can be specified.|
 |[ToDeg](UtilExt/ToDeg.md) (static)|convert given angle(rad) to degree|
 |[ToExpando](UtilExt/ToExpando.md) (static)|create an expando object by copying given src|
 |[ToJson](UtilExt/ToJson.md) (static)||
