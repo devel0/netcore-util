@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace SearchAThing.Util
 {
-    public static class Path
+    public static class PathUtil
     {
 
         /// <summary>
