@@ -21,7 +21,7 @@ namespace SearchAThing
         /// align given string into given size with alignment specified.
         /// resulting string will fit into given size with spaces or truncated if not enough for given size vs str length
         /// </summary>
-        public static string Align(this string str, int size, ColumnAlignment align)
+        public static string Align(this string str, int size, ColumnAlignment align = ColumnAlignment.left)
         {
             var l = str.Length;
 
