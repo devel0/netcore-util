@@ -9,7 +9,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             "program": "${workspaceFolder}/examples/cmdline-parser-04/bin/Debug/netcoreapp3.0/cmdline-parser-04.dll",
-            "args": [  "cmd2", "cmd-a"              
+            "args": [  "cmd2", "cmd-a", "-h"           
             ],
             "cwd": "${workspaceFolder}/examples",
             "console": "internalConsole",
