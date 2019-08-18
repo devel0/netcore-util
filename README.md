@@ -25,8 +25,8 @@
 - [Error info](doc/api/ErrorInfo.md)
 - Command line parser multi ( [**quickstart**](cmdline-parser.md) )
     - [CmdlineParser](doc/api/CmdlineParser.md)
-    - [CmdlineParserItem](doc/api/CmdlineParserItem.md)
-    - [CmdlineParserItemType](doc/api/CmdlineParserItemType.md)
+    - [CmdlineParserItem](doc/api/CmdlineParseItem.md)
+    - [CmdlineParserItemType](doc/api/CmdlineParseItemType.md)
 
 ## install
 
