@@ -13,6 +13,7 @@ public class CmdlineParser
 |**Name**|**Summary**|
 |---|---|
 |[CmdlineParser(string, Action<SearchAThing.CmdlineParser>)](CmdlineParser/ctors.md)|construct a command line parser.<br/>            through builder command, flag, argument and nested parser can be added|
+|[CmdlineParser(Action<SearchAThing.CmdlineParser>)](CmdlineParser/ctors.md#cmdlineparseractionsearchathingcmdlineparser)|construct a command line parser ( retrieve description from parent parser command that contains this parser ).<br/>            through builder command, flag, argument and nested parser can be added|
 ## Methods
 |**Name**|**Summary**|
 |---|---|
