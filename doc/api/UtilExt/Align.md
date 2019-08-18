@@ -5,7 +5,7 @@ align given string into given size with alignment specified.
 
 ### Signature
 ```csharp
-public static string Align(string str, int size, ColumnAlignment align)
+public static string Align(string str, int size, ColumnAlignment align = 0)
 ```
 ### Returns
 
