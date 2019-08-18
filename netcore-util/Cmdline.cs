@@ -179,6 +179,11 @@ namespace SearchAThing
         }
 
         IEnumerator IEnumerable.GetEnumerator() => this.GetEnumerator();
+
+        public override string ToString()
+        {
+            return $"type:{Type} shortname:{ShortName} longname:{LongName}";
+        }
     }
 
     /// <summary>
@@ -219,6 +224,15 @@ namespace SearchAThing
         public CmdlineParser(string programDescription, Action<CmdlineParser> builder)
         {
             ProgramDescription = programDescription;
+            builder(this);
+        }
+
+        /// <summary>
+        /// construct a command line parser ( retrieve description from parent parser command that contains this parser ).
+        /// through builder command, flag, argument and nested parser can be added
+        /// </summary>
+        public CmdlineParser(Action<CmdlineParser> builder)
+        {
             builder(this);
         }
 
@@ -806,137 +820,144 @@ namespace SearchAThing
                 if (qStrArr != null) sb.Append($" {qStrArr.ParameterName}...");
                 System.Console.WriteLine(sb.ToString());
             }
+
+            var pgDescription = ProgramDescription;
+            if (string.IsNullOrWhiteSpace(pgDescription) && Parent != null)
+            {
+                var q = Parent.items.FirstOrDefault(w => w.CommandParser == this);
+                if (q != null) pgDescription = q.Description;
+            }
             System.Console.WriteLine();
-            System.Console.WriteLine(ProgramDescription);
+            System.Console.WriteLine(pgDescription);
             System.Console.WriteLine();
 
             var width = 0;
 
             Action<List<CmdlineParseItem>, List<CmdlineParseItem>, bool> sweepOpts = (_items, _inheritedItems, onlyEvalWidth) =>
-             {
-                 #region commands
-                 {
-                     var cmds = _items.Where(r => r.Type == CmdlineParseItemType.command);
-                     if (cmds.Any())
-                     {
-                         if (!onlyEvalWidth)
-                         {
-                             System.Console.WriteLine("Commands:");
-                             System.Console.WriteLine();
-                         }
-                         foreach (var o in cmds)
-                         {
-                             var sb = new StringBuilder();
+            {
+                #region commands
+                {
+                    var cmds = _items.Where(r => r.Type == CmdlineParseItemType.command);
+                    if (cmds.Any())
+                    {
+                        if (!onlyEvalWidth)
+                        {
+                            System.Console.WriteLine("Commands:");
+                            System.Console.WriteLine();
+                        }
+                        foreach (var o in cmds)
+                        {
+                            var sb = new StringBuilder();
 
-                             sb.Append($"  {o.Command}");
+                            sb.Append($"  {o.Command}");
 
-                             if (onlyEvalWidth)
-                             {
-                                 width = Max(width, sb.Length);
-                             }
-                             else
-                             {
-                                 System.Console.Write(sb.ToString().Align(width));
-                                 System.Console.WriteLine($"   {o.Description}");
-                             }
-                         }
-                         if (!onlyEvalWidth) System.Console.WriteLine();
-                     }
-                 }
-                 #endregion
+                            if (onlyEvalWidth)
+                            {
+                                width = Max(width, sb.Length);
+                            }
+                            else
+                            {
+                                System.Console.Write(sb.ToString().Align(width));
+                                System.Console.WriteLine($"   {o.Description}");
+                            }
+                        }
+                        if (!onlyEvalWidth) System.Console.WriteLine();
+                    }
+                }
+                #endregion
 
-                 #region short/long options
-                 Action<List<CmdlineParseItem>, bool> sweepShortLongOpts = (_xitems, _are_inherited) =>
-             {
-                 foreach (var opt in _xitems.Where(r => r.Type == CmdlineParseItemType.flag).GroupBy(w => w.Mandatory))
-                 {
-                     if (!onlyEvalWidth)
-                     {
-                         if (_are_inherited) System.Console.Write("(inherited) ");
-                         if (opt.Key)
-                         {
-                             System.Console.WriteLine("Mandatory flags:");
-                         }
-                         else
-                         {
-                             System.Console.WriteLine("Optional flags:");
-                         }
-                         System.Console.WriteLine();
-                     }
+                #region short/long options
+                Action<List<CmdlineParseItem>, bool> sweepShortLongOpts = (_xitems, _are_inherited) =>
+                {
+                    foreach (var opt in _xitems.Where(r => r.Type == CmdlineParseItemType.flag).GroupBy(w => w.Mandatory))
+                    {
+                        if (!onlyEvalWidth)
+                        {
+                            if (_are_inherited) System.Console.Write("(inherited) ");
+                            if (opt.Key)
+                            {
+                                System.Console.WriteLine("Mandatory flags:");
+                            }
+                            else
+                            {
+                                System.Console.WriteLine("Optional flags:");
+                            }
+                            System.Console.WriteLine();
+                        }
 
-                     foreach (var o in opt)
-                     {
-                         var sb = new StringBuilder();
+                        foreach (var o in opt)
+                        {
+                            var sb = new StringBuilder();
 
-                         sb.Append("  ");
-                         if (!string.IsNullOrWhiteSpace(o.ShortName))
-                             sb.Append($"-{o.ShortName}");
-                         if (!string.IsNullOrWhiteSpace(o.LongName))
-                         {
-                             if (!string.IsNullOrWhiteSpace(o.ShortName)) sb.Append(",");
-                             sb.Append($"--{o.LongName}");
-                         }
-                         if (!string.IsNullOrWhiteSpace(o.ValueName))
-                         {
-                             sb.Append($"={o.ValueName}");
-                         }
+                            sb.Append("  ");
+                            if (!string.IsNullOrWhiteSpace(o.ShortName))
+                                sb.Append($"-{o.ShortName}");
+                            if (!string.IsNullOrWhiteSpace(o.LongName))
+                            {
+                                if (!string.IsNullOrWhiteSpace(o.ShortName)) sb.Append(",");
+                                sb.Append($"--{o.LongName}");
+                            }
+                            if (!string.IsNullOrWhiteSpace(o.ValueName))
+                            {
+                                sb.Append($"={o.ValueName}");
+                            }
 
-                         if (onlyEvalWidth)
-                         {
-                             width = Max(width, sb.Length);
-                         }
-                         else
-                         {
-                             System.Console.Write(sb.ToString().Align(width));
-                             System.Console.WriteLine($"   {o.Description}");
-                         }
-                     }
+                            if (onlyEvalWidth)
+                            {
+                                width = Max(width, sb.Length);
+                            }
+                            else
+                            {
+                                System.Console.Write(sb.ToString().Align(width));
+                                System.Console.WriteLine($"   {o.Description}");
+                            }
+                        }
 
-                     if (!onlyEvalWidth) System.Console.WriteLine();
-                 }
-             };
-                 sweepShortLongOpts(_items, false);
-                 sweepShortLongOpts(_inheritedItems, true);
-                 #endregion
+                        if (!onlyEvalWidth) System.Console.WriteLine();
+                    }
+                };
+                sweepShortLongOpts(_items, false);
+                sweepShortLongOpts(_inheritedItems, true);
+                #endregion
 
-                 #region parameters
-                 {
-                     var parameters = _items.Where(r => r.Type == CmdlineParseItemType.parameter)
-                         .Concat(_items.Where(r => r.Type == CmdlineParseItemType.parameterArray));
-                     if (parameters.Any())
-                     {
-                         if (!onlyEvalWidth)
-                         {
-                             System.Console.WriteLine("Parameters:");
-                             System.Console.WriteLine();
-                         }
-                         foreach (var o in parameters)
-                         {
-                             var sb = new StringBuilder();
+                #region parameters
+                {
+                    var parameters = _items.Where(r => r.Type == CmdlineParseItemType.parameter)
+                        .Concat(_items.Where(r => r.Type == CmdlineParseItemType.parameterArray));
+                    if (parameters.Any())
+                    {
+                        if (!onlyEvalWidth)
+                        {
+                            System.Console.WriteLine("Parameters:");
+                            System.Console.WriteLine();
+                        }
+                        foreach (var o in parameters)
+                        {
+                            var sb = new StringBuilder();
 
-                             sb.Append($"  ");
-                             if (!o.Mandatory)
-                                 sb.Append("[");
-                             sb.Append($"{o.ParameterName}");
-                             if (!o.Mandatory)
-                                 sb.Append("]");
-                             if (o.Type == CmdlineParseItemType.parameterArray) sb.Append("...");
+                            sb.Append($"  ");
+                            if (!o.Mandatory)
+                                sb.Append("[");
+                            sb.Append($"{o.ParameterName}");
+                            if (!o.Mandatory)
+                                sb.Append("]");
+                            if (o.Type == CmdlineParseItemType.parameterArray) sb.Append("...");
 
-                             if (onlyEvalWidth)
-                             {
-                                 width = Max(width, sb.Length);
-                             }
-                             else
-                             {
-                                 System.Console.Write(sb.ToString().Align(width));
-                                 System.Console.WriteLine($"   {o.Description}");
-                             }
-                         }
-                         if (!onlyEvalWidth) System.Console.WriteLine();
-                     }
-                 }
-                 #endregion
-             };
+                            if (onlyEvalWidth)
+                            {
+                                width = Max(width, sb.Length);
+                            }
+                            else
+                            {
+                                System.Console.Write(sb.ToString().Align(width));
+                                System.Console.WriteLine($"   {o.Description}");
+                            }
+                        }
+                        if (!onlyEvalWidth) System.Console.WriteLine();
+                    }
+                }
+                #endregion
+            };
 
             var inheritedItems = InheritedItems;
 
