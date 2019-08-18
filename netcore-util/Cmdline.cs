@@ -509,7 +509,7 @@ namespace SearchAThing
             }
             else
             {
-                if (helpRequested || parseFailed || args.Count == 0)
+                if (helpRequested || parseFailed || (Parent == null && args.Count == 0))
                 {
                     PrintUsage();
                 }
