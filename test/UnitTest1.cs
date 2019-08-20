@@ -169,6 +169,24 @@ namespace SearchAThing.Util
             Assert.True(exceptionCnt == 1);
         }
 
+        [Fact]
+        public void NumberTest12()
+        {
+            Assert.True(111111111111111d.PrecisionDifference(111111011111111d) == 1.000000000139778E-06);
+            Assert.True(111111111111111d.PrecisionDifference(111111111111111d) == 0);
+            Assert.True(111111111111111d.PrecisionDifference(191111111111111d) == 0.8);
+            Assert.True(111111111111111d.PrecisionDifference(111111111111119d) == 7.9936057773011271E-14);
+            Assert.True(1.23e-210.PrecisionDifference(1.23001e-210) == 9.9999999998434674E-06);
+            Assert.True(21.23e-210.PrecisionDifference(1.23001e-210) == 10.892990000000001);
+
+            Assert.True((-5327234122.34).PrecisionDifference(-5327234122.341) == 1.000088900582341E-12);
+            Assert.True((+5327234122.34).PrecisionDifference(+5327234122.341) == 1.000088900582341E-12);
+            Assert.True((+5327234122.34).PrecisionDifference(-5327234122.341) == 10.654468244681);
+            Assert.True((-5327234122.34).PrecisionDifference(+5327234122.341) == 10.654468244681);
+
+            Assert.True(1234567890123d.PrecisionDifference(1234567890023) == 1.000000082740371E-10);
+        }
+
         #endregion
 
         #region ObserableCollection
