@@ -203,6 +203,11 @@ namespace SearchAThing
         List<CmdlineParseItem> items = new List<CmdlineParseItem>();
 
         /// <summary>
+        /// list of item parser
+        /// </summary>
+        public IReadOnlyList<CmdlineParseItem> Items => items;
+
+        /// <summary>
         /// if set to false -h builtin short flag not used
         /// </summary>
         public bool ShortHelp { get; set; } = true;
