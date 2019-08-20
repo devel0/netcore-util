@@ -58,12 +58,12 @@ namespace SearchAThing
 
         /// <summary>
         /// formats given rows into a table aligning by columns.
-        /// optional column headers and alignment can be specified.
+        /// optional column spacing and alignment can be specified.
         /// </summary>
         public static string TableFormat(this IEnumerable<IEnumerable<string>> src,
             IEnumerable<string> headers = null,
             IEnumerable<ColumnAlignment> aligns = null,
-            int headerSpacing = 3)
+            int columnSpacing = 3)
         {
             var sb = new StringBuilder();
             var widths = new List<int>();
@@ -106,11 +106,11 @@ namespace SearchAThing
             {
                 foreach (var (hdr, idx) in headers.WithIndex())
                 {
-                    if (idx > 0 && headerSpacing > 0) sb.Append(" ".Repeat(headerSpacing));
+                    if (idx > 0 && columnSpacing > 0) sb.Append(" ".Repeat(columnSpacing));
                     sb.Append(hdr.Align(widths[idx], a[idx]));
                 }
                 sb.AppendLine();
-                sb.AppendLine("-".Repeat(ws + headerSpacing * (widths.Count - 1)));
+                sb.AppendLine("-".Repeat(ws + columnSpacing * (widths.Count - 1)));
             }
 
             // output data
@@ -118,7 +118,7 @@ namespace SearchAThing
             {
                 foreach (var (_cell, idx) in row.WithIndex())
                 {
-                    if (idx > 0 && headerSpacing > 0) sb.Append(" ".Repeat(headerSpacing));
+                    if (idx > 0 && columnSpacing > 0) sb.Append(" ".Repeat(columnSpacing));
                     var cell = (_cell == null) ? "" : _cell;
                     sb.Append(cell.Align(widths[idx], a[idx]));
                 }
