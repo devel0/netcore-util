@@ -1,19 +1,14 @@
 # SearchAThing.UtilExt.PrecisionDifference method
 ## PrecisionDifference(double, double)
-Compute precision difference between two numbers
-            so that results will be a positive number >= 0
-            that measures how much they equals.
-            For example a result of 1e-6 states that two given numbers are equals until 6 precision digits.
-            111111111111111d.PrecisionDifference(111111011111111d) == 1.000000000139778E-06
-            
-            The function useful to states if two computation results equals except for some precision digits.
-            
-            Other examples:
-            111111111111111d.PrecisionDifference(111111111111111d) == 0
-            111111111111111d.PrecisionDifference(191111111111111d) == 0.8
-            111111111111111d.PrecisionDifference(111111111111119d) == 7.9936057773011271E-14
-            1.23e-210.PrecisionDifference(1.23001e-210) == 9.9999999998434674E-06
-            21.23e-210.PrecisionDifference(1.23001e-210) == 10.892990000000001
+Measure precision distance between two given number.
+            for example two big numbers 1234567890123.0 and 1234567890023
+            have difference of 100 but a precision difference of about 1e-10.
+            This is an instrumentation function that is not to be used outside its scope,
+            it will help to understand loss of precision between two numbers represented with different storage.
+            For example this could useful to compare if an import-export tool produce results comparable to other previous versions
+            because there can be approximations around 1e-12 and 1e-15 due to different format and providers.  
+            While in general to compare measurements a tolerance have to be used and EqualsTol method, so that
+            1234567890123.0d.EqualsTol(1e-10, 1234567890023) is false because diff is 100.
 
 ### Signature
 ```csharp
