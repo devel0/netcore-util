@@ -316,7 +316,7 @@ namespace SearchAThing
 
                 Func<string, CmdlineParseItem> match = (a) => flags.FirstOrDefault(f =>
                 {
-                    if (flagsMatched.Contains(f)) return false;
+                    //                    if (flagsMatched.Contains(f)) return false;
 
                     if (f.HasShortName && a == $"-{f.ShortName}") return true;
 
@@ -325,7 +325,9 @@ namespace SearchAThing
                     return false;
                 });
 
-                foreach (var (arg, idx, isLast) in _args.Skip(ParentCount).WithIndexIsLast())
+                var __args = _args.Skip(ParentCount).ToArray();
+
+                foreach (var (arg, idx, isLast) in __args.WithIndexIsLast())
                 {
                     if (skipnext)
                     {
@@ -354,9 +356,9 @@ namespace SearchAThing
                     if (qflag != null) flagsMatched.Add(qflag);
 
                     // if this arg matches and nextone not matches then glue them
-                    if (qflag != null && qflag.HasValueName && idx < _args.Length - 1 && match(_args[idx + 1]) == null)
+                    if (qflag != null && qflag.HasValueName && idx < __args.Length - 1 && match(__args[idx + 1]) == null)
                     {
-                        args.Add($"{arg}={_args[idx + 1]}");
+                        args.Add($"{arg}={__args[idx + 1]}");
                         skipnext = true;
                     }
                     else
