@@ -38,6 +38,7 @@ public class CmdlineParser
 |[Command](CmdlineParser/Command.md)|command parsed ( if any )
 |[CommandItem](CmdlineParser/CommandItem.md)|command item parsed ( if any )
 |[InheritedItems](CmdlineParser/InheritedItems.md)|list of inherited items. if this is a subcommand parser all of parent's parser items will inherited.
+|[Items](CmdlineParser/Items.md)|list of item parser
 |[LongHelp](CmdlineParser/LongHelp.md)|if set to false --help builtin long flag not used
 |[OnCmdlineMatch](CmdlineParser/OnCmdlineMatch.md)|user action that will called from the parser if arguments matches without errors.<br/>            this is the primary entry point for application execution ( post-cmdline )
 |[Parent](CmdlineParser/Parent.md)|non null if this parser is a nested parser

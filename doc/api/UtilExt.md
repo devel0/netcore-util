@@ -65,7 +65,7 @@ public static class UtilExt
 |[StripBegin](UtilExt/StripBegin.md#stripbeginstring-string-bool) (static)|Returns the given string stripped from the given part if exists at beginning.|
 |[StripEnd](UtilExt/StripEnd.md) (static)|Returns the given string stripped from the given part if exists at end.|
 |[StripEnd](UtilExt/StripEnd.md#stripendstring-string-bool) (static)|Returns the given string stripped from the given part if exists at end.|
-|[TableFormat](UtilExt/TableFormat.md) (static)|formats given rows into a table aligning by columns.<br/>            optional column headers and alignment can be specified.|
+|[TableFormat](UtilExt/TableFormat.md) (static)|formats given rows into a table aligning by columns.<br/>            optional column spacing and alignment can be specified.|
 |[ToDeg](UtilExt/ToDeg.md) (static)|convert given angle(rad) to degree|
 |[ToExpando](UtilExt/ToExpando.md) (static)|create an expando object by copying given src|
 |[ToJson](UtilExt/ToJson.md) (static)||
