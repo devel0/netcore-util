@@ -16,9 +16,7 @@ namespace cmdline_parser_01
 
                 parser.OnCmdlineMatch = () =>
                 {
-                    System.Console.WriteLine($"flag_i:{(bool)flag_i}");
-                    System.Console.WriteLine($"file1:{(string)file1}");
-                    System.Console.WriteLine($"file2:{(string)file2}");
+                    System.Console.WriteLine(parser);
 
                     if (flag_i)
                     {

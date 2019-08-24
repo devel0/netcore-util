@@ -307,12 +307,6 @@ namespace SearchAThing
             if (parameters == null) parameters = new List<CmdlineParseItem>();
             if (parametersArray == null) parametersArray = new List<CmdlineParseItem>();
 
-            /*
-                        if (commands.Count > 0 && commands.Count - ParentCount == 0)
-                        {
-                            throw new Exception($"commands must 0 or more than 1");
-                        }*/
-
             var args = new List<string>();
 
             #region preprocess args ( convert { '-d', 'val' } to { '-d=val' } )
@@ -537,7 +531,18 @@ namespace SearchAThing
                 else
                 {
                     if (OnCmdlineMatch != null)
+                    {
+                        var parents = new List<CmdlineParser>();
+                        var parent = Parent;
+                        while (parent != null)
+                        {
+                            parents.Add(parent);
+                            parent = parent.Parent;
+                        }
+                        for (int i = parents.Count - 1; i >= 0; --i)
+                            parents[i].OnCmdlineMatch();
                         OnCmdlineMatch();
+                    }
                 }
             }
         }

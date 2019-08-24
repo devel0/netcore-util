@@ -20,12 +20,14 @@ namespace cmdline_parser_04
 
                     parser2.OnCmdlineMatch = () =>
                     {
+                        System.Console.WriteLine("---> parser2 OnCmdlineMatch");
                         System.Console.WriteLine(parser2);
                     };
                 }));
 
                 parser.OnCmdlineMatch = () =>
                 {
+                    System.Console.WriteLine("---> parser OnCmdlineMatch");
                     System.Console.WriteLine(parser);
                 };
             });
