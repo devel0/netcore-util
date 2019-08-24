@@ -57,9 +57,12 @@ dotnet build && dotnet examples/cmdline-parser-01/bin/Debug/netcoreapp3.0/cmdlin
 Result:
 
 ```
-flag_i:True
-file1:/etc/hosts
-file2:/etc/resolv.conf
+TYPE        SHORT-NAME   LONG-NAME   DESCRIPTION                MANDATORY   MATCHES   VALUE           
+------------------------------------------------------------------------------------------------------
+flag        i                        print filename stats       False       True      -i              
+parameter   file1                    1th pathfilename to test   False       True      /etc/hosts      
+parameter   file2                    2th pathfilename to test   False       True      /etc/resolv.conf
+
 Filesize [/etc/hosts] = 252
 Filesize [/etc/resolv.conf] = 39
 ```
@@ -92,6 +95,8 @@ dotnet build && dotnet examples/cmdline-parser-02/bin/Debug/netcoreapp3.0/cmdlin
 Result:
 
 ```
+
+ERROR: missing mandatory parameter [files]
 
 Usage: cmdline-parser-02 FLAGS files...
 
@@ -164,7 +169,8 @@ flag                          fl                     flag long                  
 flag             fsl          flag-short-long        flag short long                   False       True      --flag-short-long
 flag             fslv         flag-short-long-val    flag short long                   False       True      33               
 flag             mfslv        mflag-short-long-val   flag short long                   True        True      12               
-parameterArray   files                               file to test                      True        True      [ "a","b","c" ]  
+parameterArray   files                               file to test                      True        True      [ "a","b","c" ] 
+
 ```
 
 ### [cmdline-parser-04](examples/cmdline-parser-04/Program.cs)
@@ -238,12 +244,21 @@ dotnet build && dotnet examples/cmdline-parser-04/bin/Debug/netcoreapp3.0/cmdlin
 Result:
 
 ```
+---> parser OnCmdlineMatch
 TYPE      SHORT-NAME   LONG-NAME   DESCRIPTION                      MANDATORY   MATCHES   VALUE
 -----------------------------------------------------------------------------------------------
+flag      b                        base option                      False       True      -b   
+command   cmd1                     command 1 with no sub commands   False       False          
+command   cmd2                     command 2 with sub commands      False       True           
+
+---> parser2 OnCmdlineMatch
+TYPE      SHORT-NAME   LONG-NAME   DESCRIPTION                      MANDATORY   MATCHES   VALUE
+-----------------------------------------------------------------------------------------------
+flag      b                        base option                      False       True      -b   
+command   cmd1                     command 1 with no sub commands   False       False          
+command   cmd2                     command 2 with sub commands      False       True           
 flag      o2                       option on cmd2                   False       True      -o2  
 command   cmd-a                    command a                        False       False          
 command   cmd-b                    command b                        False       True           
-flag      b                        base option                      False       True      -b   
-command   cmd1                     command 1 with no sub commands   False       False          
-command   cmd2                     command 2 with sub commands      False       True 
+
 ```
