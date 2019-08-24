@@ -24,25 +24,26 @@ namespace SearchAThing
             /// (this method will not redirect stdout and stderr)
             /// </summary>
             public static async Task<(int exitcode, string output, string error)> ExecNoRedirect(string cmd,
-                IEnumerable<string> args, CancellationToken ct, bool sudo = false) =>
-                await Exec(cmd, args, ct, sudo, false, false);
+                IEnumerable<string> args, CancellationToken ct, bool sudo = false, bool verbose = false) =>
+                await Exec(cmd, args, ct, sudo, false, false, verbose);
 
             /// <summary>
             /// start a process in background redirecting standard output, error;
             /// a cancellation token can be supplied to cancel underlying process
             /// </summary>        
             public static async Task<(int exitcode, string output, string error)> Exec(string cmd,
-                IEnumerable<string> args, CancellationToken ct, bool sudo = false, bool redirectStdout = true, bool redirectStderr = true)
+                IEnumerable<string> args, CancellationToken ct, bool sudo = false, bool redirectStdout = true, bool redirectStderr = true,
+                bool verbose = false)
             {
                 var task = Task<(int exitcode, string output, string error)>.Run(async () =>
-                {                    
+                {
                     var p = new Process();
                     p.StartInfo.UseShellExecute = !redirectStdout && !redirectStderr;
                     p.StartInfo.RedirectStandardOutput = redirectStdout;
                     p.StartInfo.RedirectStandardError = redirectStderr;
                     if (sudo)
-                    {                        
-                        p.StartInfo.FileName = "sudo";                        
+                    {
+                        p.StartInfo.FileName = "sudo";
                         p.StartInfo.ArgumentList.Add(cmd);
                     }
                     else
@@ -58,9 +59,9 @@ namespace SearchAThing
                     if (redirectStdout)
                     {
                         p.OutputDataReceived += async (s, e) =>
-                        {                            
+                        {
                             lock (lckstdout)
-                            {                                
+                            {
                                 sbOut.AppendLine(e.Data);
                             }
                         };
@@ -77,6 +78,9 @@ namespace SearchAThing
                         };
                     }
 
+                    if (verbose)
+                        System.Console.WriteLine($"{p.StartInfo.FileName} {string.Join(" ", p.StartInfo.ArgumentList)}");
+
                     if (!p.Start()) throw new Exception($"can't run process");
 
                     if (redirectStdout) p.BeginOutputReadLine();
@@ -85,7 +89,7 @@ namespace SearchAThing
                     while (!ct.IsCancellationRequested)
                     {
                         if (p.WaitForExit(200))
-                        {                            
+                        {
                             break;
                         }
                     }
