@@ -191,12 +191,13 @@ sample program
 
 Commands:
 
-  cmd1   command 1 with no sub commands
-  cmd2   command 2 with sub commands
+  cmd1                 command 1 with no sub commands
+  cmd2                 command 2 with sub commands
 
 Optional flags:
 
-  -b     base option
+  -b                   base option
+  -i,--qval-test=VAL   value test
 
 ```
 
@@ -219,16 +220,18 @@ invoke cmd2 sub commands
 
 Commands:
 
-  cmd-a   command a
-  cmd-b   command b
+  cmd-a                   command a
+  cmd-b                   command b
 
 Optional flags:
 
-  -o2     option on cmd2
+  -o2                     option on cmd2
+  -i2,--qval-test2=VAL2   value test2
 
 (inherited) Optional flags:
 
-  -b      base option
+  -b                      base option
+  -i,--qval-test=VAL      value test
 
 ```
 
@@ -238,27 +241,30 @@ Optional flags:
 Execution:
 
 ```sh
-dotnet build && dotnet examples/cmdline-parser-04/bin/Debug/netcoreapp3.0/cmdline-parser-04.dll cmd2 cmd-b -b -o2
+dotnet build && dotnet examples/cmdline-parser-04/bin/Debug/netcoreapp3.0/cmdline-parser-04.dll cmd2 cmd-b -b -o2 -i xxx -i2 yyy
 ```
 
 Result:
 
 ```
----> parser OnCmdlineMatch
+---> parser OnCmdlineMatch (val=xxx)
 TYPE      SHORT-NAME   LONG-NAME   DESCRIPTION                      MANDATORY   MATCHES   VALUE
 -----------------------------------------------------------------------------------------------
 flag      b                        base option                      False       True      -b   
+flag      i            qval-test   value test                       False       True      xxx  
 command   cmd1                     command 1 with no sub commands   False       False          
 command   cmd2                     command 2 with sub commands      False       True           
 
----> parser2 OnCmdlineMatch
-TYPE      SHORT-NAME   LONG-NAME   DESCRIPTION                      MANDATORY   MATCHES   VALUE
------------------------------------------------------------------------------------------------
-flag      b                        base option                      False       True      -b   
-command   cmd1                     command 1 with no sub commands   False       False          
-command   cmd2                     command 2 with sub commands      False       True           
-flag      o2                       option on cmd2                   False       True      -o2  
-command   cmd-a                    command a                        False       False          
-command   cmd-b                    command b                        False       True           
+---> parser2 OnCmdlineMatch (val=xxx) (val2=yyy)
+TYPE      SHORT-NAME   LONG-NAME    DESCRIPTION                      MANDATORY   MATCHES   VALUE
+------------------------------------------------------------------------------------------------
+flag      b                         base option                      False       True      -b   
+flag      i            qval-test    value test                       False       True      xxx  
+command   cmd1                      command 1 with no sub commands   False       False          
+command   cmd2                      command 2 with sub commands      False       True           
+flag      o2                        option on cmd2                   False       True      -o2  
+flag      i2           qval-test2   value test2                      False       True      yyy  
+command   cmd-a                     command a                        False       False          
+command   cmd-b                     command b                        False       True           
 
 ```
