@@ -1,7 +1,6 @@
 # netcore-util ( command line parser )
 
 [![NuGet Badge](https://buildstats.info/nuget/netcore-util)](https://www.nuget.org/packages/netcore-util/)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdevel0%2Fnetcore-util.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdevel0%2Fnetcore-util?ref=badge_shield)
 
 .NET core utilities
 
