@@ -816,7 +816,7 @@ namespace SearchAThing
                     sb.Append(sbp);
                 }
                 if (items.Any(w => w.Type == CmdlineParseItemType.command)) sb.Append(" COMMAND");
-                if (items.Any(w => w.Type == CmdlineParseItemType.flag)) sb.Append(" FLAGS");
+                if (AllItems.Any(w => w.Type == CmdlineParseItemType.flag)) sb.Append(" FLAGS");
                 foreach (var strOpt in items.Where(w => w.Type == CmdlineParseItemType.parameter))
                 {
                     sb.Append($" {strOpt.ShortName}");
@@ -993,6 +993,11 @@ namespace SearchAThing
             }
         }
 
+        /// <summary>
+        /// list of items including inherited items.
+        /// </summary>
+        public IEnumerable<CmdlineParseItem> AllItems => InheritedItems.Union(Items);
+
         #region tostring
         /// <summary>
         /// retrieve a table representation of all items parsed.
@@ -1000,7 +1005,7 @@ namespace SearchAThing
         public override string ToString()
         {
             var rows = new List<List<string>>();
-            foreach (var x in items.Union(InheritedItems))
+            foreach (var x in AllItems)
             {
                 rows.Add(new List<string>()
                 {
