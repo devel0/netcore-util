@@ -19,7 +19,7 @@ namespace SearchAThing
 #if NETSTANDARD2_1
 
             /// <summary>
-            /// start a process in background redirecting standard output, error;
+            /// start a process in background without redirecting standard output, error;
             /// a cancellation token can be supplied to cancel underlying process
             /// (this method will not redirect stdout and stderr)
             /// </summary>
@@ -30,12 +30,21 @@ namespace SearchAThing
             /// <summary>
             /// start a process in background redirecting standard output, error;
             /// a cancellation token can be supplied to cancel underlying process
+            /// (this method will not redirect stdout and stderr)
+            /// </summary>
+            public static async Task<(int exitcode, string output, string error)> ExecRedirect(string cmd,
+                IEnumerable<string> args, CancellationToken ct, bool sudo = false, bool verbose = false) =>
+                await Exec(cmd, args, ct, sudo, true, true, verbose);
+
+            /// <summary>
+            /// start a process in background redirecting standard output, error;
+            /// a cancellation token can be supplied to cancel underlying process
             /// </summary>        
             public static async Task<(int exitcode, string output, string error)> Exec(string cmd,
                 IEnumerable<string> args, CancellationToken ct, bool sudo = false, bool redirectStdout = true, bool redirectStderr = true,
                 bool verbose = false)
             {
-                var task = Task<(int exitcode, string output, string error)>.Run(async () =>
+                var task = Task<(int exitcode, string output, string error)>.Run(() =>
                 {
                     var p = new Process();
                     p.StartInfo.UseShellExecute = !redirectStdout && !redirectStderr;
@@ -58,7 +67,7 @@ namespace SearchAThing
 
                     if (redirectStdout)
                     {
-                        p.OutputDataReceived += async (s, e) =>
+                        p.OutputDataReceived += (s, e) =>
                         {
                             lock (lckstdout)
                             {
