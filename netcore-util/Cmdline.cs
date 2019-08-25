@@ -323,11 +323,9 @@ namespace SearchAThing
                     if (f.HasLongName && a == $"--{f.LongName}") return true;
 
                     return false;
-                });
+                });                
 
-                var __args = _args.Skip(ParentCount).ToArray();
-
-                foreach (var (arg, idx, isLast) in __args.WithIndexIsLast())
+                foreach (var (arg, idx, isLast) in _args.Skip(ParentCount).WithIndexIsLast())
                 {
                     if (skipnext)
                     {
@@ -355,10 +353,12 @@ namespace SearchAThing
 
                     if (qflag != null) flagsMatched.Add(qflag);
 
+                    var b = ParentCount;
+
                     // if this arg matches and nextone not matches then glue them
-                    if (qflag != null && qflag.HasValueName && idx < __args.Length - 1 && match(__args[idx + 1]) == null)
+                    if (qflag != null && qflag.HasValueName && idx < _args.Length - 1 - b && match(_args[idx + 1 + b]) == null)
                     {
-                        args.Add($"{arg}={__args[idx + 1]}");
+                        args.Add($"{arg}={_args[idx + 1 + b]}");
                         skipnext = true;
                     }
                     else
@@ -542,7 +542,10 @@ namespace SearchAThing
                             parent = parent.Parent;
                         }
                         for (int i = parents.Count - 1; i >= 0; --i)
-                            parents[i].OnCmdlineMatch();
+                        {
+                            if (parents[i].OnCmdlineMatch != null)
+                                parents[i].OnCmdlineMatch();
+                        }
                         OnCmdlineMatch();
                     }
                 }
