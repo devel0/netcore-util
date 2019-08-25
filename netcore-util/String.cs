@@ -40,7 +40,7 @@ namespace SearchAThing
                         else
                         {
                             var hs = (size - l) / 2;
-                            str = " ".Repeat(hs) + str + " ".Repeat((size - l % 2 == 0) ? hs : (hs + 1));
+                            str = " ".Repeat(hs) + str + " ".Repeat((size - l) % 2 == 0 ? hs : (hs + 1));
                         }
                     }
                     break;
