@@ -16,7 +16,8 @@ public static class Toolkit
 |[DynamicMakeDictionary](Toolkit/DynamicMakeDictionary.md) (static)|convert given dynamic object into a dictionary string,object for its properties|
 |[Equals](Toolkit/Equals.md)||
 |[Exec](Toolkit/Exec.md) (static)|start a process in background redirecting standard output, error;<br/>            a cancellation token can be supplied to cancel underlying process|
-|[ExecNoRedirect](Toolkit/ExecNoRedirect.md) (static)|start a process in background redirecting standard output, error;<br/>            a cancellation token can be supplied to cancel underlying process<br/>            (this method will not redirect stdout and stderr)|
+|[ExecNoRedirect](Toolkit/ExecNoRedirect.md) (static)|start a process in background without redirecting standard output, error;<br/>            a cancellation token can be supplied to cancel underlying process<br/>            (this method will not redirect stdout and stderr)|
+|[ExecRedirect](Toolkit/ExecRedirect.md) (static)|start a process in background redirecting standard output, error;<br/>            a cancellation token can be supplied to cancel underlying process<br/>            (this method will not redirect stdout and stderr)|
 |[GetEmbeddedResourceNames](Toolkit/GetEmbeddedResourceNames.md) (static)|retrieve current executing assembly resource names|
 |[GetHashCode](Toolkit/GetHashCode.md)||
 |[GetType](Toolkit/GetType.md)||

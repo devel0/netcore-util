@@ -20,9 +20,10 @@ public class CmdlineParser
 |[AddCommand](CmdlineParser/AddCommand.md)|add a command.<br/>            While foreach cmdline there can be specified only one command here you can set alternative commands available.<br/>            Commands will be strings at begin of commandline.|
 |[AddLong](CmdlineParser/AddLong.md)|add optional long switch.<br/>            if valueName given a value must specified together this switch if used.|
 |[AddMandatoryLong](CmdlineParser/AddMandatoryLong.md)|add mandatory short switch.<br/>            if valueName given a value must specified together this switch if used.|
+|[AddMandatoryParameter](CmdlineParser/AddMandatoryParameter.md)|add mandatory parameter ( strings at end of command line, after flags )|
 |[AddMandatoryShort](CmdlineParser/AddMandatoryShort.md)|add mandatory short switch.<br/>            if valueName given a value must specified together this switch if used.|
 |[AddMandatoryShortLong](CmdlineParser/AddMandatoryShortLong.md)|add mandatory short,long switch.<br/>            if valueName given a value must specified together this switch if used.|
-|[AddParameter](CmdlineParser/AddParameter.md)|add a parameter ( strings at end of command line, after flags )|
+|[AddParameter](CmdlineParser/AddParameter.md)|add optional parameter ( strings at end of command line, after flags )|
 |[AddParameterArray](CmdlineParser/AddParameterArray.md)|add a parameter array item ( strings at end of command line, after flags and single parameters )|
 |[AddShort](CmdlineParser/AddShort.md)|add optional short switch.<br/>            if valueName given a value must specified together this switch if used.|
 |[AddShortLong](CmdlineParser/AddShortLong.md)|add optional short,long switch.<br/>            if valueName given a value must specified together this switch if used.|

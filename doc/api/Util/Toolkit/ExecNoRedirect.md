@@ -1,6 +1,6 @@
 # SearchAThing.Util.Toolkit.ExecNoRedirect method
 ## ExecNoRedirect(string, IEnumerable<string>, CancellationToken, bool, bool)
-start a process in background redirecting standard output, error;
+start a process in background without redirecting standard output, error;
             a cancellation token can be supplied to cancel underlying process
             (this method will not redirect stdout and stderr)
 
