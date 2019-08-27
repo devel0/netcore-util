@@ -11,8 +11,8 @@ namespace cmdline_parser_01
             var cmdline = new CmdlineParser("sample program", (parser) =>
             {
                 var flag_i = parser.AddShort("i", "print filename stats");                
-                var file1 = parser.AddParameter("file1", "1th pathfilename to test", mandatory: false);
-                var file2 = parser.AddParameter("file2", "2th pathfilename to test", mandatory: false);
+                var file1 = parser.AddParameter("file1", "1th pathfilename to test");
+                var file2 = parser.AddParameter("file2", "2th pathfilename to test");
 
                 parser.OnCmdlineMatch = () =>
                 {
