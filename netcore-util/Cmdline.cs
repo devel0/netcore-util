@@ -323,7 +323,7 @@ namespace SearchAThing
                     if (f.HasLongName && a == $"--{f.LongName}") return true;
 
                     return false;
-                });                
+                });
 
                 foreach (var (arg, idx, isLast) in _args.Skip(ParentCount).WithIndexIsLast())
                 {
@@ -580,18 +580,28 @@ namespace SearchAThing
         }
 
         /// <summary>
+        /// add optional parameter ( strings at end of command line, after flags )
+        /// </summary>
+        public CmdlineParseItem AddParameter(string name, string description) => _AddParameter(name, description, false);
+
+        /// <summary>
+        /// add mandatory parameter ( strings at end of command line, after flags )
+        /// </summary>
+        public CmdlineParseItem AddMandatoryParameter(string name, string description) => _AddParameter(name, description, true);
+
+        /// <summary>
         /// add a parameter ( strings at end of command line, after flags )
         /// </summary>
-        public CmdlineParseItem AddParameter(string name, string description, bool mandatory = true)
+        CmdlineParseItem _AddParameter(string name, string description, bool mandatory)
         {
             if (items.Any(w => w.Type == CmdlineParseItemType.parameter && w.ShortName == name))
             {
                 throw new Exception($"a parameter named [{name}] already exists");
             }
 
-            if (!mandatory && items.Count(w => w.Type == CmdlineParseItemType.parameter && w.Mandatory) > 0)
+            if (mandatory && items.Count(w => w.Type == CmdlineParseItemType.parameter && !w.Mandatory) > 0)
             {
-                throw new Exception($"can't add optional parameter after mandatories");
+                throw new Exception($"can't add mandatory parameter after optionals");
             }
 
             var item = new CmdlineParseItem(CmdlineParseItemType.parameter)
