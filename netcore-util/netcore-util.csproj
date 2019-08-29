@@ -3,7 +3,7 @@
         <TargetFrameworks>netstandard2.1;netstandard2.0</TargetFrameworks>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>        
         <PackageId>netcore-util</PackageId>   
-        <PackageVersion>1.0.27</PackageVersion>
+        <PackageVersion>1.0.28</PackageVersion>
         <Title>net core util</Title>
         <Description></Description>
         <Authors>Lorenzo Delana</Authors>

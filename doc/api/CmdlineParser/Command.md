@@ -1,10 +1,11 @@
 # Command property (SearchAThing.CmdlineParser)
-command parsed ( if any )
+command that activate this parser
 
 ## Signature
 ```csharp
-public string Command
+public CmdlineParseItem Command
 {
     get;
+    protected set;
 }
 ```

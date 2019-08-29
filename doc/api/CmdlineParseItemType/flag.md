@@ -1,5 +1,5 @@
 # flag field (SearchAThing.CmdlineParseItemType)
-parse item represent a flag ( "-x", "--x" )
+(No Description)
 
 ## Signature
 ```csharp

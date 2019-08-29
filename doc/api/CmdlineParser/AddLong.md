@@ -1,11 +1,10 @@
 # SearchAThing.CmdlineParser.AddLong method
-## AddLong(string, string, string)
-add optional long switch.
-            if valueName given a value must specified together this switch if used.
+## AddLong(string, string, string, Action<SearchAThing.CmdlineParseItem>)
+add optional long flag
 
 ### Signature
 ```csharp
-public SearchAThing.CmdlineParseItem AddLong(string longName, string description, string valueName = null)
+public SearchAThing.CmdlineParseItem AddLong(string name, string description, string valueName = null, Action<SearchAThing.CmdlineParseItem> globalFlagAction = null)
 ```
 ### Returns
 

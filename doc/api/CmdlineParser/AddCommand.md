@@ -1,14 +1,6 @@
 # SearchAThing.CmdlineParser.AddCommand method
-## AddCommand(string, string, CmdlineParser)
-add a command.
-            While foreach cmdline there can be specified only one command here you can set alternative commands available.
-            Commands will be strings at begin of commandline.
-
+## AddCommand(string, string, Action<SearchAThing.CmdlineParser>)
 ### Signature
 ```csharp
-public SearchAThing.CmdlineParseItem AddCommand(string command, string description, CmdlineParser commandParser = null)
+public SearchAThing.CmdlineParseItem AddCommand(string name, string description, Action<SearchAThing.CmdlineParser> builder = null)
 ```
-### Returns
-
-### Remarks
-

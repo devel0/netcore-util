@@ -9,7 +9,11 @@
             "request": "launch",
             "preLaunchTask": "build",
             "program": "${workspaceFolder}/examples/cmdline-parser-04/bin/Debug/netcoreapp3.0/cmdline-parser-04.dll",
-            "args": [  "cmd2", "cmd-b", "-b", "-o2", "-i", "xxx", "-i2", "yyy" ],
+            "args": [ "cmd1", "-h" ],
+            "env": {                
+                // set to 1 to debug completions mode
+                "SHOW_COMPLETIONS": "0"
+            },
             "cwd": "${workspaceFolder}/examples",
             "console": "internalConsole",
             "stopAtEntry": false,

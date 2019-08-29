@@ -1,5 +1,5 @@
 # parameter field (SearchAThing.CmdlineParseItemType)
-parse item represent a parameter ( those strings at end )
+(No Description)
 
 ## Signature
 ```csharp

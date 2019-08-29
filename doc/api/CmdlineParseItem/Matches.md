@@ -1,5 +1,5 @@
 # Matches property (SearchAThing.CmdlineParseItem)
-true if this command, flag or argument parsed
+_(No Description)_
 
 ## Signature
 ```csharp

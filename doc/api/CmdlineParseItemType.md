@@ -3,7 +3,7 @@
 
 **Inheritance:** Object → ValueType → Enum → CmdlineParseItemType
 
-item type of a command line parse element
+(No Description)
 
 ## Signature
 ```csharp

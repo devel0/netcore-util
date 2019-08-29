@@ -1,5 +1,5 @@
 # AllItems property (SearchAThing.CmdlineParser)
-list of items including inherited items.
+_(No Description)_
 
 ## Signature
 ```csharp

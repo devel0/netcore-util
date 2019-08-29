@@ -1,5 +1,5 @@
 # Values property (SearchAThing.CmdlineParseItem)
-values if this item is a parameters array
+_(No Description)_
 
 ## Signature
 ```csharp

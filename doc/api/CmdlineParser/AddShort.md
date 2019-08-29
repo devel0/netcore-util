@@ -1,11 +1,10 @@
 # SearchAThing.CmdlineParser.AddShort method
-## AddShort(string, string, string)
-add optional short switch.
-            if valueName given a value must specified together this switch if used.
+## AddShort(string, string, string, Action<SearchAThing.CmdlineParseItem>)
+add optional short flag
 
 ### Signature
 ```csharp
-public SearchAThing.CmdlineParseItem AddShort(string shortName, string description, string valueName = null)
+public SearchAThing.CmdlineParseItem AddShort(string name, string description, string valueName = null, Action<SearchAThing.CmdlineParseItem> globalFlagAction = null)
 ```
 ### Returns
 

@@ -1,11 +1,11 @@
 # ShortName property (SearchAThing.CmdlineParseItem)
-short name for this item or null if not set
+_(No Description)_
 
 ## Signature
 ```csharp
 public string ShortName
 {
     get;
-    protected set;
+    set;
 }
 ```

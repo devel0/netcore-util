@@ -1,5 +1,5 @@
 # command field (SearchAThing.CmdlineParseItemType)
-parse item represent a command ( string at begin )
+(No Description)
 
 ## Signature
 ```csharp

@@ -1,5 +1,5 @@
 # Items property (SearchAThing.CmdlineParser)
-list of item parser
+this (sub)parser items
 
 ## Signature
 ```csharp

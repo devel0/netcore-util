@@ -21,10 +21,6 @@
     - [RandomPasswordOptions](doc/api/Util/RandomPasswordOptions.md)
 - [String Wrapper](doc/api/StringWrapper.md)
 - [Error info](doc/api/ErrorInfo.md)
-- Command line parser multi ( [**quickstart**](cmdline-parser.md) )
-    - [CmdlineParser](doc/api/CmdlineParser.md)
-    - [CmdlineParserItem](doc/api/CmdlineParseItem.md)
-    - [CmdlineParserItemType](doc/api/CmdlineParseItemType.md)
 
 ## install
 
@@ -54,7 +50,7 @@ dotnet add reference ../netcore-util/netcore-util.csproj
 cd ..
 
 dotnet sln netcore-util.sln add netcore-util/netcore-util.csproj
-dotnet sln netcore-util.sln add test/test.csproj 
+dotnet sln netcore-util.sln add test/test.csproj
 dotnet restore
 dotnet build
 dotnet test test/test.csproj

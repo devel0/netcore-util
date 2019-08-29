@@ -2,5 +2,5 @@
 ## ToString()
 ### Signature
 ```csharp
-public virtual string ToString()
+public override string ToString()
 ```

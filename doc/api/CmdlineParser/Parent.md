@@ -1,5 +1,5 @@
 # Parent property (SearchAThing.CmdlineParser)
-non null if this parser is a nested parser
+_(No Description)_
 
 ## Signature
 ```csharp

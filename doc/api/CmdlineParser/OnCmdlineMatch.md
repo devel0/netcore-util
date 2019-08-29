@@ -1,12 +1,12 @@
-# OnCmdlineMatch property (SearchAThing.CmdlineParser)
-user action that will called from the parser if arguments matches without errors.
-            this is the primary entry point for application execution ( post-cmdline )
+# SearchAThing.CmdlineParser.OnCmdlineMatch method
+## OnCmdlineMatch(Action)
+set action to execute when this parser cmdline matches
 
-## Signature
+### Signature
 ```csharp
-public Action OnCmdlineMatch
-{
-    get;
-    set;
-}
+public void OnCmdlineMatch(Action action)
 ```
+### Returns
+
+### Remarks
+

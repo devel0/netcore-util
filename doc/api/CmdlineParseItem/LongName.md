@@ -1,11 +1,11 @@
 # LongName property (SearchAThing.CmdlineParseItem)
-long name for this item or null if not set
+_(No Description)_
 
 ## Signature
 ```csharp
 public string LongName
 {
     get;
-    protected set;
+    set;
 }
 ```

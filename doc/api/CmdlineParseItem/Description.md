@@ -1,11 +1,11 @@
 # Description property (SearchAThing.CmdlineParseItem)
-description used in usage to describe this item
+_(No Description)_
 
 ## Signature
 ```csharp
 public string Description
 {
     get;
-    protected set;
+    set;
 }
 ```

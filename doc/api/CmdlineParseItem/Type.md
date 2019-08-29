@@ -1,5 +1,5 @@
 # Type property (SearchAThing.CmdlineParseItem)
-type of this parse cmdline argument item
+_(No Description)_
 
 ## Signature
 ```csharp

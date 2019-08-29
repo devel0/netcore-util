@@ -1,5 +1,5 @@
 # HasLongName property (SearchAThing.CmdlineParseItem)
-states if this item have a long name definition
+_(No Description)_
 
 ## Signature
 ```csharp

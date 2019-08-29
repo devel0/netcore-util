@@ -1,12 +1,6 @@
 # SearchAThing.CmdlineParser.Run method
 ## Run(string[])
-this must called only once with main arguments, then through OnCmdlineMatch user can customize application
-
 ### Signature
 ```csharp
-public void Run(string[] _args)
+public void Run(string[] args)
 ```
-### Returns
-
-### Remarks
-
