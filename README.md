@@ -16,7 +16,7 @@
 ## API Documentation
 
 - [Extensions](doc/api/UtilExt.md)
-- [Path](doc/api/Util/Path.md)
+- [Path](doc/api/Util/PathUtil.md)
 - [Toolkit](doc/api/Util/Toolkit.md)
     - [RandomPasswordOptions](doc/api/Util/RandomPasswordOptions.md)
 - [String Wrapper](doc/api/StringWrapper.md)
