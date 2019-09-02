@@ -37,6 +37,16 @@ namespace SearchAThing
                 await Exec(cmd, args, ct, sudo, true, true, verbose);
 
             /// <summary>
+            /// start a bash process in background redirecting standard output, error;
+            /// given script can contains pipe and other shell related redirections.
+            /// a cancellation token can be supplied to cancel underlying process
+            /// (this method will not redirect stdout and stderr)
+            /// </summary>
+            public static async Task<(int exitcode, string output, string error)> ExecBashRedirect(string script,
+                CancellationToken ct, bool sudo = false, bool verbose = false) =>
+                await Exec("bash", new[] { "-c", script }, ct, sudo, true, true, verbose);
+
+            /// <summary>
             /// start a process in background redirecting standard output, error;
             /// a cancellation token can be supplied to cancel underlying process
             /// </summary>        
