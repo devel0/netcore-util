@@ -1,16 +1,17 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using static System.FormattableString;
-using static System.Math;
+﻿using System;
 
 namespace SearchAThing
 {
+
+    /// <summary>
+    /// useful if need to store quick tuple values into a list or dictionary and allowing further modification;
+    /// without this retrieved tuple will a copy-value and tuple in collection remains unmodified.
+    /// </summary>
+    public class ValueObj<T>
+    {
+        public T Value { get; set; }
+        public ValueObj(T x) { Value = x; }
+    }
 
     public static partial class UtilExt
     {
