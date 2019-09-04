@@ -1,14 +1,20 @@
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
-using static System.Math;
 
 namespace SearchAThing
 {
 
     public static partial class UtilExt
     {
+
+        /// <summary>
+        /// distinct with lambda
+        /// </summary>
+        public static IEnumerable<T> Distinct<T, TKey>(this IEnumerable<T> lst, Func<T, TKey> keySelector)
+        {
+            return lst.GroupBy(keySelector).Select(w => w.First());
+        }
 
         /// <summary>
         /// enumerable extension to enumerate itself into an (item, idx) set
@@ -32,7 +38,7 @@ namespace SearchAThing
                 isLast = !enm.MoveNext();
                 yield return (item, idx, isLast);
                 if (isLast) yield break;
-                ++idx;                
+                ++idx;
             }
         }
 
