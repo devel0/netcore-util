@@ -34,6 +34,35 @@ namespace SearchAThing
             return obj;
         }
 
+        public delegate (bool include, bool customValue, object valueIfCustom) CopyFromCustomDelegate(PropertyInfo pi, object val);
+
+        /// <summary>
+        /// copy properties from other object ; a custom non null delegate function can be passed to specify
+        /// if include a property and if to assign a custom value ( useful for complex, array types )
+        /// </summary>        
+        public static T CopyFromCustom<T>(this T obj, T other, CopyFromCustomDelegate custom = null)
+        {
+            var type = typeof(T);
+
+            foreach (var p in type.GetProperties())
+            {
+                var val = p.GetValue(other);
+
+                if (custom != null)
+                {
+                    var q = custom(p, val);
+                    if (q.include)
+                    {
+                        p.SetValue(obj, q.customValue ? q.valueIfCustom : val);
+                    }
+                }
+                else
+                    p.SetValue(obj, val);
+            }
+
+            return obj;
+        }
+
         /// <summary>
         /// copy properties from other object excluding those with given names
         /// </summary>        
