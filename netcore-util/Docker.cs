@@ -10,10 +10,6 @@ using Newtonsoft.Json.Linq;
 namespace SearchAThing.Util
 {
 
-    // TODO: enable NETSTANDARD2_0 too but requires an extension to convert argument to single string with appropriate escaping if any
-
-#if NETSTANDARD2_1
-
     /// <summary>
     /// docker network information
     /// </summary>
@@ -295,7 +291,5 @@ namespace SearchAThing.Util
         #endregion
 
     }
-
-#endif
 
 }

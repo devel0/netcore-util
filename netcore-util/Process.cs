@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 using System.Threading;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace SearchAThing
@@ -14,9 +15,6 @@ namespace SearchAThing
         public static partial class Toolkit
         {
 
-            // TODO: enable NETSTANDARD2_0 too but requires an extension to convert argument to single string with appropriate escaping if any
-
-#if NETSTANDARD2_1
 
             /// <summary>
             /// start a process in background without redirecting standard output, error;
@@ -65,14 +63,25 @@ namespace SearchAThing
                     p.StartInfo.UseShellExecute = !redirectStdout && !redirectStderr;
                     p.StartInfo.RedirectStandardOutput = redirectStdout;
                     p.StartInfo.RedirectStandardError = redirectStderr;
+                    
                     if (sudo)
                     {
                         p.StartInfo.FileName = "sudo";
-                        p.StartInfo.ArgumentList.Add(cmd);
+                        var lst = new List<string>(args);
+                        lst.Insert(0, cmd);
+                        args = lst;                        
                     }
                     else
                         p.StartInfo.FileName = cmd;
-                    foreach (var a in args) p.StartInfo.ArgumentList.Add(a);
+                    
+                    if (Environment.OSVersion.Platform == PlatformID.Unix)
+                    {                         
+                        p.StartInfo.Arguments = SystemWrap.PasteArguments.PasteUnix(args, pasteFirstArgumentUsingArgV0Rules: true);
+                    }
+                    else
+                    {
+                        p.StartInfo.Arguments = SystemWrap.PasteArguments.PasteWindows(args, pasteFirstArgumentUsingArgV0Rules: true);
+                    }
 
                     var sbOut = new StringBuilder();
                     var sbErr = new StringBuilder();
@@ -103,7 +112,7 @@ namespace SearchAThing
                     }
 
                     if (verbose)
-                        System.Console.WriteLine($"{p.StartInfo.FileName} {string.Join(" ", p.StartInfo.ArgumentList)}");
+                        System.Console.WriteLine($"{p.StartInfo.FileName} {p.StartInfo.Arguments}");
 
                     if (!p.Start()) throw new Exception($"can't run process");
 
@@ -136,8 +145,6 @@ namespace SearchAThing
 
                 return await task;
             }
-
-#endif
 
         }
 
