@@ -20,8 +20,7 @@ namespace SearchAThing
 
             /// <summary>
             /// start a process in background without redirecting standard output, error;
-            /// a cancellation token can be supplied to cancel underlying process
-            /// (this method will not redirect stdout and stderr)
+            /// a cancellation token can be supplied to cancel underlying process            
             /// </summary>
             public static async Task<(int exitcode, string output, string error)> ExecNoRedirect(string cmd,
                 IEnumerable<string> args, CancellationToken ct, bool sudo = false, bool verbose = false) =>
@@ -29,18 +28,24 @@ namespace SearchAThing
 
             /// <summary>
             /// start a process in background redirecting standard output, error;
-            /// a cancellation token can be supplied to cancel underlying process
-            /// (this method will not redirect stdout and stderr)
+            /// a cancellation token can be supplied to cancel underlying process            
             /// </summary>
             public static async Task<(int exitcode, string output, string error)> ExecRedirect(string cmd,
                 IEnumerable<string> args, CancellationToken ct, bool sudo = false, bool verbose = false) =>
                 await Exec(cmd, args, ct, sudo, true, true, verbose);
 
             /// <summary>
+            /// start a process in background redirecting standard error;
+            /// a cancellation token can be supplied to cancel underlying process            
+            /// </summary>
+            public static async Task<(int exitcode, string output, string error)> ExecRedirectError(string cmd,
+                IEnumerable<string> args, CancellationToken ct, bool sudo = false, bool verbose = false) =>
+                await Exec(cmd, args, ct, sudo, false, true, verbose);
+
+            /// <summary>
             /// start a bash process in background redirecting standard output, error;
             /// given script can contains pipe and other shell related redirections.
-            /// a cancellation token can be supplied to cancel underlying process
-            /// (this method will not redirect stdout and stderr)
+            /// a cancellation token can be supplied to cancel underlying process    
             /// </summary>
             public static async Task<(int exitcode, string output, string error)> ExecBashRedirect(string script,
                 CancellationToken ct, bool sudo = false, bool verbose = false) =>
