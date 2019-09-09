@@ -390,9 +390,9 @@ namespace SearchAThing
         }
 
         /// <summary>
-        /// return HH:mm.ss representation
+        /// return HH:mm:ss representation
         /// </summary>        
-        public static string InvariantTime(this DateTime dt, string sep = "-")
+        public static string InvariantTime(this DateTime dt, string sep = ":")
         {
             return string.Format("{0:00}{1}{2:00}{3}{4:00}", dt.Hour, sep, dt.Minute, sep, dt.Second);
         }
