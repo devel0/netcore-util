@@ -90,25 +90,31 @@ namespace SearchAThing
         }
 
         /// <summary>
-        /// Measure precision distance between two given number.
-        /// for example two big numbers 1234567890123.0 and 1234567890023
-        /// have difference of 100 but a precision difference of about 1e-10.
-        /// This is an instrumentation function that is not to be used outside its scope,
-        /// it will help to understand loss of precision between two numbers represented with different storage.
-        /// For example this could useful to compare if an import-export tool produce results comparable to other previous versions
-        /// because there can be approximations around 1e-12 and 1e-15 due to different format and providers.  
-        /// While in general to compare measurements a tolerance have to be used and EqualsTol method, so that
-        /// 1234567890123.0d.EqualsTol(1e-10, 1234567890023) is false because diff is 100.
+        /// Measure percent difference between given two numbers;
+        /// can return double.NaN if one of two numbers are 0;
+        /// returns 0 if two given numbes are either 0.
+        /// 
+        /// Given f = PrecisionDifference(x, y)
+        /// m = Min(x, y)
+        /// M = Max(x, y)        
+        /// a = Min(Abs(x), Abs(y))
+        /// 
+        /// returned value f satisfy follow condition
+        /// 
+        /// M(m, a, f) = m + a * f
         /// </summary>
-        public static double PrecisionDifference(this double a, double b)
-        {            
-            var ka = a.Magnitude();
-            var kb = b.Magnitude();
+        public static double PercentDifference(this double x, double y)
+        {
+            if (x == 0 && y == 0) return 0;
+            if ((x == 0 && y != 0) || (x != 0 && y == 0)) return double.NaN;
 
-            var qa = a * Pow(10, -ka);
-            var qb = b * Pow(10, -kb);
+            var a = Min(Abs(x), Abs(y));
+            var m = Min(x, y);
+            var M = Max(x, y);
+            var d = M - m;
+            var f = d / a;
 
-            return Abs(qa - qb) + (ka == kb ? 0 : Pow(10, Abs(ka - kb)));
+            return f;
         }
 
         /// <summary>

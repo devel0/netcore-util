@@ -172,19 +172,23 @@ namespace SearchAThing.Util
         [Fact]
         public void NumberTest12()
         {
-            Assert.True(111111111111111d.PrecisionDifference(111111011111111d) == 1.000000000139778E-06);
-            Assert.True(111111111111111d.PrecisionDifference(111111111111111d) == 0);
-            Assert.True(111111111111111d.PrecisionDifference(191111111111111d) == 0.8);
-            Assert.True(111111111111111d.PrecisionDifference(111111111111119d) == 7.9936057773011271E-14);
-            Assert.True(1.23e-210.PrecisionDifference(1.23001e-210) == 9.9999999998434674E-06);
-            Assert.True(21.23e-210.PrecisionDifference(1.23001e-210) == 10.892990000000001);
+            Assert.True(111111111111111d.PercentDifference(111111011111111d) == 9.0000081000072986E-07);
+            Assert.True(111111111111111d.PercentDifference(111111111111111d) == 0);
+            Assert.True(111111111111111d.PercentDifference(191111111111111d) == 0.72000000000000075);
+            Assert.True(111111111111111d.PercentDifference(111111111111119d) == 7.2000000000000072E-14);
+            Assert.True(1.23e-210.PercentDifference(1.23001e-210) == 8.1300813007679046E-06);
+            Assert.True(21.23e-210.PercentDifference(1.23001e-210) == 16.260022276241656);
 
-            Assert.True((-5327234122.34).PrecisionDifference(-5327234122.341) == 1.000088900582341E-12);
-            Assert.True((+5327234122.34).PrecisionDifference(+5327234122.341) == 1.000088900582341E-12);
-            Assert.True((+5327234122.34).PrecisionDifference(-5327234122.341) == 10.654468244681);
-            Assert.True((-5327234122.34).PrecisionDifference(+5327234122.341) == 10.654468244681);
+            Assert.True((-5327234122.34).PercentDifference(-5327234122.341) == 1.8761155613613974E-13);
+            Assert.True((+5327234122.34).PercentDifference(+5327234122.341) == 1.8761155613613974E-13);
+            Assert.True((+5327234122.34).PercentDifference(-5327234122.341) == 2.0000000000001874);
+            Assert.True((-5327234122.34).PercentDifference(+5327234122.341) == 2.0000000000001874);
 
-            Assert.True(1234567890123d.PrecisionDifference(1234567890023) == 1.000000082740371E-10);
+            Assert.True(1234567890123d.PercentDifference(1234567890023) == 8.1000000735590979E-11);
+
+            Assert.True(double.IsNaN(0d.PercentDifference(2.2)));
+            Assert.True(double.IsNaN(2.2.PercentDifference(0d)));
+            Assert.True(0d.PercentDifference(0d) == 0);
         }
 
         #endregion
@@ -206,32 +210,7 @@ namespace SearchAThing.Util
             Assert.True(obc == obc2);
             Assert.True(obc.ToList().SequenceEqual(new[] { 4, 3, 1 }));
         }
-        #endregion
-
-        #region ObserableCollection
-
-        [Fact]
-        public void PrecisionDifferenceTest()
-        {
-            var q = 111111111111111d.PrecisionDifference(111111011111111d);            
-            Assert.True(q == 1.000000000139778E-06);
-
-            q = 111111111111111d.PrecisionDifference(111111111111111d);
-            Assert.True(q == 0);
-
-            q = 111111111111111d.PrecisionDifference(191111111111111d);
-            Assert.True(q == 0.8);
-
-            q = 111111111111111d.PrecisionDifference(111111111111119d);
-            Assert.True(q == 7.9936057773011271E-14);
-
-            q = 1.23e-210.PrecisionDifference(1.23001e-210);
-            Assert.True(q == 9.9999999998434674E-06);
-
-            q = 21.23e-210.PrecisionDifference(1.23001e-210);
-            Assert.True(q == 10.892990000000001);
-        }
-        #endregion
+        #endregion         
 
     }
 
