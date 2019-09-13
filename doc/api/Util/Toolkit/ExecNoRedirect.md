@@ -2,7 +2,6 @@
 ## ExecNoRedirect(string, IEnumerable<string>, CancellationToken, bool, bool)
 start a process in background without redirecting standard output, error;
             a cancellation token can be supplied to cancel underlying process
-            (this method will not redirect stdout and stderr)
 
 ### Signature
 ```csharp

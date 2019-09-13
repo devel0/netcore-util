@@ -17,10 +17,12 @@ public static class UtilExt
 |[CompareTol](UtilExt/CompareTol.md) (static)||
 |[ContainsIgnoreCase](UtilExt/ContainsIgnoreCase.md) (static)|check if given string contains the part ( ignoring case )|
 |[CopyFrom](UtilExt/CopyFrom.md) (static)|copy properties from other object ; if match functor specified it copies only matched properties|
+|[CopyFromCustom](UtilExt/CopyFromCustom.md) (static)||
 |[CopyFromExclude](UtilExt/CopyFromExclude.md) (static)||
 |[CopyFromInclude](UtilExt/CopyFromInclude.md) (static)||
 |[Details](UtilExt/Details.md) (static)||
 |[DetailsObject](UtilExt/DetailsObject.md) (static)||
+|[Distinct](UtilExt/Distinct.md) (static)|distinct with lambda|
 |[Equals](UtilExt/Equals.md)||
 |[EqualsAutoTol](UtilExt/EqualsAutoTol.md) (static)|Returns true if two numbers are equals using a default tolerance of 1e-6 about the smaller one.|
 |[EqualsTol](UtilExt/EqualsTol.md) (static)||
@@ -35,7 +37,7 @@ public static class UtilExt
 |[Import](UtilExt/Import.md) (static)|parse given array of doubles ( invariant ) comma separated|
 |[InvariantDate](UtilExt/InvariantDate.md) (static)|return yyyy-MM-dd representation|
 |[InvarianteDateTime](UtilExt/InvarianteDateTime.md) (static)|return yyyy-MM-dd HH:mm.ss representation|
-|[InvariantTime](UtilExt/InvariantTime.md) (static)|return HH:mm.ss representation|
+|[InvariantTime](UtilExt/InvariantTime.md) (static)|return HH:mm:ss representation|
 |[InvDoubleParse](UtilExt/InvDoubleParse.md) (static)|Invariant culture double parse|
 |[IsInRange](UtilExt/IsInRange.md) (static)|eval if a number fits in given range<br/>            eg.<br/>            - "[0, 10)" are numbers from 0 (included) to 10 (excluded)<br/>            - "[10, 20]" are numbers from 10 (included) to 20 (included)<br/>            - "(30,)" are numbers from 30 (excluded) to +infinity|
 |[Latest](UtilExt/Latest.md) (static)|convert a string that exceed N given characters length to {prefix}{latest N chars}|
@@ -52,7 +54,7 @@ public static class UtilExt
 |[NormalizeFilename](UtilExt/NormalizeFilename.md) (static)||
 |[NormalizeWorksheetName](UtilExt/NormalizeWorksheetName.md) (static)|convert invalid worksheet characters :\/?*[]' into underscore|
 |[ParseInt](UtilExt/ParseInt.md) (static)||
-|[PrecisionDifference](UtilExt/PrecisionDifference.md) (static)|Measure precision distance between two given number.<br/>            for example two big numbers 1234567890123.0 and 1234567890023<br/>            have difference of 100 but a precision difference of about 1e-10.<br/>            This is an instrumentation function that is not to be used outside its scope,<br/>            it will help to understand loss of precision between two numbers represented with different storage.<br/>            For example this could useful to compare if an import-export tool produce results comparable to other previous versions<br/>            because there can be approximations around 1e-12 and 1e-15 due to different format and providers.  <br/>            While in general to compare measurements a tolerance have to be used and EqualsTol method, so that<br/>            1234567890123.0d.EqualsTol(1e-10, 1234567890023) is false because diff is 100.|
+|[PercentDifference](UtilExt/PercentDifference.md) (static)|Measure percent difference between given two numbers;<br/>            can return double.NaN if one of two numbers are 0;<br/>            returns 0 if two given numbes are either 0.<br/>            <br/>            Given f = PercentDifference(x, y)<br/>            m = Min(x, y)<br/>            M = Max(x, y)        <br/>            a = Min(Abs(x), Abs(y))<br/>            <br/>            returned value f satisfy follow condition<br/>            <br/>            M(m, a, f) = m + a * f|
 |[RegexMatch](UtilExt/RegexMatch.md) (static)|retrieve nr. of occurrence of given pattern through regex|
 |[Repeat](UtilExt/Repeat.md) (static)|Repeat given string for cnt by concatenate itself|
 |[Sign](UtilExt/Sign.md) (static)|returns 1.0 if n>=0<br/>            -1 otherwise|

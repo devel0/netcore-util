@@ -94,7 +94,7 @@ namespace SearchAThing
         /// can return double.NaN if one of two numbers are 0;
         /// returns 0 if two given numbes are either 0.
         /// 
-        /// Given f = PrecisionDifference(x, y)
+        /// Given f = PercentDifference(x, y)
         /// m = Min(x, y)
         /// M = Max(x, y)        
         /// a = Min(Abs(x), Abs(y))
