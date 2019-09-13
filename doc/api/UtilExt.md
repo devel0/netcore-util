@@ -21,7 +21,6 @@ public static class UtilExt
 |[CopyFromInclude](UtilExt/CopyFromInclude.md) (static)||
 |[Details](UtilExt/Details.md) (static)||
 |[DetailsObject](UtilExt/DetailsObject.md) (static)||
-|[Distinct](UtilExt/Distinct.md) (static)|distinct with lambda|
 |[Equals](UtilExt/Equals.md)||
 |[EqualsAutoTol](UtilExt/EqualsAutoTol.md) (static)|Returns true if two numbers are equals using a default tolerance of 1e-6 about the smaller one.|
 |[EqualsTol](UtilExt/EqualsTol.md) (static)||
