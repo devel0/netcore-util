@@ -54,7 +54,7 @@ public static class UtilExt
 |[NormalizeFilename](UtilExt/NormalizeFilename.md) (static)||
 |[NormalizeWorksheetName](UtilExt/NormalizeWorksheetName.md) (static)|convert invalid worksheet characters :\/?*[]' into underscore|
 |[ParseInt](UtilExt/ParseInt.md) (static)||
-|[PercentDifference](UtilExt/PercentDifference.md) (static)|Measure percent difference between given two numbers;<br/>            can return double.NaN if one of two numbers are 0;<br/>            returns 0 if two given numbes are either 0.<br/>            <br/>            Given f = PercentDifference(x, y)<br/>            m = Min(x, y)<br/>            M = Max(x, y)        <br/>            a = Min(Abs(x), Abs(y))<br/>            <br/>            returned value f satisfy follow condition<br/>            <br/>            M(m, a, f) = m + a * f|
+|[PercentDifference](UtilExt/PercentDifference.md) (static)|Measure percent difference between given two numbers;<br/>            return double.NaN if only one of two numbers are 0;<br/>            0 if both two given numbers are 0.<br/>            <br/>            Given f = PercentDifference(x, y)<br/>              m = Min(x, y)<br/>              M = Max(x, y)        <br/>              a = Min(Abs(x), Abs(y))<br/>            <br/>            returned value f satisfy follow condition        <br/>              M(m, a, f) = m + a * f|
 |[RegexMatch](UtilExt/RegexMatch.md) (static)|retrieve nr. of occurrence of given pattern through regex|
 |[Repeat](UtilExt/Repeat.md) (static)|Repeat given string for cnt by concatenate itself|
 |[Sign](UtilExt/Sign.md) (static)|returns 1.0 if n>=0<br/>            -1 otherwise|

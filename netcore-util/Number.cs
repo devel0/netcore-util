@@ -91,17 +91,16 @@ namespace SearchAThing
 
         /// <summary>
         /// Measure percent difference between given two numbers;
-        /// can return double.NaN if one of two numbers are 0;
-        /// returns 0 if two given numbes are either 0.
+        /// return double.NaN if only one of two numbers are 0;
+        /// 0 if both two given numbers are 0.
         /// 
         /// Given f = PercentDifference(x, y)
-        /// m = Min(x, y)
-        /// M = Max(x, y)        
-        /// a = Min(Abs(x), Abs(y))
+        ///   m = Min(x, y)
+        ///   M = Max(x, y)        
+        ///   a = Min(Abs(x), Abs(y))
         /// 
-        /// returned value f satisfy follow condition
-        /// 
-        /// M(m, a, f) = m + a * f
+        /// returned value f satisfy follow condition        
+        ///   M(m, a, f) = m + a * f
         /// </summary>
         public static double PercentDifference(this double x, double y)
         {
