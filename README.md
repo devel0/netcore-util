@@ -26,9 +26,13 @@
 
 - [nuget package](https://www.nuget.org/packages/netcore-util/)
 
-## debugging unit tests
+## unit tests
 
-- from vscode just run debug test from code lens balloon
+```sh
+dotnet test
+```
+
+- to debug from vscode just run debug test from code lens balloon
 
 ## how this project was built
 
