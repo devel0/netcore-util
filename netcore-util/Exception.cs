@@ -17,11 +17,16 @@ namespace SearchAThing
 
         public override string ToString()
         {
+            return ToString(true);
+        }
+
+        public string ToString(bool includeStackTrace)
+        {
             var sb = new StringBuilder();
 
             sb.AppendLine($"exception message : [{Message}]");
             sb.AppendLine($"exception type : [{ExceptionType}]");
-            sb.AppendLine($"stacktrace : [{Stacktrace}]");
+            if (includeStackTrace) sb.AppendLine($"stacktrace : [{Stacktrace}]");
 
             return sb.ToString();
         }
@@ -31,9 +36,9 @@ namespace SearchAThing
     public static partial class UtilExt
     {
 
-        public static string Details(this Exception ex)
+        public static string Details(this Exception ex, bool includeStackTrace = true)
         {
-            return DetailsObject(ex).ToString();
+            return DetailsObject(ex).ToString(includeStackTrace);
         }
 
         public static ErrorInfo DetailsObject(this Exception _ex)
