@@ -20,6 +20,7 @@ public class ErrorInfo
 |[GetHashCode](ErrorInfo/GetHashCode.md)||
 |[GetType](ErrorInfo/GetType.md)||
 |[ToString](ErrorInfo/ToString.md)||
+|[ToString](ErrorInfo/ToString.md#tostringbool)||
 ## Properties
 |**Name**|**Summary**|
 |---|---|

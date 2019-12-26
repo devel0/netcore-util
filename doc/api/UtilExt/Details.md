@@ -1,6 +1,6 @@
 # SearchAThing.UtilExt.Details method
-## Details(Exception)
+## Details(Exception, bool)
 ### Signature
 ```csharp
-public static string Details(Exception ex)
+public static string Details(Exception ex, bool includeStackTrace = True)
 ```

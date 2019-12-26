@@ -2,5 +2,5 @@
 ## DetailsObject(Exception)
 ### Signature
 ```csharp
-public static SearchAThing.ErrorInfo DetailsObject(Exception ex)
+public static SearchAThing.ErrorInfo DetailsObject(Exception _ex)
 ```
