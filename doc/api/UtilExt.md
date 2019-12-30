@@ -30,7 +30,9 @@ public static class UtilExt
 |[Export](UtilExt/Export.md) (static)|export to a string ( invariant ) comma separated|
 |[GetHashCode](UtilExt/GetHashCode.md)||
 |[GetJsonArray](UtilExt/GetJsonArray.md) (static)|return dynamic array from given [[xx],[yy],...] json array|
-|[GetMemberNames](UtilExt/GetMemberNames.md) (static)|retrieve list of member names from a functor like `x=>new {x.membername1, x.membername2, ...}`|
+|[GetMemberName](UtilExt/GetMemberName.md) (static)|retrieve member name from a functor like `x=>x.membername1|
+|[GetMemberNames](UtilExt/GetMemberNames.md) (static)|retrieve list of member names from a functor like `x=>new {x.membername1, x.membername2, ...}` or `x=>x.membername`|
+|[GetMemberNames](UtilExt/GetMemberNames.md#getmembernamestt-expressionsystemfunct-object) (static)|retrieve list of member names from a functor like `x=>new {x.membername1, x.membername2, ...}` or `x=>x.membername`|
 |[GetType](UtilExt/GetType.md)||
 |[GreatThanOrEqualsTol](UtilExt/GreatThanOrEqualsTol.md) (static)||
 |[GreatThanTol](UtilExt/GreatThanTol.md) (static)||
