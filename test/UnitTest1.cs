@@ -210,8 +210,47 @@ namespace SearchAThing.Util
             Assert.True(obc == obc2);
             Assert.True(obc.ToList().SequenceEqual(new[] { 4, 3, 1 }));
         }
-        #endregion         
+        #endregion
 
+        #region Expression
+        [Fact]
+        public void GetMembersTest()
+        {
+            var obj = new MemberTest1();
+
+            {
+                var lst = obj.GetMemberNames(x => x.a);
+                Assert.True(lst.Count == 1);
+                Assert.True(lst.Contains("a"));
+            }
+
+            {
+                var lst = obj.GetMemberNames(x => new { x.a, x.b });
+                Assert.True(lst.Count == 2);
+                Assert.True(lst.Contains("a") && lst.Contains("b"));
+            }
+
+            {
+                var res = obj.GetMemberName(x => x.b);
+                Assert.True(res == "b");
+            }
+
+
+            {
+                Assert.Throws<ArgumentException>(() =>
+                {
+                    var res = obj.GetMemberName(x => new { x.a, x.b });
+                });
+            }
+        }
+        #endregion
+
+    }
+
+    public class MemberTest1
+    {
+        public int a { get; set; }
+        public int b { get; set; }
     }
 
 }
