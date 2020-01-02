@@ -28,4 +28,18 @@ namespace SearchAThing
 
     }
 
+    public static partial class Toolkit
+    {
+
+        /// <summary>
+        /// returns true if only one of given objects is null;
+        /// returns false if all objects null or all objects not null;
+        /// </summary>
+        public static bool XorNull(object a, object b)
+        {
+            return a == null ^ b == null;
+        }
+
+    }
+
 }
