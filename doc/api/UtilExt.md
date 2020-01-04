@@ -20,6 +20,7 @@ public static class UtilExt
 |[CopyFromCustom](UtilExt/CopyFromCustom.md) (static)||
 |[CopyFromExclude](UtilExt/CopyFromExclude.md) (static)||
 |[CopyFromInclude](UtilExt/CopyFromInclude.md) (static)||
+|[CreateGetterSetter](UtilExt/CreateGetterSetter.md) (static)||
 |[Details](UtilExt/Details.md) (static)||
 |[DetailsObject](UtilExt/DetailsObject.md) (static)||
 |[Distinct](UtilExt/Distinct.md) (static)|distinct with lambda|
