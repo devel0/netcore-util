@@ -7,6 +7,7 @@ using System.Linq;
 using System.Dynamic;
 using System.Collections.ObjectModel;
 using static SearchAThing.Util.Toolkit;
+using System.Linq.Expressions;
 
 namespace SearchAThing.Util
 {
@@ -242,6 +243,23 @@ namespace SearchAThing.Util
                     var res = obj.GetMemberName(x => new { x.a, x.b });
                 });
             }
+        }        
+
+        void CreateGetterSetterTestFn<T>(T dst, T src, Expression<Func<T, object>> memberExpr)
+        {
+            var (getter, setter) = memberExpr.CreateGetterSetter();
+            setter(dst, getter(src));
+        }
+
+        [Fact]
+        public void CreateGetterSetterTest()
+        {
+            var src = new MemberTest1 { a = 1, b = 2 };
+            var dst = new MemberTest1();            
+
+            Assert.False(dst.a == src.a);
+            CreateGetterSetterTestFn<MemberTest1>(dst, src, (x) => x.a);
+            Assert.True(dst.a == src.a);
         }
         #endregion
 
