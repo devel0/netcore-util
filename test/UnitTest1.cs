@@ -8,6 +8,7 @@ using System.Dynamic;
 using System.Collections.ObjectModel;
 using static SearchAThing.Util.Toolkit;
 using System.Linq.Expressions;
+using static SearchAThing.UtilExt;
 
 namespace SearchAThing.Util
 {
@@ -229,13 +230,17 @@ namespace SearchAThing.Util
                 var lst = obj.GetMemberNames(x => new { x.a, x.b });
                 Assert.True(lst.Count == 2);
                 Assert.True(lst.Contains("a") && lst.Contains("b"));
+                lst = GetMemberNames<MemberTest1>(x => new { x.a, x.b }).ToHashSet();
+                Assert.True(lst.Count == 2);
+                Assert.True(lst.Contains("a") && lst.Contains("b"));
             }
 
             {
                 var res = obj.GetMemberName(x => x.b);
                 Assert.True(res == "b");
+                res = GetMemberName<MemberTest1>(x => x.b);
+                Assert.True(res == "b");
             }
-
 
             {
                 Assert.Throws<ArgumentException>(() =>
@@ -243,7 +248,7 @@ namespace SearchAThing.Util
                     var res = obj.GetMemberName(x => new { x.a, x.b });
                 });
             }
-        }        
+        }
 
         void CreateGetterSetterTestFn<T>(T dst, T src, Expression<Func<T, object>> memberExpr)
         {
@@ -255,7 +260,7 @@ namespace SearchAThing.Util
         public void CreateGetterSetterTest()
         {
             var src = new MemberTest1 { a = 1, b = 2 };
-            var dst = new MemberTest1();            
+            var dst = new MemberTest1();
 
             Assert.False(dst.a == src.a);
             CreateGetterSetterTestFn<MemberTest1>(dst, src, (x) => x.a);

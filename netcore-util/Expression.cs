@@ -13,7 +13,15 @@ namespace SearchAThing
         /// <summary>
         /// retrieve list of member names from a functor like `x=>new {x.membername1, x.membername2, ...}` or `x=>x.membername`
         /// </summary>
-        public static IEnumerable<string> GetMemberNames<T>(this Expression<Func<T, object>> membersExpr)
+        public static IEnumerable<string> GetMemberNames<T>(Expression<Func<T, object>> membersExpr)
+        {
+            return membersExpr.GetMemberNamesExt();
+        }
+
+        /// <summary>
+        /// retrieve list of member names from a functor like `x=>new {x.membername1, x.membername2, ...}` or `x=>x.membername`
+        /// </summary>
+        public static IEnumerable<string> GetMemberNamesExt<T>(this Expression<Func<T, object>> membersExpr)
         {
             {
                 var q = membersExpr.Body as MemberExpression;
@@ -64,7 +72,15 @@ namespace SearchAThing
         /// </summary>
         public static HashSet<string> GetMemberNames<T>(this T obj, Expression<Func<T, object>> membersExpr)
         {
-            return membersExpr.GetMemberNames().ToHashSet();
+            return membersExpr.GetMemberNamesExt().ToHashSet();
+        }
+
+        /// <summary>
+        /// retrieve member name from a functor like `x=>x.membername1
+        /// </summary>
+        public static string GetMemberName<T>(Expression<Func<T, object>> membersExpr) where T : class
+        {
+            return (null as T).GetMemberName(membersExpr);
         }
 
         /// <summary>
@@ -72,7 +88,7 @@ namespace SearchAThing
         /// </summary>
         public static string GetMemberName<T>(this T obj, Expression<Func<T, object>> membersExpr)
         {
-            var en = membersExpr.GetMemberNames().GetEnumerator();
+            var en = membersExpr.GetMemberNamesExt().GetEnumerator();
             if (!en.MoveNext()) throw new Exception($"can't find member names");
             var res = en.Current;
             if (en.MoveNext()) throw new ArgumentException($"more than one member in expression specified");
@@ -83,7 +99,7 @@ namespace SearchAThing
         /// create getter (func) and setter (action) from given lambda expr
         /// </summary>
         public static (Func<T, V> getter, Action<T, V> setter) CreateGetterSetter<T, V>(this Expression<Func<T, V>> expr)
-        {            
+        {
             MemberExpression mExpr = null;
 
             var cvtExpr = expr.Body as UnaryExpression;
