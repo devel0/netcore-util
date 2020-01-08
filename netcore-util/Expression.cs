@@ -72,7 +72,7 @@ namespace SearchAThing
         /// </summary>
         public static HashSet<string> GetMemberNames<T>(this T obj, Expression<Func<T, object>> membersExpr)
         {
-            return membersExpr.GetMemberNamesExt().ToHashSet();
+            return new HashSet<string>(membersExpr.GetMemberNamesExt().ToArray());
         }
 
         /// <summary>
