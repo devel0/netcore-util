@@ -1,3 +1,3 @@
-# netcore-sci
+# netcore-util
 
 [api documentation](api)
