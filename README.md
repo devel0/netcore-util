@@ -6,7 +6,7 @@
 
 <hr/>
 
-- [API Documentation](https://devel0.github.io/netcore-util/api/SearchAThing.Util.html)
+- [API Documentation](https://devel0.github.io/netcore-util/api/SearchAThing.UtilExt.html)
 - [install](#install)
 - [debugging unit tests](#debugging-unit-tests)
 - [how this project was built](#how-this-project-was-built)
