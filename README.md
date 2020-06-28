@@ -6,21 +6,12 @@
 
 <hr/>
 
-- [API Documentation](#api-documentation)
+- [API Documentation](https://devel0.github.io/netcore-util/api/SearchAThing.Util.html)
 - [install](#install)
 - [debugging unit tests](#debugging-unit-tests)
 - [how this project was built](#how-this-project-was-built)
 
 <hr/>
-
-## API Documentation
-
-- [Extensions](doc/api/UtilExt.md)
-- [Path](doc/api/Util/PathUtil.md)
-- [Toolkit](doc/api/Util/Toolkit.md)
-    - [RandomPasswordOptions](doc/api/Util/RandomPasswordOptions.md)
-- [String Wrapper](doc/api/StringWrapper.md)
-- [Error info](doc/api/ErrorInfo.md)
 
 ## install
 

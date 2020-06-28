@@ -1,0 +1,1588 @@
+### YamlMime:ManagedReference
+items:
+- uid: SearchAThing.Util.Toolkit
+  commentId: T:SearchAThing.Util.Toolkit
+  id: Toolkit
+  parent: SearchAThing.Util
+  children:
+  - SearchAThing.Util.Toolkit.BuildImage(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  - SearchAThing.Util.Toolkit.CreateNetwork(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  - SearchAThing.Util.Toolkit.DeflateEmbeddedResource(Assembly,System.String)
+  - SearchAThing.Util.Toolkit.DynamicMakeDictionary(System.Object)
+  - SearchAThing.Util.Toolkit.Exec(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  - SearchAThing.Util.Toolkit.ExecBashRedirect(System.String,CancellationToken,System.Boolean,System.Boolean)
+  - SearchAThing.Util.Toolkit.ExecContainerCmd(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  - SearchAThing.Util.Toolkit.ExecNoRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  - SearchAThing.Util.Toolkit.ExecRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  - SearchAThing.Util.Toolkit.ExecRedirectError(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  - SearchAThing.Util.Toolkit.GetEmbeddedResourceNames
+  - SearchAThing.Util.Toolkit.ListContainers(CancellationToken,System.Boolean,System.Boolean)
+  - SearchAThing.Util.Toolkit.ListNetworks(CancellationToken,System.Boolean,System.Boolean)
+  - SearchAThing.Util.Toolkit.MakeDynamic(System.ValueTuple{System.String,System.Object}[])
+  - SearchAThing.Util.Toolkit.RandomPassword(SearchAThing.Util.RandomPasswordOptions)
+  - SearchAThing.Util.Toolkit.RemoveContainer(System.String,CancellationToken,System.Boolean,System.Boolean)
+  - SearchAThing.Util.Toolkit.RemoveNetwork(System.String,CancellationToken,System.Boolean,System.Boolean)
+  - SearchAThing.Util.Toolkit.RunContainer(System.String,System.String,System.String,System.String,System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  - SearchAThing.Util.Toolkit.SaveEmbeddedResourceToFile(System.String,System.String,System.Boolean)
+  - SearchAThing.Util.Toolkit.StopContainer(System.String,CancellationToken,System.Boolean,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: Toolkit
+  nameWithType: Toolkit
+  fullName: SearchAThing.Util.Toolkit
+  type: Class
+  source:
+    id: Toolkit
+    path: Z:\netcore-util\netcore-util\Process.cs
+    startLine: 14
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  syntax:
+    content: 'public static class Toolkit : object'
+    content.vb: >-
+      Public Module Toolkit
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: SearchAThing.Util.Toolkit.ListNetworks(CancellationToken,System.Boolean,System.Boolean)
+  commentId: M:SearchAThing.Util.Toolkit.ListNetworks(CancellationToken,System.Boolean,System.Boolean)
+  id: ListNetworks(CancellationToken,System.Boolean,System.Boolean)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: ListNetworks(CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.ListNetworks(CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.ListNetworks(CancellationToken, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: ListNetworks
+    path: Z:\netcore-util\netcore-util\Docker.cs
+    startLine: 88
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nretrieve list of docker networks\n"
+  example: []
+  syntax:
+    content: public static Task<IReadOnlyList<DockerNetworkNfo>> ListNetworks(CancellationToken ct, bool sudo = false, bool verbose = false)
+    parameters:
+    - id: ct
+      type: CancellationToken
+    - id: sudo
+      type: System.Boolean
+    - id: verbose
+      type: System.Boolean
+    return:
+      type: Task{IReadOnlyList{SearchAThing.Util.DockerNetworkNfo}}
+    content.vb: Public Shared Function ListNetworks(ct As CancellationToken, sudo As Boolean = False, verbose As Boolean = False) As Task(Of IReadOnlyList(Of DockerNetworkNfo))
+  overload: SearchAThing.Util.Toolkit.ListNetworks*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SearchAThing.Util.Toolkit.ListContainers(CancellationToken,System.Boolean,System.Boolean)
+  commentId: M:SearchAThing.Util.Toolkit.ListContainers(CancellationToken,System.Boolean,System.Boolean)
+  id: ListContainers(CancellationToken,System.Boolean,System.Boolean)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: ListContainers(CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.ListContainers(CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.ListContainers(CancellationToken, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: ListContainers
+    path: Z:\netcore-util\netcore-util\Docker.cs
+    startLine: 117
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nretrieve list of containers\n"
+  example: []
+  syntax:
+    content: public static Task<IReadOnlyList<DockerContainerNfo>> ListContainers(CancellationToken ct, bool sudo = false, bool verbose = false)
+    parameters:
+    - id: ct
+      type: CancellationToken
+    - id: sudo
+      type: System.Boolean
+    - id: verbose
+      type: System.Boolean
+    return:
+      type: Task{IReadOnlyList{SearchAThing.Util.DockerContainerNfo}}
+    content.vb: Public Shared Function ListContainers(ct As CancellationToken, sudo As Boolean = False, verbose As Boolean = False) As Task(Of IReadOnlyList(Of DockerContainerNfo))
+  overload: SearchAThing.Util.Toolkit.ListContainers*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SearchAThing.Util.Toolkit.ExecContainerCmd(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  commentId: M:SearchAThing.Util.Toolkit.ExecContainerCmd(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  id: ExecContainerCmd(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: ExecContainerCmd(String, String, CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.ExecContainerCmd(String, String, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.ExecContainerCmd(System.String, System.String, CancellationToken, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: ExecContainerCmd
+    path: Z:\netcore-util\netcore-util\Docker.cs
+    startLine: 146
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nexecutes given bash command into container\n"
+  example: []
+  syntax:
+    content: public static Task<int> ExecContainerCmd(string containerName, string command, CancellationToken ct, bool sudo = false, bool verbose = false)
+    parameters:
+    - id: containerName
+      type: System.String
+    - id: command
+      type: System.String
+    - id: ct
+      type: CancellationToken
+    - id: sudo
+      type: System.Boolean
+    - id: verbose
+      type: System.Boolean
+    return:
+      type: Task{System.Int32}
+    content.vb: Public Shared Function ExecContainerCmd(containerName As String, command As String, ct As CancellationToken, sudo As Boolean = False, verbose As Boolean = False) As Task(Of Integer)
+  overload: SearchAThing.Util.Toolkit.ExecContainerCmd*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SearchAThing.Util.Toolkit.RunContainer(System.String,System.String,System.String,System.String,System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  commentId: M:SearchAThing.Util.Toolkit.RunContainer(System.String,System.String,System.String,System.String,System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  id: RunContainer(System.String,System.String,System.String,System.String,System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: RunContainer(String, String, String, String, String, String, CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.RunContainer(String, String, String, String, String, String, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.RunContainer(System.String, System.String, System.String, System.String, System.String, System.String, CancellationToken, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: RunContainer
+    path: Z:\netcore-util\netcore-util\Docker.cs
+    startLine: 161
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\ncreate new container from given image\n"
+  example: []
+  syntax:
+    content: public static Task RunContainer(string containerName, string containerNetwork, string containerIp, string containerImage, string cpus, string memory, CancellationToken ct, bool sudo = false, bool verbose = false)
+    parameters:
+    - id: containerName
+      type: System.String
+    - id: containerNetwork
+      type: System.String
+    - id: containerIp
+      type: System.String
+    - id: containerImage
+      type: System.String
+    - id: cpus
+      type: System.String
+    - id: memory
+      type: System.String
+    - id: ct
+      type: CancellationToken
+    - id: sudo
+      type: System.Boolean
+    - id: verbose
+      type: System.Boolean
+    return:
+      type: Task
+    content.vb: Public Shared Function RunContainer(containerName As String, containerNetwork As String, containerIp As String, containerImage As String, cpus As String, memory As String, ct As CancellationToken, sudo As Boolean = False, verbose As Boolean = False) As Task
+  overload: SearchAThing.Util.Toolkit.RunContainer*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SearchAThing.Util.Toolkit.StopContainer(System.String,CancellationToken,System.Boolean,System.Boolean)
+  commentId: M:SearchAThing.Util.Toolkit.StopContainer(System.String,CancellationToken,System.Boolean,System.Boolean)
+  id: StopContainer(System.String,CancellationToken,System.Boolean,System.Boolean)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: StopContainer(String, CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.StopContainer(String, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.StopContainer(System.String, CancellationToken, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: StopContainer
+    path: Z:\netcore-util\netcore-util\Docker.cs
+    startLine: 200
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nstop container\n"
+  example: []
+  syntax:
+    content: public static Task StopContainer(string containerName, CancellationToken ct, bool sudo = false, bool verbose = false)
+    parameters:
+    - id: containerName
+      type: System.String
+    - id: ct
+      type: CancellationToken
+    - id: sudo
+      type: System.Boolean
+    - id: verbose
+      type: System.Boolean
+    return:
+      type: Task
+    content.vb: Public Shared Function StopContainer(containerName As String, ct As CancellationToken, sudo As Boolean = False, verbose As Boolean = False) As Task
+  overload: SearchAThing.Util.Toolkit.StopContainer*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SearchAThing.Util.Toolkit.RemoveContainer(System.String,CancellationToken,System.Boolean,System.Boolean)
+  commentId: M:SearchAThing.Util.Toolkit.RemoveContainer(System.String,CancellationToken,System.Boolean,System.Boolean)
+  id: RemoveContainer(System.String,CancellationToken,System.Boolean,System.Boolean)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: RemoveContainer(String, CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.RemoveContainer(String, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.RemoveContainer(System.String, CancellationToken, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: RemoveContainer
+    path: Z:\netcore-util\netcore-util\Docker.cs
+    startLine: 218
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nremove (stopped) container\n"
+  example: []
+  syntax:
+    content: public static Task RemoveContainer(string containerName, CancellationToken ct, bool sudo = false, bool verbose = false)
+    parameters:
+    - id: containerName
+      type: System.String
+    - id: ct
+      type: CancellationToken
+    - id: sudo
+      type: System.Boolean
+    - id: verbose
+      type: System.Boolean
+    return:
+      type: Task
+    content.vb: Public Shared Function RemoveContainer(containerName As String, ct As CancellationToken, sudo As Boolean = False, verbose As Boolean = False) As Task
+  overload: SearchAThing.Util.Toolkit.RemoveContainer*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SearchAThing.Util.Toolkit.RemoveNetwork(System.String,CancellationToken,System.Boolean,System.Boolean)
+  commentId: M:SearchAThing.Util.Toolkit.RemoveNetwork(System.String,CancellationToken,System.Boolean,System.Boolean)
+  id: RemoveNetwork(System.String,CancellationToken,System.Boolean,System.Boolean)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: RemoveNetwork(String, CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.RemoveNetwork(String, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.RemoveNetwork(System.String, CancellationToken, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: RemoveNetwork
+    path: Z:\netcore-util\netcore-util\Docker.cs
+    startLine: 236
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nremove docker network\n"
+  example: []
+  syntax:
+    content: public static Task RemoveNetwork(string networkName, CancellationToken ct, bool sudo = false, bool verbose = false)
+    parameters:
+    - id: networkName
+      type: System.String
+    - id: ct
+      type: CancellationToken
+    - id: sudo
+      type: System.Boolean
+    - id: verbose
+      type: System.Boolean
+    return:
+      type: Task
+    content.vb: Public Shared Function RemoveNetwork(networkName As String, ct As CancellationToken, sudo As Boolean = False, verbose As Boolean = False) As Task
+  overload: SearchAThing.Util.Toolkit.RemoveNetwork*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SearchAThing.Util.Toolkit.CreateNetwork(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  commentId: M:SearchAThing.Util.Toolkit.CreateNetwork(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  id: CreateNetwork(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: CreateNetwork(String, String, CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.CreateNetwork(String, String, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.CreateNetwork(System.String, System.String, CancellationToken, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: CreateNetwork
+    path: Z:\netcore-util\netcore-util\Docker.cs
+    startLine: 254
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\ncreate docker network\n"
+  example: []
+  syntax:
+    content: public static Task CreateNetwork(string networkName, string subnet, CancellationToken ct, bool sudo = false, bool verbose = false)
+    parameters:
+    - id: networkName
+      type: System.String
+    - id: subnet
+      type: System.String
+    - id: ct
+      type: CancellationToken
+    - id: sudo
+      type: System.Boolean
+    - id: verbose
+      type: System.Boolean
+    return:
+      type: Task
+    content.vb: Public Shared Function CreateNetwork(networkName As String, subnet As String, ct As CancellationToken, sudo As Boolean = False, verbose As Boolean = False) As Task
+  overload: SearchAThing.Util.Toolkit.CreateNetwork*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SearchAThing.Util.Toolkit.BuildImage(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  commentId: M:SearchAThing.Util.Toolkit.BuildImage(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  id: BuildImage(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: BuildImage(String, String, CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.BuildImage(String, String, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.BuildImage(System.String, System.String, CancellationToken, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: BuildImage
+    path: Z:\netcore-util\netcore-util\Docker.cs
+    startLine: 272
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nbuild docker image\n"
+  example: []
+  syntax:
+    content: public static Task BuildImage(string dockerImageName, string dockerSourceDir, CancellationToken ct, bool sudo = false, bool verbose = false)
+    parameters:
+    - id: dockerImageName
+      type: System.String
+    - id: dockerSourceDir
+      type: System.String
+    - id: ct
+      type: CancellationToken
+    - id: sudo
+      type: System.Boolean
+    - id: verbose
+      type: System.Boolean
+    return:
+      type: Task
+    content.vb: Public Shared Function BuildImage(dockerImageName As String, dockerSourceDir As String, ct As CancellationToken, sudo As Boolean = False, verbose As Boolean = False) As Task
+  overload: SearchAThing.Util.Toolkit.BuildImage*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SearchAThing.Util.Toolkit.MakeDynamic(System.ValueTuple{System.String,System.Object}[])
+  commentId: M:SearchAThing.Util.Toolkit.MakeDynamic(System.ValueTuple{System.String,System.Object}[])
+  id: MakeDynamic(System.ValueTuple{System.String,System.Object}[])
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: MakeDynamic((String name, Object value)[])
+  nameWithType: Toolkit.MakeDynamic((String name, Object value)[])
+  fullName: SearchAThing.Util.Toolkit.MakeDynamic(System.ValueTuple<System.String, System.Object>[])
+  type: Method
+  source:
+    id: MakeDynamic
+    path: Z:\netcore-util\netcore-util\Dynamic.cs
+    startLine: 15
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\ncreate a dynamic object containing given set of properties\n"
+  example: []
+  syntax:
+    content: public static dynamic MakeDynamic(params (string name, object value)[] items)
+    parameters:
+    - id: items
+      type: System.ValueTuple{System.String,System.Object}[]
+    return:
+      type: System.Object
+    content.vb: Public Shared Function MakeDynamic(ParamArray items As(name As String, value As Object)()) As Object
+  overload: SearchAThing.Util.Toolkit.MakeDynamic*
+  nameWithType.vb: Toolkit.MakeDynamic((name As String, value As Object)())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: SearchAThing.Util.Toolkit.MakeDynamic(System.ValueTuple(Of System.String, System.Object)())
+  name.vb: MakeDynamic((name As String, value As Object)())
+- uid: SearchAThing.Util.Toolkit.DynamicMakeDictionary(System.Object)
+  commentId: M:SearchAThing.Util.Toolkit.DynamicMakeDictionary(System.Object)
+  id: DynamicMakeDictionary(System.Object)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: DynamicMakeDictionary(Object)
+  nameWithType: Toolkit.DynamicMakeDictionary(Object)
+  fullName: SearchAThing.Util.Toolkit.DynamicMakeDictionary(System.Object)
+  type: Method
+  source:
+    id: DynamicMakeDictionary
+    path: Z:\netcore-util\netcore-util\Dynamic.cs
+    startLine: 27
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nconvert given dynamic object into a dictionary string,object for its properties\n"
+  example: []
+  syntax:
+    content: public static IDictionary<string, object> DynamicMakeDictionary(dynamic obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: IDictionary{System.String,System.Object}
+    content.vb: Public Shared Function DynamicMakeDictionary(obj As Object) As IDictionary(Of String, Object)
+  overload: SearchAThing.Util.Toolkit.DynamicMakeDictionary*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SearchAThing.Util.Toolkit.DeflateEmbeddedResource(Assembly,System.String)
+  commentId: M:SearchAThing.Util.Toolkit.DeflateEmbeddedResource(Assembly,System.String)
+  id: DeflateEmbeddedResource(Assembly,System.String)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: DeflateEmbeddedResource(Assembly, String)
+  nameWithType: Toolkit.DeflateEmbeddedResource(Assembly, String)
+  fullName: SearchAThing.Util.Toolkit.DeflateEmbeddedResource(Assembly, System.String)
+  type: Method
+  source:
+    id: DeflateEmbeddedResource
+    path: Z:\netcore-util\netcore-util\EmbeddedResource.cs
+    startLine: 16
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\ndeflate embedded resource\n"
+  example: []
+  syntax:
+    content: public static Stream DeflateEmbeddedResource(Assembly assembly, string resource)
+    parameters:
+    - id: assembly
+      type: Assembly
+    - id: resource
+      type: System.String
+    return:
+      type: Stream
+    content.vb: Public Shared Function DeflateEmbeddedResource(assembly As Assembly, resource As String) As Stream
+  overload: SearchAThing.Util.Toolkit.DeflateEmbeddedResource*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SearchAThing.Util.Toolkit.SaveEmbeddedResourceToFile(System.String,System.String,System.Boolean)
+  commentId: M:SearchAThing.Util.Toolkit.SaveEmbeddedResourceToFile(System.String,System.String,System.Boolean)
+  id: SaveEmbeddedResourceToFile(System.String,System.String,System.Boolean)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: SaveEmbeddedResourceToFile(String, String, Boolean)
+  nameWithType: Toolkit.SaveEmbeddedResourceToFile(String, String, Boolean)
+  fullName: SearchAThing.Util.Toolkit.SaveEmbeddedResourceToFile(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    id: SaveEmbeddedResourceToFile
+    path: Z:\netcore-util\netcore-util\EmbeddedResource.cs
+    startLine: 36
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nsave given embedded resource to file\n"
+  example: []
+  syntax:
+    content: public static void SaveEmbeddedResourceToFile(string resource, string dstPathfilename, bool deflate = false)
+    parameters:
+    - id: resource
+      type: System.String
+    - id: dstPathfilename
+      type: System.String
+    - id: deflate
+      type: System.Boolean
+    content.vb: Public Shared Sub SaveEmbeddedResourceToFile(resource As String, dstPathfilename As String, deflate As Boolean = False)
+  overload: SearchAThing.Util.Toolkit.SaveEmbeddedResourceToFile*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SearchAThing.Util.Toolkit.GetEmbeddedResourceNames
+  commentId: M:SearchAThing.Util.Toolkit.GetEmbeddedResourceNames
+  id: GetEmbeddedResourceNames
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: GetEmbeddedResourceNames()
+  nameWithType: Toolkit.GetEmbeddedResourceNames()
+  fullName: SearchAThing.Util.Toolkit.GetEmbeddedResourceNames()
+  type: Method
+  source:
+    id: GetEmbeddedResourceNames
+    path: Z:\netcore-util\netcore-util\EmbeddedResource.cs
+    startLine: 64
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nretrieve current executing assembly resource names\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<string> GetEmbeddedResourceNames()
+    return:
+      type: IEnumerable{System.String}
+    content.vb: Public Shared Function GetEmbeddedResourceNames As IEnumerable(Of String)
+  overload: SearchAThing.Util.Toolkit.GetEmbeddedResourceNames*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SearchAThing.Util.Toolkit.RandomPassword(SearchAThing.Util.RandomPasswordOptions)
+  commentId: M:SearchAThing.Util.Toolkit.RandomPassword(SearchAThing.Util.RandomPasswordOptions)
+  id: RandomPassword(SearchAThing.Util.RandomPasswordOptions)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: RandomPassword(RandomPasswordOptions)
+  nameWithType: Toolkit.RandomPassword(RandomPasswordOptions)
+  fullName: SearchAThing.Util.Toolkit.RandomPassword(SearchAThing.Util.RandomPasswordOptions)
+  type: Method
+  source:
+    id: RandomPassword
+    path: Z:\netcore-util\netcore-util\Password.cs
+    startLine: 83
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nGenerate random password using defaults ( allow numbers, lowercase, uppercase, 12 of length, no special symbol )\n"
+  example: []
+  syntax:
+    content: public static string RandomPassword(RandomPasswordOptions opts = null)
+    parameters:
+    - id: opts
+      type: SearchAThing.Util.RandomPasswordOptions
+    return:
+      type: System.String
+    content.vb: Public Shared Function RandomPassword(opts As RandomPasswordOptions = Nothing) As String
+  overload: SearchAThing.Util.Toolkit.RandomPassword*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SearchAThing.Util.Toolkit.ExecNoRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  commentId: M:SearchAThing.Util.Toolkit.ExecNoRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  id: ExecNoRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: ExecNoRedirect(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.ExecNoRedirect(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.ExecNoRedirect(System.String, IEnumerable<System.String>, CancellationToken, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: ExecNoRedirect
+    path: Z:\netcore-util\netcore-util\Process.cs
+    startLine: 22
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nstart a process in background without redirecting standard output, error;\na cancellation token can be supplied to cancel underlying process            \n"
+  example: []
+  syntax:
+    content: public static Task<(int exitcode, string output, string error)> ExecNoRedirect(string cmd, IEnumerable<string> args, CancellationToken ct, bool sudo = false, bool verbose = false)
+    parameters:
+    - id: cmd
+      type: System.String
+    - id: args
+      type: IEnumerable{System.String}
+    - id: ct
+      type: CancellationToken
+    - id: sudo
+      type: System.Boolean
+    - id: verbose
+      type: System.Boolean
+    return:
+      type: Task{System.ValueTuple{System.Int32,System.String,System.String}}
+    content.vb: Public Shared Function ExecNoRedirect(cmd As String, args As IEnumerable(Of String), ct As CancellationToken, sudo As Boolean = False, verbose As Boolean = False) As Task(Of(exitcode As Integer, output As String, error As String))
+  overload: SearchAThing.Util.Toolkit.ExecNoRedirect*
+  nameWithType.vb: Toolkit.ExecNoRedirect(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: SearchAThing.Util.Toolkit.ExecNoRedirect(System.String, IEnumerable(Of System.String), CancellationToken, System.Boolean, System.Boolean)
+  name.vb: ExecNoRedirect(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.Util.Toolkit.ExecRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  commentId: M:SearchAThing.Util.Toolkit.ExecRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  id: ExecRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: ExecRedirect(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.ExecRedirect(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.ExecRedirect(System.String, IEnumerable<System.String>, CancellationToken, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: ExecRedirect
+    path: Z:\netcore-util\netcore-util\Process.cs
+    startLine: 30
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nstart a process in background redirecting standard output, error;\na cancellation token can be supplied to cancel underlying process            \n"
+  example: []
+  syntax:
+    content: public static Task<(int exitcode, string output, string error)> ExecRedirect(string cmd, IEnumerable<string> args, CancellationToken ct, bool sudo = false, bool verbose = false)
+    parameters:
+    - id: cmd
+      type: System.String
+    - id: args
+      type: IEnumerable{System.String}
+    - id: ct
+      type: CancellationToken
+    - id: sudo
+      type: System.Boolean
+    - id: verbose
+      type: System.Boolean
+    return:
+      type: Task{System.ValueTuple{System.Int32,System.String,System.String}}
+    content.vb: Public Shared Function ExecRedirect(cmd As String, args As IEnumerable(Of String), ct As CancellationToken, sudo As Boolean = False, verbose As Boolean = False) As Task(Of(exitcode As Integer, output As String, error As String))
+  overload: SearchAThing.Util.Toolkit.ExecRedirect*
+  nameWithType.vb: Toolkit.ExecRedirect(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: SearchAThing.Util.Toolkit.ExecRedirect(System.String, IEnumerable(Of System.String), CancellationToken, System.Boolean, System.Boolean)
+  name.vb: ExecRedirect(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.Util.Toolkit.ExecRedirectError(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  commentId: M:SearchAThing.Util.Toolkit.ExecRedirectError(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  id: ExecRedirectError(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: ExecRedirectError(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.ExecRedirectError(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.ExecRedirectError(System.String, IEnumerable<System.String>, CancellationToken, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: ExecRedirectError
+    path: Z:\netcore-util\netcore-util\Process.cs
+    startLine: 38
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nstart a process in background redirecting standard error;\na cancellation token can be supplied to cancel underlying process            \n"
+  example: []
+  syntax:
+    content: public static Task<(int exitcode, string output, string error)> ExecRedirectError(string cmd, IEnumerable<string> args, CancellationToken ct, bool sudo = false, bool verbose = false)
+    parameters:
+    - id: cmd
+      type: System.String
+    - id: args
+      type: IEnumerable{System.String}
+    - id: ct
+      type: CancellationToken
+    - id: sudo
+      type: System.Boolean
+    - id: verbose
+      type: System.Boolean
+    return:
+      type: Task{System.ValueTuple{System.Int32,System.String,System.String}}
+    content.vb: Public Shared Function ExecRedirectError(cmd As String, args As IEnumerable(Of String), ct As CancellationToken, sudo As Boolean = False, verbose As Boolean = False) As Task(Of(exitcode As Integer, output As String, error As String))
+  overload: SearchAThing.Util.Toolkit.ExecRedirectError*
+  nameWithType.vb: Toolkit.ExecRedirectError(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: SearchAThing.Util.Toolkit.ExecRedirectError(System.String, IEnumerable(Of System.String), CancellationToken, System.Boolean, System.Boolean)
+  name.vb: ExecRedirectError(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.Util.Toolkit.ExecBashRedirect(System.String,CancellationToken,System.Boolean,System.Boolean)
+  commentId: M:SearchAThing.Util.Toolkit.ExecBashRedirect(System.String,CancellationToken,System.Boolean,System.Boolean)
+  id: ExecBashRedirect(System.String,CancellationToken,System.Boolean,System.Boolean)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: ExecBashRedirect(String, CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.ExecBashRedirect(String, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.ExecBashRedirect(System.String, CancellationToken, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: ExecBashRedirect
+    path: Z:\netcore-util\netcore-util\Process.cs
+    startLine: 47
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nstart a bash process in background redirecting standard output, error;\ngiven script can contains pipe and other shell related redirections.\na cancellation token can be supplied to cancel underlying process    \n"
+  example: []
+  syntax:
+    content: public static Task<(int exitcode, string output, string error)> ExecBashRedirect(string script, CancellationToken ct, bool sudo = false, bool verbose = false)
+    parameters:
+    - id: script
+      type: System.String
+    - id: ct
+      type: CancellationToken
+    - id: sudo
+      type: System.Boolean
+    - id: verbose
+      type: System.Boolean
+    return:
+      type: Task{System.ValueTuple{System.Int32,System.String,System.String}}
+    content.vb: Public Shared Function ExecBashRedirect(script As String, ct As CancellationToken, sudo As Boolean = False, verbose As Boolean = False) As Task(Of(exitcode As Integer, output As String, error As String))
+  overload: SearchAThing.Util.Toolkit.ExecBashRedirect*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SearchAThing.Util.Toolkit.Exec(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:SearchAThing.Util.Toolkit.Exec(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  id: Exec(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  parent: SearchAThing.Util.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: Exec(String, IEnumerable<String>, CancellationToken, Boolean, Boolean, Boolean, Boolean)
+  nameWithType: Toolkit.Exec(String, IEnumerable<String>, CancellationToken, Boolean, Boolean, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.Exec(System.String, IEnumerable<System.String>, CancellationToken, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: Exec
+    path: Z:\netcore-util\netcore-util\Process.cs
+    startLine: 55
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nstart a process in background redirecting standard output, error;\na cancellation token can be supplied to cancel underlying process\n"
+  example: []
+  syntax:
+    content: public static Task<(int exitcode, string output, string error)> Exec(string cmd, IEnumerable<string> args, CancellationToken ct, bool sudo = false, bool redirectStdout = true, bool redirectStderr = true, bool verbose = false)
+    parameters:
+    - id: cmd
+      type: System.String
+    - id: args
+      type: IEnumerable{System.String}
+    - id: ct
+      type: CancellationToken
+    - id: sudo
+      type: System.Boolean
+    - id: redirectStdout
+      type: System.Boolean
+    - id: redirectStderr
+      type: System.Boolean
+    - id: verbose
+      type: System.Boolean
+    return:
+      type: Task{System.ValueTuple{System.Int32,System.String,System.String}}
+    content.vb: Public Shared Function Exec(cmd As String, args As IEnumerable(Of String), ct As CancellationToken, sudo As Boolean = False, redirectStdout As Boolean = True, redirectStderr As Boolean = True, verbose As Boolean = False) As Task(Of(exitcode As Integer, output As String, error As String))
+  overload: SearchAThing.Util.Toolkit.Exec*
+  nameWithType.vb: Toolkit.Exec(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean, Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: SearchAThing.Util.Toolkit.Exec(System.String, IEnumerable(Of System.String), CancellationToken, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
+  name.vb: Exec(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean, Boolean, Boolean)
+references:
+- uid: SearchAThing.Util
+  commentId: N:SearchAThing.Util
+  name: SearchAThing.Util
+  nameWithType: SearchAThing.Util
+  fullName: SearchAThing.Util
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: SearchAThing.Util.Toolkit.ListNetworks*
+  commentId: Overload:SearchAThing.Util.Toolkit.ListNetworks
+  name: ListNetworks
+  nameWithType: Toolkit.ListNetworks
+  fullName: SearchAThing.Util.Toolkit.ListNetworks
+- uid: CancellationToken
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: CancellationToken
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Task{IReadOnlyList{SearchAThing.Util.DockerNetworkNfo}}
+  commentId: '!:Task{IReadOnlyList{SearchAThing.Util.DockerNetworkNfo}}'
+  definition: Task`1
+  name: Task<IReadOnlyList<DockerNetworkNfo>>
+  nameWithType: Task<IReadOnlyList<DockerNetworkNfo>>
+  fullName: Task<IReadOnlyList<SearchAThing.Util.DockerNetworkNfo>>
+  nameWithType.vb: Task(Of IReadOnlyList(Of DockerNetworkNfo))
+  fullName.vb: Task(Of IReadOnlyList(Of SearchAThing.Util.DockerNetworkNfo))
+  name.vb: Task(Of IReadOnlyList(Of DockerNetworkNfo))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SearchAThing.Util.DockerNetworkNfo
+    name: DockerNetworkNfo
+    nameWithType: DockerNetworkNfo
+    fullName: SearchAThing.Util.DockerNetworkNfo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SearchAThing.Util.DockerNetworkNfo
+    name: DockerNetworkNfo
+    nameWithType: DockerNetworkNfo
+    fullName: SearchAThing.Util.DockerNetworkNfo
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.Util.Toolkit.ListContainers*
+  commentId: Overload:SearchAThing.Util.Toolkit.ListContainers
+  name: ListContainers
+  nameWithType: Toolkit.ListContainers
+  fullName: SearchAThing.Util.Toolkit.ListContainers
+- uid: Task{IReadOnlyList{SearchAThing.Util.DockerContainerNfo}}
+  commentId: '!:Task{IReadOnlyList{SearchAThing.Util.DockerContainerNfo}}'
+  definition: Task`1
+  name: Task<IReadOnlyList<DockerContainerNfo>>
+  nameWithType: Task<IReadOnlyList<DockerContainerNfo>>
+  fullName: Task<IReadOnlyList<SearchAThing.Util.DockerContainerNfo>>
+  nameWithType.vb: Task(Of IReadOnlyList(Of DockerContainerNfo))
+  fullName.vb: Task(Of IReadOnlyList(Of SearchAThing.Util.DockerContainerNfo))
+  name.vb: Task(Of IReadOnlyList(Of DockerContainerNfo))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SearchAThing.Util.DockerContainerNfo
+    name: DockerContainerNfo
+    nameWithType: DockerContainerNfo
+    fullName: SearchAThing.Util.DockerContainerNfo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SearchAThing.Util.DockerContainerNfo
+    name: DockerContainerNfo
+    nameWithType: DockerContainerNfo
+    fullName: SearchAThing.Util.DockerContainerNfo
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.Util.Toolkit.ExecContainerCmd*
+  commentId: Overload:SearchAThing.Util.Toolkit.ExecContainerCmd
+  name: ExecContainerCmd
+  nameWithType: Toolkit.ExecContainerCmd
+  fullName: SearchAThing.Util.Toolkit.ExecContainerCmd
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Task{System.Int32}
+  commentId: '!:Task{System.Int32}'
+  definition: Task`1
+  name: Task<Int32>
+  nameWithType: Task<Int32>
+  fullName: Task<System.Int32>
+  nameWithType.vb: Task(Of Int32)
+  fullName.vb: Task(Of System.Int32)
+  name.vb: Task(Of Int32)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.Util.Toolkit.RunContainer*
+  commentId: Overload:SearchAThing.Util.Toolkit.RunContainer
+  name: RunContainer
+  nameWithType: Toolkit.RunContainer
+  fullName: SearchAThing.Util.Toolkit.RunContainer
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: SearchAThing.Util.Toolkit.StopContainer*
+  commentId: Overload:SearchAThing.Util.Toolkit.StopContainer
+  name: StopContainer
+  nameWithType: Toolkit.StopContainer
+  fullName: SearchAThing.Util.Toolkit.StopContainer
+- uid: SearchAThing.Util.Toolkit.RemoveContainer*
+  commentId: Overload:SearchAThing.Util.Toolkit.RemoveContainer
+  name: RemoveContainer
+  nameWithType: Toolkit.RemoveContainer
+  fullName: SearchAThing.Util.Toolkit.RemoveContainer
+- uid: SearchAThing.Util.Toolkit.RemoveNetwork*
+  commentId: Overload:SearchAThing.Util.Toolkit.RemoveNetwork
+  name: RemoveNetwork
+  nameWithType: Toolkit.RemoveNetwork
+  fullName: SearchAThing.Util.Toolkit.RemoveNetwork
+- uid: SearchAThing.Util.Toolkit.CreateNetwork*
+  commentId: Overload:SearchAThing.Util.Toolkit.CreateNetwork
+  name: CreateNetwork
+  nameWithType: Toolkit.CreateNetwork
+  fullName: SearchAThing.Util.Toolkit.CreateNetwork
+- uid: SearchAThing.Util.Toolkit.BuildImage*
+  commentId: Overload:SearchAThing.Util.Toolkit.BuildImage
+  name: BuildImage
+  nameWithType: Toolkit.BuildImage
+  fullName: SearchAThing.Util.Toolkit.BuildImage
+- uid: SearchAThing.Util.Toolkit.MakeDynamic*
+  commentId: Overload:SearchAThing.Util.Toolkit.MakeDynamic
+  name: MakeDynamic
+  nameWithType: Toolkit.MakeDynamic
+  fullName: SearchAThing.Util.Toolkit.MakeDynamic
+- uid: System.ValueTuple{System.String,System.Object}[]
+  isExternal: true
+  name: ValueTuple<String, Object>[]
+  nameWithType: ValueTuple<String, Object>[]
+  fullName: System.ValueTuple<System.String, System.Object>[]
+  nameWithType.vb: ValueTuple(Of String, Object)()
+  fullName.vb: System.ValueTuple(Of System.String, System.Object)()
+  name.vb: ValueTuple(Of String, Object)()
+  spec.csharp:
+  - uid: System.ValueTuple`2
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.ValueTuple`2
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: SearchAThing.Util.Toolkit.DynamicMakeDictionary*
+  commentId: Overload:SearchAThing.Util.Toolkit.DynamicMakeDictionary
+  name: DynamicMakeDictionary
+  nameWithType: Toolkit.DynamicMakeDictionary
+  fullName: SearchAThing.Util.Toolkit.DynamicMakeDictionary
+- uid: IDictionary{System.String,System.Object}
+  commentId: '!:IDictionary{System.String,System.Object}'
+  definition: IDictionary`2
+  name: IDictionary<String, Object>
+  nameWithType: IDictionary<String, Object>
+  fullName: IDictionary<System.String, System.Object>
+  nameWithType.vb: IDictionary(Of String, Object)
+  fullName.vb: IDictionary(Of System.String, System.Object)
+  name.vb: IDictionary(Of String, Object)
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IDictionary`2
+  commentId: '!:IDictionary`2'
+  isExternal: true
+  name: IDictionary<, >
+  nameWithType: IDictionary<, >
+  fullName: IDictionary<, >
+  nameWithType.vb: IDictionary(Of , )
+  fullName.vb: IDictionary(Of , )
+  name.vb: IDictionary(Of , )
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.Util.Toolkit.DeflateEmbeddedResource*
+  commentId: Overload:SearchAThing.Util.Toolkit.DeflateEmbeddedResource
+  name: DeflateEmbeddedResource
+  nameWithType: Toolkit.DeflateEmbeddedResource
+  fullName: SearchAThing.Util.Toolkit.DeflateEmbeddedResource
+- uid: Assembly
+  commentId: '!:Assembly'
+  isExternal: true
+  name: Assembly
+  nameWithType: Assembly
+  fullName: Assembly
+- uid: Stream
+  commentId: '!:Stream'
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: SearchAThing.Util.Toolkit.SaveEmbeddedResourceToFile*
+  commentId: Overload:SearchAThing.Util.Toolkit.SaveEmbeddedResourceToFile
+  name: SaveEmbeddedResourceToFile
+  nameWithType: Toolkit.SaveEmbeddedResourceToFile
+  fullName: SearchAThing.Util.Toolkit.SaveEmbeddedResourceToFile
+- uid: SearchAThing.Util.Toolkit.GetEmbeddedResourceNames*
+  commentId: Overload:SearchAThing.Util.Toolkit.GetEmbeddedResourceNames
+  name: GetEmbeddedResourceNames
+  nameWithType: Toolkit.GetEmbeddedResourceNames
+  fullName: SearchAThing.Util.Toolkit.GetEmbeddedResourceNames
+- uid: IEnumerable{System.String}
+  commentId: '!:IEnumerable{System.String}'
+  definition: IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.Util.Toolkit.RandomPassword*
+  commentId: Overload:SearchAThing.Util.Toolkit.RandomPassword
+  name: RandomPassword
+  nameWithType: Toolkit.RandomPassword
+  fullName: SearchAThing.Util.Toolkit.RandomPassword
+- uid: SearchAThing.Util.RandomPasswordOptions
+  commentId: T:SearchAThing.Util.RandomPasswordOptions
+  parent: SearchAThing.Util
+  name: RandomPasswordOptions
+  nameWithType: RandomPasswordOptions
+  fullName: SearchAThing.Util.RandomPasswordOptions
+- uid: SearchAThing.Util.Toolkit.ExecNoRedirect*
+  commentId: Overload:SearchAThing.Util.Toolkit.ExecNoRedirect
+  name: ExecNoRedirect
+  nameWithType: Toolkit.ExecNoRedirect
+  fullName: SearchAThing.Util.Toolkit.ExecNoRedirect
+- uid: Task{System.ValueTuple{System.Int32,System.String,System.String}}
+  commentId: '!:Task{System.ValueTuple{System.Int32,System.String,System.String}}'
+  definition: Task`1
+  name: Task<ValueTuple<Int32, String, String>>
+  nameWithType: Task<ValueTuple<Int32, String, String>>
+  fullName: Task<System.ValueTuple<System.Int32, System.String, System.String>>
+  nameWithType.vb: Task(Of ValueTuple(Of Int32, String, String))
+  fullName.vb: Task(Of System.ValueTuple(Of System.Int32, System.String, System.String))
+  name.vb: Task(Of ValueTuple(Of Int32, String, String))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.ValueTuple`3
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.ValueTuple`3
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.Util.Toolkit.ExecRedirect*
+  commentId: Overload:SearchAThing.Util.Toolkit.ExecRedirect
+  name: ExecRedirect
+  nameWithType: Toolkit.ExecRedirect
+  fullName: SearchAThing.Util.Toolkit.ExecRedirect
+- uid: SearchAThing.Util.Toolkit.ExecRedirectError*
+  commentId: Overload:SearchAThing.Util.Toolkit.ExecRedirectError
+  name: ExecRedirectError
+  nameWithType: Toolkit.ExecRedirectError
+  fullName: SearchAThing.Util.Toolkit.ExecRedirectError
+- uid: SearchAThing.Util.Toolkit.ExecBashRedirect*
+  commentId: Overload:SearchAThing.Util.Toolkit.ExecBashRedirect
+  name: ExecBashRedirect
+  nameWithType: Toolkit.ExecBashRedirect
+  fullName: SearchAThing.Util.Toolkit.ExecBashRedirect
+- uid: SearchAThing.Util.Toolkit.Exec*
+  commentId: Overload:SearchAThing.Util.Toolkit.Exec
+  name: Exec
+  nameWithType: Toolkit.Exec
+  fullName: SearchAThing.Util.Toolkit.Exec

@@ -1,0 +1,300 @@
+{
+  "homepages": [],
+  "source_base_path": "Z:/netcore-util/docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.ColumnAlignment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.ColumnAlignment.html",
+          "hash": "QdslTFzIalZGDebGtnhkaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.ErrorInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.ErrorInfo.html",
+          "hash": "yELvXrPFuUkezvx3vMqLvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.StringWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.StringWrapper.html",
+          "hash": "RRBKu9CjNpjMy2kf//vcIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.StringWrapperLineReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.StringWrapperLineReader.html",
+          "hash": "0j6wn1NrJZV7XZBrqUmwFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Toolkit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Toolkit.html",
+          "hash": "lLNRT2I+A12GmtsAa5uC2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Util.DockerContainerNfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Util.DockerContainerNfo.html",
+          "hash": "nufkB4nwnzU+rvzWZMTQvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Util.DockerNetworkNfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Util.DockerNetworkNfo.html",
+          "hash": "IQo8i9xrZHkR4Wi1riJ5og=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Util.PathUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Util.PathUtil.html",
+          "hash": "jWM7ughim+/pXtOzVnuxuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Util.RandomPasswordOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Util.RandomPasswordOptions.html",
+          "hash": "j5VMFM6Skvyi0LCBxelR8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Util.Toolkit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Util.Toolkit.html",
+          "hash": "0K9/pmqkqqkJoJ477GmsJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Util.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Util.html",
+          "hash": "MIjboJSua+PcqTy/SLAPzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.UtilExt.CopyFromCustomDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.UtilExt.CopyFromCustomDelegate.html",
+          "hash": "cp3CZF2wEnM2YWz4Fb+IIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.UtilExt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.UtilExt.html",
+          "hash": "2c8VlfNpTVb6sDDPacz05Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.ValueObj-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.ValueObj-1.html",
+          "hash": "87xObmksh9EXTD/J6v7YkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.html",
+          "hash": "FRQPU5KWZlz5rQF/e0Hbvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "kH3yHAPnht3KhDhy8wlFUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "eWwx0Puh3ALHfCb4qQ4bLA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "btMnOzteSSytoPeKl2uHag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "zztv5MIkrfyrZFRP8U6smA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 2
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 15,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+### YamlMime:ManagedReference
+items:
+- uid: SearchAThing.Toolkit
+  commentId: T:SearchAThing.Toolkit
+  id: Toolkit
+  parent: SearchAThing
+  children:
+  - SearchAThing.Toolkit.XorNull(System.Object,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: Toolkit
+  nameWithType: Toolkit
+  fullName: SearchAThing.Toolkit
+  type: Class
+  source:
+    id: Toolkit
+    path: Z:\netcore-util\netcore-util\Object.cs
+    startLine: 30
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing
+  syntax:
+    content: 'public static class Toolkit : object'
+    content.vb: >-
+      Public Module Toolkit
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: SearchAThing.Toolkit.XorNull(System.Object,System.Object)
+  commentId: M:SearchAThing.Toolkit.XorNull(System.Object,System.Object)
+  id: XorNull(System.Object,System.Object)
+  parent: SearchAThing.Toolkit
+  langs:
+  - csharp
+  - vb
+  name: XorNull(Object, Object)
+  nameWithType: Toolkit.XorNull(Object, Object)
+  fullName: SearchAThing.Toolkit.XorNull(System.Object, System.Object)
+  type: Method
+  source:
+    id: XorNull
+    path: Z:\netcore-util\netcore-util\Object.cs
+    startLine: 37
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing
+  summary: "\nreturns true if only one of given objects is null;\nreturns false if all objects null or all objects not null;\n"
+  example: []
+  syntax:
+    content: public static bool XorNull(object a, object b)
+    parameters:
+    - id: a
+      type: System.Object
+    - id: b
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function XorNull(a As Object, b As Object) As Boolean
+  overload: SearchAThing.Toolkit.XorNull*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: SearchAThing
+  commentId: N:SearchAThing
+  name: SearchAThing
+  nameWithType: SearchAThing
+  fullName: SearchAThing
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: SearchAThing.Toolkit.XorNull*
+  commentId: Overload:SearchAThing.Toolkit.XorNull
+  name: XorNull
+  nameWithType: Toolkit.XorNull
+  fullName: SearchAThing.Toolkit.XorNull
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

@@ -1,0 +1,184 @@
+### YamlMime:ManagedReference
+items:
+- uid: SearchAThing.Util.PathUtil
+  commentId: T:SearchAThing.Util.PathUtil
+  id: PathUtil
+  parent: SearchAThing.Util
+  children:
+  - SearchAThing.Util.PathUtil.AppDataFolder(System.String)
+  - SearchAThing.Util.PathUtil.EnsureFolder(System.String)
+  - SearchAThing.Util.PathUtil.SearchInPath(System.String)
+  langs:
+  - csharp
+  - vb
+  name: PathUtil
+  nameWithType: PathUtil
+  fullName: SearchAThing.Util.PathUtil
+  type: Class
+  source:
+    id: PathUtil
+    path: Z:\netcore-util\netcore-util\Path.cs
+    startLine: 6
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  syntax:
+    content: 'public static class PathUtil : object'
+    content.vb: >-
+      Public Module PathUtil
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: SearchAThing.Util.PathUtil.AppDataFolder(System.String)
+  commentId: M:SearchAThing.Util.PathUtil.AppDataFolder(System.String)
+  id: AppDataFolder(System.String)
+  parent: SearchAThing.Util.PathUtil
+  langs:
+  - csharp
+  - vb
+  name: AppDataFolder(String)
+  nameWithType: PathUtil.AppDataFolder(String)
+  fullName: SearchAThing.Util.PathUtil.AppDataFolder(System.String)
+  type: Method
+  source:
+    id: AppDataFolder
+    path: Z:\netcore-util\netcore-util\Path.cs
+    startLine: 12
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\n{AppData}/{namespace}/{assembly_name}\n"
+  example: []
+  syntax:
+    content: public static string AppDataFolder(string ns)
+    parameters:
+    - id: ns
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function AppDataFolder(ns As String) As String
+  overload: SearchAThing.Util.PathUtil.AppDataFolder*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SearchAThing.Util.PathUtil.EnsureFolder(System.String)
+  commentId: M:SearchAThing.Util.PathUtil.EnsureFolder(System.String)
+  id: EnsureFolder(System.String)
+  isExtensionMethod: true
+  parent: SearchAThing.Util.PathUtil
+  langs:
+  - csharp
+  - vb
+  name: EnsureFolder(String)
+  nameWithType: PathUtil.EnsureFolder(String)
+  fullName: SearchAThing.Util.PathUtil.EnsureFolder(System.String)
+  type: Method
+  source:
+    id: EnsureFolder
+    path: Z:\netcore-util\netcore-util\Path.cs
+    startLine: 23
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nEnsure given folder path exists.\n"
+  example: []
+  syntax:
+    content: public static string EnsureFolder(this string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function EnsureFolder(path As String) As String
+  overload: SearchAThing.Util.PathUtil.EnsureFolder*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: SearchAThing.Util.PathUtil.SearchInPath(System.String)
+  commentId: M:SearchAThing.Util.PathUtil.SearchInPath(System.String)
+  id: SearchInPath(System.String)
+  isExtensionMethod: true
+  parent: SearchAThing.Util.PathUtil
+  langs:
+  - csharp
+  - vb
+  name: SearchInPath(String)
+  nameWithType: PathUtil.SearchInPath(String)
+  fullName: SearchAThing.Util.PathUtil.SearchInPath(System.String)
+  type: Method
+  source:
+    id: SearchInPath
+    path: Z:\netcore-util\netcore-util\Path.cs
+    startLine: 33
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing.Util
+  summary: "\nSearch given filename in the PATH\n"
+  example: []
+  syntax:
+    content: public static string SearchInPath(this string filename)
+    parameters:
+    - id: filename
+      type: System.String
+    return:
+      type: System.String
+      description: null if not found
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SearchInPath(filename As String) As String
+  overload: SearchAThing.Util.PathUtil.SearchInPath*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: SearchAThing.Util
+  commentId: N:SearchAThing.Util
+  name: SearchAThing.Util
+  nameWithType: SearchAThing.Util
+  fullName: SearchAThing.Util
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: SearchAThing.Util.PathUtil.AppDataFolder*
+  commentId: Overload:SearchAThing.Util.PathUtil.AppDataFolder
+  name: AppDataFolder
+  nameWithType: PathUtil.AppDataFolder
+  fullName: SearchAThing.Util.PathUtil.AppDataFolder
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SearchAThing.Util.PathUtil.EnsureFolder*
+  commentId: Overload:SearchAThing.Util.PathUtil.EnsureFolder
+  name: EnsureFolder
+  nameWithType: PathUtil.EnsureFolder
+  fullName: SearchAThing.Util.PathUtil.EnsureFolder
+- uid: SearchAThing.Util.PathUtil.SearchInPath*
+  commentId: Overload:SearchAThing.Util.PathUtil.SearchInPath
+  name: SearchInPath
+  nameWithType: PathUtil.SearchInPath
+  fullName: SearchAThing.Util.PathUtil.SearchInPath

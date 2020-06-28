@@ -1,0 +1,1789 @@
+### YamlMime:ManagedReference
+items:
+- uid: SearchAThing.ValueObj`1
+  commentId: T:SearchAThing.ValueObj`1
+  id: ValueObj`1
+  parent: SearchAThing
+  children:
+  - SearchAThing.ValueObj`1.#ctor(`0)
+  - SearchAThing.ValueObj`1.Value
+  langs:
+  - csharp
+  - vb
+  name: ValueObj<T>
+  nameWithType: ValueObj<T>
+  fullName: SearchAThing.ValueObj<T>
+  type: Class
+  source:
+    id: ValueObj
+    path: Z:\netcore-util\netcore-util\Object.cs
+    startLine: 9
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing
+  summary: "\nuseful if need to store quick tuple values into a list or dictionary and allowing further modification;\nwithout this retrieved tuple will a copy-value and tuple in collection remains unmodified.\n"
+  example: []
+  syntax:
+    content: 'public class ValueObj<T> : object'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public Class ValueObj(Of T)
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.SearchAThing.UtilExt.ToExpando
+  - SearchAThing.ValueObj`1.SearchAThing.UtilExt.GetMemberNames``1(Expression{Func{SearchAThing.ValueObj{{T}},System.Object}})
+  - SearchAThing.ValueObj`1.SearchAThing.UtilExt.GetMemberName``1(Expression{Func{SearchAThing.ValueObj{{T}},System.Object}})
+  - SearchAThing.ValueObj`1.SearchAThing.UtilExt.Eval``2(Func{SearchAThing.ValueObj{{T}},{U}})
+  - SearchAThing.ValueObj`1.SearchAThing.UtilExt.Assign``1(SearchAThing.ValueObj{{T}},Func{PropertyInfo,System.Boolean})
+  - SearchAThing.ValueObj`1.SearchAThing.UtilExt.CopyFrom``1(SearchAThing.ValueObj{{T}},Func{PropertyInfo,System.Boolean})
+  - SearchAThing.ValueObj`1.SearchAThing.UtilExt.CopyFromCustom``1(SearchAThing.ValueObj{{T}},SearchAThing.UtilExt.CopyFromCustomDelegate)
+  - SearchAThing.ValueObj`1.SearchAThing.UtilExt.CopyFromExclude``1(SearchAThing.ValueObj{{T}},System.String[])
+  - SearchAThing.ValueObj`1.SearchAThing.UtilExt.CopyFromInclude``1(SearchAThing.ValueObj{{T}},System.String[])
+  - System.Object.SearchAThing.UtilExt.ToJson
+  nameWithType.vb: ValueObj(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: SearchAThing.ValueObj(Of T)
+  name.vb: ValueObj(Of T)
+- uid: SearchAThing.ValueObj`1.Value
+  commentId: P:SearchAThing.ValueObj`1.Value
+  id: Value
+  parent: SearchAThing.ValueObj`1
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: ValueObj<T>.Value
+  fullName: SearchAThing.ValueObj<T>.Value
+  type: Property
+  source:
+    id: Value
+    path: Z:\netcore-util\netcore-util\Object.cs
+    startLine: 11
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing
+  syntax:
+    content: public T Value { get; set; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Property Value As T
+  overload: SearchAThing.ValueObj`1.Value*
+  nameWithType.vb: ValueObj(Of T).Value
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: SearchAThing.ValueObj(Of T).Value
+- uid: SearchAThing.ValueObj`1.#ctor(`0)
+  commentId: M:SearchAThing.ValueObj`1.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: SearchAThing.ValueObj`1
+  langs:
+  - csharp
+  - vb
+  name: ValueObj(T)
+  nameWithType: ValueObj<T>.ValueObj(T)
+  fullName: SearchAThing.ValueObj<T>.ValueObj(T)
+  type: Constructor
+  source:
+    id: .ctor
+    path: Z:\netcore-util\netcore-util\Object.cs
+    startLine: 12
+  assemblies:
+  - netcore-util
+  namespace: SearchAThing
+  syntax:
+    content: public ValueObj(T x)
+    parameters:
+    - id: x
+      type: '{T}'
+    content.vb: Public Sub New(x As T)
+  overload: SearchAThing.ValueObj`1.#ctor*
+  nameWithType.vb: ValueObj(Of T).ValueObj(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: SearchAThing.ValueObj(Of T).ValueObj(T)
+references:
+- uid: SearchAThing
+  commentId: N:SearchAThing
+  name: SearchAThing
+  nameWithType: SearchAThing
+  fullName: SearchAThing
+- uid: System.Object
+  commentId: T:System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.SearchAThing.UtilExt.ToExpando
+  commentId: M:SearchAThing.UtilExt.ToExpando(System.Object)
+  parent: SearchAThing.UtilExt
+  definition: SearchAThing.UtilExt.ToExpando(System.Object)
+  name: ToExpando()
+  nameWithType: UtilExt.ToExpando()
+  fullName: SearchAThing.UtilExt.ToExpando()
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.ToExpando
+    name: ToExpando
+    nameWithType: UtilExt.ToExpando
+    fullName: SearchAThing.UtilExt.ToExpando
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.ToExpando
+    name: ToExpando
+    nameWithType: UtilExt.ToExpando
+    fullName: SearchAThing.UtilExt.ToExpando
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.ValueObj`1.SearchAThing.UtilExt.GetMemberNames``1(Expression{Func{SearchAThing.ValueObj{{T}},System.Object}})
+  commentId: M:SearchAThing.UtilExt.GetMemberNames``1(``0,Expression{Func{``0,System.Object}})
+  parent: SearchAThing.UtilExt
+  definition: SearchAThing.UtilExt.GetMemberNames``1(``0,Expression{Func{``0,System.Object}})
+  name: GetMemberNames<ValueObj<T>>(Expression<Func<ValueObj<T>, Object>>)
+  nameWithType: UtilExt.GetMemberNames<ValueObj<T>>(Expression<Func<ValueObj<T>, Object>>)
+  fullName: SearchAThing.UtilExt.GetMemberNames<SearchAThing.ValueObj<T>>(Expression<Func<SearchAThing.ValueObj<T>, System.Object>>)
+  nameWithType.vb: UtilExt.GetMemberNames(Of ValueObj(Of T))(Expression(Of Func(Of ValueObj(Of T), Object)))
+  fullName.vb: SearchAThing.UtilExt.GetMemberNames(Of SearchAThing.ValueObj(Of T))(Expression(Of Func(Of SearchAThing.ValueObj(Of T), System.Object)))
+  name.vb: GetMemberNames(Of ValueObj(Of T))(Expression(Of Func(Of ValueObj(Of T), Object)))
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.GetMemberNames``1(Expression{Func{``0,System.Object}})
+    name: GetMemberNames<ValueObj<T>>
+    nameWithType: UtilExt.GetMemberNames<ValueObj<T>>
+    fullName: SearchAThing.UtilExt.GetMemberNames<SearchAThing.ValueObj<T>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SearchAThing.ValueObj`1
+    name: ValueObj
+    nameWithType: ValueObj
+    fullName: SearchAThing.ValueObj
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.GetMemberNames``1(Expression{Func{``0,System.Object}})
+    name: GetMemberNames(Of ValueObj(Of T))
+    nameWithType: UtilExt.GetMemberNames(Of ValueObj(Of T))
+    fullName: SearchAThing.UtilExt.GetMemberNames(Of SearchAThing.ValueObj(Of T))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SearchAThing.ValueObj`1
+    name: ValueObj
+    nameWithType: ValueObj
+    fullName: SearchAThing.ValueObj
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.ValueObj`1.SearchAThing.UtilExt.GetMemberName``1(Expression{Func{SearchAThing.ValueObj{{T}},System.Object}})
+  commentId: M:SearchAThing.UtilExt.GetMemberName``1(``0,Expression{Func{``0,System.Object}})
+  parent: SearchAThing.UtilExt
+  definition: SearchAThing.UtilExt.GetMemberName``1(``0,Expression{Func{``0,System.Object}})
+  name: GetMemberName<ValueObj<T>>(Expression<Func<ValueObj<T>, Object>>)
+  nameWithType: UtilExt.GetMemberName<ValueObj<T>>(Expression<Func<ValueObj<T>, Object>>)
+  fullName: SearchAThing.UtilExt.GetMemberName<SearchAThing.ValueObj<T>>(Expression<Func<SearchAThing.ValueObj<T>, System.Object>>)
+  nameWithType.vb: UtilExt.GetMemberName(Of ValueObj(Of T))(Expression(Of Func(Of ValueObj(Of T), Object)))
+  fullName.vb: SearchAThing.UtilExt.GetMemberName(Of SearchAThing.ValueObj(Of T))(Expression(Of Func(Of SearchAThing.ValueObj(Of T), System.Object)))
+  name.vb: GetMemberName(Of ValueObj(Of T))(Expression(Of Func(Of ValueObj(Of T), Object)))
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.GetMemberName``1(Expression{Func{``0,System.Object}})
+    name: GetMemberName<ValueObj<T>>
+    nameWithType: UtilExt.GetMemberName<ValueObj<T>>
+    fullName: SearchAThing.UtilExt.GetMemberName<SearchAThing.ValueObj<T>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SearchAThing.ValueObj`1
+    name: ValueObj
+    nameWithType: ValueObj
+    fullName: SearchAThing.ValueObj
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.GetMemberName``1(Expression{Func{``0,System.Object}})
+    name: GetMemberName(Of ValueObj(Of T))
+    nameWithType: UtilExt.GetMemberName(Of ValueObj(Of T))
+    fullName: SearchAThing.UtilExt.GetMemberName(Of SearchAThing.ValueObj(Of T))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SearchAThing.ValueObj`1
+    name: ValueObj
+    nameWithType: ValueObj
+    fullName: SearchAThing.ValueObj
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.ValueObj`1.SearchAThing.UtilExt.Eval``2(Func{SearchAThing.ValueObj{{T}},{U}})
+  commentId: M:SearchAThing.UtilExt.Eval``2(``0,Func{``0,``1})
+  parent: SearchAThing.UtilExt
+  definition: SearchAThing.UtilExt.Eval``2(``0,Func{``0,``1})
+  name: Eval<ValueObj<T>, U>(Func<ValueObj<T>, U>)
+  nameWithType: UtilExt.Eval<ValueObj<T>, U>(Func<ValueObj<T>, U>)
+  fullName: SearchAThing.UtilExt.Eval<SearchAThing.ValueObj<T>, U>(Func<SearchAThing.ValueObj<T>, U>)
+  nameWithType.vb: UtilExt.Eval(Of ValueObj(Of T), U)(Func(Of ValueObj(Of T), U))
+  fullName.vb: SearchAThing.UtilExt.Eval(Of SearchAThing.ValueObj(Of T), U)(Func(Of SearchAThing.ValueObj(Of T), U))
+  name.vb: Eval(Of ValueObj(Of T), U)(Func(Of ValueObj(Of T), U))
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.Eval``2(Func{``0,``1})
+    name: Eval<ValueObj<T>, U>
+    nameWithType: UtilExt.Eval<ValueObj<T>, U>
+    fullName: SearchAThing.UtilExt.Eval<SearchAThing.ValueObj<T>, U>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SearchAThing.ValueObj`1
+    name: ValueObj
+    nameWithType: ValueObj
+    fullName: SearchAThing.ValueObj
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.Eval``2(Func{``0,``1})
+    name: Eval(Of ValueObj(Of T), U)
+    nameWithType: UtilExt.Eval(Of ValueObj(Of T), U)
+    fullName: SearchAThing.UtilExt.Eval(Of SearchAThing.ValueObj(Of T), U)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SearchAThing.ValueObj`1
+    name: ValueObj
+    nameWithType: ValueObj
+    fullName: SearchAThing.ValueObj
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.ValueObj`1.SearchAThing.UtilExt.Assign``1(SearchAThing.ValueObj{{T}},Func{PropertyInfo,System.Boolean})
+  commentId: M:SearchAThing.UtilExt.Assign``1(``0,``0,Func{PropertyInfo,System.Boolean})
+  parent: SearchAThing.UtilExt
+  definition: SearchAThing.UtilExt.Assign``1(``0,``0,Func{PropertyInfo,System.Boolean})
+  name: Assign<ValueObj<T>>(ValueObj<T>, Func<PropertyInfo, Boolean>)
+  nameWithType: UtilExt.Assign<ValueObj<T>>(ValueObj<T>, Func<PropertyInfo, Boolean>)
+  fullName: SearchAThing.UtilExt.Assign<SearchAThing.ValueObj<T>>(SearchAThing.ValueObj<T>, Func<PropertyInfo, System.Boolean>)
+  nameWithType.vb: UtilExt.Assign(Of ValueObj(Of T))(ValueObj(Of T), Func(Of PropertyInfo, Boolean))
+  fullName.vb: SearchAThing.UtilExt.Assign(Of SearchAThing.ValueObj(Of T))(SearchAThing.ValueObj(Of T), Func(Of PropertyInfo, System.Boolean))
+  name.vb: Assign(Of ValueObj(Of T))(ValueObj(Of T), Func(Of PropertyInfo, Boolean))
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.Assign``1(``0,Func{PropertyInfo,System.Boolean})
+    name: Assign<ValueObj<T>>
+    nameWithType: UtilExt.Assign<ValueObj<T>>
+    fullName: SearchAThing.UtilExt.Assign<SearchAThing.ValueObj<T>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchAThing.ValueObj`1
+    name: ValueObj
+    nameWithType: ValueObj
+    fullName: SearchAThing.ValueObj
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PropertyInfo
+    name: PropertyInfo
+    nameWithType: PropertyInfo
+    fullName: PropertyInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.Assign``1(``0,Func{PropertyInfo,System.Boolean})
+    name: Assign(Of ValueObj(Of T))
+    nameWithType: UtilExt.Assign(Of ValueObj(Of T))
+    fullName: SearchAThing.UtilExt.Assign(Of SearchAThing.ValueObj(Of T))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchAThing.ValueObj`1
+    name: ValueObj
+    nameWithType: ValueObj
+    fullName: SearchAThing.ValueObj
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PropertyInfo
+    name: PropertyInfo
+    nameWithType: PropertyInfo
+    fullName: PropertyInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.ValueObj`1.SearchAThing.UtilExt.CopyFrom``1(SearchAThing.ValueObj{{T}},Func{PropertyInfo,System.Boolean})
+  commentId: M:SearchAThing.UtilExt.CopyFrom``1(``0,``0,Func{PropertyInfo,System.Boolean})
+  parent: SearchAThing.UtilExt
+  definition: SearchAThing.UtilExt.CopyFrom``1(``0,``0,Func{PropertyInfo,System.Boolean})
+  name: CopyFrom<ValueObj<T>>(ValueObj<T>, Func<PropertyInfo, Boolean>)
+  nameWithType: UtilExt.CopyFrom<ValueObj<T>>(ValueObj<T>, Func<PropertyInfo, Boolean>)
+  fullName: SearchAThing.UtilExt.CopyFrom<SearchAThing.ValueObj<T>>(SearchAThing.ValueObj<T>, Func<PropertyInfo, System.Boolean>)
+  nameWithType.vb: UtilExt.CopyFrom(Of ValueObj(Of T))(ValueObj(Of T), Func(Of PropertyInfo, Boolean))
+  fullName.vb: SearchAThing.UtilExt.CopyFrom(Of SearchAThing.ValueObj(Of T))(SearchAThing.ValueObj(Of T), Func(Of PropertyInfo, System.Boolean))
+  name.vb: CopyFrom(Of ValueObj(Of T))(ValueObj(Of T), Func(Of PropertyInfo, Boolean))
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.CopyFrom``1(``0,Func{PropertyInfo,System.Boolean})
+    name: CopyFrom<ValueObj<T>>
+    nameWithType: UtilExt.CopyFrom<ValueObj<T>>
+    fullName: SearchAThing.UtilExt.CopyFrom<SearchAThing.ValueObj<T>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchAThing.ValueObj`1
+    name: ValueObj
+    nameWithType: ValueObj
+    fullName: SearchAThing.ValueObj
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PropertyInfo
+    name: PropertyInfo
+    nameWithType: PropertyInfo
+    fullName: PropertyInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.CopyFrom``1(``0,Func{PropertyInfo,System.Boolean})
+    name: CopyFrom(Of ValueObj(Of T))
+    nameWithType: UtilExt.CopyFrom(Of ValueObj(Of T))
+    fullName: SearchAThing.UtilExt.CopyFrom(Of SearchAThing.ValueObj(Of T))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchAThing.ValueObj`1
+    name: ValueObj
+    nameWithType: ValueObj
+    fullName: SearchAThing.ValueObj
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PropertyInfo
+    name: PropertyInfo
+    nameWithType: PropertyInfo
+    fullName: PropertyInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.ValueObj`1.SearchAThing.UtilExt.CopyFromCustom``1(SearchAThing.ValueObj{{T}},SearchAThing.UtilExt.CopyFromCustomDelegate)
+  commentId: M:SearchAThing.UtilExt.CopyFromCustom``1(``0,``0,SearchAThing.UtilExt.CopyFromCustomDelegate)
+  parent: SearchAThing.UtilExt
+  definition: SearchAThing.UtilExt.CopyFromCustom``1(``0,``0,SearchAThing.UtilExt.CopyFromCustomDelegate)
+  name: CopyFromCustom<ValueObj<T>>(ValueObj<T>, UtilExt.CopyFromCustomDelegate)
+  nameWithType: UtilExt.CopyFromCustom<ValueObj<T>>(ValueObj<T>, UtilExt.CopyFromCustomDelegate)
+  fullName: SearchAThing.UtilExt.CopyFromCustom<SearchAThing.ValueObj<T>>(SearchAThing.ValueObj<T>, SearchAThing.UtilExt.CopyFromCustomDelegate)
+  nameWithType.vb: UtilExt.CopyFromCustom(Of ValueObj(Of T))(ValueObj(Of T), UtilExt.CopyFromCustomDelegate)
+  fullName.vb: SearchAThing.UtilExt.CopyFromCustom(Of SearchAThing.ValueObj(Of T))(SearchAThing.ValueObj(Of T), SearchAThing.UtilExt.CopyFromCustomDelegate)
+  name.vb: CopyFromCustom(Of ValueObj(Of T))(ValueObj(Of T), UtilExt.CopyFromCustomDelegate)
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.CopyFromCustom``1(``0,SearchAThing.UtilExt.CopyFromCustomDelegate)
+    name: CopyFromCustom<ValueObj<T>>
+    nameWithType: UtilExt.CopyFromCustom<ValueObj<T>>
+    fullName: SearchAThing.UtilExt.CopyFromCustom<SearchAThing.ValueObj<T>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchAThing.ValueObj`1
+    name: ValueObj
+    nameWithType: ValueObj
+    fullName: SearchAThing.ValueObj
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: SearchAThing.UtilExt.CopyFromCustomDelegate
+    name: UtilExt.CopyFromCustomDelegate
+    nameWithType: UtilExt.CopyFromCustomDelegate
+    fullName: SearchAThing.UtilExt.CopyFromCustomDelegate
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.CopyFromCustom``1(``0,SearchAThing.UtilExt.CopyFromCustomDelegate)
+    name: CopyFromCustom(Of ValueObj(Of T))
+    nameWithType: UtilExt.CopyFromCustom(Of ValueObj(Of T))
+    fullName: SearchAThing.UtilExt.CopyFromCustom(Of SearchAThing.ValueObj(Of T))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchAThing.ValueObj`1
+    name: ValueObj
+    nameWithType: ValueObj
+    fullName: SearchAThing.ValueObj
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: SearchAThing.UtilExt.CopyFromCustomDelegate
+    name: UtilExt.CopyFromCustomDelegate
+    nameWithType: UtilExt.CopyFromCustomDelegate
+    fullName: SearchAThing.UtilExt.CopyFromCustomDelegate
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.ValueObj`1.SearchAThing.UtilExt.CopyFromExclude``1(SearchAThing.ValueObj{{T}},System.String[])
+  commentId: M:SearchAThing.UtilExt.CopyFromExclude``1(``0,``0,System.String[])
+  parent: SearchAThing.UtilExt
+  definition: SearchAThing.UtilExt.CopyFromExclude``1(``0,``0,System.String[])
+  name: CopyFromExclude<ValueObj<T>>(ValueObj<T>, String[])
+  nameWithType: UtilExt.CopyFromExclude<ValueObj<T>>(ValueObj<T>, String[])
+  fullName: SearchAThing.UtilExt.CopyFromExclude<SearchAThing.ValueObj<T>>(SearchAThing.ValueObj<T>, System.String[])
+  nameWithType.vb: UtilExt.CopyFromExclude(Of ValueObj(Of T))(ValueObj(Of T), String())
+  fullName.vb: SearchAThing.UtilExt.CopyFromExclude(Of SearchAThing.ValueObj(Of T))(SearchAThing.ValueObj(Of T), System.String())
+  name.vb: CopyFromExclude(Of ValueObj(Of T))(ValueObj(Of T), String())
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.CopyFromExclude``1(``0,System.String[])
+    name: CopyFromExclude<ValueObj<T>>
+    nameWithType: UtilExt.CopyFromExclude<ValueObj<T>>
+    fullName: SearchAThing.UtilExt.CopyFromExclude<SearchAThing.ValueObj<T>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchAThing.ValueObj`1
+    name: ValueObj
+    nameWithType: ValueObj
+    fullName: SearchAThing.ValueObj
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.CopyFromExclude``1(``0,System.String[])
+    name: CopyFromExclude(Of ValueObj(Of T))
+    nameWithType: UtilExt.CopyFromExclude(Of ValueObj(Of T))
+    fullName: SearchAThing.UtilExt.CopyFromExclude(Of SearchAThing.ValueObj(Of T))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchAThing.ValueObj`1
+    name: ValueObj
+    nameWithType: ValueObj
+    fullName: SearchAThing.ValueObj
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.ValueObj`1.SearchAThing.UtilExt.CopyFromInclude``1(SearchAThing.ValueObj{{T}},System.String[])
+  commentId: M:SearchAThing.UtilExt.CopyFromInclude``1(``0,``0,System.String[])
+  parent: SearchAThing.UtilExt
+  definition: SearchAThing.UtilExt.CopyFromInclude``1(``0,``0,System.String[])
+  name: CopyFromInclude<ValueObj<T>>(ValueObj<T>, String[])
+  nameWithType: UtilExt.CopyFromInclude<ValueObj<T>>(ValueObj<T>, String[])
+  fullName: SearchAThing.UtilExt.CopyFromInclude<SearchAThing.ValueObj<T>>(SearchAThing.ValueObj<T>, System.String[])
+  nameWithType.vb: UtilExt.CopyFromInclude(Of ValueObj(Of T))(ValueObj(Of T), String())
+  fullName.vb: SearchAThing.UtilExt.CopyFromInclude(Of SearchAThing.ValueObj(Of T))(SearchAThing.ValueObj(Of T), System.String())
+  name.vb: CopyFromInclude(Of ValueObj(Of T))(ValueObj(Of T), String())
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.CopyFromInclude``1(``0,System.String[])
+    name: CopyFromInclude<ValueObj<T>>
+    nameWithType: UtilExt.CopyFromInclude<ValueObj<T>>
+    fullName: SearchAThing.UtilExt.CopyFromInclude<SearchAThing.ValueObj<T>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchAThing.ValueObj`1
+    name: ValueObj
+    nameWithType: ValueObj
+    fullName: SearchAThing.ValueObj
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.CopyFromInclude``1(``0,System.String[])
+    name: CopyFromInclude(Of ValueObj(Of T))
+    nameWithType: UtilExt.CopyFromInclude(Of ValueObj(Of T))
+    fullName: SearchAThing.UtilExt.CopyFromInclude(Of SearchAThing.ValueObj(Of T))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchAThing.ValueObj`1
+    name: ValueObj
+    nameWithType: ValueObj
+    fullName: SearchAThing.ValueObj
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.SearchAThing.UtilExt.ToJson
+  commentId: M:SearchAThing.UtilExt.ToJson(System.Object)
+  parent: SearchAThing.UtilExt
+  definition: SearchAThing.UtilExt.ToJson(System.Object)
+  name: ToJson()
+  nameWithType: UtilExt.ToJson()
+  fullName: SearchAThing.UtilExt.ToJson()
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.ToJson
+    name: ToJson
+    nameWithType: UtilExt.ToJson
+    fullName: SearchAThing.UtilExt.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.ToJson
+    name: ToJson
+    nameWithType: UtilExt.ToJson
+    fullName: SearchAThing.UtilExt.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.UtilExt.ToExpando(System.Object)
+  commentId: M:SearchAThing.UtilExt.ToExpando(System.Object)
+  isExternal: true
+  name: ToExpando(Object)
+  nameWithType: UtilExt.ToExpando(Object)
+  fullName: SearchAThing.UtilExt.ToExpando(System.Object)
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.ToExpando(System.Object)
+    name: ToExpando
+    nameWithType: UtilExt.ToExpando
+    fullName: SearchAThing.UtilExt.ToExpando
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.ToExpando(System.Object)
+    name: ToExpando
+    nameWithType: UtilExt.ToExpando
+    fullName: SearchAThing.UtilExt.ToExpando
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.UtilExt
+  commentId: T:SearchAThing.UtilExt
+  parent: SearchAThing
+  name: UtilExt
+  nameWithType: UtilExt
+  fullName: SearchAThing.UtilExt
+- uid: SearchAThing.UtilExt.GetMemberNames``1(``0,Expression{Func{``0,System.Object}})
+  commentId: M:SearchAThing.UtilExt.GetMemberNames``1(``0,Expression{Func{``0,System.Object}})
+  isExternal: true
+  name: GetMemberNames<T>(T, Expression<Func<T, Object>>)
+  nameWithType: UtilExt.GetMemberNames<T>(T, Expression<Func<T, Object>>)
+  fullName: SearchAThing.UtilExt.GetMemberNames<T>(T, Expression<Func<T, System.Object>>)
+  nameWithType.vb: UtilExt.GetMemberNames(Of T)(T, Expression(Of Func(Of T, Object)))
+  fullName.vb: SearchAThing.UtilExt.GetMemberNames(Of T)(T, Expression(Of Func(Of T, System.Object)))
+  name.vb: GetMemberNames(Of T)(T, Expression(Of Func(Of T, Object)))
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.GetMemberNames``1(``0,Expression{Func{``0,System.Object}})
+    name: GetMemberNames<T>
+    nameWithType: UtilExt.GetMemberNames<T>
+    fullName: SearchAThing.UtilExt.GetMemberNames<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.GetMemberNames``1(``0,Expression{Func{``0,System.Object}})
+    name: GetMemberNames(Of T)
+    nameWithType: UtilExt.GetMemberNames(Of T)
+    fullName: SearchAThing.UtilExt.GetMemberNames(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.UtilExt.GetMemberName``1(``0,Expression{Func{``0,System.Object}})
+  commentId: M:SearchAThing.UtilExt.GetMemberName``1(``0,Expression{Func{``0,System.Object}})
+  isExternal: true
+  name: GetMemberName<T>(T, Expression<Func<T, Object>>)
+  nameWithType: UtilExt.GetMemberName<T>(T, Expression<Func<T, Object>>)
+  fullName: SearchAThing.UtilExt.GetMemberName<T>(T, Expression<Func<T, System.Object>>)
+  nameWithType.vb: UtilExt.GetMemberName(Of T)(T, Expression(Of Func(Of T, Object)))
+  fullName.vb: SearchAThing.UtilExt.GetMemberName(Of T)(T, Expression(Of Func(Of T, System.Object)))
+  name.vb: GetMemberName(Of T)(T, Expression(Of Func(Of T, Object)))
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.GetMemberName``1(``0,Expression{Func{``0,System.Object}})
+    name: GetMemberName<T>
+    nameWithType: UtilExt.GetMemberName<T>
+    fullName: SearchAThing.UtilExt.GetMemberName<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.GetMemberName``1(``0,Expression{Func{``0,System.Object}})
+    name: GetMemberName(Of T)
+    nameWithType: UtilExt.GetMemberName(Of T)
+    fullName: SearchAThing.UtilExt.GetMemberName(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.UtilExt.Eval``2(``0,Func{``0,``1})
+  commentId: M:SearchAThing.UtilExt.Eval``2(``0,Func{``0,``1})
+  isExternal: true
+  name: Eval<T, U>(T, Func<T, U>)
+  nameWithType: UtilExt.Eval<T, U>(T, Func<T, U>)
+  fullName: SearchAThing.UtilExt.Eval<T, U>(T, Func<T, U>)
+  nameWithType.vb: UtilExt.Eval(Of T, U)(T, Func(Of T, U))
+  fullName.vb: SearchAThing.UtilExt.Eval(Of T, U)(T, Func(Of T, U))
+  name.vb: Eval(Of T, U)(T, Func(Of T, U))
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.Eval``2(``0,Func{``0,``1})
+    name: Eval<T, U>
+    nameWithType: UtilExt.Eval<T, U>
+    fullName: SearchAThing.UtilExt.Eval<T, U>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.Eval``2(``0,Func{``0,``1})
+    name: Eval(Of T, U)
+    nameWithType: UtilExt.Eval(Of T, U)
+    fullName: SearchAThing.UtilExt.Eval(Of T, U)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.UtilExt.Assign``1(``0,``0,Func{PropertyInfo,System.Boolean})
+  commentId: M:SearchAThing.UtilExt.Assign``1(``0,``0,Func{PropertyInfo,System.Boolean})
+  isExternal: true
+  name: Assign<T>(T, T, Func<PropertyInfo, Boolean>)
+  nameWithType: UtilExt.Assign<T>(T, T, Func<PropertyInfo, Boolean>)
+  fullName: SearchAThing.UtilExt.Assign<T>(T, T, Func<PropertyInfo, System.Boolean>)
+  nameWithType.vb: UtilExt.Assign(Of T)(T, T, Func(Of PropertyInfo, Boolean))
+  fullName.vb: SearchAThing.UtilExt.Assign(Of T)(T, T, Func(Of PropertyInfo, System.Boolean))
+  name.vb: Assign(Of T)(T, T, Func(Of PropertyInfo, Boolean))
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.Assign``1(``0,``0,Func{PropertyInfo,System.Boolean})
+    name: Assign<T>
+    nameWithType: UtilExt.Assign<T>
+    fullName: SearchAThing.UtilExt.Assign<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PropertyInfo
+    name: PropertyInfo
+    nameWithType: PropertyInfo
+    fullName: PropertyInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.Assign``1(``0,``0,Func{PropertyInfo,System.Boolean})
+    name: Assign(Of T)
+    nameWithType: UtilExt.Assign(Of T)
+    fullName: SearchAThing.UtilExt.Assign(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PropertyInfo
+    name: PropertyInfo
+    nameWithType: PropertyInfo
+    fullName: PropertyInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.UtilExt.CopyFrom``1(``0,``0,Func{PropertyInfo,System.Boolean})
+  commentId: M:SearchAThing.UtilExt.CopyFrom``1(``0,``0,Func{PropertyInfo,System.Boolean})
+  isExternal: true
+  name: CopyFrom<T>(T, T, Func<PropertyInfo, Boolean>)
+  nameWithType: UtilExt.CopyFrom<T>(T, T, Func<PropertyInfo, Boolean>)
+  fullName: SearchAThing.UtilExt.CopyFrom<T>(T, T, Func<PropertyInfo, System.Boolean>)
+  nameWithType.vb: UtilExt.CopyFrom(Of T)(T, T, Func(Of PropertyInfo, Boolean))
+  fullName.vb: SearchAThing.UtilExt.CopyFrom(Of T)(T, T, Func(Of PropertyInfo, System.Boolean))
+  name.vb: CopyFrom(Of T)(T, T, Func(Of PropertyInfo, Boolean))
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.CopyFrom``1(``0,``0,Func{PropertyInfo,System.Boolean})
+    name: CopyFrom<T>
+    nameWithType: UtilExt.CopyFrom<T>
+    fullName: SearchAThing.UtilExt.CopyFrom<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PropertyInfo
+    name: PropertyInfo
+    nameWithType: PropertyInfo
+    fullName: PropertyInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.CopyFrom``1(``0,``0,Func{PropertyInfo,System.Boolean})
+    name: CopyFrom(Of T)
+    nameWithType: UtilExt.CopyFrom(Of T)
+    fullName: SearchAThing.UtilExt.CopyFrom(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PropertyInfo
+    name: PropertyInfo
+    nameWithType: PropertyInfo
+    fullName: PropertyInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.UtilExt.CopyFromCustom``1(``0,``0,SearchAThing.UtilExt.CopyFromCustomDelegate)
+  commentId: M:SearchAThing.UtilExt.CopyFromCustom``1(``0,``0,SearchAThing.UtilExt.CopyFromCustomDelegate)
+  name: CopyFromCustom<T>(T, T, UtilExt.CopyFromCustomDelegate)
+  nameWithType: UtilExt.CopyFromCustom<T>(T, T, UtilExt.CopyFromCustomDelegate)
+  fullName: SearchAThing.UtilExt.CopyFromCustom<T>(T, T, SearchAThing.UtilExt.CopyFromCustomDelegate)
+  nameWithType.vb: UtilExt.CopyFromCustom(Of T)(T, T, UtilExt.CopyFromCustomDelegate)
+  fullName.vb: SearchAThing.UtilExt.CopyFromCustom(Of T)(T, T, SearchAThing.UtilExt.CopyFromCustomDelegate)
+  name.vb: CopyFromCustom(Of T)(T, T, UtilExt.CopyFromCustomDelegate)
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.CopyFromCustom``1(``0,``0,SearchAThing.UtilExt.CopyFromCustomDelegate)
+    name: CopyFromCustom<T>
+    nameWithType: UtilExt.CopyFromCustom<T>
+    fullName: SearchAThing.UtilExt.CopyFromCustom<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: SearchAThing.UtilExt.CopyFromCustomDelegate
+    name: UtilExt.CopyFromCustomDelegate
+    nameWithType: UtilExt.CopyFromCustomDelegate
+    fullName: SearchAThing.UtilExt.CopyFromCustomDelegate
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.CopyFromCustom``1(``0,``0,SearchAThing.UtilExt.CopyFromCustomDelegate)
+    name: CopyFromCustom(Of T)
+    nameWithType: UtilExt.CopyFromCustom(Of T)
+    fullName: SearchAThing.UtilExt.CopyFromCustom(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: SearchAThing.UtilExt.CopyFromCustomDelegate
+    name: UtilExt.CopyFromCustomDelegate
+    nameWithType: UtilExt.CopyFromCustomDelegate
+    fullName: SearchAThing.UtilExt.CopyFromCustomDelegate
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.UtilExt.CopyFromExclude``1(``0,``0,System.String[])
+  commentId: M:SearchAThing.UtilExt.CopyFromExclude``1(``0,``0,System.String[])
+  isExternal: true
+  name: CopyFromExclude<T>(T, T, String[])
+  nameWithType: UtilExt.CopyFromExclude<T>(T, T, String[])
+  fullName: SearchAThing.UtilExt.CopyFromExclude<T>(T, T, System.String[])
+  nameWithType.vb: UtilExt.CopyFromExclude(Of T)(T, T, String())
+  fullName.vb: SearchAThing.UtilExt.CopyFromExclude(Of T)(T, T, System.String())
+  name.vb: CopyFromExclude(Of T)(T, T, String())
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.CopyFromExclude``1(``0,``0,System.String[])
+    name: CopyFromExclude<T>
+    nameWithType: UtilExt.CopyFromExclude<T>
+    fullName: SearchAThing.UtilExt.CopyFromExclude<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.CopyFromExclude``1(``0,``0,System.String[])
+    name: CopyFromExclude(Of T)
+    nameWithType: UtilExt.CopyFromExclude(Of T)
+    fullName: SearchAThing.UtilExt.CopyFromExclude(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.UtilExt.CopyFromInclude``1(``0,``0,System.String[])
+  commentId: M:SearchAThing.UtilExt.CopyFromInclude``1(``0,``0,System.String[])
+  isExternal: true
+  name: CopyFromInclude<T>(T, T, String[])
+  nameWithType: UtilExt.CopyFromInclude<T>(T, T, String[])
+  fullName: SearchAThing.UtilExt.CopyFromInclude<T>(T, T, System.String[])
+  nameWithType.vb: UtilExt.CopyFromInclude(Of T)(T, T, String())
+  fullName.vb: SearchAThing.UtilExt.CopyFromInclude(Of T)(T, T, System.String())
+  name.vb: CopyFromInclude(Of T)(T, T, String())
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.CopyFromInclude``1(``0,``0,System.String[])
+    name: CopyFromInclude<T>
+    nameWithType: UtilExt.CopyFromInclude<T>
+    fullName: SearchAThing.UtilExt.CopyFromInclude<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.CopyFromInclude``1(``0,``0,System.String[])
+    name: CopyFromInclude(Of T)
+    nameWithType: UtilExt.CopyFromInclude(Of T)
+    fullName: SearchAThing.UtilExt.CopyFromInclude(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.UtilExt.ToJson(System.Object)
+  commentId: M:SearchAThing.UtilExt.ToJson(System.Object)
+  isExternal: true
+  name: ToJson(Object)
+  nameWithType: UtilExt.ToJson(Object)
+  fullName: SearchAThing.UtilExt.ToJson(System.Object)
+  spec.csharp:
+  - uid: SearchAThing.UtilExt.ToJson(System.Object)
+    name: ToJson
+    nameWithType: UtilExt.ToJson
+    fullName: SearchAThing.UtilExt.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SearchAThing.UtilExt.ToJson(System.Object)
+    name: ToJson
+    nameWithType: UtilExt.ToJson
+    fullName: SearchAThing.UtilExt.ToJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchAThing.ValueObj`1.Value*
+  commentId: Overload:SearchAThing.ValueObj`1.Value
+  name: Value
+  nameWithType: ValueObj<T>.Value
+  fullName: SearchAThing.ValueObj<T>.Value
+  nameWithType.vb: ValueObj(Of T).Value
+  fullName.vb: SearchAThing.ValueObj(Of T).Value
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SearchAThing.ValueObj`1.#ctor*
+  commentId: Overload:SearchAThing.ValueObj`1.#ctor
+  name: ValueObj
+  nameWithType: ValueObj<T>.ValueObj
+  fullName: SearchAThing.ValueObj<T>.ValueObj
+  nameWithType.vb: ValueObj(Of T).ValueObj
+  fullName.vb: SearchAThing.ValueObj(Of T).ValueObj
