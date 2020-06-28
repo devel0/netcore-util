@@ -13,6 +13,13 @@
 
 <hr/>
 
+## quickstart
+
+```csharp
+using SearchAThing.Util;
+using static SearchAThing.UtilExt;
+```
+
 ## install
 
 - [nuget package](https://www.nuget.org/packages/netcore-util/)
