@@ -7,29 +7,28 @@
 <hr/>
 
 - [API Documentation](https://devel0.github.io/netcore-util/api/SearchAThing.UtilExt.html)
-- [recent changes](#recent-changes)
-- [install](#install)
-- [debugging unit tests](#debugging-unit-tests)
-- [how this project was built](#how-this-project-was-built)
+- [Recent changes](#recent-changes)
+- [Quickstart](#quickstart)
+- [Unit tests](#unit-tests)
+- [Debugging unit tests](#debugging-unit-tests)
+- [How this project was built](#how-this-project-was-built)
 
 <hr/>
 
-## recent changes
+## Recent changes
 
 - **1.4.0** : refactored api namespace to have partial static UtilToolkit class in SearchAThing namespace ; moved object extension methods to UtilToolkit to avoid intellisense on object type
 
-## quickstart
+## Quickstart
+
+- [nuget package](https://www.nuget.org/packages/netcore-util/)
 
 ```csharp
 using SearchAThing;
 using static SearchAThing.UtilToolkit;
 ```
 
-## install
-
-- [nuget package](https://www.nuget.org/packages/netcore-util/)
-
-## unit tests
+## Unit tests
 
 ```sh
 dotnet test
@@ -37,7 +36,7 @@ dotnet test
 
 - to debug from vscode just run debug test from code lens balloon
 
-## how this project was built
+## How this project was built
 
 ```sh
 mkdir netcore-util
