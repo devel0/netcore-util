@@ -16,7 +16,7 @@
 [sample](/api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_CopyFromExclude__1___0___0_System_String___)
 
 ``` csharp
-var q = SearchAThing.Util.Toolkit.GetEmbeddedResourceNames();
+var q = SearchAThing.UtilToolkit.GetEmbeddedResourceNames();
 ```
 
 results is an array of strings `assemblyname.folder.subfld.filename.ext` like the follow
