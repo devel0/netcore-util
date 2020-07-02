@@ -31,6 +31,128 @@ references:
   commentId: F:SearchAThing.ColumnAlignment.right
   fullName: SearchAThing.ColumnAlignment.right
   nameWithType: ColumnAlignment.right
+- uid: SearchAThing.CopyFromCustomDelegate
+  name: CopyFromCustomDelegate
+  href: api/SearchAThing.CopyFromCustomDelegate.html
+  commentId: T:SearchAThing.CopyFromCustomDelegate
+  fullName: SearchAThing.CopyFromCustomDelegate
+  nameWithType: CopyFromCustomDelegate
+- uid: SearchAThing.DockerContainerNfo
+  name: DockerContainerNfo
+  href: api/SearchAThing.DockerContainerNfo.html
+  commentId: T:SearchAThing.DockerContainerNfo
+  fullName: SearchAThing.DockerContainerNfo
+  nameWithType: DockerContainerNfo
+- uid: SearchAThing.DockerContainerNfo.#ctor(System.String,System.String)
+  name: DockerContainerNfo(String, String)
+  href: api/SearchAThing.DockerContainerNfo.html#SearchAThing_DockerContainerNfo__ctor_System_String_System_String_
+  commentId: M:SearchAThing.DockerContainerNfo.#ctor(System.String,System.String)
+  fullName: SearchAThing.DockerContainerNfo.DockerContainerNfo(System.String, System.String)
+  nameWithType: DockerContainerNfo.DockerContainerNfo(String, String)
+- uid: SearchAThing.DockerContainerNfo.#ctor*
+  name: DockerContainerNfo
+  href: api/SearchAThing.DockerContainerNfo.html#SearchAThing_DockerContainerNfo__ctor_
+  commentId: Overload:SearchAThing.DockerContainerNfo.#ctor
+  isSpec: "True"
+  fullName: SearchAThing.DockerContainerNfo.DockerContainerNfo
+  nameWithType: DockerContainerNfo.DockerContainerNfo
+- uid: SearchAThing.DockerContainerNfo.IPAddress
+  name: IPAddress
+  href: api/SearchAThing.DockerContainerNfo.html#SearchAThing_DockerContainerNfo_IPAddress
+  commentId: P:SearchAThing.DockerContainerNfo.IPAddress
+  fullName: SearchAThing.DockerContainerNfo.IPAddress
+  nameWithType: DockerContainerNfo.IPAddress
+- uid: SearchAThing.DockerContainerNfo.IPAddress*
+  name: IPAddress
+  href: api/SearchAThing.DockerContainerNfo.html#SearchAThing_DockerContainerNfo_IPAddress_
+  commentId: Overload:SearchAThing.DockerContainerNfo.IPAddress
+  isSpec: "True"
+  fullName: SearchAThing.DockerContainerNfo.IPAddress
+  nameWithType: DockerContainerNfo.IPAddress
+- uid: SearchAThing.DockerContainerNfo.Name
+  name: Name
+  href: api/SearchAThing.DockerContainerNfo.html#SearchAThing_DockerContainerNfo_Name
+  commentId: P:SearchAThing.DockerContainerNfo.Name
+  fullName: SearchAThing.DockerContainerNfo.Name
+  nameWithType: DockerContainerNfo.Name
+- uid: SearchAThing.DockerContainerNfo.Name*
+  name: Name
+  href: api/SearchAThing.DockerContainerNfo.html#SearchAThing_DockerContainerNfo_Name_
+  commentId: Overload:SearchAThing.DockerContainerNfo.Name
+  isSpec: "True"
+  fullName: SearchAThing.DockerContainerNfo.Name
+  nameWithType: DockerContainerNfo.Name
+- uid: SearchAThing.DockerContainerNfo.ToString
+  name: ToString()
+  href: api/SearchAThing.DockerContainerNfo.html#SearchAThing_DockerContainerNfo_ToString
+  commentId: M:SearchAThing.DockerContainerNfo.ToString
+  fullName: SearchAThing.DockerContainerNfo.ToString()
+  nameWithType: DockerContainerNfo.ToString()
+- uid: SearchAThing.DockerContainerNfo.ToString*
+  name: ToString
+  href: api/SearchAThing.DockerContainerNfo.html#SearchAThing_DockerContainerNfo_ToString_
+  commentId: Overload:SearchAThing.DockerContainerNfo.ToString
+  isSpec: "True"
+  fullName: SearchAThing.DockerContainerNfo.ToString
+  nameWithType: DockerContainerNfo.ToString
+- uid: SearchAThing.DockerNetworkNfo
+  name: DockerNetworkNfo
+  href: api/SearchAThing.DockerNetworkNfo.html
+  commentId: T:SearchAThing.DockerNetworkNfo
+  fullName: SearchAThing.DockerNetworkNfo
+  nameWithType: DockerNetworkNfo
+- uid: SearchAThing.DockerNetworkNfo.#ctor(System.String,System.String)
+  name: DockerNetworkNfo(String, String)
+  href: api/SearchAThing.DockerNetworkNfo.html#SearchAThing_DockerNetworkNfo__ctor_System_String_System_String_
+  commentId: M:SearchAThing.DockerNetworkNfo.#ctor(System.String,System.String)
+  fullName: SearchAThing.DockerNetworkNfo.DockerNetworkNfo(System.String, System.String)
+  nameWithType: DockerNetworkNfo.DockerNetworkNfo(String, String)
+- uid: SearchAThing.DockerNetworkNfo.#ctor*
+  name: DockerNetworkNfo
+  href: api/SearchAThing.DockerNetworkNfo.html#SearchAThing_DockerNetworkNfo__ctor_
+  commentId: Overload:SearchAThing.DockerNetworkNfo.#ctor
+  isSpec: "True"
+  fullName: SearchAThing.DockerNetworkNfo.DockerNetworkNfo
+  nameWithType: DockerNetworkNfo.DockerNetworkNfo
+- uid: SearchAThing.DockerNetworkNfo.Name
+  name: Name
+  href: api/SearchAThing.DockerNetworkNfo.html#SearchAThing_DockerNetworkNfo_Name
+  commentId: P:SearchAThing.DockerNetworkNfo.Name
+  fullName: SearchAThing.DockerNetworkNfo.Name
+  nameWithType: DockerNetworkNfo.Name
+- uid: SearchAThing.DockerNetworkNfo.Name*
+  name: Name
+  href: api/SearchAThing.DockerNetworkNfo.html#SearchAThing_DockerNetworkNfo_Name_
+  commentId: Overload:SearchAThing.DockerNetworkNfo.Name
+  isSpec: "True"
+  fullName: SearchAThing.DockerNetworkNfo.Name
+  nameWithType: DockerNetworkNfo.Name
+- uid: SearchAThing.DockerNetworkNfo.Subnet
+  name: Subnet
+  href: api/SearchAThing.DockerNetworkNfo.html#SearchAThing_DockerNetworkNfo_Subnet
+  commentId: P:SearchAThing.DockerNetworkNfo.Subnet
+  fullName: SearchAThing.DockerNetworkNfo.Subnet
+  nameWithType: DockerNetworkNfo.Subnet
+- uid: SearchAThing.DockerNetworkNfo.Subnet*
+  name: Subnet
+  href: api/SearchAThing.DockerNetworkNfo.html#SearchAThing_DockerNetworkNfo_Subnet_
+  commentId: Overload:SearchAThing.DockerNetworkNfo.Subnet
+  isSpec: "True"
+  fullName: SearchAThing.DockerNetworkNfo.Subnet
+  nameWithType: DockerNetworkNfo.Subnet
+- uid: SearchAThing.DockerNetworkNfo.ToString
+  name: ToString()
+  href: api/SearchAThing.DockerNetworkNfo.html#SearchAThing_DockerNetworkNfo_ToString
+  commentId: M:SearchAThing.DockerNetworkNfo.ToString
+  fullName: SearchAThing.DockerNetworkNfo.ToString()
+  nameWithType: DockerNetworkNfo.ToString()
+- uid: SearchAThing.DockerNetworkNfo.ToString*
+  name: ToString
+  href: api/SearchAThing.DockerNetworkNfo.html#SearchAThing_DockerNetworkNfo_ToString_
+  commentId: Overload:SearchAThing.DockerNetworkNfo.ToString
+  isSpec: "True"
+  fullName: SearchAThing.DockerNetworkNfo.ToString
+  nameWithType: DockerNetworkNfo.ToString
 - uid: SearchAThing.ErrorInfo
   name: ErrorInfo
   href: api/SearchAThing.ErrorInfo.html
@@ -108,6 +230,168 @@ references:
   isSpec: "True"
   fullName: SearchAThing.ErrorInfo.ToString
   nameWithType: ErrorInfo.ToString
+- uid: SearchAThing.RandomPasswordOptions
+  name: RandomPasswordOptions
+  href: api/SearchAThing.RandomPasswordOptions.html
+  commentId: T:SearchAThing.RandomPasswordOptions
+  fullName: SearchAThing.RandomPasswordOptions
+  nameWithType: RandomPasswordOptions
+- uid: SearchAThing.RandomPasswordOptions.AllowLetter
+  name: AllowLetter
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AllowLetter
+  commentId: P:SearchAThing.RandomPasswordOptions.AllowLetter
+  fullName: SearchAThing.RandomPasswordOptions.AllowLetter
+  nameWithType: RandomPasswordOptions.AllowLetter
+- uid: SearchAThing.RandomPasswordOptions.AllowLetter*
+  name: AllowLetter
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AllowLetter_
+  commentId: Overload:SearchAThing.RandomPasswordOptions.AllowLetter
+  isSpec: "True"
+  fullName: SearchAThing.RandomPasswordOptions.AllowLetter
+  nameWithType: RandomPasswordOptions.AllowLetter
+- uid: SearchAThing.RandomPasswordOptions.AllowLowercase
+  name: AllowLowercase
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AllowLowercase
+  commentId: P:SearchAThing.RandomPasswordOptions.AllowLowercase
+  fullName: SearchAThing.RandomPasswordOptions.AllowLowercase
+  nameWithType: RandomPasswordOptions.AllowLowercase
+- uid: SearchAThing.RandomPasswordOptions.AllowLowercase*
+  name: AllowLowercase
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AllowLowercase_
+  commentId: Overload:SearchAThing.RandomPasswordOptions.AllowLowercase
+  isSpec: "True"
+  fullName: SearchAThing.RandomPasswordOptions.AllowLowercase
+  nameWithType: RandomPasswordOptions.AllowLowercase
+- uid: SearchAThing.RandomPasswordOptions.AllowNumber
+  name: AllowNumber
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AllowNumber
+  commentId: P:SearchAThing.RandomPasswordOptions.AllowNumber
+  fullName: SearchAThing.RandomPasswordOptions.AllowNumber
+  nameWithType: RandomPasswordOptions.AllowNumber
+- uid: SearchAThing.RandomPasswordOptions.AllowNumber*
+  name: AllowNumber
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AllowNumber_
+  commentId: Overload:SearchAThing.RandomPasswordOptions.AllowNumber
+  isSpec: "True"
+  fullName: SearchAThing.RandomPasswordOptions.AllowNumber
+  nameWithType: RandomPasswordOptions.AllowNumber
+- uid: SearchAThing.RandomPasswordOptions.AllowSpecial
+  name: AllowSpecial
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AllowSpecial
+  commentId: P:SearchAThing.RandomPasswordOptions.AllowSpecial
+  fullName: SearchAThing.RandomPasswordOptions.AllowSpecial
+  nameWithType: RandomPasswordOptions.AllowSpecial
+- uid: SearchAThing.RandomPasswordOptions.AllowSpecial*
+  name: AllowSpecial
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AllowSpecial_
+  commentId: Overload:SearchAThing.RandomPasswordOptions.AllowSpecial
+  isSpec: "True"
+  fullName: SearchAThing.RandomPasswordOptions.AllowSpecial
+  nameWithType: RandomPasswordOptions.AllowSpecial
+- uid: SearchAThing.RandomPasswordOptions.AllowUppercase
+  name: AllowUppercase
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AllowUppercase
+  commentId: P:SearchAThing.RandomPasswordOptions.AllowUppercase
+  fullName: SearchAThing.RandomPasswordOptions.AllowUppercase
+  nameWithType: RandomPasswordOptions.AllowUppercase
+- uid: SearchAThing.RandomPasswordOptions.AllowUppercase*
+  name: AllowUppercase
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AllowUppercase_
+  commentId: Overload:SearchAThing.RandomPasswordOptions.AllowUppercase
+  isSpec: "True"
+  fullName: SearchAThing.RandomPasswordOptions.AllowUppercase
+  nameWithType: RandomPasswordOptions.AllowUppercase
+- uid: SearchAThing.RandomPasswordOptions.AtLeastOneNumber
+  name: AtLeastOneNumber
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AtLeastOneNumber
+  commentId: P:SearchAThing.RandomPasswordOptions.AtLeastOneNumber
+  fullName: SearchAThing.RandomPasswordOptions.AtLeastOneNumber
+  nameWithType: RandomPasswordOptions.AtLeastOneNumber
+- uid: SearchAThing.RandomPasswordOptions.AtLeastOneNumber*
+  name: AtLeastOneNumber
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AtLeastOneNumber_
+  commentId: Overload:SearchAThing.RandomPasswordOptions.AtLeastOneNumber
+  isSpec: "True"
+  fullName: SearchAThing.RandomPasswordOptions.AtLeastOneNumber
+  nameWithType: RandomPasswordOptions.AtLeastOneNumber
+- uid: SearchAThing.RandomPasswordOptions.AtLeastOneSpecial
+  name: AtLeastOneSpecial
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AtLeastOneSpecial
+  commentId: P:SearchAThing.RandomPasswordOptions.AtLeastOneSpecial
+  fullName: SearchAThing.RandomPasswordOptions.AtLeastOneSpecial
+  nameWithType: RandomPasswordOptions.AtLeastOneSpecial
+- uid: SearchAThing.RandomPasswordOptions.AtLeastOneSpecial*
+  name: AtLeastOneSpecial
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AtLeastOneSpecial_
+  commentId: Overload:SearchAThing.RandomPasswordOptions.AtLeastOneSpecial
+  isSpec: "True"
+  fullName: SearchAThing.RandomPasswordOptions.AtLeastOneSpecial
+  nameWithType: RandomPasswordOptions.AtLeastOneSpecial
+- uid: SearchAThing.RandomPasswordOptions.AtLeastOneUppercase
+  name: AtLeastOneUppercase
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AtLeastOneUppercase
+  commentId: P:SearchAThing.RandomPasswordOptions.AtLeastOneUppercase
+  fullName: SearchAThing.RandomPasswordOptions.AtLeastOneUppercase
+  nameWithType: RandomPasswordOptions.AtLeastOneUppercase
+- uid: SearchAThing.RandomPasswordOptions.AtLeastOneUppercase*
+  name: AtLeastOneUppercase
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AtLeastOneUppercase_
+  commentId: Overload:SearchAThing.RandomPasswordOptions.AtLeastOneUppercase
+  isSpec: "True"
+  fullName: SearchAThing.RandomPasswordOptions.AtLeastOneUppercase
+  nameWithType: RandomPasswordOptions.AtLeastOneUppercase
+- uid: SearchAThing.RandomPasswordOptions.AvoidChars
+  name: AvoidChars
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AvoidChars
+  commentId: P:SearchAThing.RandomPasswordOptions.AvoidChars
+  fullName: SearchAThing.RandomPasswordOptions.AvoidChars
+  nameWithType: RandomPasswordOptions.AvoidChars
+- uid: SearchAThing.RandomPasswordOptions.AvoidChars*
+  name: AvoidChars
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_AvoidChars_
+  commentId: Overload:SearchAThing.RandomPasswordOptions.AvoidChars
+  isSpec: "True"
+  fullName: SearchAThing.RandomPasswordOptions.AvoidChars
+  nameWithType: RandomPasswordOptions.AvoidChars
+- uid: SearchAThing.RandomPasswordOptions.Length
+  name: Length
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_Length
+  commentId: P:SearchAThing.RandomPasswordOptions.Length
+  fullName: SearchAThing.RandomPasswordOptions.Length
+  nameWithType: RandomPasswordOptions.Length
+- uid: SearchAThing.RandomPasswordOptions.Length*
+  name: Length
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_Length_
+  commentId: Overload:SearchAThing.RandomPasswordOptions.Length
+  isSpec: "True"
+  fullName: SearchAThing.RandomPasswordOptions.Length
+  nameWithType: RandomPasswordOptions.Length
+- uid: SearchAThing.RandomPasswordOptions.LoopCount
+  name: LoopCount
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_LoopCount
+  commentId: P:SearchAThing.RandomPasswordOptions.LoopCount
+  fullName: SearchAThing.RandomPasswordOptions.LoopCount
+  nameWithType: RandomPasswordOptions.LoopCount
+- uid: SearchAThing.RandomPasswordOptions.LoopCount*
+  name: LoopCount
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_LoopCount_
+  commentId: Overload:SearchAThing.RandomPasswordOptions.LoopCount
+  isSpec: "True"
+  fullName: SearchAThing.RandomPasswordOptions.LoopCount
+  nameWithType: RandomPasswordOptions.LoopCount
+- uid: SearchAThing.RandomPasswordOptions.MaxSpecial
+  name: MaxSpecial
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_MaxSpecial
+  commentId: P:SearchAThing.RandomPasswordOptions.MaxSpecial
+  fullName: SearchAThing.RandomPasswordOptions.MaxSpecial
+  nameWithType: RandomPasswordOptions.MaxSpecial
+- uid: SearchAThing.RandomPasswordOptions.MaxSpecial*
+  name: MaxSpecial
+  href: api/SearchAThing.RandomPasswordOptions.html#SearchAThing_RandomPasswordOptions_MaxSpecial_
+  commentId: Overload:SearchAThing.RandomPasswordOptions.MaxSpecial
+  isSpec: "True"
+  fullName: SearchAThing.RandomPasswordOptions.MaxSpecial
+  nameWithType: RandomPasswordOptions.MaxSpecial
 - uid: SearchAThing.StringWrapper
   name: StringWrapper
   href: api/SearchAThing.StringWrapper.html
@@ -217,635 +501,6 @@ references:
   isSpec: "True"
   fullName: SearchAThing.StringWrapperLineReader.Strw
   nameWithType: StringWrapperLineReader.Strw
-- uid: SearchAThing.Toolkit
-  name: Toolkit
-  href: api/SearchAThing.Toolkit.html
-  commentId: T:SearchAThing.Toolkit
-  fullName: SearchAThing.Toolkit
-  nameWithType: Toolkit
-- uid: SearchAThing.Toolkit.XorNull(System.Object,System.Object)
-  name: XorNull(Object, Object)
-  href: api/SearchAThing.Toolkit.html#SearchAThing_Toolkit_XorNull_System_Object_System_Object_
-  commentId: M:SearchAThing.Toolkit.XorNull(System.Object,System.Object)
-  fullName: SearchAThing.Toolkit.XorNull(System.Object, System.Object)
-  nameWithType: Toolkit.XorNull(Object, Object)
-- uid: SearchAThing.Toolkit.XorNull*
-  name: XorNull
-  href: api/SearchAThing.Toolkit.html#SearchAThing_Toolkit_XorNull_
-  commentId: Overload:SearchAThing.Toolkit.XorNull
-  isSpec: "True"
-  fullName: SearchAThing.Toolkit.XorNull
-  nameWithType: Toolkit.XorNull
-- uid: SearchAThing.Util
-  name: SearchAThing.Util
-  href: api/SearchAThing.Util.html
-  commentId: N:SearchAThing.Util
-  fullName: SearchAThing.Util
-  nameWithType: SearchAThing.Util
-- uid: SearchAThing.Util.DockerContainerNfo
-  name: DockerContainerNfo
-  href: api/SearchAThing.Util.DockerContainerNfo.html
-  commentId: T:SearchAThing.Util.DockerContainerNfo
-  fullName: SearchAThing.Util.DockerContainerNfo
-  nameWithType: DockerContainerNfo
-- uid: SearchAThing.Util.DockerContainerNfo.#ctor(System.String,System.String)
-  name: DockerContainerNfo(String, String)
-  href: api/SearchAThing.Util.DockerContainerNfo.html#SearchAThing_Util_DockerContainerNfo__ctor_System_String_System_String_
-  commentId: M:SearchAThing.Util.DockerContainerNfo.#ctor(System.String,System.String)
-  fullName: SearchAThing.Util.DockerContainerNfo.DockerContainerNfo(System.String, System.String)
-  nameWithType: DockerContainerNfo.DockerContainerNfo(String, String)
-- uid: SearchAThing.Util.DockerContainerNfo.#ctor*
-  name: DockerContainerNfo
-  href: api/SearchAThing.Util.DockerContainerNfo.html#SearchAThing_Util_DockerContainerNfo__ctor_
-  commentId: Overload:SearchAThing.Util.DockerContainerNfo.#ctor
-  isSpec: "True"
-  fullName: SearchAThing.Util.DockerContainerNfo.DockerContainerNfo
-  nameWithType: DockerContainerNfo.DockerContainerNfo
-- uid: SearchAThing.Util.DockerContainerNfo.IPAddress
-  name: IPAddress
-  href: api/SearchAThing.Util.DockerContainerNfo.html#SearchAThing_Util_DockerContainerNfo_IPAddress
-  commentId: P:SearchAThing.Util.DockerContainerNfo.IPAddress
-  fullName: SearchAThing.Util.DockerContainerNfo.IPAddress
-  nameWithType: DockerContainerNfo.IPAddress
-- uid: SearchAThing.Util.DockerContainerNfo.IPAddress*
-  name: IPAddress
-  href: api/SearchAThing.Util.DockerContainerNfo.html#SearchAThing_Util_DockerContainerNfo_IPAddress_
-  commentId: Overload:SearchAThing.Util.DockerContainerNfo.IPAddress
-  isSpec: "True"
-  fullName: SearchAThing.Util.DockerContainerNfo.IPAddress
-  nameWithType: DockerContainerNfo.IPAddress
-- uid: SearchAThing.Util.DockerContainerNfo.Name
-  name: Name
-  href: api/SearchAThing.Util.DockerContainerNfo.html#SearchAThing_Util_DockerContainerNfo_Name
-  commentId: P:SearchAThing.Util.DockerContainerNfo.Name
-  fullName: SearchAThing.Util.DockerContainerNfo.Name
-  nameWithType: DockerContainerNfo.Name
-- uid: SearchAThing.Util.DockerContainerNfo.Name*
-  name: Name
-  href: api/SearchAThing.Util.DockerContainerNfo.html#SearchAThing_Util_DockerContainerNfo_Name_
-  commentId: Overload:SearchAThing.Util.DockerContainerNfo.Name
-  isSpec: "True"
-  fullName: SearchAThing.Util.DockerContainerNfo.Name
-  nameWithType: DockerContainerNfo.Name
-- uid: SearchAThing.Util.DockerContainerNfo.ToString
-  name: ToString()
-  href: api/SearchAThing.Util.DockerContainerNfo.html#SearchAThing_Util_DockerContainerNfo_ToString
-  commentId: M:SearchAThing.Util.DockerContainerNfo.ToString
-  fullName: SearchAThing.Util.DockerContainerNfo.ToString()
-  nameWithType: DockerContainerNfo.ToString()
-- uid: SearchAThing.Util.DockerContainerNfo.ToString*
-  name: ToString
-  href: api/SearchAThing.Util.DockerContainerNfo.html#SearchAThing_Util_DockerContainerNfo_ToString_
-  commentId: Overload:SearchAThing.Util.DockerContainerNfo.ToString
-  isSpec: "True"
-  fullName: SearchAThing.Util.DockerContainerNfo.ToString
-  nameWithType: DockerContainerNfo.ToString
-- uid: SearchAThing.Util.DockerNetworkNfo
-  name: DockerNetworkNfo
-  href: api/SearchAThing.Util.DockerNetworkNfo.html
-  commentId: T:SearchAThing.Util.DockerNetworkNfo
-  fullName: SearchAThing.Util.DockerNetworkNfo
-  nameWithType: DockerNetworkNfo
-- uid: SearchAThing.Util.DockerNetworkNfo.#ctor(System.String,System.String)
-  name: DockerNetworkNfo(String, String)
-  href: api/SearchAThing.Util.DockerNetworkNfo.html#SearchAThing_Util_DockerNetworkNfo__ctor_System_String_System_String_
-  commentId: M:SearchAThing.Util.DockerNetworkNfo.#ctor(System.String,System.String)
-  fullName: SearchAThing.Util.DockerNetworkNfo.DockerNetworkNfo(System.String, System.String)
-  nameWithType: DockerNetworkNfo.DockerNetworkNfo(String, String)
-- uid: SearchAThing.Util.DockerNetworkNfo.#ctor*
-  name: DockerNetworkNfo
-  href: api/SearchAThing.Util.DockerNetworkNfo.html#SearchAThing_Util_DockerNetworkNfo__ctor_
-  commentId: Overload:SearchAThing.Util.DockerNetworkNfo.#ctor
-  isSpec: "True"
-  fullName: SearchAThing.Util.DockerNetworkNfo.DockerNetworkNfo
-  nameWithType: DockerNetworkNfo.DockerNetworkNfo
-- uid: SearchAThing.Util.DockerNetworkNfo.Name
-  name: Name
-  href: api/SearchAThing.Util.DockerNetworkNfo.html#SearchAThing_Util_DockerNetworkNfo_Name
-  commentId: P:SearchAThing.Util.DockerNetworkNfo.Name
-  fullName: SearchAThing.Util.DockerNetworkNfo.Name
-  nameWithType: DockerNetworkNfo.Name
-- uid: SearchAThing.Util.DockerNetworkNfo.Name*
-  name: Name
-  href: api/SearchAThing.Util.DockerNetworkNfo.html#SearchAThing_Util_DockerNetworkNfo_Name_
-  commentId: Overload:SearchAThing.Util.DockerNetworkNfo.Name
-  isSpec: "True"
-  fullName: SearchAThing.Util.DockerNetworkNfo.Name
-  nameWithType: DockerNetworkNfo.Name
-- uid: SearchAThing.Util.DockerNetworkNfo.Subnet
-  name: Subnet
-  href: api/SearchAThing.Util.DockerNetworkNfo.html#SearchAThing_Util_DockerNetworkNfo_Subnet
-  commentId: P:SearchAThing.Util.DockerNetworkNfo.Subnet
-  fullName: SearchAThing.Util.DockerNetworkNfo.Subnet
-  nameWithType: DockerNetworkNfo.Subnet
-- uid: SearchAThing.Util.DockerNetworkNfo.Subnet*
-  name: Subnet
-  href: api/SearchAThing.Util.DockerNetworkNfo.html#SearchAThing_Util_DockerNetworkNfo_Subnet_
-  commentId: Overload:SearchAThing.Util.DockerNetworkNfo.Subnet
-  isSpec: "True"
-  fullName: SearchAThing.Util.DockerNetworkNfo.Subnet
-  nameWithType: DockerNetworkNfo.Subnet
-- uid: SearchAThing.Util.DockerNetworkNfo.ToString
-  name: ToString()
-  href: api/SearchAThing.Util.DockerNetworkNfo.html#SearchAThing_Util_DockerNetworkNfo_ToString
-  commentId: M:SearchAThing.Util.DockerNetworkNfo.ToString
-  fullName: SearchAThing.Util.DockerNetworkNfo.ToString()
-  nameWithType: DockerNetworkNfo.ToString()
-- uid: SearchAThing.Util.DockerNetworkNfo.ToString*
-  name: ToString
-  href: api/SearchAThing.Util.DockerNetworkNfo.html#SearchAThing_Util_DockerNetworkNfo_ToString_
-  commentId: Overload:SearchAThing.Util.DockerNetworkNfo.ToString
-  isSpec: "True"
-  fullName: SearchAThing.Util.DockerNetworkNfo.ToString
-  nameWithType: DockerNetworkNfo.ToString
-- uid: SearchAThing.Util.PathUtil
-  name: PathUtil
-  href: api/SearchAThing.Util.PathUtil.html
-  commentId: T:SearchAThing.Util.PathUtil
-  fullName: SearchAThing.Util.PathUtil
-  nameWithType: PathUtil
-- uid: SearchAThing.Util.PathUtil.AppDataFolder(System.String)
-  name: AppDataFolder(String)
-  href: api/SearchAThing.Util.PathUtil.html#SearchAThing_Util_PathUtil_AppDataFolder_System_String_
-  commentId: M:SearchAThing.Util.PathUtil.AppDataFolder(System.String)
-  fullName: SearchAThing.Util.PathUtil.AppDataFolder(System.String)
-  nameWithType: PathUtil.AppDataFolder(String)
-- uid: SearchAThing.Util.PathUtil.AppDataFolder*
-  name: AppDataFolder
-  href: api/SearchAThing.Util.PathUtil.html#SearchAThing_Util_PathUtil_AppDataFolder_
-  commentId: Overload:SearchAThing.Util.PathUtil.AppDataFolder
-  isSpec: "True"
-  fullName: SearchAThing.Util.PathUtil.AppDataFolder
-  nameWithType: PathUtil.AppDataFolder
-- uid: SearchAThing.Util.PathUtil.EnsureFolder(System.String)
-  name: EnsureFolder(String)
-  href: api/SearchAThing.Util.PathUtil.html#SearchAThing_Util_PathUtil_EnsureFolder_System_String_
-  commentId: M:SearchAThing.Util.PathUtil.EnsureFolder(System.String)
-  fullName: SearchAThing.Util.PathUtil.EnsureFolder(System.String)
-  nameWithType: PathUtil.EnsureFolder(String)
-- uid: SearchAThing.Util.PathUtil.EnsureFolder*
-  name: EnsureFolder
-  href: api/SearchAThing.Util.PathUtil.html#SearchAThing_Util_PathUtil_EnsureFolder_
-  commentId: Overload:SearchAThing.Util.PathUtil.EnsureFolder
-  isSpec: "True"
-  fullName: SearchAThing.Util.PathUtil.EnsureFolder
-  nameWithType: PathUtil.EnsureFolder
-- uid: SearchAThing.Util.PathUtil.SearchInPath(System.String)
-  name: SearchInPath(String)
-  href: api/SearchAThing.Util.PathUtil.html#SearchAThing_Util_PathUtil_SearchInPath_System_String_
-  commentId: M:SearchAThing.Util.PathUtil.SearchInPath(System.String)
-  fullName: SearchAThing.Util.PathUtil.SearchInPath(System.String)
-  nameWithType: PathUtil.SearchInPath(String)
-- uid: SearchAThing.Util.PathUtil.SearchInPath*
-  name: SearchInPath
-  href: api/SearchAThing.Util.PathUtil.html#SearchAThing_Util_PathUtil_SearchInPath_
-  commentId: Overload:SearchAThing.Util.PathUtil.SearchInPath
-  isSpec: "True"
-  fullName: SearchAThing.Util.PathUtil.SearchInPath
-  nameWithType: PathUtil.SearchInPath
-- uid: SearchAThing.Util.RandomPasswordOptions
-  name: RandomPasswordOptions
-  href: api/SearchAThing.Util.RandomPasswordOptions.html
-  commentId: T:SearchAThing.Util.RandomPasswordOptions
-  fullName: SearchAThing.Util.RandomPasswordOptions
-  nameWithType: RandomPasswordOptions
-- uid: SearchAThing.Util.RandomPasswordOptions.AllowLetter
-  name: AllowLetter
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AllowLetter
-  commentId: P:SearchAThing.Util.RandomPasswordOptions.AllowLetter
-  fullName: SearchAThing.Util.RandomPasswordOptions.AllowLetter
-  nameWithType: RandomPasswordOptions.AllowLetter
-- uid: SearchAThing.Util.RandomPasswordOptions.AllowLetter*
-  name: AllowLetter
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AllowLetter_
-  commentId: Overload:SearchAThing.Util.RandomPasswordOptions.AllowLetter
-  isSpec: "True"
-  fullName: SearchAThing.Util.RandomPasswordOptions.AllowLetter
-  nameWithType: RandomPasswordOptions.AllowLetter
-- uid: SearchAThing.Util.RandomPasswordOptions.AllowLowercase
-  name: AllowLowercase
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AllowLowercase
-  commentId: P:SearchAThing.Util.RandomPasswordOptions.AllowLowercase
-  fullName: SearchAThing.Util.RandomPasswordOptions.AllowLowercase
-  nameWithType: RandomPasswordOptions.AllowLowercase
-- uid: SearchAThing.Util.RandomPasswordOptions.AllowLowercase*
-  name: AllowLowercase
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AllowLowercase_
-  commentId: Overload:SearchAThing.Util.RandomPasswordOptions.AllowLowercase
-  isSpec: "True"
-  fullName: SearchAThing.Util.RandomPasswordOptions.AllowLowercase
-  nameWithType: RandomPasswordOptions.AllowLowercase
-- uid: SearchAThing.Util.RandomPasswordOptions.AllowNumber
-  name: AllowNumber
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AllowNumber
-  commentId: P:SearchAThing.Util.RandomPasswordOptions.AllowNumber
-  fullName: SearchAThing.Util.RandomPasswordOptions.AllowNumber
-  nameWithType: RandomPasswordOptions.AllowNumber
-- uid: SearchAThing.Util.RandomPasswordOptions.AllowNumber*
-  name: AllowNumber
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AllowNumber_
-  commentId: Overload:SearchAThing.Util.RandomPasswordOptions.AllowNumber
-  isSpec: "True"
-  fullName: SearchAThing.Util.RandomPasswordOptions.AllowNumber
-  nameWithType: RandomPasswordOptions.AllowNumber
-- uid: SearchAThing.Util.RandomPasswordOptions.AllowSpecial
-  name: AllowSpecial
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AllowSpecial
-  commentId: P:SearchAThing.Util.RandomPasswordOptions.AllowSpecial
-  fullName: SearchAThing.Util.RandomPasswordOptions.AllowSpecial
-  nameWithType: RandomPasswordOptions.AllowSpecial
-- uid: SearchAThing.Util.RandomPasswordOptions.AllowSpecial*
-  name: AllowSpecial
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AllowSpecial_
-  commentId: Overload:SearchAThing.Util.RandomPasswordOptions.AllowSpecial
-  isSpec: "True"
-  fullName: SearchAThing.Util.RandomPasswordOptions.AllowSpecial
-  nameWithType: RandomPasswordOptions.AllowSpecial
-- uid: SearchAThing.Util.RandomPasswordOptions.AllowUppercase
-  name: AllowUppercase
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AllowUppercase
-  commentId: P:SearchAThing.Util.RandomPasswordOptions.AllowUppercase
-  fullName: SearchAThing.Util.RandomPasswordOptions.AllowUppercase
-  nameWithType: RandomPasswordOptions.AllowUppercase
-- uid: SearchAThing.Util.RandomPasswordOptions.AllowUppercase*
-  name: AllowUppercase
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AllowUppercase_
-  commentId: Overload:SearchAThing.Util.RandomPasswordOptions.AllowUppercase
-  isSpec: "True"
-  fullName: SearchAThing.Util.RandomPasswordOptions.AllowUppercase
-  nameWithType: RandomPasswordOptions.AllowUppercase
-- uid: SearchAThing.Util.RandomPasswordOptions.AtLeastOneNumber
-  name: AtLeastOneNumber
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AtLeastOneNumber
-  commentId: P:SearchAThing.Util.RandomPasswordOptions.AtLeastOneNumber
-  fullName: SearchAThing.Util.RandomPasswordOptions.AtLeastOneNumber
-  nameWithType: RandomPasswordOptions.AtLeastOneNumber
-- uid: SearchAThing.Util.RandomPasswordOptions.AtLeastOneNumber*
-  name: AtLeastOneNumber
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AtLeastOneNumber_
-  commentId: Overload:SearchAThing.Util.RandomPasswordOptions.AtLeastOneNumber
-  isSpec: "True"
-  fullName: SearchAThing.Util.RandomPasswordOptions.AtLeastOneNumber
-  nameWithType: RandomPasswordOptions.AtLeastOneNumber
-- uid: SearchAThing.Util.RandomPasswordOptions.AtLeastOneSpecial
-  name: AtLeastOneSpecial
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AtLeastOneSpecial
-  commentId: P:SearchAThing.Util.RandomPasswordOptions.AtLeastOneSpecial
-  fullName: SearchAThing.Util.RandomPasswordOptions.AtLeastOneSpecial
-  nameWithType: RandomPasswordOptions.AtLeastOneSpecial
-- uid: SearchAThing.Util.RandomPasswordOptions.AtLeastOneSpecial*
-  name: AtLeastOneSpecial
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AtLeastOneSpecial_
-  commentId: Overload:SearchAThing.Util.RandomPasswordOptions.AtLeastOneSpecial
-  isSpec: "True"
-  fullName: SearchAThing.Util.RandomPasswordOptions.AtLeastOneSpecial
-  nameWithType: RandomPasswordOptions.AtLeastOneSpecial
-- uid: SearchAThing.Util.RandomPasswordOptions.AtLeastOneUppercase
-  name: AtLeastOneUppercase
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AtLeastOneUppercase
-  commentId: P:SearchAThing.Util.RandomPasswordOptions.AtLeastOneUppercase
-  fullName: SearchAThing.Util.RandomPasswordOptions.AtLeastOneUppercase
-  nameWithType: RandomPasswordOptions.AtLeastOneUppercase
-- uid: SearchAThing.Util.RandomPasswordOptions.AtLeastOneUppercase*
-  name: AtLeastOneUppercase
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AtLeastOneUppercase_
-  commentId: Overload:SearchAThing.Util.RandomPasswordOptions.AtLeastOneUppercase
-  isSpec: "True"
-  fullName: SearchAThing.Util.RandomPasswordOptions.AtLeastOneUppercase
-  nameWithType: RandomPasswordOptions.AtLeastOneUppercase
-- uid: SearchAThing.Util.RandomPasswordOptions.AvoidChars
-  name: AvoidChars
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AvoidChars
-  commentId: P:SearchAThing.Util.RandomPasswordOptions.AvoidChars
-  fullName: SearchAThing.Util.RandomPasswordOptions.AvoidChars
-  nameWithType: RandomPasswordOptions.AvoidChars
-- uid: SearchAThing.Util.RandomPasswordOptions.AvoidChars*
-  name: AvoidChars
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_AvoidChars_
-  commentId: Overload:SearchAThing.Util.RandomPasswordOptions.AvoidChars
-  isSpec: "True"
-  fullName: SearchAThing.Util.RandomPasswordOptions.AvoidChars
-  nameWithType: RandomPasswordOptions.AvoidChars
-- uid: SearchAThing.Util.RandomPasswordOptions.Length
-  name: Length
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_Length
-  commentId: P:SearchAThing.Util.RandomPasswordOptions.Length
-  fullName: SearchAThing.Util.RandomPasswordOptions.Length
-  nameWithType: RandomPasswordOptions.Length
-- uid: SearchAThing.Util.RandomPasswordOptions.Length*
-  name: Length
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_Length_
-  commentId: Overload:SearchAThing.Util.RandomPasswordOptions.Length
-  isSpec: "True"
-  fullName: SearchAThing.Util.RandomPasswordOptions.Length
-  nameWithType: RandomPasswordOptions.Length
-- uid: SearchAThing.Util.RandomPasswordOptions.LoopCount
-  name: LoopCount
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_LoopCount
-  commentId: P:SearchAThing.Util.RandomPasswordOptions.LoopCount
-  fullName: SearchAThing.Util.RandomPasswordOptions.LoopCount
-  nameWithType: RandomPasswordOptions.LoopCount
-- uid: SearchAThing.Util.RandomPasswordOptions.LoopCount*
-  name: LoopCount
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_LoopCount_
-  commentId: Overload:SearchAThing.Util.RandomPasswordOptions.LoopCount
-  isSpec: "True"
-  fullName: SearchAThing.Util.RandomPasswordOptions.LoopCount
-  nameWithType: RandomPasswordOptions.LoopCount
-- uid: SearchAThing.Util.RandomPasswordOptions.MaxSpecial
-  name: MaxSpecial
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_MaxSpecial
-  commentId: P:SearchAThing.Util.RandomPasswordOptions.MaxSpecial
-  fullName: SearchAThing.Util.RandomPasswordOptions.MaxSpecial
-  nameWithType: RandomPasswordOptions.MaxSpecial
-- uid: SearchAThing.Util.RandomPasswordOptions.MaxSpecial*
-  name: MaxSpecial
-  href: api/SearchAThing.Util.RandomPasswordOptions.html#SearchAThing_Util_RandomPasswordOptions_MaxSpecial_
-  commentId: Overload:SearchAThing.Util.RandomPasswordOptions.MaxSpecial
-  isSpec: "True"
-  fullName: SearchAThing.Util.RandomPasswordOptions.MaxSpecial
-  nameWithType: RandomPasswordOptions.MaxSpecial
-- uid: SearchAThing.Util.Toolkit
-  name: Toolkit
-  href: api/SearchAThing.Util.Toolkit.html
-  commentId: T:SearchAThing.Util.Toolkit
-  fullName: SearchAThing.Util.Toolkit
-  nameWithType: Toolkit
-- uid: SearchAThing.Util.Toolkit.BuildImage(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
-  name: BuildImage(String, String, CancellationToken, Boolean, Boolean)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_BuildImage_System_String_System_String_CancellationToken_System_Boolean_System_Boolean_
-  commentId: M:SearchAThing.Util.Toolkit.BuildImage(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
-  fullName: SearchAThing.Util.Toolkit.BuildImage(System.String, System.String, CancellationToken, System.Boolean, System.Boolean)
-  nameWithType: Toolkit.BuildImage(String, String, CancellationToken, Boolean, Boolean)
-- uid: SearchAThing.Util.Toolkit.BuildImage*
-  name: BuildImage
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_BuildImage_
-  commentId: Overload:SearchAThing.Util.Toolkit.BuildImage
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.BuildImage
-  nameWithType: Toolkit.BuildImage
-- uid: SearchAThing.Util.Toolkit.CreateNetwork(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
-  name: CreateNetwork(String, String, CancellationToken, Boolean, Boolean)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_CreateNetwork_System_String_System_String_CancellationToken_System_Boolean_System_Boolean_
-  commentId: M:SearchAThing.Util.Toolkit.CreateNetwork(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
-  fullName: SearchAThing.Util.Toolkit.CreateNetwork(System.String, System.String, CancellationToken, System.Boolean, System.Boolean)
-  nameWithType: Toolkit.CreateNetwork(String, String, CancellationToken, Boolean, Boolean)
-- uid: SearchAThing.Util.Toolkit.CreateNetwork*
-  name: CreateNetwork
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_CreateNetwork_
-  commentId: Overload:SearchAThing.Util.Toolkit.CreateNetwork
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.CreateNetwork
-  nameWithType: Toolkit.CreateNetwork
-- uid: SearchAThing.Util.Toolkit.DeflateEmbeddedResource(Assembly,System.String)
-  name: DeflateEmbeddedResource(Assembly, String)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_DeflateEmbeddedResource_Assembly_System_String_
-  commentId: M:SearchAThing.Util.Toolkit.DeflateEmbeddedResource(Assembly,System.String)
-  fullName: SearchAThing.Util.Toolkit.DeflateEmbeddedResource(Assembly, System.String)
-  nameWithType: Toolkit.DeflateEmbeddedResource(Assembly, String)
-- uid: SearchAThing.Util.Toolkit.DeflateEmbeddedResource*
-  name: DeflateEmbeddedResource
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_DeflateEmbeddedResource_
-  commentId: Overload:SearchAThing.Util.Toolkit.DeflateEmbeddedResource
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.DeflateEmbeddedResource
-  nameWithType: Toolkit.DeflateEmbeddedResource
-- uid: SearchAThing.Util.Toolkit.DynamicMakeDictionary(System.Object)
-  name: DynamicMakeDictionary(Object)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_DynamicMakeDictionary_System_Object_
-  commentId: M:SearchAThing.Util.Toolkit.DynamicMakeDictionary(System.Object)
-  fullName: SearchAThing.Util.Toolkit.DynamicMakeDictionary(System.Object)
-  nameWithType: Toolkit.DynamicMakeDictionary(Object)
-- uid: SearchAThing.Util.Toolkit.DynamicMakeDictionary*
-  name: DynamicMakeDictionary
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_DynamicMakeDictionary_
-  commentId: Overload:SearchAThing.Util.Toolkit.DynamicMakeDictionary
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.DynamicMakeDictionary
-  nameWithType: Toolkit.DynamicMakeDictionary
-- uid: SearchAThing.Util.Toolkit.Exec(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
-  name: Exec(String, IEnumerable<String>, CancellationToken, Boolean, Boolean, Boolean, Boolean)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_Exec_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
-  commentId: M:SearchAThing.Util.Toolkit.Exec(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
-  name.vb: Exec(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean, Boolean, Boolean)
-  fullName: SearchAThing.Util.Toolkit.Exec(System.String, IEnumerable<System.String>, CancellationToken, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
-  fullName.vb: SearchAThing.Util.Toolkit.Exec(System.String, IEnumerable(Of System.String), CancellationToken, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
-  nameWithType: Toolkit.Exec(String, IEnumerable<String>, CancellationToken, Boolean, Boolean, Boolean, Boolean)
-  nameWithType.vb: Toolkit.Exec(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean, Boolean, Boolean)
-- uid: SearchAThing.Util.Toolkit.Exec*
-  name: Exec
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_Exec_
-  commentId: Overload:SearchAThing.Util.Toolkit.Exec
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.Exec
-  nameWithType: Toolkit.Exec
-- uid: SearchAThing.Util.Toolkit.ExecBashRedirect(System.String,CancellationToken,System.Boolean,System.Boolean)
-  name: ExecBashRedirect(String, CancellationToken, Boolean, Boolean)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ExecBashRedirect_System_String_CancellationToken_System_Boolean_System_Boolean_
-  commentId: M:SearchAThing.Util.Toolkit.ExecBashRedirect(System.String,CancellationToken,System.Boolean,System.Boolean)
-  fullName: SearchAThing.Util.Toolkit.ExecBashRedirect(System.String, CancellationToken, System.Boolean, System.Boolean)
-  nameWithType: Toolkit.ExecBashRedirect(String, CancellationToken, Boolean, Boolean)
-- uid: SearchAThing.Util.Toolkit.ExecBashRedirect*
-  name: ExecBashRedirect
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ExecBashRedirect_
-  commentId: Overload:SearchAThing.Util.Toolkit.ExecBashRedirect
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.ExecBashRedirect
-  nameWithType: Toolkit.ExecBashRedirect
-- uid: SearchAThing.Util.Toolkit.ExecContainerCmd(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
-  name: ExecContainerCmd(String, String, CancellationToken, Boolean, Boolean)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ExecContainerCmd_System_String_System_String_CancellationToken_System_Boolean_System_Boolean_
-  commentId: M:SearchAThing.Util.Toolkit.ExecContainerCmd(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
-  fullName: SearchAThing.Util.Toolkit.ExecContainerCmd(System.String, System.String, CancellationToken, System.Boolean, System.Boolean)
-  nameWithType: Toolkit.ExecContainerCmd(String, String, CancellationToken, Boolean, Boolean)
-- uid: SearchAThing.Util.Toolkit.ExecContainerCmd*
-  name: ExecContainerCmd
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ExecContainerCmd_
-  commentId: Overload:SearchAThing.Util.Toolkit.ExecContainerCmd
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.ExecContainerCmd
-  nameWithType: Toolkit.ExecContainerCmd
-- uid: SearchAThing.Util.Toolkit.ExecNoRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
-  name: ExecNoRedirect(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ExecNoRedirect_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_
-  commentId: M:SearchAThing.Util.Toolkit.ExecNoRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
-  name.vb: ExecNoRedirect(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
-  fullName: SearchAThing.Util.Toolkit.ExecNoRedirect(System.String, IEnumerable<System.String>, CancellationToken, System.Boolean, System.Boolean)
-  fullName.vb: SearchAThing.Util.Toolkit.ExecNoRedirect(System.String, IEnumerable(Of System.String), CancellationToken, System.Boolean, System.Boolean)
-  nameWithType: Toolkit.ExecNoRedirect(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
-  nameWithType.vb: Toolkit.ExecNoRedirect(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
-- uid: SearchAThing.Util.Toolkit.ExecNoRedirect*
-  name: ExecNoRedirect
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ExecNoRedirect_
-  commentId: Overload:SearchAThing.Util.Toolkit.ExecNoRedirect
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.ExecNoRedirect
-  nameWithType: Toolkit.ExecNoRedirect
-- uid: SearchAThing.Util.Toolkit.ExecRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
-  name: ExecRedirect(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ExecRedirect_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_
-  commentId: M:SearchAThing.Util.Toolkit.ExecRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
-  name.vb: ExecRedirect(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
-  fullName: SearchAThing.Util.Toolkit.ExecRedirect(System.String, IEnumerable<System.String>, CancellationToken, System.Boolean, System.Boolean)
-  fullName.vb: SearchAThing.Util.Toolkit.ExecRedirect(System.String, IEnumerable(Of System.String), CancellationToken, System.Boolean, System.Boolean)
-  nameWithType: Toolkit.ExecRedirect(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
-  nameWithType.vb: Toolkit.ExecRedirect(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
-- uid: SearchAThing.Util.Toolkit.ExecRedirect*
-  name: ExecRedirect
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ExecRedirect_
-  commentId: Overload:SearchAThing.Util.Toolkit.ExecRedirect
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.ExecRedirect
-  nameWithType: Toolkit.ExecRedirect
-- uid: SearchAThing.Util.Toolkit.ExecRedirectError(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
-  name: ExecRedirectError(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ExecRedirectError_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_
-  commentId: M:SearchAThing.Util.Toolkit.ExecRedirectError(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
-  name.vb: ExecRedirectError(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
-  fullName: SearchAThing.Util.Toolkit.ExecRedirectError(System.String, IEnumerable<System.String>, CancellationToken, System.Boolean, System.Boolean)
-  fullName.vb: SearchAThing.Util.Toolkit.ExecRedirectError(System.String, IEnumerable(Of System.String), CancellationToken, System.Boolean, System.Boolean)
-  nameWithType: Toolkit.ExecRedirectError(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
-  nameWithType.vb: Toolkit.ExecRedirectError(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
-- uid: SearchAThing.Util.Toolkit.ExecRedirectError*
-  name: ExecRedirectError
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ExecRedirectError_
-  commentId: Overload:SearchAThing.Util.Toolkit.ExecRedirectError
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.ExecRedirectError
-  nameWithType: Toolkit.ExecRedirectError
-- uid: SearchAThing.Util.Toolkit.GetEmbeddedResourceNames
-  name: GetEmbeddedResourceNames()
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_GetEmbeddedResourceNames
-  commentId: M:SearchAThing.Util.Toolkit.GetEmbeddedResourceNames
-  fullName: SearchAThing.Util.Toolkit.GetEmbeddedResourceNames()
-  nameWithType: Toolkit.GetEmbeddedResourceNames()
-- uid: SearchAThing.Util.Toolkit.GetEmbeddedResourceNames*
-  name: GetEmbeddedResourceNames
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_GetEmbeddedResourceNames_
-  commentId: Overload:SearchAThing.Util.Toolkit.GetEmbeddedResourceNames
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.GetEmbeddedResourceNames
-  nameWithType: Toolkit.GetEmbeddedResourceNames
-- uid: SearchAThing.Util.Toolkit.ListContainers(CancellationToken,System.Boolean,System.Boolean)
-  name: ListContainers(CancellationToken, Boolean, Boolean)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ListContainers_CancellationToken_System_Boolean_System_Boolean_
-  commentId: M:SearchAThing.Util.Toolkit.ListContainers(CancellationToken,System.Boolean,System.Boolean)
-  fullName: SearchAThing.Util.Toolkit.ListContainers(CancellationToken, System.Boolean, System.Boolean)
-  nameWithType: Toolkit.ListContainers(CancellationToken, Boolean, Boolean)
-- uid: SearchAThing.Util.Toolkit.ListContainers*
-  name: ListContainers
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ListContainers_
-  commentId: Overload:SearchAThing.Util.Toolkit.ListContainers
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.ListContainers
-  nameWithType: Toolkit.ListContainers
-- uid: SearchAThing.Util.Toolkit.ListNetworks(CancellationToken,System.Boolean,System.Boolean)
-  name: ListNetworks(CancellationToken, Boolean, Boolean)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ListNetworks_CancellationToken_System_Boolean_System_Boolean_
-  commentId: M:SearchAThing.Util.Toolkit.ListNetworks(CancellationToken,System.Boolean,System.Boolean)
-  fullName: SearchAThing.Util.Toolkit.ListNetworks(CancellationToken, System.Boolean, System.Boolean)
-  nameWithType: Toolkit.ListNetworks(CancellationToken, Boolean, Boolean)
-- uid: SearchAThing.Util.Toolkit.ListNetworks*
-  name: ListNetworks
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ListNetworks_
-  commentId: Overload:SearchAThing.Util.Toolkit.ListNetworks
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.ListNetworks
-  nameWithType: Toolkit.ListNetworks
-- uid: SearchAThing.Util.Toolkit.MakeDynamic(System.ValueTuple{System.String,System.Object}[])
-  name: MakeDynamic((String name, Object value)[])
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_MakeDynamic_System_ValueTuple_System_String_System_Object____
-  commentId: M:SearchAThing.Util.Toolkit.MakeDynamic(System.ValueTuple{System.String,System.Object}[])
-  name.vb: MakeDynamic((name As String, value As Object)())
-  fullName: SearchAThing.Util.Toolkit.MakeDynamic(System.ValueTuple<System.String, System.Object>[])
-  fullName.vb: SearchAThing.Util.Toolkit.MakeDynamic(System.ValueTuple(Of System.String, System.Object)())
-  nameWithType: Toolkit.MakeDynamic((String name, Object value)[])
-  nameWithType.vb: Toolkit.MakeDynamic((name As String, value As Object)())
-- uid: SearchAThing.Util.Toolkit.MakeDynamic*
-  name: MakeDynamic
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_MakeDynamic_
-  commentId: Overload:SearchAThing.Util.Toolkit.MakeDynamic
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.MakeDynamic
-  nameWithType: Toolkit.MakeDynamic
-- uid: SearchAThing.Util.Toolkit.RandomPassword(SearchAThing.Util.RandomPasswordOptions)
-  name: RandomPassword(RandomPasswordOptions)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_RandomPassword_SearchAThing_Util_RandomPasswordOptions_
-  commentId: M:SearchAThing.Util.Toolkit.RandomPassword(SearchAThing.Util.RandomPasswordOptions)
-  fullName: SearchAThing.Util.Toolkit.RandomPassword(SearchAThing.Util.RandomPasswordOptions)
-  nameWithType: Toolkit.RandomPassword(RandomPasswordOptions)
-- uid: SearchAThing.Util.Toolkit.RandomPassword*
-  name: RandomPassword
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_RandomPassword_
-  commentId: Overload:SearchAThing.Util.Toolkit.RandomPassword
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.RandomPassword
-  nameWithType: Toolkit.RandomPassword
-- uid: SearchAThing.Util.Toolkit.RemoveContainer(System.String,CancellationToken,System.Boolean,System.Boolean)
-  name: RemoveContainer(String, CancellationToken, Boolean, Boolean)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_RemoveContainer_System_String_CancellationToken_System_Boolean_System_Boolean_
-  commentId: M:SearchAThing.Util.Toolkit.RemoveContainer(System.String,CancellationToken,System.Boolean,System.Boolean)
-  fullName: SearchAThing.Util.Toolkit.RemoveContainer(System.String, CancellationToken, System.Boolean, System.Boolean)
-  nameWithType: Toolkit.RemoveContainer(String, CancellationToken, Boolean, Boolean)
-- uid: SearchAThing.Util.Toolkit.RemoveContainer*
-  name: RemoveContainer
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_RemoveContainer_
-  commentId: Overload:SearchAThing.Util.Toolkit.RemoveContainer
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.RemoveContainer
-  nameWithType: Toolkit.RemoveContainer
-- uid: SearchAThing.Util.Toolkit.RemoveNetwork(System.String,CancellationToken,System.Boolean,System.Boolean)
-  name: RemoveNetwork(String, CancellationToken, Boolean, Boolean)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_RemoveNetwork_System_String_CancellationToken_System_Boolean_System_Boolean_
-  commentId: M:SearchAThing.Util.Toolkit.RemoveNetwork(System.String,CancellationToken,System.Boolean,System.Boolean)
-  fullName: SearchAThing.Util.Toolkit.RemoveNetwork(System.String, CancellationToken, System.Boolean, System.Boolean)
-  nameWithType: Toolkit.RemoveNetwork(String, CancellationToken, Boolean, Boolean)
-- uid: SearchAThing.Util.Toolkit.RemoveNetwork*
-  name: RemoveNetwork
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_RemoveNetwork_
-  commentId: Overload:SearchAThing.Util.Toolkit.RemoveNetwork
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.RemoveNetwork
-  nameWithType: Toolkit.RemoveNetwork
-- uid: SearchAThing.Util.Toolkit.RunContainer(System.String,System.String,System.String,System.String,System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
-  name: RunContainer(String, String, String, String, String, String, CancellationToken, Boolean, Boolean)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_RunContainer_System_String_System_String_System_String_System_String_System_String_System_String_CancellationToken_System_Boolean_System_Boolean_
-  commentId: M:SearchAThing.Util.Toolkit.RunContainer(System.String,System.String,System.String,System.String,System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
-  fullName: SearchAThing.Util.Toolkit.RunContainer(System.String, System.String, System.String, System.String, System.String, System.String, CancellationToken, System.Boolean, System.Boolean)
-  nameWithType: Toolkit.RunContainer(String, String, String, String, String, String, CancellationToken, Boolean, Boolean)
-- uid: SearchAThing.Util.Toolkit.RunContainer*
-  name: RunContainer
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_RunContainer_
-  commentId: Overload:SearchAThing.Util.Toolkit.RunContainer
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.RunContainer
-  nameWithType: Toolkit.RunContainer
-- uid: SearchAThing.Util.Toolkit.SaveEmbeddedResourceToFile(System.String,System.String,System.Boolean)
-  name: SaveEmbeddedResourceToFile(String, String, Boolean)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_SaveEmbeddedResourceToFile_System_String_System_String_System_Boolean_
-  commentId: M:SearchAThing.Util.Toolkit.SaveEmbeddedResourceToFile(System.String,System.String,System.Boolean)
-  fullName: SearchAThing.Util.Toolkit.SaveEmbeddedResourceToFile(System.String, System.String, System.Boolean)
-  nameWithType: Toolkit.SaveEmbeddedResourceToFile(String, String, Boolean)
-- uid: SearchAThing.Util.Toolkit.SaveEmbeddedResourceToFile*
-  name: SaveEmbeddedResourceToFile
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_SaveEmbeddedResourceToFile_
-  commentId: Overload:SearchAThing.Util.Toolkit.SaveEmbeddedResourceToFile
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.SaveEmbeddedResourceToFile
-  nameWithType: Toolkit.SaveEmbeddedResourceToFile
-- uid: SearchAThing.Util.Toolkit.StopContainer(System.String,CancellationToken,System.Boolean,System.Boolean)
-  name: StopContainer(String, CancellationToken, Boolean, Boolean)
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_StopContainer_System_String_CancellationToken_System_Boolean_System_Boolean_
-  commentId: M:SearchAThing.Util.Toolkit.StopContainer(System.String,CancellationToken,System.Boolean,System.Boolean)
-  fullName: SearchAThing.Util.Toolkit.StopContainer(System.String, CancellationToken, System.Boolean, System.Boolean)
-  nameWithType: Toolkit.StopContainer(String, CancellationToken, Boolean, Boolean)
-- uid: SearchAThing.Util.Toolkit.StopContainer*
-  name: StopContainer
-  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_StopContainer_
-  commentId: Overload:SearchAThing.Util.Toolkit.StopContainer
-  isSpec: "True"
-  fullName: SearchAThing.Util.Toolkit.StopContainer
-  nameWithType: Toolkit.StopContainer
 - uid: SearchAThing.UtilExt
   name: UtilExt
   href: api/SearchAThing.UtilExt.html
@@ -930,21 +585,15 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.CopyFromCustom
   nameWithType: UtilExt.CopyFromCustom
-- uid: SearchAThing.UtilExt.CopyFromCustom``1(``0,``0,SearchAThing.UtilExt.CopyFromCustomDelegate)
-  name: CopyFromCustom<T>(T, T, UtilExt.CopyFromCustomDelegate)
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_CopyFromCustom__1___0___0_SearchAThing_UtilExt_CopyFromCustomDelegate_
-  commentId: M:SearchAThing.UtilExt.CopyFromCustom``1(``0,``0,SearchAThing.UtilExt.CopyFromCustomDelegate)
-  name.vb: CopyFromCustom(Of T)(T, T, UtilExt.CopyFromCustomDelegate)
-  fullName: SearchAThing.UtilExt.CopyFromCustom<T>(T, T, SearchAThing.UtilExt.CopyFromCustomDelegate)
-  fullName.vb: SearchAThing.UtilExt.CopyFromCustom(Of T)(T, T, SearchAThing.UtilExt.CopyFromCustomDelegate)
-  nameWithType: UtilExt.CopyFromCustom<T>(T, T, UtilExt.CopyFromCustomDelegate)
-  nameWithType.vb: UtilExt.CopyFromCustom(Of T)(T, T, UtilExt.CopyFromCustomDelegate)
-- uid: SearchAThing.UtilExt.CopyFromCustomDelegate
-  name: UtilExt.CopyFromCustomDelegate
-  href: api/SearchAThing.UtilExt.CopyFromCustomDelegate.html
-  commentId: T:SearchAThing.UtilExt.CopyFromCustomDelegate
-  fullName: SearchAThing.UtilExt.CopyFromCustomDelegate
-  nameWithType: UtilExt.CopyFromCustomDelegate
+- uid: SearchAThing.UtilExt.CopyFromCustom``1(``0,``0,SearchAThing.CopyFromCustomDelegate)
+  name: CopyFromCustom<T>(T, T, CopyFromCustomDelegate)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_CopyFromCustom__1___0___0_SearchAThing_CopyFromCustomDelegate_
+  commentId: M:SearchAThing.UtilExt.CopyFromCustom``1(``0,``0,SearchAThing.CopyFromCustomDelegate)
+  name.vb: CopyFromCustom(Of T)(T, T, CopyFromCustomDelegate)
+  fullName: SearchAThing.UtilExt.CopyFromCustom<T>(T, T, SearchAThing.CopyFromCustomDelegate)
+  fullName.vb: SearchAThing.UtilExt.CopyFromCustom(Of T)(T, T, SearchAThing.CopyFromCustomDelegate)
+  nameWithType: UtilExt.CopyFromCustom<T>(T, T, CopyFromCustomDelegate)
+  nameWithType.vb: UtilExt.CopyFromCustom(Of T)(T, T, CopyFromCustomDelegate)
 - uid: SearchAThing.UtilExt.CopyFromExclude*
   name: CopyFromExclude
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_CopyFromExclude_
@@ -1093,6 +742,22 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.Export
   nameWithType: UtilExt.Export
+- uid: SearchAThing.UtilExt.GetEmbeddedFileContent*
+  name: GetEmbeddedFileContent
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GetEmbeddedFileContent_
+  commentId: Overload:SearchAThing.UtilExt.GetEmbeddedFileContent
+  isSpec: "True"
+  fullName: SearchAThing.UtilExt.GetEmbeddedFileContent
+  nameWithType: UtilExt.GetEmbeddedFileContent
+- uid: SearchAThing.UtilExt.GetEmbeddedFileContent``1(System.String)
+  name: GetEmbeddedFileContent<T>(String)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GetEmbeddedFileContent__1_System_String_
+  commentId: M:SearchAThing.UtilExt.GetEmbeddedFileContent``1(System.String)
+  name.vb: GetEmbeddedFileContent(Of T)(String)
+  fullName: SearchAThing.UtilExt.GetEmbeddedFileContent<T>(System.String)
+  fullName.vb: SearchAThing.UtilExt.GetEmbeddedFileContent(Of T)(System.String)
+  nameWithType: UtilExt.GetEmbeddedFileContent<T>(String)
+  nameWithType.vb: UtilExt.GetEmbeddedFileContent(Of T)(String)
 - uid: SearchAThing.UtilExt.GetJsonArray(System.String)
   name: GetJsonArray(String)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GetJsonArray_System_String_
@@ -1113,15 +778,6 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.GetMemberName
   nameWithType: UtilExt.GetMemberName
-- uid: SearchAThing.UtilExt.GetMemberName``1(``0,Expression{Func{``0,System.Object}})
-  name: GetMemberName<T>(T, Expression<Func<T, Object>>)
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GetMemberName__1___0_Expression_Func___0_System_Object___
-  commentId: M:SearchAThing.UtilExt.GetMemberName``1(``0,Expression{Func{``0,System.Object}})
-  name.vb: GetMemberName(Of T)(T, Expression(Of Func(Of T, Object)))
-  fullName: SearchAThing.UtilExt.GetMemberName<T>(T, Expression<Func<T, System.Object>>)
-  fullName.vb: SearchAThing.UtilExt.GetMemberName(Of T)(T, Expression(Of Func(Of T, System.Object)))
-  nameWithType: UtilExt.GetMemberName<T>(T, Expression<Func<T, Object>>)
-  nameWithType.vb: UtilExt.GetMemberName(Of T)(T, Expression(Of Func(Of T, Object)))
 - uid: SearchAThing.UtilExt.GetMemberName``1(Expression{Func{``0,System.Object}})
   name: GetMemberName<T>(Expression<Func<T, Object>>)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GetMemberName__1_Expression_Func___0_System_Object___
@@ -1138,15 +794,6 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.GetMemberNames
   nameWithType: UtilExt.GetMemberNames
-- uid: SearchAThing.UtilExt.GetMemberNames``1(``0,Expression{Func{``0,System.Object}})
-  name: GetMemberNames<T>(T, Expression<Func<T, Object>>)
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GetMemberNames__1___0_Expression_Func___0_System_Object___
-  commentId: M:SearchAThing.UtilExt.GetMemberNames``1(``0,Expression{Func{``0,System.Object}})
-  name.vb: GetMemberNames(Of T)(T, Expression(Of Func(Of T, Object)))
-  fullName: SearchAThing.UtilExt.GetMemberNames<T>(T, Expression<Func<T, System.Object>>)
-  fullName.vb: SearchAThing.UtilExt.GetMemberNames(Of T)(T, Expression(Of Func(Of T, System.Object)))
-  nameWithType: UtilExt.GetMemberNames<T>(T, Expression<Func<T, Object>>)
-  nameWithType.vb: UtilExt.GetMemberNames(Of T)(T, Expression(Of Func(Of T, Object)))
 - uid: SearchAThing.UtilExt.GetMemberNames``1(Expression{Func{``0,System.Object}})
   name: GetMemberNames<T>(Expression<Func<T, Object>>)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GetMemberNames__1_Expression_Func___0_System_Object___
@@ -1156,22 +803,6 @@ references:
   fullName.vb: SearchAThing.UtilExt.GetMemberNames(Of T)(Expression(Of Func(Of T, System.Object)))
   nameWithType: UtilExt.GetMemberNames<T>(Expression<Func<T, Object>>)
   nameWithType.vb: UtilExt.GetMemberNames(Of T)(Expression(Of Func(Of T, Object)))
-- uid: SearchAThing.UtilExt.GetMemberNamesExt*
-  name: GetMemberNamesExt
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GetMemberNamesExt_
-  commentId: Overload:SearchAThing.UtilExt.GetMemberNamesExt
-  isSpec: "True"
-  fullName: SearchAThing.UtilExt.GetMemberNamesExt
-  nameWithType: UtilExt.GetMemberNamesExt
-- uid: SearchAThing.UtilExt.GetMemberNamesExt``1(Expression{Func{``0,System.Object}})
-  name: GetMemberNamesExt<T>(Expression<Func<T, Object>>)
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GetMemberNamesExt__1_Expression_Func___0_System_Object___
-  commentId: M:SearchAThing.UtilExt.GetMemberNamesExt``1(Expression{Func{``0,System.Object}})
-  name.vb: GetMemberNamesExt(Of T)(Expression(Of Func(Of T, Object)))
-  fullName: SearchAThing.UtilExt.GetMemberNamesExt<T>(Expression<Func<T, System.Object>>)
-  fullName.vb: SearchAThing.UtilExt.GetMemberNamesExt(Of T)(Expression(Of Func(Of T, System.Object)))
-  nameWithType: UtilExt.GetMemberNamesExt<T>(Expression<Func<T, Object>>)
-  nameWithType.vb: UtilExt.GetMemberNamesExt(Of T)(Expression(Of Func(Of T, Object)))
 - uid: SearchAThing.UtilExt.GreatThanOrEqualsTol(System.Double,System.Double,System.Double)
   name: GreatThanOrEqualsTol(Double, Double, Double)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GreatThanOrEqualsTol_System_Double_System_Double_System_Double_
@@ -1652,19 +1283,6 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.ToDeg
   nameWithType: UtilExt.ToDeg
-- uid: SearchAThing.UtilExt.ToExpando(System.Object)
-  name: ToExpando(Object)
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_ToExpando_System_Object_
-  commentId: M:SearchAThing.UtilExt.ToExpando(System.Object)
-  fullName: SearchAThing.UtilExt.ToExpando(System.Object)
-  nameWithType: UtilExt.ToExpando(Object)
-- uid: SearchAThing.UtilExt.ToExpando*
-  name: ToExpando
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_ToExpando_
-  commentId: Overload:SearchAThing.UtilExt.ToExpando
-  isSpec: "True"
-  fullName: SearchAThing.UtilExt.ToExpando
-  nameWithType: UtilExt.ToExpando
 - uid: SearchAThing.UtilExt.ToJson(System.Object)
   name: ToJson(Object)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_ToJson_System_Object_
@@ -1801,6 +1419,416 @@ references:
   fullName.vb: SearchAThing.UtilExt.WithIndexIsLast(Of T)(IEnumerable(Of T))
   nameWithType: UtilExt.WithIndexIsLast<T>(IEnumerable<T>)
   nameWithType.vb: UtilExt.WithIndexIsLast(Of T)(IEnumerable(Of T))
+- uid: SearchAThing.UtilToolkit
+  name: UtilToolkit
+  href: api/SearchAThing.UtilToolkit.html
+  commentId: T:SearchAThing.UtilToolkit
+  fullName: SearchAThing.UtilToolkit
+  nameWithType: UtilToolkit
+- uid: SearchAThing.UtilToolkit.AppDataFolder(System.String)
+  name: AppDataFolder(String)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_AppDataFolder_System_String_
+  commentId: M:SearchAThing.UtilToolkit.AppDataFolder(System.String)
+  fullName: SearchAThing.UtilToolkit.AppDataFolder(System.String)
+  nameWithType: UtilToolkit.AppDataFolder(String)
+- uid: SearchAThing.UtilToolkit.AppDataFolder*
+  name: AppDataFolder
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_AppDataFolder_
+  commentId: Overload:SearchAThing.UtilToolkit.AppDataFolder
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.AppDataFolder
+  nameWithType: UtilToolkit.AppDataFolder
+- uid: SearchAThing.UtilToolkit.BuildImage(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  name: BuildImage(String, String, CancellationToken, Boolean, Boolean)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_BuildImage_System_String_System_String_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.UtilToolkit.BuildImage(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  fullName: SearchAThing.UtilToolkit.BuildImage(System.String, System.String, CancellationToken, System.Boolean, System.Boolean)
+  nameWithType: UtilToolkit.BuildImage(String, String, CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.UtilToolkit.BuildImage*
+  name: BuildImage
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_BuildImage_
+  commentId: Overload:SearchAThing.UtilToolkit.BuildImage
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.BuildImage
+  nameWithType: UtilToolkit.BuildImage
+- uid: SearchAThing.UtilToolkit.CreateNetwork(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  name: CreateNetwork(String, String, CancellationToken, Boolean, Boolean)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_CreateNetwork_System_String_System_String_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.UtilToolkit.CreateNetwork(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  fullName: SearchAThing.UtilToolkit.CreateNetwork(System.String, System.String, CancellationToken, System.Boolean, System.Boolean)
+  nameWithType: UtilToolkit.CreateNetwork(String, String, CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.UtilToolkit.CreateNetwork*
+  name: CreateNetwork
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_CreateNetwork_
+  commentId: Overload:SearchAThing.UtilToolkit.CreateNetwork
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.CreateNetwork
+  nameWithType: UtilToolkit.CreateNetwork
+- uid: SearchAThing.UtilToolkit.DeflateEmbeddedResource(Assembly,System.String)
+  name: DeflateEmbeddedResource(Assembly, String)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_DeflateEmbeddedResource_Assembly_System_String_
+  commentId: M:SearchAThing.UtilToolkit.DeflateEmbeddedResource(Assembly,System.String)
+  fullName: SearchAThing.UtilToolkit.DeflateEmbeddedResource(Assembly, System.String)
+  nameWithType: UtilToolkit.DeflateEmbeddedResource(Assembly, String)
+- uid: SearchAThing.UtilToolkit.DeflateEmbeddedResource*
+  name: DeflateEmbeddedResource
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_DeflateEmbeddedResource_
+  commentId: Overload:SearchAThing.UtilToolkit.DeflateEmbeddedResource
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.DeflateEmbeddedResource
+  nameWithType: UtilToolkit.DeflateEmbeddedResource
+- uid: SearchAThing.UtilToolkit.DynamicMakeDictionary(System.Object)
+  name: DynamicMakeDictionary(Object)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_DynamicMakeDictionary_System_Object_
+  commentId: M:SearchAThing.UtilToolkit.DynamicMakeDictionary(System.Object)
+  fullName: SearchAThing.UtilToolkit.DynamicMakeDictionary(System.Object)
+  nameWithType: UtilToolkit.DynamicMakeDictionary(Object)
+- uid: SearchAThing.UtilToolkit.DynamicMakeDictionary*
+  name: DynamicMakeDictionary
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_DynamicMakeDictionary_
+  commentId: Overload:SearchAThing.UtilToolkit.DynamicMakeDictionary
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.DynamicMakeDictionary
+  nameWithType: UtilToolkit.DynamicMakeDictionary
+- uid: SearchAThing.UtilToolkit.EnsureFolder(System.String)
+  name: EnsureFolder(String)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_EnsureFolder_System_String_
+  commentId: M:SearchAThing.UtilToolkit.EnsureFolder(System.String)
+  fullName: SearchAThing.UtilToolkit.EnsureFolder(System.String)
+  nameWithType: UtilToolkit.EnsureFolder(String)
+- uid: SearchAThing.UtilToolkit.EnsureFolder*
+  name: EnsureFolder
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_EnsureFolder_
+  commentId: Overload:SearchAThing.UtilToolkit.EnsureFolder
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.EnsureFolder
+  nameWithType: UtilToolkit.EnsureFolder
+- uid: SearchAThing.UtilToolkit.Exec(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name: Exec(String, IEnumerable<String>, CancellationToken, Boolean, Boolean, Boolean, Boolean)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_Exec_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.UtilToolkit.Exec(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  name.vb: Exec(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean, Boolean, Boolean)
+  fullName: SearchAThing.UtilToolkit.Exec(System.String, IEnumerable<System.String>, CancellationToken, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
+  fullName.vb: SearchAThing.UtilToolkit.Exec(System.String, IEnumerable(Of System.String), CancellationToken, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
+  nameWithType: UtilToolkit.Exec(String, IEnumerable<String>, CancellationToken, Boolean, Boolean, Boolean, Boolean)
+  nameWithType.vb: UtilToolkit.Exec(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean, Boolean, Boolean)
+- uid: SearchAThing.UtilToolkit.Exec*
+  name: Exec
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_Exec_
+  commentId: Overload:SearchAThing.UtilToolkit.Exec
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.Exec
+  nameWithType: UtilToolkit.Exec
+- uid: SearchAThing.UtilToolkit.ExecBashRedirect(System.String,CancellationToken,System.Boolean,System.Boolean)
+  name: ExecBashRedirect(String, CancellationToken, Boolean, Boolean)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ExecBashRedirect_System_String_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.UtilToolkit.ExecBashRedirect(System.String,CancellationToken,System.Boolean,System.Boolean)
+  fullName: SearchAThing.UtilToolkit.ExecBashRedirect(System.String, CancellationToken, System.Boolean, System.Boolean)
+  nameWithType: UtilToolkit.ExecBashRedirect(String, CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.UtilToolkit.ExecBashRedirect*
+  name: ExecBashRedirect
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ExecBashRedirect_
+  commentId: Overload:SearchAThing.UtilToolkit.ExecBashRedirect
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.ExecBashRedirect
+  nameWithType: UtilToolkit.ExecBashRedirect
+- uid: SearchAThing.UtilToolkit.ExecContainerCmd(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  name: ExecContainerCmd(String, String, CancellationToken, Boolean, Boolean)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ExecContainerCmd_System_String_System_String_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.UtilToolkit.ExecContainerCmd(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  fullName: SearchAThing.UtilToolkit.ExecContainerCmd(System.String, System.String, CancellationToken, System.Boolean, System.Boolean)
+  nameWithType: UtilToolkit.ExecContainerCmd(String, String, CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.UtilToolkit.ExecContainerCmd*
+  name: ExecContainerCmd
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ExecContainerCmd_
+  commentId: Overload:SearchAThing.UtilToolkit.ExecContainerCmd
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.ExecContainerCmd
+  nameWithType: UtilToolkit.ExecContainerCmd
+- uid: SearchAThing.UtilToolkit.ExecNoRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  name: ExecNoRedirect(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ExecNoRedirect_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.UtilToolkit.ExecNoRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  name.vb: ExecNoRedirect(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.UtilToolkit.ExecNoRedirect(System.String, IEnumerable<System.String>, CancellationToken, System.Boolean, System.Boolean)
+  fullName.vb: SearchAThing.UtilToolkit.ExecNoRedirect(System.String, IEnumerable(Of System.String), CancellationToken, System.Boolean, System.Boolean)
+  nameWithType: UtilToolkit.ExecNoRedirect(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
+  nameWithType.vb: UtilToolkit.ExecNoRedirect(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.UtilToolkit.ExecNoRedirect*
+  name: ExecNoRedirect
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ExecNoRedirect_
+  commentId: Overload:SearchAThing.UtilToolkit.ExecNoRedirect
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.ExecNoRedirect
+  nameWithType: UtilToolkit.ExecNoRedirect
+- uid: SearchAThing.UtilToolkit.ExecRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  name: ExecRedirect(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ExecRedirect_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.UtilToolkit.ExecRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  name.vb: ExecRedirect(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.UtilToolkit.ExecRedirect(System.String, IEnumerable<System.String>, CancellationToken, System.Boolean, System.Boolean)
+  fullName.vb: SearchAThing.UtilToolkit.ExecRedirect(System.String, IEnumerable(Of System.String), CancellationToken, System.Boolean, System.Boolean)
+  nameWithType: UtilToolkit.ExecRedirect(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
+  nameWithType.vb: UtilToolkit.ExecRedirect(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.UtilToolkit.ExecRedirect*
+  name: ExecRedirect
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ExecRedirect_
+  commentId: Overload:SearchAThing.UtilToolkit.ExecRedirect
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.ExecRedirect
+  nameWithType: UtilToolkit.ExecRedirect
+- uid: SearchAThing.UtilToolkit.ExecRedirectError(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  name: ExecRedirectError(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ExecRedirectError_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.UtilToolkit.ExecRedirectError(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)
+  name.vb: ExecRedirectError(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.UtilToolkit.ExecRedirectError(System.String, IEnumerable<System.String>, CancellationToken, System.Boolean, System.Boolean)
+  fullName.vb: SearchAThing.UtilToolkit.ExecRedirectError(System.String, IEnumerable(Of System.String), CancellationToken, System.Boolean, System.Boolean)
+  nameWithType: UtilToolkit.ExecRedirectError(String, IEnumerable<String>, CancellationToken, Boolean, Boolean)
+  nameWithType.vb: UtilToolkit.ExecRedirectError(String, IEnumerable(Of String), CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.UtilToolkit.ExecRedirectError*
+  name: ExecRedirectError
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ExecRedirectError_
+  commentId: Overload:SearchAThing.UtilToolkit.ExecRedirectError
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.ExecRedirectError
+  nameWithType: UtilToolkit.ExecRedirectError
+- uid: SearchAThing.UtilToolkit.GetEmbeddedResourceNames
+  name: GetEmbeddedResourceNames()
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_GetEmbeddedResourceNames
+  commentId: M:SearchAThing.UtilToolkit.GetEmbeddedResourceNames
+  fullName: SearchAThing.UtilToolkit.GetEmbeddedResourceNames()
+  nameWithType: UtilToolkit.GetEmbeddedResourceNames()
+- uid: SearchAThing.UtilToolkit.GetEmbeddedResourceNames*
+  name: GetEmbeddedResourceNames
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_GetEmbeddedResourceNames_
+  commentId: Overload:SearchAThing.UtilToolkit.GetEmbeddedResourceNames
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.GetEmbeddedResourceNames
+  nameWithType: UtilToolkit.GetEmbeddedResourceNames
+- uid: SearchAThing.UtilToolkit.GetEmbeddedResourcesList*
+  name: GetEmbeddedResourcesList
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_GetEmbeddedResourcesList_
+  commentId: Overload:SearchAThing.UtilToolkit.GetEmbeddedResourcesList
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.GetEmbeddedResourcesList
+  nameWithType: UtilToolkit.GetEmbeddedResourcesList
+- uid: SearchAThing.UtilToolkit.GetEmbeddedResourcesList``1
+  name: GetEmbeddedResourcesList<T>()
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_GetEmbeddedResourcesList__1
+  commentId: M:SearchAThing.UtilToolkit.GetEmbeddedResourcesList``1
+  name.vb: GetEmbeddedResourcesList(Of T)()
+  fullName: SearchAThing.UtilToolkit.GetEmbeddedResourcesList<T>()
+  fullName.vb: SearchAThing.UtilToolkit.GetEmbeddedResourcesList(Of T)()
+  nameWithType: UtilToolkit.GetEmbeddedResourcesList<T>()
+  nameWithType.vb: UtilToolkit.GetEmbeddedResourcesList(Of T)()
+- uid: SearchAThing.UtilToolkit.GetMemberName*
+  name: GetMemberName
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_GetMemberName_
+  commentId: Overload:SearchAThing.UtilToolkit.GetMemberName
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.GetMemberName
+  nameWithType: UtilToolkit.GetMemberName
+- uid: SearchAThing.UtilToolkit.GetMemberName``1(``0,Expression{Func{``0,System.Object}})
+  name: GetMemberName<T>(T, Expression<Func<T, Object>>)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_GetMemberName__1___0_Expression_Func___0_System_Object___
+  commentId: M:SearchAThing.UtilToolkit.GetMemberName``1(``0,Expression{Func{``0,System.Object}})
+  name.vb: GetMemberName(Of T)(T, Expression(Of Func(Of T, Object)))
+  fullName: SearchAThing.UtilToolkit.GetMemberName<T>(T, Expression<Func<T, System.Object>>)
+  fullName.vb: SearchAThing.UtilToolkit.GetMemberName(Of T)(T, Expression(Of Func(Of T, System.Object)))
+  nameWithType: UtilToolkit.GetMemberName<T>(T, Expression<Func<T, Object>>)
+  nameWithType.vb: UtilToolkit.GetMemberName(Of T)(T, Expression(Of Func(Of T, Object)))
+- uid: SearchAThing.UtilToolkit.GetMemberNames*
+  name: GetMemberNames
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_GetMemberNames_
+  commentId: Overload:SearchAThing.UtilToolkit.GetMemberNames
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.GetMemberNames
+  nameWithType: UtilToolkit.GetMemberNames
+- uid: SearchAThing.UtilToolkit.GetMemberNames``1(``0,Expression{Func{``0,System.Object}})
+  name: GetMemberNames<T>(T, Expression<Func<T, Object>>)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_GetMemberNames__1___0_Expression_Func___0_System_Object___
+  commentId: M:SearchAThing.UtilToolkit.GetMemberNames``1(``0,Expression{Func{``0,System.Object}})
+  name.vb: GetMemberNames(Of T)(T, Expression(Of Func(Of T, Object)))
+  fullName: SearchAThing.UtilToolkit.GetMemberNames<T>(T, Expression<Func<T, System.Object>>)
+  fullName.vb: SearchAThing.UtilToolkit.GetMemberNames(Of T)(T, Expression(Of Func(Of T, System.Object)))
+  nameWithType: UtilToolkit.GetMemberNames<T>(T, Expression<Func<T, Object>>)
+  nameWithType.vb: UtilToolkit.GetMemberNames(Of T)(T, Expression(Of Func(Of T, Object)))
+- uid: SearchAThing.UtilToolkit.GetMemberNamesExt*
+  name: GetMemberNamesExt
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_GetMemberNamesExt_
+  commentId: Overload:SearchAThing.UtilToolkit.GetMemberNamesExt
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.GetMemberNamesExt
+  nameWithType: UtilToolkit.GetMemberNamesExt
+- uid: SearchAThing.UtilToolkit.GetMemberNamesExt``1(Expression{Func{``0,System.Object}})
+  name: GetMemberNamesExt<T>(Expression<Func<T, Object>>)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_GetMemberNamesExt__1_Expression_Func___0_System_Object___
+  commentId: M:SearchAThing.UtilToolkit.GetMemberNamesExt``1(Expression{Func{``0,System.Object}})
+  name.vb: GetMemberNamesExt(Of T)(Expression(Of Func(Of T, Object)))
+  fullName: SearchAThing.UtilToolkit.GetMemberNamesExt<T>(Expression<Func<T, System.Object>>)
+  fullName.vb: SearchAThing.UtilToolkit.GetMemberNamesExt(Of T)(Expression(Of Func(Of T, System.Object)))
+  nameWithType: UtilToolkit.GetMemberNamesExt<T>(Expression<Func<T, Object>>)
+  nameWithType.vb: UtilToolkit.GetMemberNamesExt(Of T)(Expression(Of Func(Of T, Object)))
+- uid: SearchAThing.UtilToolkit.ListContainers(CancellationToken,System.Boolean,System.Boolean)
+  name: ListContainers(CancellationToken, Boolean, Boolean)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ListContainers_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.UtilToolkit.ListContainers(CancellationToken,System.Boolean,System.Boolean)
+  fullName: SearchAThing.UtilToolkit.ListContainers(CancellationToken, System.Boolean, System.Boolean)
+  nameWithType: UtilToolkit.ListContainers(CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.UtilToolkit.ListContainers*
+  name: ListContainers
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ListContainers_
+  commentId: Overload:SearchAThing.UtilToolkit.ListContainers
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.ListContainers
+  nameWithType: UtilToolkit.ListContainers
+- uid: SearchAThing.UtilToolkit.ListNetworks(CancellationToken,System.Boolean,System.Boolean)
+  name: ListNetworks(CancellationToken, Boolean, Boolean)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ListNetworks_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.UtilToolkit.ListNetworks(CancellationToken,System.Boolean,System.Boolean)
+  fullName: SearchAThing.UtilToolkit.ListNetworks(CancellationToken, System.Boolean, System.Boolean)
+  nameWithType: UtilToolkit.ListNetworks(CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.UtilToolkit.ListNetworks*
+  name: ListNetworks
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ListNetworks_
+  commentId: Overload:SearchAThing.UtilToolkit.ListNetworks
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.ListNetworks
+  nameWithType: UtilToolkit.ListNetworks
+- uid: SearchAThing.UtilToolkit.MakeDynamic(System.ValueTuple{System.String,System.Object}[])
+  name: MakeDynamic((String name, Object value)[])
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_MakeDynamic_System_ValueTuple_System_String_System_Object____
+  commentId: M:SearchAThing.UtilToolkit.MakeDynamic(System.ValueTuple{System.String,System.Object}[])
+  name.vb: MakeDynamic((name As String, value As Object)())
+  fullName: SearchAThing.UtilToolkit.MakeDynamic(System.ValueTuple<System.String, System.Object>[])
+  fullName.vb: SearchAThing.UtilToolkit.MakeDynamic(System.ValueTuple(Of System.String, System.Object)())
+  nameWithType: UtilToolkit.MakeDynamic((String name, Object value)[])
+  nameWithType.vb: UtilToolkit.MakeDynamic((name As String, value As Object)())
+- uid: SearchAThing.UtilToolkit.MakeDynamic*
+  name: MakeDynamic
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_MakeDynamic_
+  commentId: Overload:SearchAThing.UtilToolkit.MakeDynamic
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.MakeDynamic
+  nameWithType: UtilToolkit.MakeDynamic
+- uid: SearchAThing.UtilToolkit.RandomPassword(SearchAThing.RandomPasswordOptions)
+  name: RandomPassword(RandomPasswordOptions)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_RandomPassword_SearchAThing_RandomPasswordOptions_
+  commentId: M:SearchAThing.UtilToolkit.RandomPassword(SearchAThing.RandomPasswordOptions)
+  fullName: SearchAThing.UtilToolkit.RandomPassword(SearchAThing.RandomPasswordOptions)
+  nameWithType: UtilToolkit.RandomPassword(RandomPasswordOptions)
+- uid: SearchAThing.UtilToolkit.RandomPassword*
+  name: RandomPassword
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_RandomPassword_
+  commentId: Overload:SearchAThing.UtilToolkit.RandomPassword
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.RandomPassword
+  nameWithType: UtilToolkit.RandomPassword
+- uid: SearchAThing.UtilToolkit.RemoveContainer(System.String,CancellationToken,System.Boolean,System.Boolean)
+  name: RemoveContainer(String, CancellationToken, Boolean, Boolean)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_RemoveContainer_System_String_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.UtilToolkit.RemoveContainer(System.String,CancellationToken,System.Boolean,System.Boolean)
+  fullName: SearchAThing.UtilToolkit.RemoveContainer(System.String, CancellationToken, System.Boolean, System.Boolean)
+  nameWithType: UtilToolkit.RemoveContainer(String, CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.UtilToolkit.RemoveContainer*
+  name: RemoveContainer
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_RemoveContainer_
+  commentId: Overload:SearchAThing.UtilToolkit.RemoveContainer
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.RemoveContainer
+  nameWithType: UtilToolkit.RemoveContainer
+- uid: SearchAThing.UtilToolkit.RemoveNetwork(System.String,CancellationToken,System.Boolean,System.Boolean)
+  name: RemoveNetwork(String, CancellationToken, Boolean, Boolean)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_RemoveNetwork_System_String_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.UtilToolkit.RemoveNetwork(System.String,CancellationToken,System.Boolean,System.Boolean)
+  fullName: SearchAThing.UtilToolkit.RemoveNetwork(System.String, CancellationToken, System.Boolean, System.Boolean)
+  nameWithType: UtilToolkit.RemoveNetwork(String, CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.UtilToolkit.RemoveNetwork*
+  name: RemoveNetwork
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_RemoveNetwork_
+  commentId: Overload:SearchAThing.UtilToolkit.RemoveNetwork
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.RemoveNetwork
+  nameWithType: UtilToolkit.RemoveNetwork
+- uid: SearchAThing.UtilToolkit.RunContainer(System.String,System.String,System.String,System.String,System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  name: RunContainer(String, String, String, String, String, String, CancellationToken, Boolean, Boolean)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_RunContainer_System_String_System_String_System_String_System_String_System_String_System_String_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.UtilToolkit.RunContainer(System.String,System.String,System.String,System.String,System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
+  fullName: SearchAThing.UtilToolkit.RunContainer(System.String, System.String, System.String, System.String, System.String, System.String, CancellationToken, System.Boolean, System.Boolean)
+  nameWithType: UtilToolkit.RunContainer(String, String, String, String, String, String, CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.UtilToolkit.RunContainer*
+  name: RunContainer
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_RunContainer_
+  commentId: Overload:SearchAThing.UtilToolkit.RunContainer
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.RunContainer
+  nameWithType: UtilToolkit.RunContainer
+- uid: SearchAThing.UtilToolkit.SaveEmbeddedResourceToFile(System.String,System.String,System.Boolean)
+  name: SaveEmbeddedResourceToFile(String, String, Boolean)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_SaveEmbeddedResourceToFile_System_String_System_String_System_Boolean_
+  commentId: M:SearchAThing.UtilToolkit.SaveEmbeddedResourceToFile(System.String,System.String,System.Boolean)
+  fullName: SearchAThing.UtilToolkit.SaveEmbeddedResourceToFile(System.String, System.String, System.Boolean)
+  nameWithType: UtilToolkit.SaveEmbeddedResourceToFile(String, String, Boolean)
+- uid: SearchAThing.UtilToolkit.SaveEmbeddedResourceToFile*
+  name: SaveEmbeddedResourceToFile
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_SaveEmbeddedResourceToFile_
+  commentId: Overload:SearchAThing.UtilToolkit.SaveEmbeddedResourceToFile
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.SaveEmbeddedResourceToFile
+  nameWithType: UtilToolkit.SaveEmbeddedResourceToFile
+- uid: SearchAThing.UtilToolkit.SearchInPath(System.String)
+  name: SearchInPath(String)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_SearchInPath_System_String_
+  commentId: M:SearchAThing.UtilToolkit.SearchInPath(System.String)
+  fullName: SearchAThing.UtilToolkit.SearchInPath(System.String)
+  nameWithType: UtilToolkit.SearchInPath(String)
+- uid: SearchAThing.UtilToolkit.SearchInPath*
+  name: SearchInPath
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_SearchInPath_
+  commentId: Overload:SearchAThing.UtilToolkit.SearchInPath
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.SearchInPath
+  nameWithType: UtilToolkit.SearchInPath
+- uid: SearchAThing.UtilToolkit.StopContainer(System.String,CancellationToken,System.Boolean,System.Boolean)
+  name: StopContainer(String, CancellationToken, Boolean, Boolean)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_StopContainer_System_String_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.UtilToolkit.StopContainer(System.String,CancellationToken,System.Boolean,System.Boolean)
+  fullName: SearchAThing.UtilToolkit.StopContainer(System.String, CancellationToken, System.Boolean, System.Boolean)
+  nameWithType: UtilToolkit.StopContainer(String, CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.UtilToolkit.StopContainer*
+  name: StopContainer
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_StopContainer_
+  commentId: Overload:SearchAThing.UtilToolkit.StopContainer
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.StopContainer
+  nameWithType: UtilToolkit.StopContainer
+- uid: SearchAThing.UtilToolkit.ToExpando(System.Object)
+  name: ToExpando(Object)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ToExpando_System_Object_
+  commentId: M:SearchAThing.UtilToolkit.ToExpando(System.Object)
+  fullName: SearchAThing.UtilToolkit.ToExpando(System.Object)
+  nameWithType: UtilToolkit.ToExpando(Object)
+- uid: SearchAThing.UtilToolkit.ToExpando*
+  name: ToExpando
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ToExpando_
+  commentId: Overload:SearchAThing.UtilToolkit.ToExpando
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.ToExpando
+  nameWithType: UtilToolkit.ToExpando
+- uid: SearchAThing.UtilToolkit.XorNull(System.Object,System.Object)
+  name: XorNull(Object, Object)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_XorNull_System_Object_System_Object_
+  commentId: M:SearchAThing.UtilToolkit.XorNull(System.Object,System.Object)
+  fullName: SearchAThing.UtilToolkit.XorNull(System.Object, System.Object)
+  nameWithType: UtilToolkit.XorNull(Object, Object)
+- uid: SearchAThing.UtilToolkit.XorNull*
+  name: XorNull
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_XorNull_
+  commentId: Overload:SearchAThing.UtilToolkit.XorNull
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.XorNull
+  nameWithType: UtilToolkit.XorNull
 - uid: SearchAThing.ValueObj`1
   name: ValueObj<T>
   href: api/SearchAThing.ValueObj-1.html

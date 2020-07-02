@@ -9,7 +9,43 @@
       "output": {
         ".html": {
           "relative_path": "api/SearchAThing.ColumnAlignment.html",
-          "hash": "QdslTFzIalZGDebGtnhkaw=="
+          "hash": "FcVGdAcMHIlZWZ7tRx2gpA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.CopyFromCustomDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.CopyFromCustomDelegate.html",
+          "hash": "JRmaOssrU9Lk48tlBZDzBQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.DockerContainerNfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.DockerContainerNfo.html",
+          "hash": "YMUFwUK17Tf0iP0n0Kt8og=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.DockerNetworkNfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.DockerNetworkNfo.html",
+          "hash": "/HivoTygqPOgwemiyba3rw=="
         }
       },
       "is_incremental": true,
@@ -21,7 +57,19 @@
       "output": {
         ".html": {
           "relative_path": "api/SearchAThing.ErrorInfo.html",
-          "hash": "yELvXrPFuUkezvx3vMqLvg=="
+          "hash": "GMdalyzuCHf1RM+8KmPJyw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.RandomPasswordOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.RandomPasswordOptions.html",
+          "hash": "Om/vdjF7wvG0DSRbGHKAAg=="
         }
       },
       "is_incremental": true,
@@ -33,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SearchAThing.StringWrapper.html",
-          "hash": "RRBKu9CjNpjMy2kf//vcIA=="
+          "hash": "fmzB/r3dNnftfF6DbPGvNQ=="
         }
       },
       "is_incremental": true,
@@ -45,103 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SearchAThing.StringWrapperLineReader.html",
-          "hash": "0j6wn1NrJZV7XZBrqUmwFA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.Toolkit.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SearchAThing.Toolkit.html",
-          "hash": "lLNRT2I+A12GmtsAa5uC2A=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.Util.DockerContainerNfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SearchAThing.Util.DockerContainerNfo.html",
-          "hash": "nufkB4nwnzU+rvzWZMTQvw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.Util.DockerNetworkNfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SearchAThing.Util.DockerNetworkNfo.html",
-          "hash": "IQo8i9xrZHkR4Wi1riJ5og=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.Util.PathUtil.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SearchAThing.Util.PathUtil.html",
-          "hash": "jWM7ughim+/pXtOzVnuxuQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.Util.RandomPasswordOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SearchAThing.Util.RandomPasswordOptions.html",
-          "hash": "j5VMFM6Skvyi0LCBxelR8Q=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.Util.Toolkit.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SearchAThing.Util.Toolkit.html",
-          "hash": "0K9/pmqkqqkJoJ477GmsJw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.Util.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SearchAThing.Util.html",
-          "hash": "MIjboJSua+PcqTy/SLAPzg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SearchAThing.UtilExt.CopyFromCustomDelegate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SearchAThing.UtilExt.CopyFromCustomDelegate.html",
-          "hash": "cp3CZF2wEnM2YWz4Fb+IIw=="
+          "hash": "wQxpToivJM+MtrUu2T2mLQ=="
         }
       },
       "is_incremental": true,
@@ -153,7 +105,19 @@
       "output": {
         ".html": {
           "relative_path": "api/SearchAThing.UtilExt.html",
-          "hash": "jn++xfxfUOMjxhegJU/QnA=="
+          "hash": "oE95PMzEztvhbF+7cU4EgQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.UtilToolkit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.UtilToolkit.html",
+          "hash": "irzgHa5SzB4w4ZZh/Si3Jw=="
         }
       },
       "is_incremental": true,
@@ -165,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SearchAThing.ValueObj-1.html",
-          "hash": "87xObmksh9EXTD/J6v7YkQ=="
+          "hash": "b1C83opxj8VZQB3m2bl7Kg=="
         }
       },
       "is_incremental": true,
@@ -177,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SearchAThing.html",
-          "hash": "FRQPU5KWZlz5rQF/e0Hbvg=="
+          "hash": "3zvm7dh1J8Pp9tb1Is6p2Q=="
         }
       },
       "is_incremental": true,
@@ -189,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "9Hz5eg0mmhpLHWEM9Vbstg=="
+          "hash": "BmIGSRCTjX4qxY2H2AU+aQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -201,10 +165,22 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "kH3yHAPnht3KhDhy8wlFUA=="
+          "hash": "ZJsq3n6VzD+gk3UleZVKJg=="
         }
       },
       "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/embedded-resources.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/embedded-resources.html",
+          "hash": "RD3M/eYiocjH/k0Kcb41ow=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -213,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "eWwx0Puh3ALHfCb4qQ4bLA=="
+          "hash": "PSYOuLY5PAKPcTB4E4fSEQ=="
         }
       },
       "is_incremental": true,
@@ -225,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "gB8AESyvNru97tzIZofEEg=="
+          "hash": "+YMOYEUDRCP2EZcEJ+Mr/g=="
         }
       },
       "is_incremental": false,
@@ -240,10 +216,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "0tWYO51v5L34VlKYwdWhbQ=="
+          "hash": "L9dD0ax47VUQszkMyyErRw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -271,14 +247,14 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 3,
-          "skipped_file_count": 1
+          "total_file_count": 4,
+          "skipped_file_count": 4
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 15,
-          "skipped_file_count": 15
+          "total_file_count": 12,
+          "skipped_file_count": 12
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
