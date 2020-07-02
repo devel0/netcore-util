@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Runtime.CompilerServices;
 using static System.Math;
 
 namespace SearchAThing
@@ -165,7 +166,7 @@ namespace SearchAThing
             var decfmt = "#".Repeat(significantDigits);
             return string.Format(CultureInfo.InvariantCulture, "{0:0." + decfmt + "}", d);
         }
-
+        
         public static bool EqualsTol(this double x, double tol, double y)
         {
             return Abs(x - y) <= tol;

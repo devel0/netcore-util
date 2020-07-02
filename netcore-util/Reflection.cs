@@ -5,6 +5,8 @@ using System.Reflection;
 namespace SearchAThing
 {
 
+    public delegate (bool include, bool customValue, object valueIfCustom) CopyFromCustomDelegate(PropertyInfo pi, object val);
+
     public static partial class UtilExt
     {
 
@@ -32,9 +34,7 @@ namespace SearchAThing
                 p.SetValue(obj, p.GetValue(other));
 
             return obj;
-        }
-
-        public delegate (bool include, bool customValue, object valueIfCustom) CopyFromCustomDelegate(PropertyInfo pi, object val);
+        }        
 
         /// <summary>
         /// copy properties from other object ; a custom non null delegate function can be passed to specify

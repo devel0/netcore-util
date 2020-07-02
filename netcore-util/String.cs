@@ -12,6 +12,9 @@ using static System.Math;
 namespace SearchAThing
 {
 
+    /// <summary>
+    /// generic enum for column alignment description
+    /// </summary>
     public enum ColumnAlignment { left, center, right };
 
     public static partial class UtilExt

@@ -1,7 +1,6 @@
 ﻿using System;
 using SearchAThing;
-using SearchAThing.Util;
-using static SearchAThing.Util.Toolkit;
+using static SearchAThing.UtilToolkit;
 
 namespace mytest
 {

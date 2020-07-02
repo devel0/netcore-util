@@ -28,7 +28,7 @@ namespace SearchAThing
 
     }
 
-    public static partial class Toolkit
+    public static partial class UtilToolkit
     {
 
         /// <summary>

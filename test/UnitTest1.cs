@@ -6,11 +6,11 @@ using System.Globalization;
 using System.Linq;
 using System.Dynamic;
 using System.Collections.ObjectModel;
-using static SearchAThing.Util.Toolkit;
+using static SearchAThing.UtilToolkit;
 using System.Linq.Expressions;
 using static SearchAThing.UtilExt;
 
-namespace SearchAThing.Util
+namespace SearchAThing
 {
     public class UnitTest1
     {
@@ -60,7 +60,7 @@ namespace SearchAThing.Util
         public void DynamicTest4()
         {
             var dynobj = MakeDynamic(("a", 10), ("b", 10.2));
-            var expobj = ((object)dynobj).ToExpando();
+            var expobj = ToExpando(((object)dynobj));
             Assert.True(expobj.GetType() == typeof(ExpandoObject));
         }
 
@@ -113,7 +113,7 @@ namespace SearchAThing.Util
         public void NumberTest6()
         {
             var cultureBackup = Thread.CurrentThread.CurrentCulture;
-            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("it");
+            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("it");            
             Assert.True(double.Parse("1,2").EqualsAutoTol(1.2));
             Assert.True(double.Parse("1.2").EqualsAutoTol(12));
 
@@ -221,13 +221,13 @@ namespace SearchAThing.Util
             var obj = new MemberTest1();
 
             {
-                var lst = obj.GetMemberNames(x => x.a);
+                var lst = GetMemberNames(obj, x => x.a);
                 Assert.True(lst.Count == 1);
                 Assert.True(lst.Contains("a"));
             }
 
             {
-                var lst = obj.GetMemberNames(x => new { x.a, x.b });
+                var lst = GetMemberNames(obj, x => new { x.a, x.b });
                 Assert.True(lst.Count == 2);
                 Assert.True(lst.Contains("a") && lst.Contains("b"));
                 lst = GetMemberNames<MemberTest1>(x => new { x.a, x.b }).ToHashSet();
@@ -236,7 +236,7 @@ namespace SearchAThing.Util
             }
 
             {
-                var res = obj.GetMemberName(x => x.b);
+                var res = GetMemberName(obj, x => x.b);
                 Assert.True(res == "b");
                 res = GetMemberName<MemberTest1>(x => x.b);
                 Assert.True(res == "b");
@@ -245,7 +245,7 @@ namespace SearchAThing.Util
             {
                 Assert.Throws<ArgumentException>(() =>
                 {
-                    var res = obj.GetMemberName(x => new { x.a, x.b });
+                    var res = GetMemberName(obj, x => new { x.a, x.b });
                 });
             }
         }

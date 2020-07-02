@@ -7,7 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 
-namespace SearchAThing.Util
+namespace SearchAThing
 {
 
     /// <summary>
@@ -46,6 +46,7 @@ namespace SearchAThing.Util
 
     /// <summary>
     /// docker container info
+    /// used by [ListContainer](/api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ListContainers_CancellationToken_System_Boolean_System_Boolean_)
     /// </summary>
     public class DockerContainerNfo
     {
@@ -78,7 +79,7 @@ namespace SearchAThing.Util
         }
     }
 
-    public static partial class Toolkit
+    public static partial class UtilToolkit
     {
 
 
@@ -90,12 +91,12 @@ namespace SearchAThing.Util
         {
             var res = new List<DockerNetworkNfo>();
 
-            var cmdres = await Toolkit.ExecRedirect("docker", new[] { "network", "ls", "--format", "'{{.Name}}'" }, ct, sudo, verbose);
+            var cmdres = await UtilToolkit.ExecRedirect("docker", new[] { "network", "ls", "--format", "'{{.Name}}'" }, ct, sudo, verbose);
             if (cmdres.exitcode != 0) throw new Exception($"docker execution error: [{cmdres.error}]");
 
             foreach (var network in cmdres.output.Lines().Select(w => w.StripBegin("'").StripEnd("'")))
             {
-                cmdres = await Toolkit.ExecRedirect("docker", new[] { "network", "inspect", network }, ct, sudo, verbose);
+                cmdres = await UtilToolkit.ExecRedirect("docker", new[] { "network", "inspect", network }, ct, sudo, verbose);
                 if (cmdres.exitcode != 0) throw new Exception($"docker execution error: [{cmdres.error}]");
 
                 var jsonObj = JObject.Parse("{cnf: " + cmdres.output + "}");
@@ -119,12 +120,12 @@ namespace SearchAThing.Util
         {
             var res = new List<DockerContainerNfo>();
 
-            var cmdres = await Toolkit.ExecRedirect("docker", new[] { "ps", "-a", "--format", "'{{.Names}}'" }, ct, sudo, verbose);
+            var cmdres = await UtilToolkit.ExecRedirect("docker", new[] { "ps", "-a", "--format", "'{{.Names}}'" }, ct, sudo, verbose);
             if (cmdres.exitcode != 0) throw new Exception($"docker execution error: [{cmdres.error}]");
 
             foreach (var container in cmdres.output.Lines().Select(w => w.StripBegin("'").StripEnd("'")))
             {
-                cmdres = await Toolkit.ExecRedirect("docker", new[] { "inspect", container }, ct, sudo, verbose);
+                cmdres = await UtilToolkit.ExecRedirect("docker", new[] { "inspect", container }, ct, sudo, verbose);
                 if (cmdres.exitcode != 0) throw new Exception($"docker execution error: [{cmdres.error}]");
 
                 var jsonObj = JObject.Parse("{cnf: " + cmdres.output + "}");
@@ -146,7 +147,7 @@ namespace SearchAThing.Util
         /// </summary>        
         public static async Task<int> ExecContainerCmd(string containerName, string command, CancellationToken ct, bool sudo = false, bool verbose = false)
         {
-            var res = await Toolkit.ExecNoRedirect("docker", new[]
+            var res = await UtilToolkit.ExecNoRedirect("docker", new[]
             {
                 "exec", containerName, "bash", "-c", command
             }, ct, sudo, verbose);
@@ -183,7 +184,7 @@ namespace SearchAThing.Util
                 $"--memory={memory}",
                 containerImage
             });
-            var cmdres = await Toolkit.ExecRedirect("docker", args, ct, sudo, verbose);
+            var cmdres = await UtilToolkit.ExecRedirect("docker", args, ct, sudo, verbose);
             if (cmdres.exitcode != 0)
             {
                 System.Console.WriteLine("ERROR");
@@ -201,7 +202,7 @@ namespace SearchAThing.Util
         public static async Task StopContainer(string containerName, CancellationToken ct, bool sudo = false, bool verbose = false)
         {
             System.Console.Write($"Stopping [{containerName}] container...");
-            var cmdres = await Toolkit.ExecRedirect("docker", new[] { "stop", containerName }, ct, sudo, verbose);
+            var cmdres = await UtilToolkit.ExecRedirect("docker", new[] { "stop", containerName }, ct, sudo, verbose);
             if (cmdres.exitcode != 0)
             {
                 System.Console.WriteLine("ERROR");
@@ -219,7 +220,7 @@ namespace SearchAThing.Util
         public static async Task RemoveContainer(string containerName, CancellationToken ct, bool sudo = false, bool verbose = false)
         {
             System.Console.Write($"Removing [{containerName}] container...");
-            var cmdres = await Toolkit.ExecRedirect("docker", new[] { "rm", containerName }, ct, sudo, verbose);
+            var cmdres = await UtilToolkit.ExecRedirect("docker", new[] { "rm", containerName }, ct, sudo, verbose);
             if (cmdres.exitcode != 0)
             {
                 System.Console.WriteLine("ERROR");
@@ -237,7 +238,7 @@ namespace SearchAThing.Util
         public static async Task RemoveNetwork(string networkName, CancellationToken ct, bool sudo = false, bool verbose = false)
         {
             System.Console.Write($"Removing [{networkName}] network...");
-            var cmdres = await Toolkit.ExecRedirect("docker", new[] { "network", "rm", networkName }, ct, sudo, verbose);
+            var cmdres = await UtilToolkit.ExecRedirect("docker", new[] { "network", "rm", networkName }, ct, sudo, verbose);
             if (cmdres.exitcode != 0)
             {
                 System.Console.WriteLine("ERROR");
@@ -255,7 +256,7 @@ namespace SearchAThing.Util
         public static async Task CreateNetwork(string networkName, string subnet, CancellationToken ct, bool sudo = false, bool verbose = false)
         {
             System.Console.Write($"Creating [{networkName}] network...");
-            var cmdres = await Toolkit.ExecRedirect("docker", new[] { "network", "create", $"--subnet={subnet}", networkName }, ct, sudo, verbose);
+            var cmdres = await UtilToolkit.ExecRedirect("docker", new[] { "network", "create", $"--subnet={subnet}", networkName }, ct, sudo, verbose);
             if (cmdres.exitcode != 0)
             {
                 System.Console.WriteLine("ERROR");
@@ -273,7 +274,7 @@ namespace SearchAThing.Util
         public static async Task BuildImage(string dockerImageName, string dockerSourceDir, CancellationToken ct, bool sudo = false, bool verbose = false)
         {
             System.Console.WriteLine($"Creating [{dockerImageName}] docker image...");
-            var cmdres = await Toolkit.ExecNoRedirect("docker", new[] {
+            var cmdres = await UtilToolkit.ExecNoRedirect("docker", new[] {
                 "build",
                 "--network=build",
                 "-t", dockerImageName,

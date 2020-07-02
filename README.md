@@ -7,17 +7,22 @@
 <hr/>
 
 - [API Documentation](https://devel0.github.io/netcore-util/api/SearchAThing.UtilExt.html)
+- [recent changes](#recent-changes)
 - [install](#install)
 - [debugging unit tests](#debugging-unit-tests)
 - [how this project was built](#how-this-project-was-built)
 
 <hr/>
 
+## recent changes
+
+- **1.4.0** : refactored api namespace to have partial static UtilToolkit class in SearchAThing namespace ; moved object extension methods to UtilToolkit to avoid intellisense on object type
+
 ## quickstart
 
 ```csharp
-using SearchAThing.Util;
-using static SearchAThing.UtilExt;
+using SearchAThing;
+using static SearchAThing.UtilToolkit;
 ```
 
 ## install
