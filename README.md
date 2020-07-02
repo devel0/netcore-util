@@ -10,7 +10,6 @@
 - [Recent changes](#recent-changes)
 - [Quickstart](#quickstart)
 - [Unit tests](#unit-tests)
-- [Debugging unit tests](#debugging-unit-tests)
 - [How this project was built](#how-this-project-was-built)
 
 <hr/>
