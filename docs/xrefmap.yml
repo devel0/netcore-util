@@ -1419,6 +1419,70 @@ references:
   fullName.vb: SearchAThing.UtilExt.WithIndexIsLast(Of T)(IEnumerable(Of T))
   nameWithType: UtilExt.WithIndexIsLast<T>(IEnumerable<T>)
   nameWithType.vb: UtilExt.WithIndexIsLast(Of T)(IEnumerable(Of T))
+- uid: SearchAThing.UtilExt.WithNext*
+  name: WithNext
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithNext_
+  commentId: Overload:SearchAThing.UtilExt.WithNext
+  isSpec: "True"
+  fullName: SearchAThing.UtilExt.WithNext
+  nameWithType: UtilExt.WithNext
+- uid: SearchAThing.UtilExt.WithNext``1(IEnumerable{``0})
+  name: WithNext<T>(IEnumerable<T>)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithNext__1_IEnumerable___0__
+  commentId: M:SearchAThing.UtilExt.WithNext``1(IEnumerable{``0})
+  name.vb: WithNext(Of T)(IEnumerable(Of T))
+  fullName: SearchAThing.UtilExt.WithNext<T>(IEnumerable<T>)
+  fullName.vb: SearchAThing.UtilExt.WithNext(Of T)(IEnumerable(Of T))
+  nameWithType: UtilExt.WithNext<T>(IEnumerable<T>)
+  nameWithType.vb: UtilExt.WithNext(Of T)(IEnumerable(Of T))
+- uid: SearchAThing.UtilExt.WithNextPrimitive*
+  name: WithNextPrimitive
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithNextPrimitive_
+  commentId: Overload:SearchAThing.UtilExt.WithNextPrimitive
+  isSpec: "True"
+  fullName: SearchAThing.UtilExt.WithNextPrimitive
+  nameWithType: UtilExt.WithNextPrimitive
+- uid: SearchAThing.UtilExt.WithNextPrimitive``1(IEnumerable{``0})
+  name: WithNextPrimitive<T>(IEnumerable<T>)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithNextPrimitive__1_IEnumerable___0__
+  commentId: M:SearchAThing.UtilExt.WithNextPrimitive``1(IEnumerable{``0})
+  name.vb: WithNextPrimitive(Of T)(IEnumerable(Of T))
+  fullName: SearchAThing.UtilExt.WithNextPrimitive<T>(IEnumerable<T>)
+  fullName.vb: SearchAThing.UtilExt.WithNextPrimitive(Of T)(IEnumerable(Of T))
+  nameWithType: UtilExt.WithNextPrimitive<T>(IEnumerable<T>)
+  nameWithType.vb: UtilExt.WithNextPrimitive(Of T)(IEnumerable(Of T))
+- uid: SearchAThing.UtilExt.WithPrev*
+  name: WithPrev
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithPrev_
+  commentId: Overload:SearchAThing.UtilExt.WithPrev
+  isSpec: "True"
+  fullName: SearchAThing.UtilExt.WithPrev
+  nameWithType: UtilExt.WithPrev
+- uid: SearchAThing.UtilExt.WithPrev``1(IEnumerable{``0})
+  name: WithPrev<T>(IEnumerable<T>)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithPrev__1_IEnumerable___0__
+  commentId: M:SearchAThing.UtilExt.WithPrev``1(IEnumerable{``0})
+  name.vb: WithPrev(Of T)(IEnumerable(Of T))
+  fullName: SearchAThing.UtilExt.WithPrev<T>(IEnumerable<T>)
+  fullName.vb: SearchAThing.UtilExt.WithPrev(Of T)(IEnumerable(Of T))
+  nameWithType: UtilExt.WithPrev<T>(IEnumerable<T>)
+  nameWithType.vb: UtilExt.WithPrev(Of T)(IEnumerable(Of T))
+- uid: SearchAThing.UtilExt.WithPrevPrimitive*
+  name: WithPrevPrimitive
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithPrevPrimitive_
+  commentId: Overload:SearchAThing.UtilExt.WithPrevPrimitive
+  isSpec: "True"
+  fullName: SearchAThing.UtilExt.WithPrevPrimitive
+  nameWithType: UtilExt.WithPrevPrimitive
+- uid: SearchAThing.UtilExt.WithPrevPrimitive``1(IEnumerable{``0})
+  name: WithPrevPrimitive<T>(IEnumerable<T>)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithPrevPrimitive__1_IEnumerable___0__
+  commentId: M:SearchAThing.UtilExt.WithPrevPrimitive``1(IEnumerable{``0})
+  name.vb: WithPrevPrimitive(Of T)(IEnumerable(Of T))
+  fullName: SearchAThing.UtilExt.WithPrevPrimitive<T>(IEnumerable<T>)
+  fullName.vb: SearchAThing.UtilExt.WithPrevPrimitive(Of T)(IEnumerable(Of T))
+  nameWithType: UtilExt.WithPrevPrimitive<T>(IEnumerable<T>)
+  nameWithType.vb: UtilExt.WithPrevPrimitive(Of T)(IEnumerable(Of T))
 - uid: SearchAThing.UtilToolkit
   name: UtilToolkit
   href: api/SearchAThing.UtilToolkit.html
