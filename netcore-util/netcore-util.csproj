@@ -6,6 +6,7 @@
         <PackageVersion>1.4.0</PackageVersion>
         <Title>net core util</Title>
         <Description></Description>
+        <LangVersion>8</LangVersion>        
         <Authors>Lorenzo Delana</Authors>
         <PackageTags>netcore util</PackageTags>
         <PackageProjectUrl>https://github.com/devel0/netcore-util</PackageProjectUrl>
