@@ -7,13 +7,13 @@ namespace SearchAThing
 
     public delegate (bool include, bool customValue, object valueIfCustom) CopyFromCustomDelegate(PropertyInfo pi, object val);
 
-    public static partial class UtilExt
+    public static partial class UtilToolkit
     {
 
         /// <summary>
         /// assign public properties of src to dst object
         /// </summary>        
-        public static void Assign<T>(this T src, T dst, Func<PropertyInfo, bool> exclude = null)
+        public static void Assign<T>(T src, T dst, Func<PropertyInfo, bool> exclude = null)
         {
             foreach (var item in src.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.GetProperty))
             {
@@ -26,7 +26,7 @@ namespace SearchAThing
         /// <summary>
         /// copy properties from other object ; if match functor specified it copies only matched properties
         /// </summary>        
-        public static T CopyFrom<T>(this T obj, T other, Func<PropertyInfo, bool> match = null)
+        public static T CopyFrom<T>(T obj, T other, Func<PropertyInfo, bool> match = null)
         {
             var type = typeof(T);
 
@@ -34,13 +34,13 @@ namespace SearchAThing
                 p.SetValue(obj, p.GetValue(other));
 
             return obj;
-        }        
+        }
 
         /// <summary>
         /// copy properties from other object ; a custom non null delegate function can be passed to specify
         /// if include a property and if to assign a custom value ( useful for complex, array types )
         /// </summary>        
-        public static T CopyFromCustom<T>(this T obj, T other, CopyFromCustomDelegate custom = null)
+        public static T CopyFromCustom<T>(T obj, T other, CopyFromCustomDelegate custom = null)
         {
             var type = typeof(T);
 
@@ -66,17 +66,17 @@ namespace SearchAThing
         /// <summary>
         /// copy properties from other object excluding those with given names
         /// </summary>        
-        public static T CopyFromExclude<T>(this T obj, T other, params string[] exclude_names)
+        public static T CopyFromExclude<T>(T obj, T other, params string[] exclude_names)
         {
-            return obj.CopyFrom(other, (p) => !exclude_names.Any(exclude_name => exclude_name == p.Name));
+            return CopyFrom(obj, other, (p) => !exclude_names.Any(exclude_name => exclude_name == p.Name));
         }
 
         /// <summary>
         /// copy properties from other object including only those with given names
         /// </summary>        
-        public static T CopyFromInclude<T>(this T obj, T other, params string[] include_names)
+        public static T CopyFromInclude<T>(T obj, T other, params string[] include_names)
         {
-            return obj.CopyFrom(other, (p) => include_names.Any(include_name => include_name == p.Name));
+            return CopyFrom(obj, other, (p) => include_names.Any(include_name => include_name == p.Name));
         }
 
     }
