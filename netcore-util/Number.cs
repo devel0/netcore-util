@@ -30,7 +30,6 @@ namespace SearchAThing
             return Truncate(p) * multiple;
         }
 
-
         /// <summary>
         /// Round the given value using the multiple basis
         /// if null return null
@@ -55,20 +54,34 @@ namespace SearchAThing
         }
 
         /// <summary>
-        /// convert given angle(rad) to degree
-        /// </summary>        
-        public static double ToDeg(this double angleRad)
-        {
-            return angleRad / PI * 180.0;
-        }
+        /// convert given angle(rad) to deg
+        /// </summary>
+        /// <param name="angleRad">angle (rad)</param>
+        /// <returns>angle (deg)</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static double ToDeg(this double angleRad) => angleRad / PI * 180.0;
 
         /// <summary>
-        /// convert given angle(grad) to radians
-        /// </summary>        
-        public static double ToRad(this double angleGrad)
-        {
-            return angleGrad / 180.0 * PI;
-        }
+        /// convert given angle(deg) to rad
+        /// </summary>
+        /// <param name="angleGrad">angle (deg)</param>
+        /// <returns>angle (radians)</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static double ToRad(this double angleGrad) => angleGrad / 180.0 * PI;
+
+        /// <summary>
+        /// convert given angle(deg) to rad
+        /// </summary>
+        /// <param name="angleDeg">angle (deg)</param>
+        /// <returns>angle (radians)</returns>
+        public static float ToRad(this float angleDeg) => angleDeg / 180f * ((float)PI);
+
+        /// <summary>
+        /// convert given angle(rad) to deg
+        /// </summary>
+        /// <param name="angleRad">angle (rad)</param>
+        /// <returns>angle (deg)</returns>
+        public static float ToDeg(this float angleRad) => angleRad / (float)PI * 180f;
 
         /// <summary>
         /// Return an invariant string representation rounded to given dec.        
@@ -166,9 +179,9 @@ namespace SearchAThing
             var decfmt = "#".Repeat(significantDigits);
             return string.Format(CultureInfo.InvariantCulture, "{0:0." + decfmt + "}", d);
         }
-        
+
         public static bool EqualsTol(this double x, double tol, double y)
-        {
+        {            
             return Abs(x - y) <= tol;
         }
 
@@ -257,6 +270,26 @@ namespace SearchAThing
             if (n >= 0) return 1.0;
             return -1.0;
         }
+
+        /// <summary>
+        /// return clamped number between [min,max] interval
+        /// </summary>
+        /// <param name="n">number</param>
+        /// <param name="min">min value admissible</param>
+        /// <param name="max">max value admissible</param>
+        /// <returns>n if between [min,max] otherwise min when n less than min or max when n great than max</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static float Clamp(this float n, float min, float max) => n < min ? min : (n > max) ? max : n;
+
+        /// <summary>
+        /// return clamped number between [min,max] interval
+        /// </summary>
+        /// <param name="n">number</param>
+        /// <param name="min">min value admissible</param>
+        /// <param name="max">max value admissible</param>
+        /// <returns>n if between [min,max] otherwise min when n less than min or max when n great than max</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static double Clamp(this double n, double min, double max) => n < min ? min : (n > max) ? max : n;
 
     }
 
