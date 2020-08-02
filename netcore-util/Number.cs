@@ -104,33 +104,6 @@ namespace SearchAThing
         }
 
         /// <summary>
-        /// Measure percent difference between given two numbers;
-        /// return double.NaN if only one of two numbers are 0;
-        /// 0 if both two given numbers are 0.
-        /// 
-        /// Given f = PercentDifference(x, y)
-        ///   m = Min(x, y)
-        ///   M = Max(x, y)        
-        ///   a = Min(Abs(x), Abs(y))
-        /// 
-        /// returned value f satisfy follow condition        
-        ///   M(m, a, f) = m + a * f
-        /// </summary>
-        public static double PercentDifference(this double x, double y)
-        {
-            if (x == 0 && y == 0) return 0;
-            if ((x == 0 && y != 0) || (x != 0 && y == 0)) return double.NaN;
-
-            var a = Min(Abs(x), Abs(y));
-            var m = Min(x, y);
-            var M = Max(x, y);
-            var d = M - m;
-            var f = d / a;
-
-            return f;
-        }
-
-        /// <summary>
         /// Invariant culture double parse
         /// </summary>        
         public static double InvDoubleParse(this string str)
