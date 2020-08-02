@@ -16,6 +16,7 @@
 
 ## Recent changes
 
+- **1.6.0** : move some Object extension method to UtilToolkit as static methods ; added ToRad, ToDeg, Clamp float/double methods
 - **1.4.0** : refactored api namespace to have partial static UtilToolkit class in SearchAThing namespace ; moved object extension methods to UtilToolkit to avoid intellisense on object type
 
 ## Quickstart

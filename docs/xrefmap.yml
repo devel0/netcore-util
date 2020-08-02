@@ -520,22 +520,25 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.Align
   nameWithType: UtilExt.Align
-- uid: SearchAThing.UtilExt.Assign*
-  name: Assign
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_Assign_
-  commentId: Overload:SearchAThing.UtilExt.Assign
+- uid: SearchAThing.UtilExt.Clamp(System.Double,System.Double,System.Double)
+  name: Clamp(Double, Double, Double)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_Clamp_System_Double_System_Double_System_Double_
+  commentId: M:SearchAThing.UtilExt.Clamp(System.Double,System.Double,System.Double)
+  fullName: SearchAThing.UtilExt.Clamp(System.Double, System.Double, System.Double)
+  nameWithType: UtilExt.Clamp(Double, Double, Double)
+- uid: SearchAThing.UtilExt.Clamp(System.Single,System.Single,System.Single)
+  name: Clamp(Single, Single, Single)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_Clamp_System_Single_System_Single_System_Single_
+  commentId: M:SearchAThing.UtilExt.Clamp(System.Single,System.Single,System.Single)
+  fullName: SearchAThing.UtilExt.Clamp(System.Single, System.Single, System.Single)
+  nameWithType: UtilExt.Clamp(Single, Single, Single)
+- uid: SearchAThing.UtilExt.Clamp*
+  name: Clamp
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_Clamp_
+  commentId: Overload:SearchAThing.UtilExt.Clamp
   isSpec: "True"
-  fullName: SearchAThing.UtilExt.Assign
-  nameWithType: UtilExt.Assign
-- uid: SearchAThing.UtilExt.Assign``1(``0,``0,Func{PropertyInfo,System.Boolean})
-  name: Assign<T>(T, T, Func<PropertyInfo, Boolean>)
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_Assign__1___0___0_Func_PropertyInfo_System_Boolean__
-  commentId: M:SearchAThing.UtilExt.Assign``1(``0,``0,Func{PropertyInfo,System.Boolean})
-  name.vb: Assign(Of T)(T, T, Func(Of PropertyInfo, Boolean))
-  fullName: SearchAThing.UtilExt.Assign<T>(T, T, Func<PropertyInfo, System.Boolean>)
-  fullName.vb: SearchAThing.UtilExt.Assign(Of T)(T, T, Func(Of PropertyInfo, System.Boolean))
-  nameWithType: UtilExt.Assign<T>(T, T, Func<PropertyInfo, Boolean>)
-  nameWithType.vb: UtilExt.Assign(Of T)(T, T, Func(Of PropertyInfo, Boolean))
+  fullName: SearchAThing.UtilExt.Clamp
+  nameWithType: UtilExt.Clamp
 - uid: SearchAThing.UtilExt.CompareTol(System.Double,System.Double,System.Double)
   name: CompareTol(Double, Double, Double)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_CompareTol_System_Double_System_Double_System_Double_
@@ -562,70 +565,6 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.ContainsIgnoreCase
   nameWithType: UtilExt.ContainsIgnoreCase
-- uid: SearchAThing.UtilExt.CopyFrom*
-  name: CopyFrom
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_CopyFrom_
-  commentId: Overload:SearchAThing.UtilExt.CopyFrom
-  isSpec: "True"
-  fullName: SearchAThing.UtilExt.CopyFrom
-  nameWithType: UtilExt.CopyFrom
-- uid: SearchAThing.UtilExt.CopyFrom``1(``0,``0,Func{PropertyInfo,System.Boolean})
-  name: CopyFrom<T>(T, T, Func<PropertyInfo, Boolean>)
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_CopyFrom__1___0___0_Func_PropertyInfo_System_Boolean__
-  commentId: M:SearchAThing.UtilExt.CopyFrom``1(``0,``0,Func{PropertyInfo,System.Boolean})
-  name.vb: CopyFrom(Of T)(T, T, Func(Of PropertyInfo, Boolean))
-  fullName: SearchAThing.UtilExt.CopyFrom<T>(T, T, Func<PropertyInfo, System.Boolean>)
-  fullName.vb: SearchAThing.UtilExt.CopyFrom(Of T)(T, T, Func(Of PropertyInfo, System.Boolean))
-  nameWithType: UtilExt.CopyFrom<T>(T, T, Func<PropertyInfo, Boolean>)
-  nameWithType.vb: UtilExt.CopyFrom(Of T)(T, T, Func(Of PropertyInfo, Boolean))
-- uid: SearchAThing.UtilExt.CopyFromCustom*
-  name: CopyFromCustom
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_CopyFromCustom_
-  commentId: Overload:SearchAThing.UtilExt.CopyFromCustom
-  isSpec: "True"
-  fullName: SearchAThing.UtilExt.CopyFromCustom
-  nameWithType: UtilExt.CopyFromCustom
-- uid: SearchAThing.UtilExt.CopyFromCustom``1(``0,``0,SearchAThing.CopyFromCustomDelegate)
-  name: CopyFromCustom<T>(T, T, CopyFromCustomDelegate)
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_CopyFromCustom__1___0___0_SearchAThing_CopyFromCustomDelegate_
-  commentId: M:SearchAThing.UtilExt.CopyFromCustom``1(``0,``0,SearchAThing.CopyFromCustomDelegate)
-  name.vb: CopyFromCustom(Of T)(T, T, CopyFromCustomDelegate)
-  fullName: SearchAThing.UtilExt.CopyFromCustom<T>(T, T, SearchAThing.CopyFromCustomDelegate)
-  fullName.vb: SearchAThing.UtilExt.CopyFromCustom(Of T)(T, T, SearchAThing.CopyFromCustomDelegate)
-  nameWithType: UtilExt.CopyFromCustom<T>(T, T, CopyFromCustomDelegate)
-  nameWithType.vb: UtilExt.CopyFromCustom(Of T)(T, T, CopyFromCustomDelegate)
-- uid: SearchAThing.UtilExt.CopyFromExclude*
-  name: CopyFromExclude
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_CopyFromExclude_
-  commentId: Overload:SearchAThing.UtilExt.CopyFromExclude
-  isSpec: "True"
-  fullName: SearchAThing.UtilExt.CopyFromExclude
-  nameWithType: UtilExt.CopyFromExclude
-- uid: SearchAThing.UtilExt.CopyFromExclude``1(``0,``0,System.String[])
-  name: CopyFromExclude<T>(T, T, String[])
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_CopyFromExclude__1___0___0_System_String___
-  commentId: M:SearchAThing.UtilExt.CopyFromExclude``1(``0,``0,System.String[])
-  name.vb: CopyFromExclude(Of T)(T, T, String())
-  fullName: SearchAThing.UtilExt.CopyFromExclude<T>(T, T, System.String[])
-  fullName.vb: SearchAThing.UtilExt.CopyFromExclude(Of T)(T, T, System.String())
-  nameWithType: UtilExt.CopyFromExclude<T>(T, T, String[])
-  nameWithType.vb: UtilExt.CopyFromExclude(Of T)(T, T, String())
-- uid: SearchAThing.UtilExt.CopyFromInclude*
-  name: CopyFromInclude
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_CopyFromInclude_
-  commentId: Overload:SearchAThing.UtilExt.CopyFromInclude
-  isSpec: "True"
-  fullName: SearchAThing.UtilExt.CopyFromInclude
-  nameWithType: UtilExt.CopyFromInclude
-- uid: SearchAThing.UtilExt.CopyFromInclude``1(``0,``0,System.String[])
-  name: CopyFromInclude<T>(T, T, String[])
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_CopyFromInclude__1___0___0_System_String___
-  commentId: M:SearchAThing.UtilExt.CopyFromInclude``1(``0,``0,System.String[])
-  name.vb: CopyFromInclude(Of T)(T, T, String())
-  fullName: SearchAThing.UtilExt.CopyFromInclude<T>(T, T, System.String[])
-  fullName.vb: SearchAThing.UtilExt.CopyFromInclude(Of T)(T, T, System.String())
-  nameWithType: UtilExt.CopyFromInclude<T>(T, T, String[])
-  nameWithType.vb: UtilExt.CopyFromInclude(Of T)(T, T, String())
 - uid: SearchAThing.UtilExt.CreateGetterSetter*
   name: CreateGetterSetter
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_CreateGetterSetter_
@@ -1276,6 +1215,12 @@ references:
   commentId: M:SearchAThing.UtilExt.ToDeg(System.Double)
   fullName: SearchAThing.UtilExt.ToDeg(System.Double)
   nameWithType: UtilExt.ToDeg(Double)
+- uid: SearchAThing.UtilExt.ToDeg(System.Single)
+  name: ToDeg(Single)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_ToDeg_System_Single_
+  commentId: M:SearchAThing.UtilExt.ToDeg(System.Single)
+  fullName: SearchAThing.UtilExt.ToDeg(System.Single)
+  nameWithType: UtilExt.ToDeg(Single)
 - uid: SearchAThing.UtilExt.ToDeg*
   name: ToDeg
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_ToDeg_
@@ -1283,25 +1228,18 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.ToDeg
   nameWithType: UtilExt.ToDeg
-- uid: SearchAThing.UtilExt.ToJson(System.Object)
-  name: ToJson(Object)
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_ToJson_System_Object_
-  commentId: M:SearchAThing.UtilExt.ToJson(System.Object)
-  fullName: SearchAThing.UtilExt.ToJson(System.Object)
-  nameWithType: UtilExt.ToJson(Object)
-- uid: SearchAThing.UtilExt.ToJson*
-  name: ToJson
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_ToJson_
-  commentId: Overload:SearchAThing.UtilExt.ToJson
-  isSpec: "True"
-  fullName: SearchAThing.UtilExt.ToJson
-  nameWithType: UtilExt.ToJson
 - uid: SearchAThing.UtilExt.ToRad(System.Double)
   name: ToRad(Double)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_ToRad_System_Double_
   commentId: M:SearchAThing.UtilExt.ToRad(System.Double)
   fullName: SearchAThing.UtilExt.ToRad(System.Double)
   nameWithType: UtilExt.ToRad(Double)
+- uid: SearchAThing.UtilExt.ToRad(System.Single)
+  name: ToRad(Single)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_ToRad_System_Single_
+  commentId: M:SearchAThing.UtilExt.ToRad(System.Single)
+  fullName: SearchAThing.UtilExt.ToRad(System.Single)
+  nameWithType: UtilExt.ToRad(Single)
 - uid: SearchAThing.UtilExt.ToRad*
   name: ToRad
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_ToRad_
@@ -1502,6 +1440,22 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilToolkit.AppDataFolder
   nameWithType: UtilToolkit.AppDataFolder
+- uid: SearchAThing.UtilToolkit.Assign*
+  name: Assign
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_Assign_
+  commentId: Overload:SearchAThing.UtilToolkit.Assign
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.Assign
+  nameWithType: UtilToolkit.Assign
+- uid: SearchAThing.UtilToolkit.Assign``1(``0,``0,Func{PropertyInfo,System.Boolean})
+  name: Assign<T>(T, T, Func<PropertyInfo, Boolean>)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_Assign__1___0___0_Func_PropertyInfo_System_Boolean__
+  commentId: M:SearchAThing.UtilToolkit.Assign``1(``0,``0,Func{PropertyInfo,System.Boolean})
+  name.vb: Assign(Of T)(T, T, Func(Of PropertyInfo, Boolean))
+  fullName: SearchAThing.UtilToolkit.Assign<T>(T, T, Func<PropertyInfo, System.Boolean>)
+  fullName.vb: SearchAThing.UtilToolkit.Assign(Of T)(T, T, Func(Of PropertyInfo, System.Boolean))
+  nameWithType: UtilToolkit.Assign<T>(T, T, Func<PropertyInfo, Boolean>)
+  nameWithType.vb: UtilToolkit.Assign(Of T)(T, T, Func(Of PropertyInfo, Boolean))
 - uid: SearchAThing.UtilToolkit.BuildImage(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
   name: BuildImage(String, String, CancellationToken, Boolean, Boolean)
   href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_BuildImage_System_String_System_String_CancellationToken_System_Boolean_System_Boolean_
@@ -1515,6 +1469,70 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilToolkit.BuildImage
   nameWithType: UtilToolkit.BuildImage
+- uid: SearchAThing.UtilToolkit.CopyFrom*
+  name: CopyFrom
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_CopyFrom_
+  commentId: Overload:SearchAThing.UtilToolkit.CopyFrom
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.CopyFrom
+  nameWithType: UtilToolkit.CopyFrom
+- uid: SearchAThing.UtilToolkit.CopyFrom``1(``0,``0,Func{PropertyInfo,System.Boolean})
+  name: CopyFrom<T>(T, T, Func<PropertyInfo, Boolean>)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_CopyFrom__1___0___0_Func_PropertyInfo_System_Boolean__
+  commentId: M:SearchAThing.UtilToolkit.CopyFrom``1(``0,``0,Func{PropertyInfo,System.Boolean})
+  name.vb: CopyFrom(Of T)(T, T, Func(Of PropertyInfo, Boolean))
+  fullName: SearchAThing.UtilToolkit.CopyFrom<T>(T, T, Func<PropertyInfo, System.Boolean>)
+  fullName.vb: SearchAThing.UtilToolkit.CopyFrom(Of T)(T, T, Func(Of PropertyInfo, System.Boolean))
+  nameWithType: UtilToolkit.CopyFrom<T>(T, T, Func<PropertyInfo, Boolean>)
+  nameWithType.vb: UtilToolkit.CopyFrom(Of T)(T, T, Func(Of PropertyInfo, Boolean))
+- uid: SearchAThing.UtilToolkit.CopyFromCustom*
+  name: CopyFromCustom
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_CopyFromCustom_
+  commentId: Overload:SearchAThing.UtilToolkit.CopyFromCustom
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.CopyFromCustom
+  nameWithType: UtilToolkit.CopyFromCustom
+- uid: SearchAThing.UtilToolkit.CopyFromCustom``1(``0,``0,SearchAThing.CopyFromCustomDelegate)
+  name: CopyFromCustom<T>(T, T, CopyFromCustomDelegate)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_CopyFromCustom__1___0___0_SearchAThing_CopyFromCustomDelegate_
+  commentId: M:SearchAThing.UtilToolkit.CopyFromCustom``1(``0,``0,SearchAThing.CopyFromCustomDelegate)
+  name.vb: CopyFromCustom(Of T)(T, T, CopyFromCustomDelegate)
+  fullName: SearchAThing.UtilToolkit.CopyFromCustom<T>(T, T, SearchAThing.CopyFromCustomDelegate)
+  fullName.vb: SearchAThing.UtilToolkit.CopyFromCustom(Of T)(T, T, SearchAThing.CopyFromCustomDelegate)
+  nameWithType: UtilToolkit.CopyFromCustom<T>(T, T, CopyFromCustomDelegate)
+  nameWithType.vb: UtilToolkit.CopyFromCustom(Of T)(T, T, CopyFromCustomDelegate)
+- uid: SearchAThing.UtilToolkit.CopyFromExclude*
+  name: CopyFromExclude
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_CopyFromExclude_
+  commentId: Overload:SearchAThing.UtilToolkit.CopyFromExclude
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.CopyFromExclude
+  nameWithType: UtilToolkit.CopyFromExclude
+- uid: SearchAThing.UtilToolkit.CopyFromExclude``1(``0,``0,System.String[])
+  name: CopyFromExclude<T>(T, T, String[])
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_CopyFromExclude__1___0___0_System_String___
+  commentId: M:SearchAThing.UtilToolkit.CopyFromExclude``1(``0,``0,System.String[])
+  name.vb: CopyFromExclude(Of T)(T, T, String())
+  fullName: SearchAThing.UtilToolkit.CopyFromExclude<T>(T, T, System.String[])
+  fullName.vb: SearchAThing.UtilToolkit.CopyFromExclude(Of T)(T, T, System.String())
+  nameWithType: UtilToolkit.CopyFromExclude<T>(T, T, String[])
+  nameWithType.vb: UtilToolkit.CopyFromExclude(Of T)(T, T, String())
+- uid: SearchAThing.UtilToolkit.CopyFromInclude*
+  name: CopyFromInclude
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_CopyFromInclude_
+  commentId: Overload:SearchAThing.UtilToolkit.CopyFromInclude
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.CopyFromInclude
+  nameWithType: UtilToolkit.CopyFromInclude
+- uid: SearchAThing.UtilToolkit.CopyFromInclude``1(``0,``0,System.String[])
+  name: CopyFromInclude<T>(T, T, String[])
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_CopyFromInclude__1___0___0_System_String___
+  commentId: M:SearchAThing.UtilToolkit.CopyFromInclude``1(``0,``0,System.String[])
+  name.vb: CopyFromInclude(Of T)(T, T, String())
+  fullName: SearchAThing.UtilToolkit.CopyFromInclude<T>(T, T, System.String[])
+  fullName.vb: SearchAThing.UtilToolkit.CopyFromInclude(Of T)(T, T, System.String())
+  nameWithType: UtilToolkit.CopyFromInclude<T>(T, T, String[])
+  nameWithType.vb: UtilToolkit.CopyFromInclude(Of T)(T, T, String())
 - uid: SearchAThing.UtilToolkit.CreateNetwork(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
   name: CreateNetwork(String, String, CancellationToken, Boolean, Boolean)
   href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_CreateNetwork_System_String_System_String_CancellationToken_System_Boolean_System_Boolean_
@@ -1880,6 +1898,19 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilToolkit.ToExpando
   nameWithType: UtilToolkit.ToExpando
+- uid: SearchAThing.UtilToolkit.ToJson(System.Object)
+  name: ToJson(Object)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ToJson_System_Object_
+  commentId: M:SearchAThing.UtilToolkit.ToJson(System.Object)
+  fullName: SearchAThing.UtilToolkit.ToJson(System.Object)
+  nameWithType: UtilToolkit.ToJson(Object)
+- uid: SearchAThing.UtilToolkit.ToJson*
+  name: ToJson
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ToJson_
+  commentId: Overload:SearchAThing.UtilToolkit.ToJson
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.ToJson
+  nameWithType: UtilToolkit.ToJson
 - uid: SearchAThing.UtilToolkit.XorNull(System.Object,System.Object)
   name: XorNull(Object, Object)
   href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_XorNull_System_Object_System_Object_

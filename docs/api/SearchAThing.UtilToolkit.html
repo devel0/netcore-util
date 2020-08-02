@@ -138,6 +138,64 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilToolkit_Assign__1___0___0_Func_PropertyInfo_System_Boolean__.md&amp;value=---%0Auid%3A%20SearchAThing.UtilToolkit.Assign%60%601(%60%600%2C%60%600%2CFunc%7BPropertyInfo%2CSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Reflection.cs/#L16">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilToolkit_Assign_" data-uid="SearchAThing.UtilToolkit.Assign*"></a>
+  <h4 id="SearchAThing_UtilToolkit_Assign__1___0___0_Func_PropertyInfo_System_Boolean__" data-uid="SearchAThing.UtilToolkit.Assign``1(``0,``0,Func{PropertyInfo,System.Boolean})">Assign&lt;T&gt;(T, T, Func&lt;PropertyInfo, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>assign public properties of src to dst object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Assign&lt;T&gt;(T src, T dst, Func&lt;PropertyInfo, bool&gt; exclude = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">PropertyInfo</span>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">exclude</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilToolkit_BuildImage_System_String_System_String_CancellationToken_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilToolkit.BuildImage(System.String%2CSystem.String%2CCancellationToken%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -200,6 +258,299 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilToolkit_CopyFrom__1___0___0_Func_PropertyInfo_System_Boolean__.md&amp;value=---%0Auid%3A%20SearchAThing.UtilToolkit.CopyFrom%60%601(%60%600%2C%60%600%2CFunc%7BPropertyInfo%2CSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Reflection.cs/#L29">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilToolkit_CopyFrom_" data-uid="SearchAThing.UtilToolkit.CopyFrom*"></a>
+  <h4 id="SearchAThing_UtilToolkit_CopyFrom__1___0___0_Func_PropertyInfo_System_Boolean__" data-uid="SearchAThing.UtilToolkit.CopyFrom``1(``0,``0,Func{PropertyInfo,System.Boolean})">CopyFrom&lt;T&gt;(T, T, Func&lt;PropertyInfo, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>copy properties from other object ; if match functor specified it copies only matched properties</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T CopyFrom&lt;T&gt;(T obj, T other, Func&lt;PropertyInfo, bool&gt; match = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">PropertyInfo</span>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilToolkit_CopyFromCustom__1___0___0_SearchAThing_CopyFromCustomDelegate_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilToolkit.CopyFromCustom%60%601(%60%600%2C%60%600%2CSearchAThing.CopyFromCustomDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Reflection.cs/#L43">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilToolkit_CopyFromCustom_" data-uid="SearchAThing.UtilToolkit.CopyFromCustom*"></a>
+  <h4 id="SearchAThing_UtilToolkit_CopyFromCustom__1___0___0_SearchAThing_CopyFromCustomDelegate_" data-uid="SearchAThing.UtilToolkit.CopyFromCustom``1(``0,``0,SearchAThing.CopyFromCustomDelegate)">CopyFromCustom&lt;T&gt;(T, T, CopyFromCustomDelegate)</h4>
+  <div class="markdown level1 summary"><p>copy properties from other object ; a custom non null delegate function can be passed to specify
+if include a property and if to assign a custom value ( useful for complex, array types )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T CopyFromCustom&lt;T&gt;(T obj, T other, CopyFromCustomDelegate custom = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SearchAThing.CopyFromCustomDelegate.html">CopyFromCustomDelegate</a></td>
+        <td><span class="parametername">custom</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilToolkit_CopyFromExclude__1___0___0_System_String___.md&amp;value=---%0Auid%3A%20SearchAThing.UtilToolkit.CopyFromExclude%60%601(%60%600%2C%60%600%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Reflection.cs/#L69">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilToolkit_CopyFromExclude_" data-uid="SearchAThing.UtilToolkit.CopyFromExclude*"></a>
+  <h4 id="SearchAThing_UtilToolkit_CopyFromExclude__1___0___0_System_String___" data-uid="SearchAThing.UtilToolkit.CopyFromExclude``1(``0,``0,System.String[])">CopyFromExclude&lt;T&gt;(T, T, String[])</h4>
+  <div class="markdown level1 summary"><p>copy properties from other object excluding those with given names</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T CopyFromExclude&lt;T&gt;(T obj, T other, params string[] exclude_names)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">exclude_names</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilToolkit_CopyFromInclude__1___0___0_System_String___.md&amp;value=---%0Auid%3A%20SearchAThing.UtilToolkit.CopyFromInclude%60%601(%60%600%2C%60%600%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Reflection.cs/#L77">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilToolkit_CopyFromInclude_" data-uid="SearchAThing.UtilToolkit.CopyFromInclude*"></a>
+  <h4 id="SearchAThing_UtilToolkit_CopyFromInclude__1___0___0_System_String___" data-uid="SearchAThing.UtilToolkit.CopyFromInclude``1(``0,``0,System.String[])">CopyFromInclude&lt;T&gt;(T, T, String[])</h4>
+  <div class="markdown level1 summary"><p>copy properties from other object including only those with given names</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T CopyFromInclude&lt;T&gt;(T obj, T other, params string[] include_names)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">include_names</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1749,6 +2100,53 @@ a cancellation token can be supplied to cancel underlying process</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilToolkit_ToJson_System_Object_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilToolkit.ToJson(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L435">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilToolkit_ToJson_" data-uid="SearchAThing.UtilToolkit.ToJson*"></a>
+  <h4 id="SearchAThing_UtilToolkit_ToJson_System_Object_" data-uid="SearchAThing.UtilToolkit.ToJson(System.Object)">ToJson(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToJson(object o)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">o</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilToolkit_XorNull_System_Object_System_Object_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilToolkit.XorNull(System.Object%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -1812,7 +2210,7 @@ returns false if all objects null or all objects not null;</p>
                     <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilToolkit.md&amp;value=---%0Auid%3A%20SearchAThing.UtilToolkit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Process.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L433" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
