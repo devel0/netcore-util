@@ -23,8 +23,15 @@
 
 - [nuget package](https://www.nuget.org/packages/netcore-util/)
 
+- [extension methods](https://devel0.github.io/netcore-util/api/SearchAThing.UtilExt.html)
+
 ```csharp
 using SearchAThing;
+```
+
+- [toolkit methods](https://devel0.github.io/netcore-util/api/SearchAThing.UtilToolkit.html)
+
+```csharp
 using static SearchAThing.UtilToolkit;
 ```
 
