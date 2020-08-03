@@ -1042,19 +1042,6 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.ParseInt
   nameWithType: UtilExt.ParseInt
-- uid: SearchAThing.UtilExt.PercentDifference(System.Double,System.Double)
-  name: PercentDifference(Double, Double)
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_PercentDifference_System_Double_System_Double_
-  commentId: M:SearchAThing.UtilExt.PercentDifference(System.Double,System.Double)
-  fullName: SearchAThing.UtilExt.PercentDifference(System.Double, System.Double)
-  nameWithType: UtilExt.PercentDifference(Double, Double)
-- uid: SearchAThing.UtilExt.PercentDifference*
-  name: PercentDifference
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_PercentDifference_
-  commentId: Overload:SearchAThing.UtilExt.PercentDifference
-  isSpec: "True"
-  fullName: SearchAThing.UtilExt.PercentDifference
-  nameWithType: UtilExt.PercentDifference
 - uid: SearchAThing.UtilExt.RegexMatch(System.String,System.String,RegexOptions)
   name: RegexMatch(String, String, RegexOptions)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_RegexMatch_System_String_System_String_RegexOptions_
