@@ -171,28 +171,6 @@ namespace SearchAThing
             Assert.True(exceptionCnt == 1);
         }
 
-        [Fact]
-        public void NumberTest12()
-        {
-            Assert.True(111111111111111d.PercentDifference(111111011111111d) == 9.0000081000072986E-07);
-            Assert.True(111111111111111d.PercentDifference(111111111111111d) == 0);
-            Assert.True(111111111111111d.PercentDifference(191111111111111d) == 0.72000000000000075);
-            Assert.True(111111111111111d.PercentDifference(111111111111119d) == 7.2000000000000072E-14);
-            Assert.True(1.23e-210.PercentDifference(1.23001e-210) == 8.1300813007679046E-06);
-            Assert.True(21.23e-210.PercentDifference(1.23001e-210) == 16.260022276241656);
-
-            Assert.True((-5327234122.34).PercentDifference(-5327234122.341) == 1.8761155613613974E-13);
-            Assert.True((+5327234122.34).PercentDifference(+5327234122.341) == 1.8761155613613974E-13);
-            Assert.True((+5327234122.34).PercentDifference(-5327234122.341) == 2.0000000000001874);
-            Assert.True((-5327234122.34).PercentDifference(+5327234122.341) == 2.0000000000001874);
-
-            Assert.True(1234567890123d.PercentDifference(1234567890023) == 8.1000000735590979E-11);
-
-            Assert.True(double.IsNaN(0d.PercentDifference(2.2)));
-            Assert.True(double.IsNaN(2.2.PercentDifference(0d)));
-            Assert.True(0d.PercentDifference(0d) == 0);
-        }
-
         #endregion
 
         #region ObserableCollection
