@@ -101,42 +101,50 @@ namespace SearchAThing
         /// <summary>
         /// enumerate given items returning a tuple with null ( for last hit ) next element
         /// </summary>
-        public static IEnumerable<(T item, T? next)> WithNextPrimitive<T>(this IEnumerable<T> en) where T : struct
+        /// <remarks>
+        /// [unit test](../test/Enumerable/EnumerableTest_0002.cs)
+        /// </remarks>
+        public static IEnumerable<(T item, T? next, bool isLast)> WithNextPrimitive<T>(this IEnumerable<T> en, bool repeatFirstAtEnd = false) where T : struct
         {
             var enm = en.GetEnumerator();
 
+            T? first = null;
             T? prev = null;
-            var item = default(T);
+            var item = default(T?);
             var isLast = !enm.MoveNext();
             while (!isLast)
             {
                 item = enm.Current;
                 isLast = !enm.MoveNext();
-                if (isLast)
+
+                if (first == null)
                 {
-                    yield return (item, null);
-                    yield break;
+                    first = prev = item;
                 }
                 else
                 {
-                    if (prev == null)
-                        prev = item;
-                    else
+                    yield return (prev.Value, item, false);
+                    if (isLast)
                     {
-                        yield return (prev.Value, item);
-                        prev = item;
+                        yield return (item.Value, repeatFirstAtEnd ? first : null, true);
+                        yield break;
                     }
+                    prev = item;
                 }
             }
         }
-
         /// <summary>
-        /// enumerate given items returning a tuple with null ( for last hit ) next element
-        /// </summary>
-        public static IEnumerable<(T item, T next)> WithNext<T>(this IEnumerable<T> en) where T : class
+        /// enumerate given items returning a tuple (item,next,isLast) with next=null for last element or next=first if repeatFirstAtEnd=true
+        /// </summary>                
+        /// <param name="repeatFirstAtEnd">last enumerated result will (last,first,true)</param>        
+        /// <remarks>
+        /// [unit test](../test/Enumerable/EnumerableTest_0001.cs)
+        /// </remarks>
+        public static IEnumerable<(T item, T next, bool isLast)> WithNext<T>(this IEnumerable<T> en, bool repeatFirstAtEnd = false) where T : class
         {
             var enm = en.GetEnumerator();
 
+            T first = null;
             T prev = null;
             var item = default(T);
             var isLast = !enm.MoveNext();
@@ -144,20 +152,20 @@ namespace SearchAThing
             {
                 item = enm.Current;
                 isLast = !enm.MoveNext();
-                if (isLast)
+
+                if (first == null)
                 {
-                    yield return (item, null);
-                    yield break;
+                    first = prev = item;
                 }
                 else
                 {
-                    if (prev == null)
-                        prev = item;
-                    else
+                    yield return (prev, item, false);
+                    if (isLast)
                     {
-                        yield return (prev, item);
-                        prev = item;
+                        yield return (item, repeatFirstAtEnd ? first : null, true);
+                        yield break;
                     }
+                    prev = item;
                 }
             }
         }
