@@ -1351,15 +1351,15 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.WithNext
   nameWithType: UtilExt.WithNext
-- uid: SearchAThing.UtilExt.WithNext``1(IEnumerable{``0})
-  name: WithNext<T>(IEnumerable<T>)
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithNext__1_IEnumerable___0__
-  commentId: M:SearchAThing.UtilExt.WithNext``1(IEnumerable{``0})
-  name.vb: WithNext(Of T)(IEnumerable(Of T))
-  fullName: SearchAThing.UtilExt.WithNext<T>(IEnumerable<T>)
-  fullName.vb: SearchAThing.UtilExt.WithNext(Of T)(IEnumerable(Of T))
-  nameWithType: UtilExt.WithNext<T>(IEnumerable<T>)
-  nameWithType.vb: UtilExt.WithNext(Of T)(IEnumerable(Of T))
+- uid: SearchAThing.UtilExt.WithNext``1(IEnumerable{``0},System.Boolean)
+  name: WithNext<T>(IEnumerable<T>, Boolean)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithNext__1_IEnumerable___0__System_Boolean_
+  commentId: M:SearchAThing.UtilExt.WithNext``1(IEnumerable{``0},System.Boolean)
+  name.vb: WithNext(Of T)(IEnumerable(Of T), Boolean)
+  fullName: SearchAThing.UtilExt.WithNext<T>(IEnumerable<T>, System.Boolean)
+  fullName.vb: SearchAThing.UtilExt.WithNext(Of T)(IEnumerable(Of T), System.Boolean)
+  nameWithType: UtilExt.WithNext<T>(IEnumerable<T>, Boolean)
+  nameWithType.vb: UtilExt.WithNext(Of T)(IEnumerable(Of T), Boolean)
 - uid: SearchAThing.UtilExt.WithNextPrimitive*
   name: WithNextPrimitive
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithNextPrimitive_
@@ -1367,15 +1367,15 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.WithNextPrimitive
   nameWithType: UtilExt.WithNextPrimitive
-- uid: SearchAThing.UtilExt.WithNextPrimitive``1(IEnumerable{``0})
-  name: WithNextPrimitive<T>(IEnumerable<T>)
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithNextPrimitive__1_IEnumerable___0__
-  commentId: M:SearchAThing.UtilExt.WithNextPrimitive``1(IEnumerable{``0})
-  name.vb: WithNextPrimitive(Of T)(IEnumerable(Of T))
-  fullName: SearchAThing.UtilExt.WithNextPrimitive<T>(IEnumerable<T>)
-  fullName.vb: SearchAThing.UtilExt.WithNextPrimitive(Of T)(IEnumerable(Of T))
-  nameWithType: UtilExt.WithNextPrimitive<T>(IEnumerable<T>)
-  nameWithType.vb: UtilExt.WithNextPrimitive(Of T)(IEnumerable(Of T))
+- uid: SearchAThing.UtilExt.WithNextPrimitive``1(IEnumerable{``0},System.Boolean)
+  name: WithNextPrimitive<T>(IEnumerable<T>, Boolean)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithNextPrimitive__1_IEnumerable___0__System_Boolean_
+  commentId: M:SearchAThing.UtilExt.WithNextPrimitive``1(IEnumerable{``0},System.Boolean)
+  name.vb: WithNextPrimitive(Of T)(IEnumerable(Of T), Boolean)
+  fullName: SearchAThing.UtilExt.WithNextPrimitive<T>(IEnumerable<T>, System.Boolean)
+  fullName.vb: SearchAThing.UtilExt.WithNextPrimitive(Of T)(IEnumerable(Of T), System.Boolean)
+  nameWithType: UtilExt.WithNextPrimitive<T>(IEnumerable<T>, Boolean)
+  nameWithType.vb: UtilExt.WithNextPrimitive(Of T)(IEnumerable(Of T), Boolean)
 - uid: SearchAThing.UtilExt.WithPrev*
   name: WithPrev
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithPrev_
