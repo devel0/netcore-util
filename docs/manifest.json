@@ -100,15 +100,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/SearchAThing.UtilExt.yml",
       "output": {
         ".html": {
           "relative_path": "api/SearchAThing.UtilExt.html",
-          "hash": "CFwYRXLNbCzbq+8l/u1waQ=="
+          "hash": "VgiD1ctUub9GKg5z4s1www=="
         }
       },
       "is_incremental": false,
@@ -219,19 +216,22 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "R2+h8iEOYC7YLlkz00RUOg=="
+          "hash": "DxudPBfFw8zvdL+dUqjPcw=="
         }
       },
       "is_incremental": true,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "+rHUkRZHZRi5gd1aTU6lJA=="
+          "hash": "k+WKLxJEvA5fFGiKalgOCA=="
         }
       },
       "is_incremental": false,

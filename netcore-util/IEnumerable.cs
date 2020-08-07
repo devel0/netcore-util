@@ -102,7 +102,7 @@ namespace SearchAThing
         /// enumerate given items returning a tuple with null ( for last hit ) next element
         /// </summary>
         /// <remarks>
-        /// [unit test](../test/Enumerable/EnumerableTest_0002.cs)
+        /// [unit test](https://github.com/devel0/netcore-util/tree/master/test/Enumerable/EnumerableTest_0002.cs)
         /// </remarks>
         public static IEnumerable<(T item, T? next, bool isLast)> WithNextPrimitive<T>(this IEnumerable<T> en, bool repeatFirstAtEnd = false) where T : struct
         {
@@ -138,7 +138,7 @@ namespace SearchAThing
         /// </summary>                
         /// <param name="repeatFirstAtEnd">last enumerated result will (last,first,true)</param>        
         /// <remarks>
-        /// [unit test](../test/Enumerable/EnumerableTest_0001.cs)
+        /// [unit test](https://github.com/devel0/netcore-util/tree/master/test/Enumerable/EnumerableTest_0001.cs)
         /// </remarks>
         public static IEnumerable<(T item, T next, bool isLast)> WithNext<T>(this IEnumerable<T> en, bool repeatFirstAtEnd = false) where T : class
         {
