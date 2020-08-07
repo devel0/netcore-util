@@ -6,3 +6,5 @@
   href: api/SearchAThing.UtilExt.html
 - name: Toolkit methods
   href: api/SearchAThing.UtilToolkit.html
+- name: Sources
+  href: https://github.com/devel0/netcore-util
