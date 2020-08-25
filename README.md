@@ -4,21 +4,16 @@
 
 .NET core utilities
 
+- [API Documentation](https://devel0.github.io/netcore-util/api/SearchAThing.UtilExt.html)
+- [Changelog](https://github.com/devel0/netcore-util/commits/master)
+
 <hr/>
 
-- [API Documentation](https://devel0.github.io/netcore-util/api/SearchAThing.UtilExt.html)
-- [Recent changes](#recent-changes)
 - [Quickstart](#quickstart)
 - [Unit tests](#unit-tests)
 - [How this project was built](#how-this-project-was-built)
 
 <hr/>
-
-## Recent changes
-
-- **1.6.2** : fix enumerable ext WithNext, WithNextPrimitive
-- **1.6.0** : move some Object extension method to UtilToolkit as static methods ; added ToRad, ToDeg, Clamp float/double methods
-- **1.4.0** : refactored api namespace to have partial static UtilToolkit class in SearchAThing namespace ; moved object extension methods to UtilToolkit to avoid intellisense on object type
 
 ## Quickstart
 
