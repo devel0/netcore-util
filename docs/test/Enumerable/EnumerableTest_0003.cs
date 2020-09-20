@@ -8,35 +8,20 @@ namespace SearchAThing.Util.Tests
     public partial class EnumerableTests
     {
 
-        public class Sample
-        {
-            public Sample(int v) { this.Value = v; }
-            public int Value { get; private set; }
-            public override string ToString() => Value.ToString();
-        }
-
         [Fact]
-        public void EnumerableTest_0001()
+        public void EnumerableTest_0003()
         {
             // verify it works even with 1 element
             {
                 var a = new[] { "sample" };
 
                 var cnt = 0;
-                foreach (var x in a.WithNext())
+                foreach (var x in a.WithPrev())
                 {
                     Assert.True(x.item == "sample");
                     ++cnt;
                 }
-                Assert.True(cnt == 1);
-
-                cnt = 0;
-                foreach (var x in a.WithNext(repeatFirstAtEnd: true))
-                {
-                    Assert.True(x.item == "sample" && x.next == "sample");
-                    ++cnt;
-                }
-                Assert.True(cnt == 1);
+                Assert.True(cnt == 1);                
             }
 
             {
@@ -44,7 +29,7 @@ namespace SearchAThing.Util.Tests
 
                 foreach (var rfe in new[] { false, true })
                 {
-                    var q = a.WithNext(repeatFirstAtEnd: rfe).ToList();
+                    var q = a.WithPrevNext(repeatFirstAtEnd: rfe).ToList();
 
                     Assert.True(q.Count == 5);
                     Assert.True(q[0].Eval(y => y.item.Value == 1 && y.next.Value == 2 && y.isLast == false));

@@ -1392,6 +1392,38 @@ references:
   fullName.vb: SearchAThing.UtilExt.WithPrev(Of T)(IEnumerable(Of T))
   nameWithType: UtilExt.WithPrev<T>(IEnumerable<T>)
   nameWithType.vb: UtilExt.WithPrev(Of T)(IEnumerable(Of T))
+- uid: SearchAThing.UtilExt.WithPrevNext*
+  name: WithPrevNext
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithPrevNext_
+  commentId: Overload:SearchAThing.UtilExt.WithPrevNext
+  isSpec: "True"
+  fullName: SearchAThing.UtilExt.WithPrevNext
+  nameWithType: UtilExt.WithPrevNext
+- uid: SearchAThing.UtilExt.WithPrevNext``1(IEnumerable{``0},System.Boolean)
+  name: WithPrevNext<T>(IEnumerable<T>, Boolean)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithPrevNext__1_IEnumerable___0__System_Boolean_
+  commentId: M:SearchAThing.UtilExt.WithPrevNext``1(IEnumerable{``0},System.Boolean)
+  name.vb: WithPrevNext(Of T)(IEnumerable(Of T), Boolean)
+  fullName: SearchAThing.UtilExt.WithPrevNext<T>(IEnumerable<T>, System.Boolean)
+  fullName.vb: SearchAThing.UtilExt.WithPrevNext(Of T)(IEnumerable(Of T), System.Boolean)
+  nameWithType: UtilExt.WithPrevNext<T>(IEnumerable<T>, Boolean)
+  nameWithType.vb: UtilExt.WithPrevNext(Of T)(IEnumerable(Of T), Boolean)
+- uid: SearchAThing.UtilExt.WithPrevNextPrimitive*
+  name: WithPrevNextPrimitive
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithPrevNextPrimitive_
+  commentId: Overload:SearchAThing.UtilExt.WithPrevNextPrimitive
+  isSpec: "True"
+  fullName: SearchAThing.UtilExt.WithPrevNextPrimitive
+  nameWithType: UtilExt.WithPrevNextPrimitive
+- uid: SearchAThing.UtilExt.WithPrevNextPrimitive``1(IEnumerable{``0},System.Boolean)
+  name: WithPrevNextPrimitive<T>(IEnumerable<T>, Boolean)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithPrevNextPrimitive__1_IEnumerable___0__System_Boolean_
+  commentId: M:SearchAThing.UtilExt.WithPrevNextPrimitive``1(IEnumerable{``0},System.Boolean)
+  name.vb: WithPrevNextPrimitive(Of T)(IEnumerable(Of T), Boolean)
+  fullName: SearchAThing.UtilExt.WithPrevNextPrimitive<T>(IEnumerable<T>, System.Boolean)
+  fullName.vb: SearchAThing.UtilExt.WithPrevNextPrimitive(Of T)(IEnumerable(Of T), System.Boolean)
+  nameWithType: UtilExt.WithPrevNextPrimitive<T>(IEnumerable<T>, Boolean)
+  nameWithType.vb: UtilExt.WithPrevNextPrimitive(Of T)(IEnumerable(Of T), Boolean)
 - uid: SearchAThing.UtilExt.WithPrevPrimitive*
   name: WithPrevPrimitive
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithPrevPrimitive_

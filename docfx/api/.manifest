@@ -114,6 +114,8 @@
   "SearchAThing.UtilExt.WithNext``1(IEnumerable{``0},System.Boolean)": "SearchAThing.UtilExt.yml",
   "SearchAThing.UtilExt.WithNextPrimitive``1(IEnumerable{``0},System.Boolean)": "SearchAThing.UtilExt.yml",
   "SearchAThing.UtilExt.WithPrev``1(IEnumerable{``0})": "SearchAThing.UtilExt.yml",
+  "SearchAThing.UtilExt.WithPrevNext``1(IEnumerable{``0},System.Boolean)": "SearchAThing.UtilExt.yml",
+  "SearchAThing.UtilExt.WithPrevNextPrimitive``1(IEnumerable{``0},System.Boolean)": "SearchAThing.UtilExt.yml",
   "SearchAThing.UtilExt.WithPrevPrimitive``1(IEnumerable{``0})": "SearchAThing.UtilExt.yml",
   "SearchAThing.UtilToolkit": "SearchAThing.UtilToolkit.yml",
   "SearchAThing.UtilToolkit.AppDataFolder(System.String)": "SearchAThing.UtilToolkit.yml",

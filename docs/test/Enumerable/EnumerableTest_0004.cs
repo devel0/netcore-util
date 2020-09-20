@@ -9,14 +9,14 @@ namespace SearchAThing.Util.Tests
     {
 
         [Fact]
-        public void EnumerableTest_0002()
+        public void EnumerableTest_0004()
         {
             // verify it works even with 1 element
             {
                 var a = new[] { 1 };
 
                 var cnt = 0;
-                foreach (var x in a.WithNextPrimitive())
+                foreach (var x in a.WithPrevNextPrimitive())
                 {
                     Assert.True(x.item == 1);
                     ++cnt;
@@ -24,7 +24,7 @@ namespace SearchAThing.Util.Tests
                 Assert.True(cnt == 1);
 
                 cnt = 0;
-                foreach (var x in a.WithNextPrimitive(repeatFirstAtEnd: true))
+                foreach (var x in a.WithPrevNextPrimitive(repeatFirstAtEnd: true))
                 {
                     Assert.True(x.item == 1 && x.next == 1);
                     ++cnt;
@@ -37,7 +37,7 @@ namespace SearchAThing.Util.Tests
 
                 foreach (var rfe in new[] { false, true })
                 {
-                    var q = a.WithNextPrimitive(repeatFirstAtEnd: rfe).ToList();
+                    var q = a.WithPrevNextPrimitive(repeatFirstAtEnd: rfe).ToList();
 
                     Assert.True(q.Count == 5);
                     Assert.True(q[0].Eval(y => y.item == 1 && y.next.Value == 2 && y.isLast == false));
