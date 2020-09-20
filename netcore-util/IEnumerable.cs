@@ -120,6 +120,7 @@ namespace SearchAThing
                 if (first == null)
                 {
                     first = prev = item;
+                    if (isLast) yield return (item.Value, repeatFirstAtEnd ? first : null, true);
                 }
                 else
                 {
@@ -180,6 +181,7 @@ namespace SearchAThing
                 if (first == null)
                 {
                     first = prev = item;
+                    if (isLast) yield return (item, repeatFirstAtEnd ? first : null, true);
                 }
                 else
                 {
