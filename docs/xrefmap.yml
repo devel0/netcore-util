@@ -539,6 +539,12 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.Clamp
   nameWithType: UtilExt.Clamp
+- uid: SearchAThing.UtilExt.CompareTol(IQuantity,IQuantity,IQuantity)
+  name: CompareTol(IQuantity, IQuantity, IQuantity)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_CompareTol_IQuantity_IQuantity_IQuantity_
+  commentId: M:SearchAThing.UtilExt.CompareTol(IQuantity,IQuantity,IQuantity)
+  fullName: SearchAThing.UtilExt.CompareTol(IQuantity, IQuantity, IQuantity)
+  nameWithType: UtilExt.CompareTol(IQuantity, IQuantity, IQuantity)
 - uid: SearchAThing.UtilExt.CompareTol(System.Double,System.Double,System.Double)
   name: CompareTol(Double, Double, Double)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_CompareTol_System_Double_System_Double_System_Double_
@@ -636,6 +642,12 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.EqualsAutoTol
   nameWithType: UtilExt.EqualsAutoTol
+- uid: SearchAThing.UtilExt.EqualsTol(IQuantity,IQuantity,IQuantity)
+  name: EqualsTol(IQuantity, IQuantity, IQuantity)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_EqualsTol_IQuantity_IQuantity_IQuantity_
+  commentId: M:SearchAThing.UtilExt.EqualsTol(IQuantity,IQuantity,IQuantity)
+  fullName: SearchAThing.UtilExt.EqualsTol(IQuantity, IQuantity, IQuantity)
+  nameWithType: UtilExt.EqualsTol(IQuantity, IQuantity, IQuantity)
 - uid: SearchAThing.UtilExt.EqualsTol(System.Double,System.Double,System.Double)
   name: EqualsTol(Double, Double, Double)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_EqualsTol_System_Double_System_Double_System_Double_
@@ -742,6 +754,12 @@ references:
   fullName.vb: SearchAThing.UtilExt.GetMemberNames(Of T)(Expression(Of Func(Of T, System.Object)))
   nameWithType: UtilExt.GetMemberNames<T>(Expression<Func<T, Object>>)
   nameWithType.vb: UtilExt.GetMemberNames(Of T)(Expression(Of Func(Of T, Object)))
+- uid: SearchAThing.UtilExt.GreatThanOrEqualsTol(IQuantity,IQuantity,IQuantity)
+  name: GreatThanOrEqualsTol(IQuantity, IQuantity, IQuantity)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GreatThanOrEqualsTol_IQuantity_IQuantity_IQuantity_
+  commentId: M:SearchAThing.UtilExt.GreatThanOrEqualsTol(IQuantity,IQuantity,IQuantity)
+  fullName: SearchAThing.UtilExt.GreatThanOrEqualsTol(IQuantity, IQuantity, IQuantity)
+  nameWithType: UtilExt.GreatThanOrEqualsTol(IQuantity, IQuantity, IQuantity)
 - uid: SearchAThing.UtilExt.GreatThanOrEqualsTol(System.Double,System.Double,System.Double)
   name: GreatThanOrEqualsTol(Double, Double, Double)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GreatThanOrEqualsTol_System_Double_System_Double_System_Double_
@@ -755,6 +773,12 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.GreatThanOrEqualsTol
   nameWithType: UtilExt.GreatThanOrEqualsTol
+- uid: SearchAThing.UtilExt.GreatThanTol(IQuantity,IQuantity,IQuantity)
+  name: GreatThanTol(IQuantity, IQuantity, IQuantity)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GreatThanTol_IQuantity_IQuantity_IQuantity_
+  commentId: M:SearchAThing.UtilExt.GreatThanTol(IQuantity,IQuantity,IQuantity)
+  fullName: SearchAThing.UtilExt.GreatThanTol(IQuantity, IQuantity, IQuantity)
+  nameWithType: UtilExt.GreatThanTol(IQuantity, IQuantity, IQuantity)
 - uid: SearchAThing.UtilExt.GreatThanTol(System.Double,System.Double,System.Double)
   name: GreatThanTol(Double, Double, Double)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GreatThanTol_System_Double_System_Double_System_Double_
@@ -872,6 +896,12 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.Latest
   nameWithType: UtilExt.Latest
+- uid: SearchAThing.UtilExt.LessThanOrEqualsTol(IQuantity,IQuantity,IQuantity)
+  name: LessThanOrEqualsTol(IQuantity, IQuantity, IQuantity)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_LessThanOrEqualsTol_IQuantity_IQuantity_IQuantity_
+  commentId: M:SearchAThing.UtilExt.LessThanOrEqualsTol(IQuantity,IQuantity,IQuantity)
+  fullName: SearchAThing.UtilExt.LessThanOrEqualsTol(IQuantity, IQuantity, IQuantity)
+  nameWithType: UtilExt.LessThanOrEqualsTol(IQuantity, IQuantity, IQuantity)
 - uid: SearchAThing.UtilExt.LessThanOrEqualsTol(System.Double,System.Double,System.Double)
   name: LessThanOrEqualsTol(Double, Double, Double)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_LessThanOrEqualsTol_System_Double_System_Double_System_Double_
@@ -885,6 +915,12 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.LessThanOrEqualsTol
   nameWithType: UtilExt.LessThanOrEqualsTol
+- uid: SearchAThing.UtilExt.LessThanTol(IQuantity,IQuantity,IQuantity)
+  name: LessThanTol(IQuantity, IQuantity, IQuantity)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_LessThanTol_IQuantity_IQuantity_IQuantity_
+  commentId: M:SearchAThing.UtilExt.LessThanTol(IQuantity,IQuantity,IQuantity)
+  fullName: SearchAThing.UtilExt.LessThanTol(IQuantity, IQuantity, IQuantity)
+  nameWithType: UtilExt.LessThanTol(IQuantity, IQuantity, IQuantity)
 - uid: SearchAThing.UtilExt.LessThanTol(System.Double,System.Double,System.Double)
   name: LessThanTol(Double, Double, Double)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_LessThanTol_System_Double_System_Double_System_Double_

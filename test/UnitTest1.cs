@@ -9,6 +9,7 @@ using System.Collections.ObjectModel;
 using static SearchAThing.UtilToolkit;
 using System.Linq.Expressions;
 using static SearchAThing.UtilExt;
+using UnitsNet;
 
 namespace SearchAThing
 {
@@ -113,7 +114,7 @@ namespace SearchAThing
         public void NumberTest6()
         {
             var cultureBackup = Thread.CurrentThread.CurrentCulture;
-            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("it");            
+            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("it");
             Assert.True(double.Parse("1,2").EqualsAutoTol(1.2));
             Assert.True(double.Parse("1.2").EqualsAutoTol(12));
 
@@ -169,6 +170,43 @@ namespace SearchAThing
                 ++exceptionCnt;
             }
             Assert.True(exceptionCnt == 1);
+        }
+
+        [Fact]
+        public void NumberTest12()
+        {
+            var a = Length.FromMillimeters(1.3d);
+            var b = Length.FromMillimeters(1.299d);
+
+            Assert.True(a.EqualsTol(Length.FromMicrometers(1 + 1e-12), b));
+            Assert.False(a.EqualsTol(Length.FromNanometers(1), b));
+
+            var c = Force.FromNewtons(1.299d);
+
+            try
+            {
+                a.EqualsTol(Length.FromMicrometers(1 + 1e-12), c); // should generate exception due to different unit
+                Assert.True(false);
+            }
+            catch
+            {
+            }
+
+            var d = Length.FromMillimeters(1.31);
+
+            // 1.3 < 1.31
+            Assert.True(a.LessThanTol(Length.FromMicrometers(10), d));
+            
+            // 1.31 <= 1.3
+            Assert.True(d.LessThanOrEqualsTol(Length.FromMillimeters(0.011), a));
+            Assert.False(d.LessThanOrEqualsTol(Length.FromMillimeters(0.009), a));
+
+            // 1.3 > 1.31
+            Assert.False(a.GreatThanTol(Length.FromMicrometers(10), d));
+
+            // 1.3 >= 1.31
+            Assert.True(a.GreatThanOrEqualsTol(Length.FromMillimeters(0.011), d));
+            Assert.False(a.GreatThanOrEqualsTol(Length.FromMillimeters(0.009), d));
         }
 
         #endregion

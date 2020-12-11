@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Runtime.CompilerServices;
+using UnitsNet;
 using static System.Math;
 
 namespace SearchAThing
@@ -153,29 +154,96 @@ namespace SearchAThing
             return string.Format(CultureInfo.InvariantCulture, "{0:0." + decfmt + "}", d);
         }
 
+        /// <summary>
+        /// true if ( |x-y| <= tol )
+        /// </summary>        
         public static bool EqualsTol(this double x, double tol, double y)
-        {            
+        {
+            var d = UnitsNet.Length.FromCentimeters(3);
+
             return Abs(x - y) <= tol;
         }
 
+        /// <summary>
+        /// true if ( |x-y| <= tol )
+        /// </summary>        
+        public static bool EqualsTol(this IQuantity x, IQuantity tol, IQuantity y)
+        {
+            var bu = x.QuantityInfo.BaseUnitInfo.Value;
+
+            return x.ToUnit(bu).Value.EqualsTol(tol.ToUnit(bu).Value, y.ToUnit(bu).Value);
+        }
+
+        /// <summary>
+        /// true if (x > y) AND NOT ( |x-y| <= tol )
+        /// </summary>        
         public static bool GreatThanTol(this double x, double tol, double y)
         {
             return x > y && !x.EqualsTol(tol, y);
         }
 
+        /// <summary>
+        /// true if (x > y) AND NOT ( |x-y| <= tol )
+        /// </summary>        
+        public static bool GreatThanTol(this IQuantity x, IQuantity tol, IQuantity y)
+        {
+            var bu = x.QuantityInfo.BaseUnitInfo.Value;
+
+            return x.ToUnit(bu).Value.GreatThanTol(tol.ToUnit(bu).Value, y.ToUnit(bu).Value);
+        }
+
+        /// <summary>
+        /// true if (x > y) AND ( |x-y| <= tol )
+        /// </summary>        
         public static bool GreatThanOrEqualsTol(this double x, double tol, double y)
         {
             return x > y || x.EqualsTol(tol, y);
         }
 
+        /// <summary>
+        /// true if (x > y) AND ( |x-y| <= tol )
+        /// </summary>     
+        public static bool GreatThanOrEqualsTol(this IQuantity x, IQuantity tol, IQuantity y)
+        {
+            var bu = x.QuantityInfo.BaseUnitInfo.Value;
+
+            return x.ToUnit(bu).Value.GreatThanOrEqualsTol(tol.ToUnit(bu).Value, y.ToUnit(bu).Value);
+        }
+
+        /// <summary>
+        /// true if (x < y) AND NOT ( |x-y| <= tol )
+        /// </summary>     
         public static bool LessThanTol(this double x, double tol, double y)
         {
             return x < y && !x.EqualsTol(tol, y);
         }
 
+        /// <summary>
+        /// true if (x < y) AND NOT ( |x-y| <= tol )
+        /// </summary>     
+        public static bool LessThanTol(this IQuantity x, IQuantity tol, IQuantity y)
+        {
+            var bu = x.QuantityInfo.BaseUnitInfo.Value;
+
+            return x.ToUnit(bu).Value.LessThanTol(tol.ToUnit(bu).Value, y.ToUnit(bu).Value);
+        }
+
+        /// <summary>
+        /// true if (x < y) AND ( |x-y| <= tol )
+        /// </summary>     
         public static bool LessThanOrEqualsTol(this double x, double tol, double y)
         {
             return x < y || x.EqualsTol(tol, y);
+        }
+
+        /// <summary>
+        /// true if (x < y) AND ( |x-y| <= tol )
+        /// </summary>     
+        public static bool LessThanOrEqualsTol(this IQuantity x, IQuantity tol, IQuantity y)
+        {
+            var bu = x.QuantityInfo.BaseUnitInfo.Value;
+
+            return x.ToUnit(bu).Value.LessThanOrEqualsTol(tol.ToUnit(bu).Value, y.ToUnit(bu).Value);
         }
 
         public static int CompareTol(this double x, double tol, double y)
@@ -183,6 +251,13 @@ namespace SearchAThing
             if (x.EqualsTol(tol, y)) return 0;
             if (x < y) return -1;
             return 1; // x > y
+        }
+
+        public static int CompareTol(this IQuantity x, IQuantity tol, IQuantity y)
+        {
+            var bu = x.QuantityInfo.BaseUnitInfo.Value;
+
+            return x.ToUnit(bu).Value.CompareTol(tol.ToUnit(bu).Value, y.ToUnit(bu).Value);
         }
 
         /// <summary>
