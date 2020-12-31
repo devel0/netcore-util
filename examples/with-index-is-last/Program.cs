@@ -1,15 +1,12 @@
+﻿using SearchAThing;
 using Xunit;
 using System.Linq;
-using System;
-using System.Collections.Generic;
 
-namespace SearchAThing.Util.Tests
+namespace with_index_is_last
 {
-    public partial class EnumerableTests
+    class Program
     {
-
-        [Fact]
-        public void EnumerableTest_0005()
+        static void Main(string[] args)
         {
             var q = new[] { 1, 2, 4 };
 
@@ -28,7 +25,8 @@ namespace SearchAThing.Util.Tests
 
             Assert.True(q2 == 3);
             Assert.True(last == 4);
-        }
 
+            System.Console.WriteLine($"tests succeeded");
+        }
     }
 }
