@@ -3,6 +3,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>with_index_is_last</RootNamespace>
+    <AssemblyName>example</AssemblyName>
   </PropertyGroup>
   <ItemGroup>    
     

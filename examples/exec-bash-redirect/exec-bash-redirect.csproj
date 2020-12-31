@@ -6,9 +6,8 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <LangVersion>8</LangVersion>
     <TargetFramework>net5.0</TargetFramework>
-    <IsPackable>false</IsPackable>
+    <RootNamespace>exec_bash_redirect</RootNamespace>
     <AssemblyName>example</AssemblyName>
   </PropertyGroup>
 

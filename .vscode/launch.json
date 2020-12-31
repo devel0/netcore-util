@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/examples/random-password/bin/Debug/netcoreapp3.0/random-password.dll",
+            "program": "${workspaceFolder}/examples/exec-bash-redirect/bin/Debug/net5.0/example.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/examples/random-password",
+            "cwd": "${workspaceFolder}/examples/exec",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
