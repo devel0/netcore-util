@@ -777,7 +777,7 @@ if include a property and if to assign a custom value ( useful for complex, arra
     <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilToolkit_Exec_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilToolkit.Exec(System.String%2CIEnumerable%7BSystem.String%7D%2CCancellationToken%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Process.cs/#L53">View Source</a>
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Process.cs/#L92">View Source</a>
   </span>
   <a id="SearchAThing_UtilToolkit_Exec_" data-uid="SearchAThing.UtilToolkit.Exec*"></a>
   <h4 id="SearchAThing_UtilToolkit_Exec_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="SearchAThing.UtilToolkit.Exec(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">Exec(String, IEnumerable&lt;String&gt;, CancellationToken, Boolean, Boolean, Boolean, Boolean)</h4>
@@ -787,7 +787,7 @@ a cancellation token can be supplied to cancel underlying process</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;(int exitcode, string output, string error)&gt; Exec(string cmd, IEnumerable&lt;string&gt; args, CancellationToken ct, bool sudo = false, bool redirectStdout = true, bool redirectStderr = true, bool verbose = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;ExecResult&gt; Exec(string cmd, IEnumerable&lt;string&gt; args, CancellationToken ct, bool sudo = false, bool redirectStdout = true, bool redirectStderr = true, bool verbose = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -802,37 +802,44 @@ a cancellation token can be supplied to cancel underlying process</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">cmd</span></td>
-        <td></td>
+        <td><p>cmd to execute</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">args</span></td>
-        <td></td>
+        <td><p>cmd arguments ( array of strings )</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">ct</span></td>
-        <td></td>
+        <td><p>cancellation token</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">sudo</span></td>
-        <td></td>
+        <td><p>true if sudo required</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">redirectStdout</span></td>
-        <td></td>
+        <td><p>redirect process stdout and grab into output</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">redirectStderr</span></td>
-        <td></td>
+        <td><p>redirect process stderr and grab into error</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">verbose</span></td>
-        <td></td>
+        <td><p>if true prints command and args used</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -846,7 +853,7 @@ a cancellation token can be supplied to cancel underlying process</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SearchAThing.ExecResult.html">ExecResult</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -856,7 +863,7 @@ a cancellation token can be supplied to cancel underlying process</p>
     <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilToolkit_ExecBashRedirect_System_String_CancellationToken_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilToolkit.ExecBashRedirect(System.String%2CCancellationToken%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Process.cs/#L45">View Source</a>
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Process.cs/#L77">View Source</a>
   </span>
   <a id="SearchAThing_UtilToolkit_ExecBashRedirect_" data-uid="SearchAThing.UtilToolkit.ExecBashRedirect*"></a>
   <h4 id="SearchAThing_UtilToolkit_ExecBashRedirect_System_String_CancellationToken_System_Boolean_System_Boolean_" data-uid="SearchAThing.UtilToolkit.ExecBashRedirect(System.String,CancellationToken,System.Boolean,System.Boolean)">ExecBashRedirect(String, CancellationToken, Boolean, Boolean)</h4>
@@ -867,7 +874,7 @@ a cancellation token can be supplied to cancel underlying process</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;(int exitcode, string output, string error)&gt; ExecBashRedirect(string script, CancellationToken ct, bool sudo = false, bool verbose = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;ExecResult&gt; ExecBashRedirect(string script, CancellationToken ct, bool sudo = false, bool verbose = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -882,22 +889,26 @@ a cancellation token can be supplied to cancel underlying process</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">script</span></td>
-        <td></td>
+        <td><p>bash script to execute</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">ct</span></td>
-        <td></td>
+        <td><p>cancellation token</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">sudo</span></td>
-        <td></td>
+        <td><p>true if sudo required</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">verbose</span></td>
-        <td></td>
+        <td><p>if true prints command and args used</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -911,7 +922,7 @@ a cancellation token can be supplied to cancel underlying process</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SearchAThing.ExecResult.html">ExecResult</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -989,7 +1000,7 @@ a cancellation token can be supplied to cancel underlying process</p>
     <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilToolkit_ExecNoRedirect_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilToolkit.ExecNoRedirect(System.String%2CIEnumerable%7BSystem.String%7D%2CCancellationToken%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Process.cs/#L20">View Source</a>
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Process.cs/#L47">View Source</a>
   </span>
   <a id="SearchAThing_UtilToolkit_ExecNoRedirect_" data-uid="SearchAThing.UtilToolkit.ExecNoRedirect*"></a>
   <h4 id="SearchAThing_UtilToolkit_ExecNoRedirect_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_" data-uid="SearchAThing.UtilToolkit.ExecNoRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)">ExecNoRedirect(String, IEnumerable&lt;String&gt;, CancellationToken, Boolean, Boolean)</h4>
@@ -999,7 +1010,7 @@ a cancellation token can be supplied to cancel underlying process</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;(int exitcode, string output, string error)&gt; ExecNoRedirect(string cmd, IEnumerable&lt;string&gt; args, CancellationToken ct, bool sudo = false, bool verbose = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;ExecResult&gt; ExecNoRedirect(string cmd, IEnumerable&lt;string&gt; args, CancellationToken ct, bool sudo = false, bool verbose = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1048,7 +1059,7 @@ a cancellation token can be supplied to cancel underlying process</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SearchAThing.ExecResult.html">ExecResult</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1058,7 +1069,7 @@ a cancellation token can be supplied to cancel underlying process</p>
     <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilToolkit_ExecRedirect_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilToolkit.ExecRedirect(System.String%2CIEnumerable%7BSystem.String%7D%2CCancellationToken%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Process.cs/#L28">View Source</a>
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Process.cs/#L55">View Source</a>
   </span>
   <a id="SearchAThing_UtilToolkit_ExecRedirect_" data-uid="SearchAThing.UtilToolkit.ExecRedirect*"></a>
   <h4 id="SearchAThing_UtilToolkit_ExecRedirect_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_" data-uid="SearchAThing.UtilToolkit.ExecRedirect(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)">ExecRedirect(String, IEnumerable&lt;String&gt;, CancellationToken, Boolean, Boolean)</h4>
@@ -1068,7 +1079,7 @@ a cancellation token can be supplied to cancel underlying process</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;(int exitcode, string output, string error)&gt; ExecRedirect(string cmd, IEnumerable&lt;string&gt; args, CancellationToken ct, bool sudo = false, bool verbose = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;ExecResult&gt; ExecRedirect(string cmd, IEnumerable&lt;string&gt; args, CancellationToken ct, bool sudo = false, bool verbose = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1117,7 +1128,7 @@ a cancellation token can be supplied to cancel underlying process</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SearchAThing.ExecResult.html">ExecResult</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1127,7 +1138,7 @@ a cancellation token can be supplied to cancel underlying process</p>
     <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilToolkit_ExecRedirectError_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilToolkit.ExecRedirectError(System.String%2CIEnumerable%7BSystem.String%7D%2CCancellationToken%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Process.cs/#L36">View Source</a>
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Process.cs/#L63">View Source</a>
   </span>
   <a id="SearchAThing_UtilToolkit_ExecRedirectError_" data-uid="SearchAThing.UtilToolkit.ExecRedirectError*"></a>
   <h4 id="SearchAThing_UtilToolkit_ExecRedirectError_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_" data-uid="SearchAThing.UtilToolkit.ExecRedirectError(System.String,IEnumerable{System.String},CancellationToken,System.Boolean,System.Boolean)">ExecRedirectError(String, IEnumerable&lt;String&gt;, CancellationToken, Boolean, Boolean)</h4>
@@ -1137,7 +1148,7 @@ a cancellation token can be supplied to cancel underlying process</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;(int exitcode, string output, string error)&gt; ExecRedirectError(string cmd, IEnumerable&lt;string&gt; args, CancellationToken ct, bool sudo = false, bool verbose = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;ExecResult&gt; ExecRedirectError(string cmd, IEnumerable&lt;string&gt; args, CancellationToken ct, bool sudo = false, bool verbose = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1186,7 +1197,7 @@ a cancellation token can be supplied to cancel underlying process</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="SearchAThing.ExecResult.html">ExecResult</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

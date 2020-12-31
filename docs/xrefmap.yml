@@ -230,6 +230,64 @@ references:
   isSpec: "True"
   fullName: SearchAThing.ErrorInfo.ToString
   nameWithType: ErrorInfo.ToString
+- uid: SearchAThing.ExecResult
+  name: ExecResult
+  href: api/SearchAThing.ExecResult.html
+  commentId: T:SearchAThing.ExecResult
+  fullName: SearchAThing.ExecResult
+  nameWithType: ExecResult
+- uid: SearchAThing.ExecResult.#ctor(System.Int32,System.String,System.String)
+  name: ExecResult(Int32, String, String)
+  href: api/SearchAThing.ExecResult.html#SearchAThing_ExecResult__ctor_System_Int32_System_String_System_String_
+  commentId: M:SearchAThing.ExecResult.#ctor(System.Int32,System.String,System.String)
+  fullName: SearchAThing.ExecResult.ExecResult(System.Int32, System.String, System.String)
+  nameWithType: ExecResult.ExecResult(Int32, String, String)
+- uid: SearchAThing.ExecResult.#ctor*
+  name: ExecResult
+  href: api/SearchAThing.ExecResult.html#SearchAThing_ExecResult__ctor_
+  commentId: Overload:SearchAThing.ExecResult.#ctor
+  isSpec: "True"
+  fullName: SearchAThing.ExecResult.ExecResult
+  nameWithType: ExecResult.ExecResult
+- uid: SearchAThing.ExecResult.Error
+  name: Error
+  href: api/SearchAThing.ExecResult.html#SearchAThing_ExecResult_Error
+  commentId: P:SearchAThing.ExecResult.Error
+  fullName: SearchAThing.ExecResult.Error
+  nameWithType: ExecResult.Error
+- uid: SearchAThing.ExecResult.Error*
+  name: Error
+  href: api/SearchAThing.ExecResult.html#SearchAThing_ExecResult_Error_
+  commentId: Overload:SearchAThing.ExecResult.Error
+  isSpec: "True"
+  fullName: SearchAThing.ExecResult.Error
+  nameWithType: ExecResult.Error
+- uid: SearchAThing.ExecResult.ExitCode
+  name: ExitCode
+  href: api/SearchAThing.ExecResult.html#SearchAThing_ExecResult_ExitCode
+  commentId: P:SearchAThing.ExecResult.ExitCode
+  fullName: SearchAThing.ExecResult.ExitCode
+  nameWithType: ExecResult.ExitCode
+- uid: SearchAThing.ExecResult.ExitCode*
+  name: ExitCode
+  href: api/SearchAThing.ExecResult.html#SearchAThing_ExecResult_ExitCode_
+  commentId: Overload:SearchAThing.ExecResult.ExitCode
+  isSpec: "True"
+  fullName: SearchAThing.ExecResult.ExitCode
+  nameWithType: ExecResult.ExitCode
+- uid: SearchAThing.ExecResult.Output
+  name: Output
+  href: api/SearchAThing.ExecResult.html#SearchAThing_ExecResult_Output
+  commentId: P:SearchAThing.ExecResult.Output
+  fullName: SearchAThing.ExecResult.Output
+  nameWithType: ExecResult.Output
+- uid: SearchAThing.ExecResult.Output*
+  name: Output
+  href: api/SearchAThing.ExecResult.html#SearchAThing_ExecResult_Output_
+  commentId: Overload:SearchAThing.ExecResult.Output
+  isSpec: "True"
+  fullName: SearchAThing.ExecResult.Output
+  nameWithType: ExecResult.Output
 - uid: SearchAThing.RandomPasswordOptions
   name: RandomPasswordOptions
   href: api/SearchAThing.RandomPasswordOptions.html
