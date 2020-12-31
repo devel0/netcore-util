@@ -9,9 +9,16 @@
 
 <hr/>
 
-- [Quickstart](#quickstart)
-- [Unit tests](#unit-tests)
-- [How this project was built](#how-this-project-was-built)
+<!-- TOC -->
+- [netcore-util](#netcore-util)
+  * [Quickstart](#quickstart)
+  * [Examples](#examples)
+    + [with-index-is-last](#with-index-is-last)
+    + [exec](#exec)
+    + [exec-bash-redirect](#exec-bash-redirect)
+  * [Unit tests](#unit-tests)
+  * [How this project was built](#how-this-project-was-built)
+<!-- TOCEND -->
 
 <hr/>
 
@@ -73,7 +80,7 @@ namespace with_index_is_last
 
 ### exec
 
-- [Exec]()
+- [Exec](https://devel0.github.io/netcore-util/api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_Exec_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_System_Boolean_System_Boolean_)
 
 ```csharp
 using System.Threading;
@@ -125,7 +132,7 @@ namespace exec
 
 ### exec-bash-redirect
 
-- [ExecBashRedirect]()
+- [ExecBashRedirect](https://devel0.github.io/netcore-util/api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ExecBashRedirect_System_String_CancellationToken_System_Boolean_System_Boolean_)
 
 ```csharp
 using System.Threading;
