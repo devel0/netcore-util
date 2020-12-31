@@ -92,14 +92,14 @@ namespace SearchAThing
             var res = new List<DockerNetworkNfo>();
 
             var cmdres = await UtilToolkit.ExecRedirect("docker", new[] { "network", "ls", "--format", "'{{.Name}}'" }, ct, sudo, verbose);
-            if (cmdres.exitcode != 0) throw new Exception($"docker execution error: [{cmdres.error}]");
+            if (cmdres.ExitCode != 0) throw new Exception($"docker execution error: [{cmdres.Error}]");
 
-            foreach (var network in cmdres.output.Lines().Select(w => w.StripBegin("'").StripEnd("'")))
+            foreach (var network in cmdres.Output.Lines().Select(w => w.StripBegin("'").StripEnd("'")))
             {
                 cmdres = await UtilToolkit.ExecRedirect("docker", new[] { "network", "inspect", network }, ct, sudo, verbose);
-                if (cmdres.exitcode != 0) throw new Exception($"docker execution error: [{cmdres.error}]");
+                if (cmdres.ExitCode != 0) throw new Exception($"docker execution error: [{cmdres.Error}]");
 
-                var jsonObj = JObject.Parse("{cnf: " + cmdres.output + "}");
+                var jsonObj = JObject.Parse("{cnf: " + cmdres.Output + "}");
                 var q = jsonObj["cnf"][0]["IPAM"]["Config"];
                 if (q.Count() > 0)
                 {
@@ -121,14 +121,14 @@ namespace SearchAThing
             var res = new List<DockerContainerNfo>();
 
             var cmdres = await UtilToolkit.ExecRedirect("docker", new[] { "ps", "-a", "--format", "'{{.Names}}'" }, ct, sudo, verbose);
-            if (cmdres.exitcode != 0) throw new Exception($"docker execution error: [{cmdres.error}]");
+            if (cmdres.ExitCode != 0) throw new Exception($"docker execution error: [{cmdres.Error}]");
 
-            foreach (var container in cmdres.output.Lines().Select(w => w.StripBegin("'").StripEnd("'")))
+            foreach (var container in cmdres.Output.Lines().Select(w => w.StripBegin("'").StripEnd("'")))
             {
                 cmdres = await UtilToolkit.ExecRedirect("docker", new[] { "inspect", container }, ct, sudo, verbose);
-                if (cmdres.exitcode != 0) throw new Exception($"docker execution error: [{cmdres.error}]");
+                if (cmdres.ExitCode != 0) throw new Exception($"docker execution error: [{cmdres.Error}]");
 
-                var jsonObj = JObject.Parse("{cnf: " + cmdres.output + "}");
+                var jsonObj = JObject.Parse("{cnf: " + cmdres.Output + "}");
                 var q = jsonObj["cnf"][0]["NetworkSettings"]["Networks"];
                 if (q.Count() > 0)
                 {
@@ -152,7 +152,7 @@ namespace SearchAThing
                 "exec", containerName, "bash", "-c", command
             }, ct, sudo, verbose);
 
-            return res.exitcode;
+            return res.ExitCode;
         }
         #endregion
 
@@ -185,10 +185,10 @@ namespace SearchAThing
                 containerImage
             });
             var cmdres = await UtilToolkit.ExecRedirect("docker", args, ct, sudo, verbose);
-            if (cmdres.exitcode != 0)
+            if (cmdres.ExitCode != 0)
             {
                 System.Console.WriteLine("ERROR");
-                throw new Exception($"docker execution error: [{cmdres.error}]");
+                throw new Exception($"docker execution error: [{cmdres.Error}]");
             }
             else
                 System.Console.WriteLine("OK");
@@ -203,10 +203,10 @@ namespace SearchAThing
         {
             System.Console.Write($"Stopping [{containerName}] container...");
             var cmdres = await UtilToolkit.ExecRedirect("docker", new[] { "stop", containerName }, ct, sudo, verbose);
-            if (cmdres.exitcode != 0)
+            if (cmdres.ExitCode != 0)
             {
                 System.Console.WriteLine("ERROR");
-                throw new Exception($"docker execution error: [{cmdres.error}]");
+                throw new Exception($"docker execution error: [{cmdres.Error}]");
             }
             else
                 System.Console.WriteLine("OK");
@@ -221,10 +221,10 @@ namespace SearchAThing
         {
             System.Console.Write($"Removing [{containerName}] container...");
             var cmdres = await UtilToolkit.ExecRedirect("docker", new[] { "rm", containerName }, ct, sudo, verbose);
-            if (cmdres.exitcode != 0)
+            if (cmdres.ExitCode != 0)
             {
                 System.Console.WriteLine("ERROR");
-                throw new Exception($"docker execution error: [{cmdres.error}]");
+                throw new Exception($"docker execution error: [{cmdres.Error}]");
             }
             else
                 System.Console.WriteLine("OK");
@@ -239,10 +239,10 @@ namespace SearchAThing
         {
             System.Console.Write($"Removing [{networkName}] network...");
             var cmdres = await UtilToolkit.ExecRedirect("docker", new[] { "network", "rm", networkName }, ct, sudo, verbose);
-            if (cmdres.exitcode != 0)
+            if (cmdres.ExitCode != 0)
             {
                 System.Console.WriteLine("ERROR");
-                throw new Exception($"docker execution error: [{cmdres.error}]");
+                throw new Exception($"docker execution error: [{cmdres.Error}]");
             }
             else
                 System.Console.WriteLine("OK");
@@ -257,10 +257,10 @@ namespace SearchAThing
         {
             System.Console.Write($"Creating [{networkName}] network...");
             var cmdres = await UtilToolkit.ExecRedirect("docker", new[] { "network", "create", $"--subnet={subnet}", networkName }, ct, sudo, verbose);
-            if (cmdres.exitcode != 0)
+            if (cmdres.ExitCode != 0)
             {
                 System.Console.WriteLine("ERROR");
-                throw new Exception($"docker execution error: [{cmdres.error}]");
+                throw new Exception($"docker execution error: [{cmdres.Error}]");
             }
             else
                 System.Console.WriteLine("OK");
@@ -281,10 +281,10 @@ namespace SearchAThing
                 "-f", $"{dockerSourceDir}/Dockerfile",
                 dockerSourceDir
             }, ct, sudo, verbose);
-            if (cmdres.exitcode != 0)
+            if (cmdres.ExitCode != 0)
             {
                 System.Console.WriteLine("ERROR");
-                throw new Exception($"docker execution error: [{cmdres.error}]");
+                throw new Exception($"docker execution error: [{cmdres.Error}]");
             }
             else
                 System.Console.WriteLine("OK");

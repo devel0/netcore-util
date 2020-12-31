@@ -9,6 +9,33 @@ using System.Threading.Tasks;
 namespace SearchAThing
 {
 
+    /// <summary>
+    /// results of process executio
+    /// </summary>
+    public class ExecResult
+    {
+        public ExecResult(int exitCode, string output, string error)
+        {
+            ExitCode = exitCode;
+            Output = output;
+            Error = error;
+        }
+        /// <summary>
+        /// exitcode of process execuition
+        /// </summary>        
+        public int ExitCode { get; private set; }
+
+        /// <summary>
+        /// stdout of process execution if redirection was used
+        /// </summary>    
+        public string Output { get; private set; }
+
+        /// <summary>
+        /// stderr of process execution if redirection was used
+        /// </summary>        
+        public string Error { get; private set; }
+    }
+
     public static partial class UtilToolkit
     {
 
@@ -17,7 +44,7 @@ namespace SearchAThing
         /// start a process in background without redirecting standard output, error;
         /// a cancellation token can be supplied to cancel underlying process            
         /// </summary>
-        public static async Task<(int exitcode, string output, string error)> ExecNoRedirect(string cmd,
+        public static async Task<ExecResult> ExecNoRedirect(string cmd,
             IEnumerable<string> args, CancellationToken ct, bool sudo = false, bool verbose = false) =>
             await Exec(cmd, args, ct, sudo, false, false, verbose);
 
@@ -25,7 +52,7 @@ namespace SearchAThing
         /// start a process in background redirecting standard output, error;
         /// a cancellation token can be supplied to cancel underlying process            
         /// </summary>
-        public static async Task<(int exitcode, string output, string error)> ExecRedirect(string cmd,
+        public static async Task<ExecResult> ExecRedirect(string cmd,
             IEnumerable<string> args, CancellationToken ct, bool sudo = false, bool verbose = false) =>
             await Exec(cmd, args, ct, sudo, true, true, verbose);
 
@@ -33,7 +60,7 @@ namespace SearchAThing
         /// start a process in background redirecting standard error;
         /// a cancellation token can be supplied to cancel underlying process            
         /// </summary>
-        public static async Task<(int exitcode, string output, string error)> ExecRedirectError(string cmd,
+        public static async Task<ExecResult> ExecRedirectError(string cmd,
             IEnumerable<string> args, CancellationToken ct, bool sudo = false, bool verbose = false) =>
             await Exec(cmd, args, ct, sudo, false, true, verbose);
 
@@ -42,19 +69,32 @@ namespace SearchAThing
         /// given script can contains pipe and other shell related redirections.
         /// a cancellation token can be supplied to cancel underlying process    
         /// </summary>
-        public static async Task<(int exitcode, string output, string error)> ExecBashRedirect(string script,
+        /// <param name="script">bash script to execute</param>
+        /// <param name="ct">cancellation token</param>
+        /// <param name="sudo">true if sudo required</param>
+        /// <param name="verbose">if true prints command and args used</param>
+        /// <returns></returns>
+        public static async Task<ExecResult> ExecBashRedirect(string script,
             CancellationToken ct, bool sudo = false, bool verbose = false) =>
             await Exec("bash", new[] { "-c", script }, ct, sudo, true, true, verbose);
 
         /// <summary>
         /// start a process in background redirecting standard output, error;
         /// a cancellation token can be supplied to cancel underlying process
-        /// </summary>        
-        public static async Task<(int exitcode, string output, string error)> Exec(string cmd,
-            IEnumerable<string> args, CancellationToken ct, bool sudo = false, bool redirectStdout = true, bool redirectStderr = true,
+        /// </summary>
+        /// <param name="cmd">cmd to execute</param>
+        /// <param name="args">cmd arguments ( array of strings )</param>
+        /// <param name="ct">cancellation token</param>
+        /// <param name="sudo">true if sudo required</param>
+        /// <param name="redirectStdout">redirect process stdout and grab into output</param>
+        /// <param name="redirectStderr">redirect process stderr and grab into error</param>
+        /// <param name="verbose">if true prints command and args used</param>                  
+        public static async Task<ExecResult> Exec(string cmd,
+            IEnumerable<string> args, CancellationToken ct, bool sudo = false,
+            bool redirectStdout = true, bool redirectStderr = true,
             bool verbose = false)
         {
-            var task = Task<(int exitcode, string output, string error)>.Run(() =>
+            var task = Task<ExecResult>.Run(() =>
             {
                 var p = new Process();
                 p.StartInfo.UseShellExecute = !redirectStdout && !redirectStderr;
@@ -137,7 +177,7 @@ namespace SearchAThing
 
                 p.WaitForExit(); // flush async                                        
 
-                    return (p.ExitCode, sbOut.ToString(), sbErr.ToString());
+                return new ExecResult(p.ExitCode, sbOut.ToString(), sbErr.ToString());
             });
 
             return await task;
