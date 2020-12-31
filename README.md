@@ -39,7 +39,6 @@ using static SearchAThing.UtilToolkit;
 
 ```csharp
 using SearchAThing;
-using Xunit;
 using System.Linq;
 
 namespace with_index_is_last
@@ -63,10 +62,10 @@ namespace with_index_is_last
                 return w.item;
             }).Sum();
 
-            Assert.True(q2 == 3);
-            Assert.True(last == 4);
-
-            System.Console.WriteLine($"tests succeeded");
+            if (q2 == 3 && last == 4)
+                System.Console.WriteLine($"tests succeeded");
+            else
+                System.Console.WriteLine($"tests failed");
         }
     }
 }

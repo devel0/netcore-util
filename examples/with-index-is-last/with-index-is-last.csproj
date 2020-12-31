@@ -10,8 +10,5 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\netcore-util\netcore-util.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="xunit" Version="2.4.1" />
-  </ItemGroup>
+  </ItemGroup>  
 </Project>
