@@ -69,6 +69,27 @@ namespace SearchAThing
         }
 
         /// <summary>
+        /// retrieve list of member names from a functor like `x=>new {x.membername1, x.membername2, ...}` or `x=>x.membername`
+        /// </summary>
+        public static HashSet<string> GetMemberNames<T>(Expression<Func<T, object>> membersExpr)
+        {
+            return new HashSet<string>(GetMemberNamesExt(membersExpr).ToArray());
+        }
+
+
+        /// <summary>
+        /// retrieve member name from a functor like `x=>x.membername1
+        /// </summary>
+        public static string GetMemberName<T>(Expression<Func<T, object>> membersExpr)
+        {
+            var en = GetMemberNamesExt(membersExpr).GetEnumerator();
+            if (!en.MoveNext()) throw new Exception($"can't find member names");
+            var res = en.Current;
+            if (en.MoveNext()) throw new ArgumentException($"more than one member in expression specified");
+            return res;
+        }
+
+        /// <summary>
         /// retrieve member name from a functor like `x=>x.membername1
         /// </summary>
         public static string GetMemberName<T>(T obj, Expression<Func<T, object>> membersExpr)
@@ -83,23 +104,7 @@ namespace SearchAThing
     }
 
     public static partial class UtilExt
-    {        
-
-        /// <summary>
-        /// retrieve list of member names from a functor like `x=>new {x.membername1, x.membername2, ...}` or `x=>x.membername`
-        /// </summary>
-        public static IEnumerable<string> GetMemberNames<T>(Expression<Func<T, object>> membersExpr)
-        {
-            return GetMemberNamesExt(membersExpr);
-        }
-
-        /// <summary>
-        /// retrieve member name from a functor like `x=>x.membername1
-        /// </summary>
-        public static string GetMemberName<T>(Expression<Func<T, object>> membersExpr) where T : class
-        {
-            return UtilToolkit.GetMemberName<T>(null, membersExpr);
-        }
+    {
 
         /// <summary>
         /// create getter (func) and setter (action) from given lambda expr
