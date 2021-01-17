@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Runtime.CompilerServices;
+using UnitsNet;
 using static System.Math;
 
 namespace SearchAThing
@@ -29,7 +31,6 @@ namespace SearchAThing
             return Truncate(p) * multiple;
         }
 
-
         /// <summary>
         /// Round the given value using the multiple basis
         /// if null return null
@@ -54,20 +55,34 @@ namespace SearchAThing
         }
 
         /// <summary>
-        /// convert given angle(rad) to degree
-        /// </summary>        
-        public static double ToDeg(this double angleRad)
-        {
-            return angleRad / PI * 180.0;
-        }
+        /// convert given angle(rad) to deg
+        /// </summary>
+        /// <param name="angleRad">angle (rad)</param>
+        /// <returns>angle (deg)</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static double ToDeg(this double angleRad) => angleRad / PI * 180.0;
 
         /// <summary>
-        /// convert given angle(grad) to radians
-        /// </summary>        
-        public static double ToRad(this double angleGrad)
-        {
-            return angleGrad / 180.0 * PI;
-        }
+        /// convert given angle(deg) to rad
+        /// </summary>
+        /// <param name="angleGrad">angle (deg)</param>
+        /// <returns>angle (radians)</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static double ToRad(this double angleGrad) => angleGrad / 180.0 * PI;
+
+        /// <summary>
+        /// convert given angle(deg) to rad
+        /// </summary>
+        /// <param name="angleDeg">angle (deg)</param>
+        /// <returns>angle (radians)</returns>
+        public static float ToRad(this float angleDeg) => angleDeg / 180f * ((float)PI);
+
+        /// <summary>
+        /// convert given angle(rad) to deg
+        /// </summary>
+        /// <param name="angleRad">angle (rad)</param>
+        /// <returns>angle (deg)</returns>
+        public static float ToDeg(this float angleRad) => angleRad / (float)PI * 180f;
 
         /// <summary>
         /// Return an invariant string representation rounded to given dec.        
@@ -87,28 +102,6 @@ namespace SearchAThing
             if (a < double.Epsilon) return 0;
 
             return (int)Floor(Log10(a));
-        }
-
-        /// <summary>
-        /// Measure precision distance between two given number.
-        /// for example two big numbers 1234567890123.0 and 1234567890023
-        /// have difference of 100 but a precision difference of about 1e-10.
-        /// This is an instrumentation function that is not to be used outside its scope,
-        /// it will help to understand loss of precision between two numbers represented with different storage.
-        /// For example this could useful to compare if an import-export tool produce results comparable to other previous versions
-        /// because there can be approximations around 1e-12 and 1e-15 due to different format and providers.  
-        /// While in general to compare measurements a tolerance have to be used and EqualsTol method, so that
-        /// 1234567890123.0d.EqualsTol(1e-10, 1234567890023) is false because diff is 100.
-        /// </summary>
-        public static double PrecisionDifference(this double a, double b)
-        {            
-            var ka = a.Magnitude();
-            var kb = b.Magnitude();
-
-            var qa = a * Pow(10, -ka);
-            var qb = b * Pow(10, -kb);
-
-            return Abs(qa - qb) + (ka == kb ? 0 : Pow(10, Abs(ka - kb)));
         }
 
         /// <summary>
@@ -161,29 +154,96 @@ namespace SearchAThing
             return string.Format(CultureInfo.InvariantCulture, "{0:0." + decfmt + "}", d);
         }
 
+        /// <summary>
+        /// true if ( |x-y| <= tol )
+        /// </summary>        
         public static bool EqualsTol(this double x, double tol, double y)
         {
+            var d = UnitsNet.Length.FromCentimeters(3);
+
             return Abs(x - y) <= tol;
         }
 
+        /// <summary>
+        /// true if ( |x-y| <= tol )
+        /// </summary>        
+        public static bool EqualsTol(this IQuantity x, IQuantity tol, IQuantity y)
+        {
+            var bu = x.QuantityInfo.BaseUnitInfo.Value;
+
+            return x.ToUnit(bu).Value.EqualsTol(tol.ToUnit(bu).Value, y.ToUnit(bu).Value);
+        }
+
+        /// <summary>
+        /// true if (x > y) AND NOT ( |x-y| <= tol )
+        /// </summary>        
         public static bool GreatThanTol(this double x, double tol, double y)
         {
             return x > y && !x.EqualsTol(tol, y);
         }
 
+        /// <summary>
+        /// true if (x > y) AND NOT ( |x-y| <= tol )
+        /// </summary>        
+        public static bool GreatThanTol(this IQuantity x, IQuantity tol, IQuantity y)
+        {
+            var bu = x.QuantityInfo.BaseUnitInfo.Value;
+
+            return x.ToUnit(bu).Value.GreatThanTol(tol.ToUnit(bu).Value, y.ToUnit(bu).Value);
+        }
+
+        /// <summary>
+        /// true if (x > y) AND ( |x-y| <= tol )
+        /// </summary>        
         public static bool GreatThanOrEqualsTol(this double x, double tol, double y)
         {
             return x > y || x.EqualsTol(tol, y);
         }
 
+        /// <summary>
+        /// true if (x > y) AND ( |x-y| <= tol )
+        /// </summary>     
+        public static bool GreatThanOrEqualsTol(this IQuantity x, IQuantity tol, IQuantity y)
+        {
+            var bu = x.QuantityInfo.BaseUnitInfo.Value;
+
+            return x.ToUnit(bu).Value.GreatThanOrEqualsTol(tol.ToUnit(bu).Value, y.ToUnit(bu).Value);
+        }
+
+        /// <summary>
+        /// true if (x < y) AND NOT ( |x-y| <= tol )
+        /// </summary>     
         public static bool LessThanTol(this double x, double tol, double y)
         {
             return x < y && !x.EqualsTol(tol, y);
         }
 
+        /// <summary>
+        /// true if (x < y) AND NOT ( |x-y| <= tol )
+        /// </summary>     
+        public static bool LessThanTol(this IQuantity x, IQuantity tol, IQuantity y)
+        {
+            var bu = x.QuantityInfo.BaseUnitInfo.Value;
+
+            return x.ToUnit(bu).Value.LessThanTol(tol.ToUnit(bu).Value, y.ToUnit(bu).Value);
+        }
+
+        /// <summary>
+        /// true if (x < y) AND ( |x-y| <= tol )
+        /// </summary>     
         public static bool LessThanOrEqualsTol(this double x, double tol, double y)
         {
             return x < y || x.EqualsTol(tol, y);
+        }
+
+        /// <summary>
+        /// true if (x < y) AND ( |x-y| <= tol )
+        /// </summary>     
+        public static bool LessThanOrEqualsTol(this IQuantity x, IQuantity tol, IQuantity y)
+        {
+            var bu = x.QuantityInfo.BaseUnitInfo.Value;
+
+            return x.ToUnit(bu).Value.LessThanOrEqualsTol(tol.ToUnit(bu).Value, y.ToUnit(bu).Value);
         }
 
         public static int CompareTol(this double x, double tol, double y)
@@ -191,6 +251,13 @@ namespace SearchAThing
             if (x.EqualsTol(tol, y)) return 0;
             if (x < y) return -1;
             return 1; // x > y
+        }
+
+        public static int CompareTol(this IQuantity x, IQuantity tol, IQuantity y)
+        {
+            var bu = x.QuantityInfo.BaseUnitInfo.Value;
+
+            return x.ToUnit(bu).Value.CompareTol(tol.ToUnit(bu).Value, y.ToUnit(bu).Value);
         }
 
         /// <summary>
@@ -251,6 +318,26 @@ namespace SearchAThing
             if (n >= 0) return 1.0;
             return -1.0;
         }
+
+        /// <summary>
+        /// return clamped number between [min,max] interval
+        /// </summary>
+        /// <param name="n">number</param>
+        /// <param name="min">min value admissible</param>
+        /// <param name="max">max value admissible</param>
+        /// <returns>n if between [min,max] otherwise min when n less than min or max when n great than max</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static float Clamp(this float n, float min, float max) => n < min ? min : (n > max) ? max : n;
+
+        /// <summary>
+        /// return clamped number between [min,max] interval
+        /// </summary>
+        /// <param name="n">number</param>
+        /// <param name="min">min value admissible</param>
+        /// <param name="max">max value admissible</param>
+        /// <returns>n if between [min,max] otherwise min when n less than min or max when n great than max</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static double Clamp(this double n, double min, double max) => n < min ? min : (n > max) ? max : n;
 
     }
 

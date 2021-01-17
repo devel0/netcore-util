@@ -12,6 +12,9 @@ using static System.Math;
 namespace SearchAThing
 {
 
+    /// <summary>
+    /// generic enum for column alignment description
+    /// </summary>
     public enum ColumnAlignment { left, center, right };
 
     public static partial class UtilExt
@@ -351,11 +354,6 @@ namespace SearchAThing
             return new StringWrapper() { str = sb.ToString() };
         }
 
-        public static string ToJson(this object o)
-        {
-            return JsonConvert.SerializeObject(o);
-        }
-
         /// <summary>
         /// removes all characters that aren't 0-9 dot or comma
         /// </summary>        
@@ -430,6 +428,14 @@ namespace SearchAThing
             return false;
         }
 
+    }
+
+    public static partial class UtilToolkit
+    {
+        public static string ToJson(object o)
+        {
+            return JsonConvert.SerializeObject(o);
+        }
     }
 
     public class StringWrapperLineReader

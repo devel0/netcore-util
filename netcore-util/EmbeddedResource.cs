@@ -5,10 +5,34 @@ using System.IO;
 using System.IO.Compression;
 using System.Reflection;
 
-namespace SearchAThing.Util
+namespace SearchAThing
 {
 
-    public static partial class Toolkit
+    public static partial class UtilExt
+    {
+
+        /// <summary>
+        /// retrieve embedded resource file content and read into a string
+        /// </summary>
+        /// <param name="resourceName">name of resource (eg. namespace.filename.ext)</param>
+        /// <typeparam name="T">Type for which lookup assembly (eg. namespace.classname)</typeparam>
+        public static string GetEmbeddedFileContent<T>(this string resourceName) where T : class
+        {
+            var assembly = typeof(T).GetTypeInfo().Assembly;
+            string res = "";
+            using (var resource = assembly.GetManifestResourceStream(resourceName))
+            {
+                using (var sr = new StreamReader(resource))
+                {
+                    res = sr.ReadToEnd();
+                }
+            }
+            return res;
+        }
+
+    }
+
+    public static partial class UtilToolkit
     {
 
         /// <summary>
@@ -65,6 +89,16 @@ namespace SearchAThing.Util
         public static IEnumerable<string> GetEmbeddedResourceNames()
         {
             var assembly = Assembly.GetCallingAssembly();
+            return assembly.GetManifestResourceNames();
+        }
+
+        /// <summary>
+        /// retrieve the list of embedded resource names from given Type
+        /// </summary>
+        /// <typeparam name="T">Type for which lookup assembly (eg. namespace.classname)</typeparam>
+        public static string[] GetEmbeddedResourcesList<T>() where T : class
+        {
+            var assembly = typeof(T).GetTypeInfo().Assembly;
             return assembly.GetManifestResourceNames();
         }
 

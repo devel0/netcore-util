@@ -17,11 +17,16 @@ namespace SearchAThing
 
         public override string ToString()
         {
+            return ToString(true);
+        }
+
+        public string ToString(bool includeStackTrace)
+        {
             var sb = new StringBuilder();
 
             sb.AppendLine($"exception message : [{Message}]");
             sb.AppendLine($"exception type : [{ExceptionType}]");
-            sb.AppendLine($"stacktrace : [{Stacktrace}]");
+            if (includeStackTrace) sb.AppendLine($"stacktrace : [{Stacktrace}]");
 
             return sb.ToString();
         }
@@ -31,64 +36,35 @@ namespace SearchAThing
     public static partial class UtilExt
     {
 
-        public static string Details(this Exception ex)
+        public static string Details(this Exception ex, bool includeStackTrace = true)
         {
-            return DetailsObject(ex).ToString();
+            return DetailsObject(ex).ToString(includeStackTrace);
         }
 
-        public static ErrorInfo DetailsObject(this Exception ex)
+        public static ErrorInfo DetailsObject(this Exception _ex)
         {
             var res = new ErrorInfo();
 
             try
             {
-                res.Message = ex.Message;
-                res.ExceptionType = ex.GetType().ToString();
-                res.Stacktrace = ex.StackTrace.ToString();
+                var ex = ((_ex.InnerException as Npgsql.PostgresException) != null) ? _ex.InnerException : _ex;
 
-                var sb = new StringBuilder();
-
-                Func<Exception, string> inner_detail = null;
-                inner_detail = (e) =>
+                if (ex is Npgsql.PostgresException)
                 {
-                    if (e is Npgsql.PostgresException)
-                    {
-                        var pex = e as Npgsql.PostgresException;
+                    var pex = ex as Npgsql.PostgresException;
 
-                        sb.AppendLine($"npgsql statement [{pex.Statement}]");
-                    }
+                    res.Message = $"{pex.Message} [table:{pex.TableName}] [constraint:{pex.ConstraintName}] [stmt:{pex.Statement}]";
+                    res.ExceptionType = pex.GetType().ToString();
+                    res.Stacktrace = pex.StackTrace.ToString();
+                }
+                else
+                {
 
-                        // TODO https://stackoverflow.com/questions/46430619/net-core-2-ef-core-error-handling-save-changes
-                        /*
-                        if (e is System.Data.Entity.Validation.DbEntityValidationException)
-                        {
-                            var dex = e as System.Data.Entity.Validation.DbEntityValidationException;
-
-                            foreach (var deve in dex.EntityValidationErrors)
-                            {
-                                sb.Append($"db validation error entry : [{deve.Entry}]");
-
-                                foreach (var k in deve.ValidationErrors)
-                                {
-                                    sb.Append($" {k.ErrorMessage}");
-                                }
-                                sb.AppendLine();
-                            }
-                        }*/
-
-                    if (e.InnerException != null)
-                    {
-                        sb.AppendLine($"inner exception : {e.InnerException.Message}");
-
-                        inner_detail(e.InnerException);
-                    }
-                    return "";
-                };
-
-                inner_detail(ex);
-
-                if (sb.Length > 0)
-                    res.InnerException = sb.ToString();
+                    res.Message = ex.Message;
+                    res.ExceptionType = ex.GetType().ToString();
+                    res.Stacktrace = ex.StackTrace.ToString();
+                    res.InnerException = ex.InnerException != null ? ex.InnerException.Message : "";
+                }
 
                 return res;
             }

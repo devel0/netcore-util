@@ -2,9 +2,9 @@ using System;
 using System.IO;
 using System.Reflection;
 
-namespace SearchAThing.Util
+namespace SearchAThing
 {
-    public static class PathUtil
+    public static partial class UtilToolkit
     {
 
         /// <summary>

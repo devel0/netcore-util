@@ -7,9 +7,11 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/netcore-util.sln"
+                "${workspaceFolder}/netcore-util.sln",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
-        }
+        }         
     ]
 }

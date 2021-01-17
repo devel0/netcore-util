@@ -1,0 +1,4512 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UtilExt
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UtilExt
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SearchAThing.UtilExt">
+  
+  
+  <h1 id="SearchAThing_UtilExt" data-uid="SearchAThing.UtilExt" class="text-break">Class UtilExt
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UtilExt</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SearchAThing.html">SearchAThing</a></h6>
+  <h6><strong>Assembly</strong>: netcore-util.dll</h6>
+  <h5 id="SearchAThing_UtilExt_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class UtilExt : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Align_System_String_System_Int32_SearchAThing_ColumnAlignment_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Align(System.String%2CSystem.Int32%2CSearchAThing.ColumnAlignment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L27">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Align_" data-uid="SearchAThing.UtilExt.Align*"></a>
+  <h4 id="SearchAThing_UtilExt_Align_System_String_System_Int32_SearchAThing_ColumnAlignment_" data-uid="SearchAThing.UtilExt.Align(System.String,System.Int32,SearchAThing.ColumnAlignment)">Align(String, Int32, ColumnAlignment)</h4>
+  <div class="markdown level1 summary"><p>align given string into given size with alignment specified.
+resulting string will fit into given size with spaces or truncated if not enough for given size vs str length</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Align(this string str, int size, ColumnAlignment align = ColumnAlignment.left)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SearchAThing.ColumnAlignment.html">ColumnAlignment</a></td>
+        <td><span class="parametername">align</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Clamp_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Clamp(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L339">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Clamp_" data-uid="SearchAThing.UtilExt.Clamp*"></a>
+  <h4 id="SearchAThing_UtilExt_Clamp_System_Double_System_Double_System_Double_" data-uid="SearchAThing.UtilExt.Clamp(System.Double,System.Double,System.Double)">Clamp(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>return clamped number between [min,max] interval</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Clamp(this double n, double min, double max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>number</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>min value admissible</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>max value admissible</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>n if between [min,max] otherwise min when n less than min or max when n great than max</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Clamp_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Clamp(System.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L329">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Clamp_" data-uid="SearchAThing.UtilExt.Clamp*"></a>
+  <h4 id="SearchAThing_UtilExt_Clamp_System_Single_System_Single_System_Single_" data-uid="SearchAThing.UtilExt.Clamp(System.Single,System.Single,System.Single)">Clamp(Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>return clamped number between [min,max] interval</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Clamp(this float n, float min, float max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>number</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>min value admissible</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>max value admissible</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>n if between [min,max] otherwise min when n less than min or max when n great than max</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_CompareTol_IQuantity_IQuantity_IQuantity_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.CompareTol(IQuantity%2CIQuantity%2CIQuantity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L256">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_CompareTol_" data-uid="SearchAThing.UtilExt.CompareTol*"></a>
+  <h4 id="SearchAThing_UtilExt_CompareTol_IQuantity_IQuantity_IQuantity_" data-uid="SearchAThing.UtilExt.CompareTol(IQuantity,IQuantity,IQuantity)">CompareTol(IQuantity, IQuantity, IQuantity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CompareTol(this IQuantity x, IQuantity tol, IQuantity y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">tol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_CompareTol_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.CompareTol(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L249">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_CompareTol_" data-uid="SearchAThing.UtilExt.CompareTol*"></a>
+  <h4 id="SearchAThing_UtilExt_CompareTol_System_Double_System_Double_System_Double_" data-uid="SearchAThing.UtilExt.CompareTol(System.Double,System.Double,System.Double)">CompareTol(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CompareTol(this double x, double tol, double y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_ContainsIgnoreCase_System_String_System_String_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.ContainsIgnoreCase(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L324">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_ContainsIgnoreCase_" data-uid="SearchAThing.UtilExt.ContainsIgnoreCase*"></a>
+  <h4 id="SearchAThing_UtilExt_ContainsIgnoreCase_System_String_System_String_" data-uid="SearchAThing.UtilExt.ContainsIgnoreCase(System.String,System.String)">ContainsIgnoreCase(String, String)</h4>
+  <div class="markdown level1 summary"><p>check if given string contains the part ( ignoring case )</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ContainsIgnoreCase(this string str, string part)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">part</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_CreateGetterSetter__2_Expression_Func___0___1___.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.CreateGetterSetter%60%602(Expression%7BFunc%7B%60%600%2C%60%601%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Expression.cs/#L107">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_CreateGetterSetter_" data-uid="SearchAThing.UtilExt.CreateGetterSetter*"></a>
+  <h4 id="SearchAThing_UtilExt_CreateGetterSetter__2_Expression_Func___0___1___" data-uid="SearchAThing.UtilExt.CreateGetterSetter``2(Expression{Func{``0,``1}})">CreateGetterSetter&lt;T, V&gt;(Expression&lt;Func&lt;T, V&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>create getter (func) and setter (action) from given lambda expr</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (Func&lt;T, V&gt; getter, Action&lt;T, V&gt; setter) CreateGetterSetter&lt;T, V&gt;(this Expression&lt;Func&lt;T, V&gt;&gt; expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;T, V&gt;&gt;</td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">Func</span>&lt;T, V&gt;, <span class="xref">Action</span>&lt;T, V&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">V</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Details_Exception_System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Details(Exception%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Exception.cs/#L39">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Details_" data-uid="SearchAThing.UtilExt.Details*"></a>
+  <h4 id="SearchAThing_UtilExt_Details_Exception_System_Boolean_" data-uid="SearchAThing.UtilExt.Details(Exception,System.Boolean)">Details(Exception, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Details(this Exception ex, bool includeStackTrace = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">ex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeStackTrace</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_DetailsObject_Exception_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.DetailsObject(Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Exception.cs/#L44">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_DetailsObject_" data-uid="SearchAThing.UtilExt.DetailsObject*"></a>
+  <h4 id="SearchAThing_UtilExt_DetailsObject_Exception_" data-uid="SearchAThing.UtilExt.DetailsObject(Exception)">DetailsObject(Exception)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ErrorInfo DetailsObject(this Exception _ex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">_ex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SearchAThing.ErrorInfo.html">ErrorInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Distinct__2_IEnumerable___0__Func___0___1__.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Distinct%60%602(IEnumerable%7B%60%600%7D%2CFunc%7B%60%600%2C%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/IEnumerable.cs/#L14">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Distinct_" data-uid="SearchAThing.UtilExt.Distinct*"></a>
+  <h4 id="SearchAThing_UtilExt_Distinct__2_IEnumerable___0__Func___0___1__" data-uid="SearchAThing.UtilExt.Distinct``2(IEnumerable{``0},Func{``0,``1})">Distinct&lt;T, TKey&gt;(IEnumerable&lt;T&gt;, Func&lt;T, TKey&gt;)</h4>
+  <div class="markdown level1 summary"><p>distinct with lambda</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; Distinct&lt;T, TKey&gt;(this IEnumerable&lt;T&gt; lst, Func&lt;T, TKey&gt; keySelector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">lst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, TKey&gt;</td>
+        <td><span class="parametername">keySelector</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_EqualsAutoTol_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.EqualsAutoTol(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L17">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_EqualsAutoTol_" data-uid="SearchAThing.UtilExt.EqualsAutoTol*"></a>
+  <h4 id="SearchAThing_UtilExt_EqualsAutoTol_System_Double_System_Double_System_Double_" data-uid="SearchAThing.UtilExt.EqualsAutoTol(System.Double,System.Double,System.Double)">EqualsAutoTol(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Returns true if two numbers are equals using a default tolerance of 1e-6 about the smaller one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EqualsAutoTol(this double x, double y, double precision = 1E-06)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">precision</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_EqualsTol_IQuantity_IQuantity_IQuantity_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.EqualsTol(IQuantity%2CIQuantity%2CIQuantity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L170">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_EqualsTol_" data-uid="SearchAThing.UtilExt.EqualsTol*"></a>
+  <h4 id="SearchAThing_UtilExt_EqualsTol_IQuantity_IQuantity_IQuantity_" data-uid="SearchAThing.UtilExt.EqualsTol(IQuantity,IQuantity,IQuantity)">EqualsTol(IQuantity, IQuantity, IQuantity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EqualsTol(this IQuantity x, IQuantity tol, IQuantity y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">tol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_EqualsTol_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.EqualsTol(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L160">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_EqualsTol_" data-uid="SearchAThing.UtilExt.EqualsTol*"></a>
+  <h4 id="SearchAThing_UtilExt_EqualsTol_System_Double_System_Double_System_Double_" data-uid="SearchAThing.UtilExt.EqualsTol(System.Double,System.Double,System.Double)">EqualsTol(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EqualsTol(this double x, double tol, double y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Eval__2___0_Func___0___1__.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Eval%60%602(%60%600%2CFunc%7B%60%600%2C%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Object.cs/#L24">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Eval_" data-uid="SearchAThing.UtilExt.Eval*"></a>
+  <h4 id="SearchAThing_UtilExt_Eval__2___0_Func___0___1__" data-uid="SearchAThing.UtilExt.Eval``2(``0,Func{``0,``1})">Eval&lt;T, U&gt;(T, Func&lt;T, U&gt;)</h4>
+  <div class="markdown level1 summary"><p>useful to decide action checking for nullity when object retrieval
+can consume cpu;
+eg. myobj.Eval((x) =&gt; (x == null) ? &quot;&quot; : x)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static U Eval&lt;T, U&gt;(this T obj, Func&lt;T, U&gt; fn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, U&gt;</td>
+        <td><span class="parametername">fn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Export_System_Double___.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Export(System.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L297">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Export_" data-uid="SearchAThing.UtilExt.Export*"></a>
+  <h4 id="SearchAThing_UtilExt_Export_System_Double___" data-uid="SearchAThing.UtilExt.Export(System.Double[])">Export(Double[])</h4>
+  <div class="markdown level1 summary"><p>export to a string ( invariant ) comma separated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Export(this double[] ary)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">ary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_GetEmbeddedFileContent__1_System_String_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.GetEmbeddedFileContent%60%601(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/EmbeddedResource.cs/#L19">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_GetEmbeddedFileContent_" data-uid="SearchAThing.UtilExt.GetEmbeddedFileContent*"></a>
+  <h4 id="SearchAThing_UtilExt_GetEmbeddedFileContent__1_System_String_" data-uid="SearchAThing.UtilExt.GetEmbeddedFileContent``1(System.String)">GetEmbeddedFileContent&lt;T&gt;(String)</h4>
+  <div class="markdown level1 summary"><p>retrieve embedded resource file content and read into a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetEmbeddedFileContent&lt;T&gt;(this string resourceName)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>name of resource (eg. namespace.filename.ext)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type for which lookup assembly (eg. namespace.classname)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_GetJsonArray_System_String_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.GetJsonArray(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L279">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_GetJsonArray_" data-uid="SearchAThing.UtilExt.GetJsonArray*"></a>
+  <h4 id="SearchAThing_UtilExt_GetJsonArray_System_String_" data-uid="SearchAThing.UtilExt.GetJsonArray(System.String)">GetJsonArray(String)</h4>
+  <div class="markdown level1 summary"><p>return dynamic array from given [[xx],[yy],...] json array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic GetJsonArray(this string jsonDumps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">jsonDumps</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_GetMemberName__1_Expression_Func___0_System_Object___.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.GetMemberName%60%601(Expression%7BFunc%7B%60%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Expression.cs/#L99">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_GetMemberName_" data-uid="SearchAThing.UtilExt.GetMemberName*"></a>
+  <h4 id="SearchAThing_UtilExt_GetMemberName__1_Expression_Func___0_System_Object___" data-uid="SearchAThing.UtilExt.GetMemberName``1(Expression{Func{``0,System.Object}})">GetMemberName&lt;T&gt;(Expression&lt;Func&lt;T, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>retrieve member name from a functor like `x=&gt;x.membername1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetMemberName&lt;T&gt;(Expression&lt;Func&lt;T, object&gt;&gt; membersExpr)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;T, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">membersExpr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_GetMemberNames__1_Expression_Func___0_System_Object___.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.GetMemberNames%60%601(Expression%7BFunc%7B%60%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Expression.cs/#L91">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_GetMemberNames_" data-uid="SearchAThing.UtilExt.GetMemberNames*"></a>
+  <h4 id="SearchAThing_UtilExt_GetMemberNames__1_Expression_Func___0_System_Object___" data-uid="SearchAThing.UtilExt.GetMemberNames``1(Expression{Func{``0,System.Object}})">GetMemberNames&lt;T&gt;(Expression&lt;Func&lt;T, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>retrieve list of member names from a functor like <code>x=&gt;new {x.membername1, x.membername2, ...}</code> or <code>x=&gt;x.membername</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; GetMemberNames&lt;T&gt;(Expression&lt;Func&lt;T, object&gt;&gt; membersExpr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;T, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">membersExpr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_GreatThanOrEqualsTol_IQuantity_IQuantity_IQuantity_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.GreatThanOrEqualsTol(IQuantity%2CIQuantity%2CIQuantity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L206">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_GreatThanOrEqualsTol_" data-uid="SearchAThing.UtilExt.GreatThanOrEqualsTol*"></a>
+  <h4 id="SearchAThing_UtilExt_GreatThanOrEqualsTol_IQuantity_IQuantity_IQuantity_" data-uid="SearchAThing.UtilExt.GreatThanOrEqualsTol(IQuantity,IQuantity,IQuantity)">GreatThanOrEqualsTol(IQuantity, IQuantity, IQuantity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GreatThanOrEqualsTol(this IQuantity x, IQuantity tol, IQuantity y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">tol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_GreatThanOrEqualsTol_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.GreatThanOrEqualsTol(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L198">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_GreatThanOrEqualsTol_" data-uid="SearchAThing.UtilExt.GreatThanOrEqualsTol*"></a>
+  <h4 id="SearchAThing_UtilExt_GreatThanOrEqualsTol_System_Double_System_Double_System_Double_" data-uid="SearchAThing.UtilExt.GreatThanOrEqualsTol(System.Double,System.Double,System.Double)">GreatThanOrEqualsTol(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GreatThanOrEqualsTol(this double x, double tol, double y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_GreatThanTol_IQuantity_IQuantity_IQuantity_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.GreatThanTol(IQuantity%2CIQuantity%2CIQuantity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L188">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_GreatThanTol_" data-uid="SearchAThing.UtilExt.GreatThanTol*"></a>
+  <h4 id="SearchAThing_UtilExt_GreatThanTol_IQuantity_IQuantity_IQuantity_" data-uid="SearchAThing.UtilExt.GreatThanTol(IQuantity,IQuantity,IQuantity)">GreatThanTol(IQuantity, IQuantity, IQuantity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GreatThanTol(this IQuantity x, IQuantity tol, IQuantity y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">tol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_GreatThanTol_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.GreatThanTol(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L180">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_GreatThanTol_" data-uid="SearchAThing.UtilExt.GreatThanTol*"></a>
+  <h4 id="SearchAThing_UtilExt_GreatThanTol_System_Double_System_Double_System_Double_" data-uid="SearchAThing.UtilExt.GreatThanTol(System.Double,System.Double,System.Double)">GreatThanTol(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GreatThanTol(this double x, double tol, double y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_HumanReadable_System_Int64_System_Boolean_System_Int64_System_Int32_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.HumanReadable(System.Int64%2CSystem.Boolean%2CSystem.Int64%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L208">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_HumanReadable_" data-uid="SearchAThing.UtilExt.HumanReadable*"></a>
+  <h4 id="SearchAThing_UtilExt_HumanReadable_System_Int64_System_Boolean_System_Int64_System_Int32_" data-uid="SearchAThing.UtilExt.HumanReadable(System.Int64,System.Boolean,System.Int64,System.Int32)">HumanReadable(Int64, Boolean, Int64, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a human readable bytes length. (eg. 1000, 1K, 1M, 1G, 1T)
+if onlyBytesUnit is set to false it will enable representation through K, M, G, T suffixes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string HumanReadable(this long bytes, bool onlyBytesUnit = true, long bytesMultiple = 1L, int decimals = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">bytes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">onlyBytesUnit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">bytesMultiple</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">decimals</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Import_System_String_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Import(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L287">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Import_" data-uid="SearchAThing.UtilExt.Import*"></a>
+  <h4 id="SearchAThing_UtilExt_Import_System_String_" data-uid="SearchAThing.UtilExt.Import(System.String)">Import(String)</h4>
+  <div class="markdown level1 summary"><p>parse given array of doubles ( invariant ) comma separated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double[] Import(this string ary)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_InvariantDate_DateTime_System_String_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.InvariantDate(DateTime%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L385">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_InvariantDate_" data-uid="SearchAThing.UtilExt.InvariantDate*"></a>
+  <h4 id="SearchAThing_UtilExt_InvariantDate_DateTime_System_String_" data-uid="SearchAThing.UtilExt.InvariantDate(DateTime,System.String)">InvariantDate(DateTime, String)</h4>
+  <div class="markdown level1 summary"><p>return yyyy-MM-dd representation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string InvariantDate(this DateTime dt, string sep = &quot;-&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">dt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sep</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_InvarianteDateTime_DateTime_System_String_System_String_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.InvarianteDateTime(DateTime%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L377">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_InvarianteDateTime_" data-uid="SearchAThing.UtilExt.InvarianteDateTime*"></a>
+  <h4 id="SearchAThing_UtilExt_InvarianteDateTime_DateTime_System_String_System_String_" data-uid="SearchAThing.UtilExt.InvarianteDateTime(DateTime,System.String,System.String)">InvarianteDateTime(DateTime, String, String)</h4>
+  <div class="markdown level1 summary"><p>return yyyy-MM-dd HH:mm.ss representation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string InvarianteDateTime(this DateTime dt, string datesep = &quot;-&quot;, string timesep = &quot;:&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">dt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">datesep</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">timesep</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_InvariantTime_DateTime_System_String_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.InvariantTime(DateTime%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L393">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_InvariantTime_" data-uid="SearchAThing.UtilExt.InvariantTime*"></a>
+  <h4 id="SearchAThing_UtilExt_InvariantTime_DateTime_System_String_" data-uid="SearchAThing.UtilExt.InvariantTime(DateTime,System.String)">InvariantTime(DateTime, String)</h4>
+  <div class="markdown level1 summary"><p>return HH:mm:ss representation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string InvariantTime(this DateTime dt, string sep = &quot;:&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">dt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sep</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_InvDoubleParse_System_String_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.InvDoubleParse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L110">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_InvDoubleParse_" data-uid="SearchAThing.UtilExt.InvDoubleParse*"></a>
+  <h4 id="SearchAThing_UtilExt_InvDoubleParse_System_String_" data-uid="SearchAThing.UtilExt.InvDoubleParse(System.String)">InvDoubleParse(String)</h4>
+  <div class="markdown level1 summary"><p>Invariant culture double parse</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double InvDoubleParse(this string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_IsInRange_System_Double_System_Double_System_String_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.IsInRange(System.Double%2CSystem.Double%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L270">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_IsInRange_" data-uid="SearchAThing.UtilExt.IsInRange*"></a>
+  <h4 id="SearchAThing_UtilExt_IsInRange_System_Double_System_Double_System_String_" data-uid="SearchAThing.UtilExt.IsInRange(System.Double,System.Double,System.String)">IsInRange(Double, Double, String)</h4>
+  <div class="markdown level1 summary"><p>eval if a number fits in given range
+eg.</p>
+<ul>
+<li>&quot;[0, 10)&quot; are numbers from 0 (included) to 10 (excluded)</li>
+<li>&quot;[10, 20]&quot; are numbers from 10 (included) to 20 (included)</li>
+<li>&quot;(30,)&quot; are numbers from 30 (excluded) to +infinity</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInRange(this double nr, double tol, string range)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">nr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">range</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Latest_System_String_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Latest(System.String%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L313">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Latest_" data-uid="SearchAThing.UtilExt.Latest*"></a>
+  <h4 id="SearchAThing_UtilExt_Latest_System_String_System_Int32_System_String_" data-uid="SearchAThing.UtilExt.Latest(System.String,System.Int32,System.String)">Latest(String, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>convert a string that exceed N given characters length to {prefix}{latest N chars}</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Latest(this string str, int last_n_chars, string prefix_if_exceed = &quot;...&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">last_n_chars</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">prefix_if_exceed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_LessThanOrEqualsTol_IQuantity_IQuantity_IQuantity_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.LessThanOrEqualsTol(IQuantity%2CIQuantity%2CIQuantity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L242">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_LessThanOrEqualsTol_" data-uid="SearchAThing.UtilExt.LessThanOrEqualsTol*"></a>
+  <h4 id="SearchAThing_UtilExt_LessThanOrEqualsTol_IQuantity_IQuantity_IQuantity_" data-uid="SearchAThing.UtilExt.LessThanOrEqualsTol(IQuantity,IQuantity,IQuantity)">LessThanOrEqualsTol(IQuantity, IQuantity, IQuantity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LessThanOrEqualsTol(this IQuantity x, IQuantity tol, IQuantity y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">tol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_LessThanOrEqualsTol_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.LessThanOrEqualsTol(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L234">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_LessThanOrEqualsTol_" data-uid="SearchAThing.UtilExt.LessThanOrEqualsTol*"></a>
+  <h4 id="SearchAThing_UtilExt_LessThanOrEqualsTol_System_Double_System_Double_System_Double_" data-uid="SearchAThing.UtilExt.LessThanOrEqualsTol(System.Double,System.Double,System.Double)">LessThanOrEqualsTol(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LessThanOrEqualsTol(this double x, double tol, double y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_LessThanTol_IQuantity_IQuantity_IQuantity_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.LessThanTol(IQuantity%2CIQuantity%2CIQuantity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L224">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_LessThanTol_" data-uid="SearchAThing.UtilExt.LessThanTol*"></a>
+  <h4 id="SearchAThing_UtilExt_LessThanTol_IQuantity_IQuantity_IQuantity_" data-uid="SearchAThing.UtilExt.LessThanTol(IQuantity,IQuantity,IQuantity)">LessThanTol(IQuantity, IQuantity, IQuantity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LessThanTol(this IQuantity x, IQuantity tol, IQuantity y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">tol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IQuantity</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_LessThanTol_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.LessThanTol(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L216">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_LessThanTol_" data-uid="SearchAThing.UtilExt.LessThanTol*"></a>
+  <h4 id="SearchAThing_UtilExt_LessThanTol_System_Double_System_Double_System_Double_" data-uid="SearchAThing.UtilExt.LessThanTol(System.Double,System.Double,System.Double)">LessThanTol(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LessThanTol(this double x, double tol, double y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Lines_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Lines(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L194">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Lines_" data-uid="SearchAThing.UtilExt.Lines*"></a>
+  <h4 id="SearchAThing_UtilExt_Lines_System_String_System_Boolean_" data-uid="SearchAThing.UtilExt.Lines(System.String,System.Boolean)">Lines(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Smart line splitter that split a text into lines whatever unix or windows line ending style.
+By default its remove empty lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; Lines(this string txt, bool removeEmptyLines = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">txt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">removeEmptyLines</span></td>
+        <td><p>If true remove empty lines.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Magnitude_System_Double_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Magnitude(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L98">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Magnitude_" data-uid="SearchAThing.UtilExt.Magnitude*"></a>
+  <h4 id="SearchAThing_UtilExt_Magnitude_System_Double_" data-uid="SearchAThing.UtilExt.Magnitude(System.Double)">Magnitude(Double)</h4>
+  <div class="markdown level1 summary"><p>Magnitude of given number. (eg. 190 -&gt; 1.9e2 -&gt; 2)
+(eg. 0.0034 -&gt; 3.4e-3 -&gt; -3)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Magnitude(this double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_MatchesFilter_IEnumerable_System_String__System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.MatchesFilter(IEnumerable%7BSystem.String%7D%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L414">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_MatchesFilter_" data-uid="SearchAThing.UtilExt.MatchesFilter*"></a>
+  <h4 id="SearchAThing_UtilExt_MatchesFilter_IEnumerable_System_String__System_String_System_Boolean_" data-uid="SearchAThing.UtilExt.MatchesFilter(IEnumerable{System.String},System.String,System.Boolean)">MatchesFilter(IEnumerable&lt;String&gt;, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Checks whatever fields matches given filter all words in any of inputs.
+ex. fields={ &quot;abc&quot;, &quot;de&quot; } filter=&quot;a&quot; results: true
+ex. fields={ &quot;abc&quot;, &quot;de&quot; } filter=&quot;a d&quot; results: true
+ex. fields={ &quot;abc&quot;, &quot;de&quot; } filter=&quot;a f&quot; results: false
+autoskips null fields check;
+returns true if filter empty</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool MatchesFilter(this IEnumerable&lt;string&gt; fields, string filter, bool ignoreCase = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">fields</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignoreCase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Mean_IEnumerable_System_Double__.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Mean(IEnumerable%7BSystem.Double%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L140">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Mean_" data-uid="SearchAThing.UtilExt.Mean*"></a>
+  <h4 id="SearchAThing_UtilExt_Mean_IEnumerable_System_Double__" data-uid="SearchAThing.UtilExt.Mean(IEnumerable{System.Double})">Mean(IEnumerable&lt;Double&gt;)</h4>
+  <div class="markdown level1 summary"><p>Mean of given numbers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Mean(this IEnumerable&lt;double&gt; set)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">set</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_MRound_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.MRound(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L25">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_MRound_" data-uid="SearchAThing.UtilExt.MRound*"></a>
+  <h4 id="SearchAThing_UtilExt_MRound_System_Double_System_Double_" data-uid="SearchAThing.UtilExt.MRound(System.Double,System.Double)">MRound(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Round the given value using the multiple basis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double MRound(this double value, double multiple)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">multiple</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_MRound_System_Double_System_Nullable_System_Double__.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.MRound(System.Double%2CSystem.Nullable%7BSystem.Double%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L49">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_MRound_" data-uid="SearchAThing.UtilExt.MRound*"></a>
+  <h4 id="SearchAThing_UtilExt_MRound_System_Double_System_Nullable_System_Double__" data-uid="SearchAThing.UtilExt.MRound(System.Double,System.Nullable{System.Double})">MRound(Double, Nullable&lt;Double&gt;)</h4>
+  <div class="markdown level1 summary"><p>Round the given value using the multiple basis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double MRound(this double value, double? multiple)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">multiple</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_MRound_System_Nullable_System_Double__System_Double_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.MRound(System.Nullable%7BSystem.Double%7D%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L38">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_MRound_" data-uid="SearchAThing.UtilExt.MRound*"></a>
+  <h4 id="SearchAThing_UtilExt_MRound_System_Nullable_System_Double__System_Double_" data-uid="SearchAThing.UtilExt.MRound(System.Nullable{System.Double},System.Double)">MRound(Nullable&lt;Double&gt;, Double)</h4>
+  <div class="markdown level1 summary"><p>Round the given value using the multiple basis
+if null return null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double? MRound(this double? value, double multiple)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">multiple</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_NextLine_System_String_System_Int32__.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.NextLine(System.String%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L184">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_NextLine_" data-uid="SearchAThing.UtilExt.NextLine*"></a>
+  <h4 id="SearchAThing_UtilExt_NextLine_System_String_System_Int32__" data-uid="SearchAThing.UtilExt.NextLine(System.String,System.Int32@)">NextLine(String, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>extract line from string buffer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NextLine(this string txt, ref int off)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">txt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">off</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_NormalizeFilename_System_String_System_Char_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.NormalizeFilename(System.String%2CSystem.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L337">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_NormalizeFilename_" data-uid="SearchAThing.UtilExt.NormalizeFilename*"></a>
+  <h4 id="SearchAThing_UtilExt_NormalizeFilename_System_String_System_Char_" data-uid="SearchAThing.UtilExt.NormalizeFilename(System.String,System.Char)">NormalizeFilename(String, Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NormalizeFilename(this string filename, char subst = '_')</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">subst</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_NormalizeWorksheetName_System_String_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.NormalizeWorksheetName(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L332">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_NormalizeWorksheetName_" data-uid="SearchAThing.UtilExt.NormalizeWorksheetName*"></a>
+  <h4 id="SearchAThing_UtilExt_NormalizeWorksheetName_System_String_" data-uid="SearchAThing.UtilExt.NormalizeWorksheetName(System.String)">NormalizeWorksheetName(String)</h4>
+  <div class="markdown level1 summary"><p>convert invalid worksheet characters :/?*[]' into underscore</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NormalizeWorksheetName(this string s)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">s</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_ParseInt_System_String_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.ParseInt(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L372">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_ParseInt_" data-uid="SearchAThing.UtilExt.ParseInt*"></a>
+  <h4 id="SearchAThing_UtilExt_ParseInt_System_String_" data-uid="SearchAThing.UtilExt.ParseInt(System.String)">ParseInt(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ParseInt(this string s)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">s</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_RegexMatch_System_String_System_String_RegexOptions_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.RegexMatch(System.String%2CSystem.String%2CRegexOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L401">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_RegexMatch_" data-uid="SearchAThing.UtilExt.RegexMatch*"></a>
+  <h4 id="SearchAThing_UtilExt_RegexMatch_System_String_System_String_RegexOptions_" data-uid="SearchAThing.UtilExt.RegexMatch(System.String,System.String,RegexOptions)">RegexMatch(String, String, RegexOptions)</h4>
+  <div class="markdown level1 summary"><p>retrieve nr. of occurrence of given pattern through regex</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RegexMatch(this string s, string pattern, RegexOptions opt = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">s</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pattern</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">RegexOptions</span></td>
+        <td><span class="parametername">opt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Repeat_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Repeat(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L227">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Repeat_" data-uid="SearchAThing.UtilExt.Repeat*"></a>
+  <h4 id="SearchAThing_UtilExt_Repeat_System_String_System_Int32_" data-uid="SearchAThing.UtilExt.Repeat(System.String,System.Int32)">Repeat(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Repeat given string for cnt by concatenate itself</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Repeat(this string s, int cnt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">s</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">cnt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Sign_System_Double_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Sign(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L316">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Sign_" data-uid="SearchAThing.UtilExt.Sign*"></a>
+  <h4 id="SearchAThing_UtilExt_Sign_System_Double_" data-uid="SearchAThing.UtilExt.Sign(System.Double)">Sign(Double)</h4>
+  <div class="markdown level1 summary"><p>returns 1.0 if n&gt;=0
+-1 otherwise</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Sign(this double n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">n</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Sign_System_Int32_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Sign(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L306">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Sign_" data-uid="SearchAThing.UtilExt.Sign*"></a>
+  <h4 id="SearchAThing_UtilExt_Sign_System_Int32_" data-uid="SearchAThing.UtilExt.Sign(System.Int32)">Sign(Int32)</h4>
+  <div class="markdown level1 summary"><p>returns 1.0 if n&gt;=0
+-1 otherwise</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Sign(this int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_SmartDoubleParse_System_String_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.SmartDoubleParse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L120">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_SmartDoubleParse_" data-uid="SearchAThing.UtilExt.SmartDoubleParse*"></a>
+  <h4 id="SearchAThing_UtilExt_SmartDoubleParse_System_String_" data-uid="SearchAThing.UtilExt.SmartDoubleParse(System.String)">SmartDoubleParse(String)</h4>
+  <div class="markdown level1 summary"><p>parse string that represent number without knowing current culture
+so that it can parse &quot;1.2&quot; or &quot;1,2&quot; equivalent to 1.2
+it will throw error more than one dot or comma found</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double SmartDoubleParse(this string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Sort__2_ObservableCollection___0__Func___0___1__System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Sort%60%602(ObservableCollection%7B%60%600%7D%2CFunc%7B%60%600%2C%60%601%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/ObservableCollection.cs/#L18">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Sort_" data-uid="SearchAThing.UtilExt.Sort*"></a>
+  <h4 id="SearchAThing_UtilExt_Sort__2_ObservableCollection___0__Func___0___1__System_Boolean_" data-uid="SearchAThing.UtilExt.Sort``2(ObservableCollection{``0},Func{``0,``1},System.Boolean)">Sort&lt;TSource, TKey&gt;(ObservableCollection&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>sort obc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Sort&lt;TSource, TKey&gt;(this ObservableCollection&lt;TSource&gt; obc, Func&lt;TSource, TKey&gt; keySelector, bool descending = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ObservableCollection</span>&lt;TSource&gt;</td>
+        <td><span class="parametername">obc</span></td>
+        <td><p>observable collection to sort</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TSource, TKey&gt;</td>
+        <td><span class="parametername">keySelector</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">descending</span></td>
+        <td><p>if true then sort descending</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Split_System_String_System_String_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Split(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L271">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Split_" data-uid="SearchAThing.UtilExt.Split*"></a>
+  <h4 id="SearchAThing_UtilExt_Split_System_String_System_String_" data-uid="SearchAThing.UtilExt.Split(System.String,System.String)">Split(String, String)</h4>
+  <div class="markdown level1 summary"><p>split string with given separator string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] Split(this string str, string sepStr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sepStr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_Stringify_System_Double_System_Int32_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.Stringify(System.Double%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L89">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_Stringify_" data-uid="SearchAThing.UtilExt.Stringify*"></a>
+  <h4 id="SearchAThing_UtilExt_Stringify_System_Double_System_Int32_" data-uid="SearchAThing.UtilExt.Stringify(System.Double,System.Int32)">Stringify(Double, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Stringify(this double x, int dec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_StripBegin_System_String_System_Char_System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.StripBegin(System.String%2CSystem.Char%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L137">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_StripBegin_" data-uid="SearchAThing.UtilExt.StripBegin*"></a>
+  <h4 id="SearchAThing_UtilExt_StripBegin_System_String_System_Char_System_Boolean_" data-uid="SearchAThing.UtilExt.StripBegin(System.String,System.Char,System.Boolean)">StripBegin(String, Char, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Returns the given string stripped from the given part if exists at beginning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string StripBegin(this string str, char c, bool ignoreCase = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignoreCase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_StripBegin_System_String_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.StripBegin(System.String%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L148">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_StripBegin_" data-uid="SearchAThing.UtilExt.StripBegin*"></a>
+  <h4 id="SearchAThing_UtilExt_StripBegin_System_String_System_String_System_Boolean_" data-uid="SearchAThing.UtilExt.StripBegin(System.String,System.String,System.Boolean)">StripBegin(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Returns the given string stripped from the given part if exists at beginning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string StripBegin(this string str, string partToStrip, bool ignoreCase = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">partToStrip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignoreCase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_StripEnd_System_String_System_Char_System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.StripEnd(System.String%2CSystem.Char%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L162">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_StripEnd_" data-uid="SearchAThing.UtilExt.StripEnd*"></a>
+  <h4 id="SearchAThing_UtilExt_StripEnd_System_String_System_Char_System_Boolean_" data-uid="SearchAThing.UtilExt.StripEnd(System.String,System.Char,System.Boolean)">StripEnd(String, Char, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Returns the given string stripped from the given part if exists at end.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string StripEnd(this string str, char c, bool ignoreCase = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignoreCase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_StripEnd_System_String_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.StripEnd(System.String%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L173">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_StripEnd_" data-uid="SearchAThing.UtilExt.StripEnd*"></a>
+  <h4 id="SearchAThing_UtilExt_StripEnd_System_String_System_String_System_Boolean_" data-uid="SearchAThing.UtilExt.StripEnd(System.String,System.String,System.Boolean)">StripEnd(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Returns the given string stripped from the given part if exists at end.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string StripEnd(this string str, string partToStrip, bool ignoreCase = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">partToStrip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignoreCase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_TableFormat_IEnumerable_IEnumerable_System_String___IEnumerable_System_String__IEnumerable_SearchAThing_ColumnAlignment__System_Int32_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.TableFormat(IEnumerable%7BIEnumerable%7BSystem.String%7D%7D%2CIEnumerable%7BSystem.String%7D%2CIEnumerable%7BSearchAThing.ColumnAlignment%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L66">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_TableFormat_" data-uid="SearchAThing.UtilExt.TableFormat*"></a>
+  <h4 id="SearchAThing_UtilExt_TableFormat_IEnumerable_IEnumerable_System_String___IEnumerable_System_String__IEnumerable_SearchAThing_ColumnAlignment__System_Int32_" data-uid="SearchAThing.UtilExt.TableFormat(IEnumerable{IEnumerable{System.String}},IEnumerable{System.String},IEnumerable{SearchAThing.ColumnAlignment},System.Int32)">TableFormat(IEnumerable&lt;IEnumerable&lt;String&gt;&gt;, IEnumerable&lt;String&gt;, IEnumerable&lt;ColumnAlignment&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>formats given rows into a table aligning by columns.
+optional column spacing and alignment can be specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TableFormat(this IEnumerable&lt;IEnumerable&lt;string&gt;&gt; src, IEnumerable&lt;string&gt; headers = null, IEnumerable&lt;ColumnAlignment&gt; aligns = null, int columnSpacing = 3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">headers</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="SearchAThing.ColumnAlignment.html">ColumnAlignment</a>&gt;</td>
+        <td><span class="parametername">aligns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">columnSpacing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_ToDeg_System_Double_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.ToDeg(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L62">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_ToDeg_" data-uid="SearchAThing.UtilExt.ToDeg*"></a>
+  <h4 id="SearchAThing_UtilExt_ToDeg_System_Double_" data-uid="SearchAThing.UtilExt.ToDeg(System.Double)">ToDeg(Double)</h4>
+  <div class="markdown level1 summary"><p>convert given angle(rad) to deg</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ToDeg(this double angleRad)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">angleRad</span></td>
+        <td><p>angle (rad)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>angle (deg)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_ToDeg_System_Single_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.ToDeg(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L85">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_ToDeg_" data-uid="SearchAThing.UtilExt.ToDeg*"></a>
+  <h4 id="SearchAThing_UtilExt_ToDeg_System_Single_" data-uid="SearchAThing.UtilExt.ToDeg(System.Single)">ToDeg(Single)</h4>
+  <div class="markdown level1 summary"><p>convert given angle(rad) to deg</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ToDeg(this float angleRad)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">angleRad</span></td>
+        <td><p>angle (rad)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>angle (deg)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_ToRad_System_Double_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.ToRad(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L70">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_ToRad_" data-uid="SearchAThing.UtilExt.ToRad*"></a>
+  <h4 id="SearchAThing_UtilExt_ToRad_System_Double_" data-uid="SearchAThing.UtilExt.ToRad(System.Double)">ToRad(Double)</h4>
+  <div class="markdown level1 summary"><p>convert given angle(deg) to rad</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ToRad(this double angleGrad)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">angleGrad</span></td>
+        <td><p>angle (deg)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>angle (radians)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_ToRad_System_Single_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.ToRad(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L78">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_ToRad_" data-uid="SearchAThing.UtilExt.ToRad*"></a>
+  <h4 id="SearchAThing_UtilExt_ToRad_System_Single_" data-uid="SearchAThing.UtilExt.ToRad(System.Single)">ToRad(Single)</h4>
+  <div class="markdown level1 summary"><p>convert given angle(deg) to rad</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ToRad(this float angleDeg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">angleDeg</span></td>
+        <td><p>angle (deg)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>angle (radians)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_ToString_System_Double_System_Int32_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.ToString(System.Double%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Number.cs/#L151">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_ToString_" data-uid="SearchAThing.UtilExt.ToString*"></a>
+  <h4 id="SearchAThing_UtilExt_ToString_System_Double_System_Int32_" data-uid="SearchAThing.UtilExt.ToString(System.Double,System.Int32)">ToString(Double, Int32)</h4>
+  <div class="markdown level1 summary"><p>format number so that show given significant digits. (eg. 2.03 with significantDigits=4 create &quot;2.0300&quot;)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToString(this double d, int significantDigits)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">d</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">significantDigits</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_ToStringWrapper_StringBuilder_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.ToStringWrapper(StringBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L352">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_ToStringWrapper_" data-uid="SearchAThing.UtilExt.ToStringWrapper*"></a>
+  <h4 id="SearchAThing_UtilExt_ToStringWrapper_StringBuilder_" data-uid="SearchAThing.UtilExt.ToStringWrapper(StringBuilder)">ToStringWrapper(StringBuilder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringWrapper ToStringWrapper(this StringBuilder sb)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StringBuilder</span></td>
+        <td><span class="parametername">sb</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SearchAThing.StringWrapper.html">StringWrapper</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_TrimNonNumericCharacters_System_String_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.TrimNonNumericCharacters(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L360">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_TrimNonNumericCharacters_" data-uid="SearchAThing.UtilExt.TrimNonNumericCharacters*"></a>
+  <h4 id="SearchAThing_UtilExt_TrimNonNumericCharacters_System_String_" data-uid="SearchAThing.UtilExt.TrimNonNumericCharacters(System.String)">TrimNonNumericCharacters(String)</h4>
+  <div class="markdown level1 summary"><p>removes all characters that aren't 0-9 dot or comma</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TrimNonNumericCharacters(this string s)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">s</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_UnspecifiedAsUTCDateTime_DateTime_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.UnspecifiedAsUTCDateTime(DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Date.cs/#L12">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_UnspecifiedAsUTCDateTime_" data-uid="SearchAThing.UtilExt.UnspecifiedAsUTCDateTime*"></a>
+  <h4 id="SearchAThing_UtilExt_UnspecifiedAsUTCDateTime_DateTime_" data-uid="SearchAThing.UtilExt.UnspecifiedAsUTCDateTime(DateTime)">UnspecifiedAsUTCDateTime(DateTime)</h4>
+  <div class="markdown level1 summary"><p>if given dt has unspecified kind rectifies to UTC without any conversion</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime UnspecifiedAsUTCDateTime(this DateTime dt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">dt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_WildcardMatch_System_String_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.WildcardMatch(System.String%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L255">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_WildcardMatch_" data-uid="SearchAThing.UtilExt.WildcardMatch*"></a>
+  <h4 id="SearchAThing_UtilExt_WildcardMatch_System_String_System_String_System_Boolean_" data-uid="SearchAThing.UtilExt.WildcardMatch(System.String,System.String,System.Boolean)">WildcardMatch(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>return true if given string matches the given pattern
+the asterisk '*' character replace any group of chars
+the question '?' character replace any single character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool WildcardMatch(this string str, string pattern, bool caseSentitive = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pattern</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">caseSentitive</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_WildcardToRegex_System_String_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.WildcardToRegex(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L245">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_WildcardToRegex_" data-uid="SearchAThing.UtilExt.WildcardToRegex*"></a>
+  <h4 id="SearchAThing_UtilExt_WildcardToRegex_System_String_" data-uid="SearchAThing.UtilExt.WildcardToRegex(System.String)">WildcardToRegex(String)</h4>
+  <div class="markdown level1 summary"><p>convert wildcard pattern to regex
+the asterisk '*' character replace any group of chars
+the question '?' character replace any single character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string WildcardToRegex(this string pattern)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pattern</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_WithIndex__1_IEnumerable___0__.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.WithIndex%60%601(IEnumerable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/IEnumerable.cs/#L22">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_WithIndex_" data-uid="SearchAThing.UtilExt.WithIndex*"></a>
+  <h4 id="SearchAThing_UtilExt_WithIndex__1_IEnumerable___0__" data-uid="SearchAThing.UtilExt.WithIndex``1(IEnumerable{``0})">WithIndex&lt;T&gt;(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>enumerable extension to enumerate itself into an (item, idx) set</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(T item, int idx)&gt; WithIndex&lt;T&gt;(this IEnumerable&lt;T&gt; en)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">en</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;T, <span class="xref">System.Int32</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_WithIndexIsLast__1_IEnumerable___0__.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.WithIndexIsLast%60%601(IEnumerable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/IEnumerable.cs/#L28">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_WithIndexIsLast_" data-uid="SearchAThing.UtilExt.WithIndexIsLast*"></a>
+  <h4 id="SearchAThing_UtilExt_WithIndexIsLast__1_IEnumerable___0__" data-uid="SearchAThing.UtilExt.WithIndexIsLast``1(IEnumerable{``0})">WithIndexIsLast&lt;T&gt;(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>enumerable extension to enumerate itself into an (item, idx, isLast) set</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(T item, int idx, bool isLast)&gt; WithIndexIsLast&lt;T&gt;(this IEnumerable&lt;T&gt; en)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">en</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;T, <span class="xref">System.Int32</span>, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_WithNext__1_IEnumerable___0__System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.WithNext%60%601(IEnumerable%7B%60%600%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/IEnumerable.cs/#L168">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_WithNext_" data-uid="SearchAThing.UtilExt.WithNext*"></a>
+  <h4 id="SearchAThing_UtilExt_WithNext__1_IEnumerable___0__System_Boolean_" data-uid="SearchAThing.UtilExt.WithNext``1(IEnumerable{``0},System.Boolean)">WithNext&lt;T&gt;(IEnumerable&lt;T&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>enumerate given items returning a tuple (item,next,isLast) with next=null for last element or next=first if repeatFirstAtEnd=true on latest el</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(T item, T next, bool isLast)&gt; WithNext&lt;T&gt;(this IEnumerable&lt;T&gt; en, bool repeatFirstAtEnd = false)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">en</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">repeatFirstAtEnd</span></td>
+        <td><p>last enumerated result will (last,first,true)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;T, T, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="SearchAThing_UtilExt_WithNext__1_IEnumerable___0__System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a href="https://github.com/devel0/netcore-util/tree/master/test/Enumerable/EnumerableTest_0001.cs">unit test</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_WithNextPrimitive__1_IEnumerable___0__System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.WithNextPrimitive%60%601(IEnumerable%7B%60%600%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/IEnumerable.cs/#L107">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_WithNextPrimitive_" data-uid="SearchAThing.UtilExt.WithNextPrimitive*"></a>
+  <h4 id="SearchAThing_UtilExt_WithNextPrimitive__1_IEnumerable___0__System_Boolean_" data-uid="SearchAThing.UtilExt.WithNextPrimitive``1(IEnumerable{``0},System.Boolean)">WithNextPrimitive&lt;T&gt;(IEnumerable&lt;T&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>enumerate given items returning a tuple with null ( for last hit ) next element</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(T item, T? next, bool isLast)&gt; WithNextPrimitive&lt;T&gt;(this IEnumerable&lt;T&gt; en, bool repeatFirstAtEnd = false)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">en</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">repeatFirstAtEnd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;T, <span class="xref">System.Nullable</span>&lt;T&gt;, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="SearchAThing_UtilExt_WithNextPrimitive__1_IEnumerable___0__System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a href="https://github.com/devel0/netcore-util/tree/master/test/Enumerable/EnumerableTest_0002.cs">unit test</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_WithPrev__1_IEnumerable___0__.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.WithPrev%60%601(IEnumerable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/IEnumerable.cs/#L65">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_WithPrev_" data-uid="SearchAThing.UtilExt.WithPrev*"></a>
+  <h4 id="SearchAThing_UtilExt_WithPrev__1_IEnumerable___0__" data-uid="SearchAThing.UtilExt.WithPrev``1(IEnumerable{``0})">WithPrev&lt;T&gt;(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>enumerate given items returning a tuple with null ( for first hit ) prev element</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(T prev, T item)&gt; WithPrev&lt;T&gt;(this IEnumerable&lt;T&gt; en)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">en</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;T, T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_WithPrevNext__1_IEnumerable___0__System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.WithPrevNext%60%601(IEnumerable%7B%60%600%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/IEnumerable.cs/#L208">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_WithPrevNext_" data-uid="SearchAThing.UtilExt.WithPrevNext*"></a>
+  <h4 id="SearchAThing_UtilExt_WithPrevNext__1_IEnumerable___0__System_Boolean_" data-uid="SearchAThing.UtilExt.WithPrevNext``1(IEnumerable{``0},System.Boolean)">WithPrevNext&lt;T&gt;(IEnumerable&lt;T&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>enumerate given items returning a tuple (prev,item,next,isLast)
+with prev=null for first element
+with next=null for last element or next=first if repeatFirstAtEnd=true on latest el</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(T prev, T item, T next, bool isLast)&gt; WithPrevNext&lt;T&gt;(this IEnumerable&lt;T&gt; en, bool repeatFirstAtEnd = false)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">en</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">repeatFirstAtEnd</span></td>
+        <td><p>last enumerated result will (last,first,true)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;T, T, T, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="SearchAThing_UtilExt_WithPrevNext__1_IEnumerable___0__System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a href="https://github.com/devel0/netcore-util/tree/master/test/Enumerable/EnumerableTest_0003.cs">unit test</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_WithPrevNextPrimitive__1_IEnumerable___0__System_Boolean_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.WithPrevNextPrimitive%60%601(IEnumerable%7B%60%600%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/IEnumerable.cs/#L147">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_WithPrevNextPrimitive_" data-uid="SearchAThing.UtilExt.WithPrevNextPrimitive*"></a>
+  <h4 id="SearchAThing_UtilExt_WithPrevNextPrimitive__1_IEnumerable___0__System_Boolean_" data-uid="SearchAThing.UtilExt.WithPrevNextPrimitive``1(IEnumerable{``0},System.Boolean)">WithPrevNextPrimitive&lt;T&gt;(IEnumerable&lt;T&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>enumerate given items returning a tuple (prev,item,next,isLast)
+with prev=null for first element
+with next=null for last element or next=first if repeatFirstAtEnd=true on latest el</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(T? prev, T item, T? next, bool isLast)&gt; WithPrevNextPrimitive&lt;T&gt;(this IEnumerable&lt;T&gt; en, bool repeatFirstAtEnd = false)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">en</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">repeatFirstAtEnd</span></td>
+        <td><p>last enumerated result will (last,first,true)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Nullable</span>&lt;T&gt;, T, <span class="xref">System.Nullable</span>&lt;T&gt;, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="SearchAThing_UtilExt_WithPrevNextPrimitive__1_IEnumerable___0__System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a href="https://github.com/devel0/netcore-util/tree/master/test/Enumerable/EnumerableTest_0004.cs">unit test</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_WithPrevPrimitive__1_IEnumerable___0__.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.WithPrevPrimitive%60%601(IEnumerable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/IEnumerable.cs/#L48">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilExt_WithPrevPrimitive_" data-uid="SearchAThing.UtilExt.WithPrevPrimitive*"></a>
+  <h4 id="SearchAThing_UtilExt_WithPrevPrimitive__1_IEnumerable___0__" data-uid="SearchAThing.UtilExt.WithPrevPrimitive``1(IEnumerable{``0})">WithPrevPrimitive&lt;T&gt;(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>enumerate given items returning a tuple with nullable ( for first hit ) prev element</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(T? prev, T item)&gt; WithPrevPrimitive&lt;T&gt;(this IEnumerable&lt;T&gt; en)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">en</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Nullable</span>&lt;T&gt;, T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/String.cs/#L20" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
