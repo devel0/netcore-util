@@ -10,14 +10,13 @@
 <hr/>
 
 <!-- TOC -->
-- [netcore-util](#netcore-util)
-  * [Quickstart](#quickstart)
-  * [Examples](#examples)
-    + [with-index-is-last](#with-index-is-last)
-    + [exec](#exec)
-    + [exec-bash-redirect](#exec-bash-redirect)
-  * [Unit tests](#unit-tests)
-  * [How this project was built](#how-this-project-was-built)
+* [Quickstart](#quickstart)
+* [Examples](#examples)
+  + [with-index-is-last](#with-index-is-last)
+  + [exec](#exec)
+  + [exec-bash-redirect](#exec-bash-redirect)
+* [Unit tests](#unit-tests)
+* [How this project was built](#how-this-project-was-built)
 <!-- TOCEND -->
 
 <hr/>
