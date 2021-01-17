@@ -443,7 +443,7 @@ resulting string will fit into given size with spaces or truncated if not enough
     <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_CreateGetterSetter__2_Expression_Func___0___1___.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.CreateGetterSetter%60%602(Expression%7BFunc%7B%60%600%2C%60%601%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Expression.cs/#L107">View Source</a>
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Expression.cs/#L112">View Source</a>
   </span>
   <a id="SearchAThing_UtilExt_CreateGetterSetter_" data-uid="SearchAThing.UtilExt.CreateGetterSetter*"></a>
   <h4 id="SearchAThing_UtilExt_CreateGetterSetter__2_Expression_Func___0___1___" data-uid="SearchAThing.UtilExt.CreateGetterSetter``2(Expression{Func{``0,``1}})">CreateGetterSetter&lt;T, V&gt;(Expression&lt;Func&lt;T, V&gt;&gt;)</h4>
@@ -1080,133 +1080,6 @@ eg. myobj.Eval((x) =&gt; (x == null) ? &quot;&quot; : x)</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Object</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_GetMemberName__1_Expression_Func___0_System_Object___.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.GetMemberName%60%601(Expression%7BFunc%7B%60%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Expression.cs/#L99">View Source</a>
-  </span>
-  <a id="SearchAThing_UtilExt_GetMemberName_" data-uid="SearchAThing.UtilExt.GetMemberName*"></a>
-  <h4 id="SearchAThing_UtilExt_GetMemberName__1_Expression_Func___0_System_Object___" data-uid="SearchAThing.UtilExt.GetMemberName``1(Expression{Func{``0,System.Object}})">GetMemberName&lt;T&gt;(Expression&lt;Func&lt;T, Object&gt;&gt;)</h4>
-  <div class="markdown level1 summary"><p>retrieve member name from a functor like `x=&gt;x.membername1</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetMemberName&lt;T&gt;(Expression&lt;Func&lt;T, object&gt;&gt; membersExpr)
-    where T : class</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;T, <span class="xref">System.Object</span>&gt;&gt;</td>
-        <td><span class="parametername">membersExpr</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilExt_GetMemberNames__1_Expression_Func___0_System_Object___.md&amp;value=---%0Auid%3A%20SearchAThing.UtilExt.GetMemberNames%60%601(Expression%7BFunc%7B%60%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Expression.cs/#L91">View Source</a>
-  </span>
-  <a id="SearchAThing_UtilExt_GetMemberNames_" data-uid="SearchAThing.UtilExt.GetMemberNames*"></a>
-  <h4 id="SearchAThing_UtilExt_GetMemberNames__1_Expression_Func___0_System_Object___" data-uid="SearchAThing.UtilExt.GetMemberNames``1(Expression{Func{``0,System.Object}})">GetMemberNames&lt;T&gt;(Expression&lt;Func&lt;T, Object&gt;&gt;)</h4>
-  <div class="markdown level1 summary"><p>retrieve list of member names from a functor like <code>x=&gt;new {x.membername1, x.membername2, ...}</code> or <code>x=&gt;x.membername</code></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; GetMemberNames&lt;T&gt;(Expression&lt;Func&lt;T, object&gt;&gt; membersExpr)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;T, <span class="xref">System.Object</span>&gt;&gt;</td>
-        <td><span class="parametername">membersExpr</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
         <td></td>
       </tr>
     </tbody>

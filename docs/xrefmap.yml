@@ -780,38 +780,6 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.GetJsonArray
   nameWithType: UtilExt.GetJsonArray
-- uid: SearchAThing.UtilExt.GetMemberName*
-  name: GetMemberName
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GetMemberName_
-  commentId: Overload:SearchAThing.UtilExt.GetMemberName
-  isSpec: "True"
-  fullName: SearchAThing.UtilExt.GetMemberName
-  nameWithType: UtilExt.GetMemberName
-- uid: SearchAThing.UtilExt.GetMemberName``1(Expression{Func{``0,System.Object}})
-  name: GetMemberName<T>(Expression<Func<T, Object>>)
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GetMemberName__1_Expression_Func___0_System_Object___
-  commentId: M:SearchAThing.UtilExt.GetMemberName``1(Expression{Func{``0,System.Object}})
-  name.vb: GetMemberName(Of T)(Expression(Of Func(Of T, Object)))
-  fullName: SearchAThing.UtilExt.GetMemberName<T>(Expression<Func<T, System.Object>>)
-  fullName.vb: SearchAThing.UtilExt.GetMemberName(Of T)(Expression(Of Func(Of T, System.Object)))
-  nameWithType: UtilExt.GetMemberName<T>(Expression<Func<T, Object>>)
-  nameWithType.vb: UtilExt.GetMemberName(Of T)(Expression(Of Func(Of T, Object)))
-- uid: SearchAThing.UtilExt.GetMemberNames*
-  name: GetMemberNames
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GetMemberNames_
-  commentId: Overload:SearchAThing.UtilExt.GetMemberNames
-  isSpec: "True"
-  fullName: SearchAThing.UtilExt.GetMemberNames
-  nameWithType: UtilExt.GetMemberNames
-- uid: SearchAThing.UtilExt.GetMemberNames``1(Expression{Func{``0,System.Object}})
-  name: GetMemberNames<T>(Expression<Func<T, Object>>)
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GetMemberNames__1_Expression_Func___0_System_Object___
-  commentId: M:SearchAThing.UtilExt.GetMemberNames``1(Expression{Func{``0,System.Object}})
-  name.vb: GetMemberNames(Of T)(Expression(Of Func(Of T, Object)))
-  fullName: SearchAThing.UtilExt.GetMemberNames<T>(Expression<Func<T, System.Object>>)
-  fullName.vb: SearchAThing.UtilExt.GetMemberNames(Of T)(Expression(Of Func(Of T, System.Object)))
-  nameWithType: UtilExt.GetMemberNames<T>(Expression<Func<T, Object>>)
-  nameWithType.vb: UtilExt.GetMemberNames(Of T)(Expression(Of Func(Of T, Object)))
 - uid: SearchAThing.UtilExt.GreatThanOrEqualsTol(IQuantity,IQuantity,IQuantity)
   name: GreatThanOrEqualsTol(IQuantity, IQuantity, IQuantity)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_GreatThanOrEqualsTol_IQuantity_IQuantity_IQuantity_
@@ -1569,12 +1537,15 @@ references:
   fullName.vb: SearchAThing.UtilToolkit.Assign(Of T)(T, T, Func(Of PropertyInfo, System.Boolean))
   nameWithType: UtilToolkit.Assign<T>(T, T, Func<PropertyInfo, Boolean>)
   nameWithType.vb: UtilToolkit.Assign(Of T)(T, T, Func(Of PropertyInfo, Boolean))
-- uid: SearchAThing.UtilToolkit.BuildImage(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
-  name: BuildImage(String, String, CancellationToken, Boolean, Boolean)
-  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_BuildImage_System_String_System_String_CancellationToken_System_Boolean_System_Boolean_
-  commentId: M:SearchAThing.UtilToolkit.BuildImage(System.String,System.String,CancellationToken,System.Boolean,System.Boolean)
-  fullName: SearchAThing.UtilToolkit.BuildImage(System.String, System.String, CancellationToken, System.Boolean, System.Boolean)
-  nameWithType: UtilToolkit.BuildImage(String, String, CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.UtilToolkit.BuildImage(System.String,System.String,CancellationToken,System.Boolean,System.Boolean,System.String[])
+  name: BuildImage(String, String, CancellationToken, Boolean, Boolean, String[])
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_BuildImage_System_String_System_String_CancellationToken_System_Boolean_System_Boolean_System_String___
+  commentId: M:SearchAThing.UtilToolkit.BuildImage(System.String,System.String,CancellationToken,System.Boolean,System.Boolean,System.String[])
+  name.vb: BuildImage(String, String, CancellationToken, Boolean, Boolean, String())
+  fullName: SearchAThing.UtilToolkit.BuildImage(System.String, System.String, CancellationToken, System.Boolean, System.Boolean, System.String[])
+  fullName.vb: SearchAThing.UtilToolkit.BuildImage(System.String, System.String, CancellationToken, System.Boolean, System.Boolean, System.String())
+  nameWithType: UtilToolkit.BuildImage(String, String, CancellationToken, Boolean, Boolean, String[])
+  nameWithType.vb: UtilToolkit.BuildImage(String, String, CancellationToken, Boolean, Boolean, String())
 - uid: SearchAThing.UtilToolkit.BuildImage*
   name: BuildImage
   href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_BuildImage_
@@ -1833,6 +1804,15 @@ references:
   fullName.vb: SearchAThing.UtilToolkit.GetMemberName(Of T)(T, Expression(Of Func(Of T, System.Object)))
   nameWithType: UtilToolkit.GetMemberName<T>(T, Expression<Func<T, Object>>)
   nameWithType.vb: UtilToolkit.GetMemberName(Of T)(T, Expression(Of Func(Of T, Object)))
+- uid: SearchAThing.UtilToolkit.GetMemberName``1(Expression{Func{``0,System.Object}})
+  name: GetMemberName<T>(Expression<Func<T, Object>>)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_GetMemberName__1_Expression_Func___0_System_Object___
+  commentId: M:SearchAThing.UtilToolkit.GetMemberName``1(Expression{Func{``0,System.Object}})
+  name.vb: GetMemberName(Of T)(Expression(Of Func(Of T, Object)))
+  fullName: SearchAThing.UtilToolkit.GetMemberName<T>(Expression<Func<T, System.Object>>)
+  fullName.vb: SearchAThing.UtilToolkit.GetMemberName(Of T)(Expression(Of Func(Of T, System.Object)))
+  nameWithType: UtilToolkit.GetMemberName<T>(Expression<Func<T, Object>>)
+  nameWithType.vb: UtilToolkit.GetMemberName(Of T)(Expression(Of Func(Of T, Object)))
 - uid: SearchAThing.UtilToolkit.GetMemberNames*
   name: GetMemberNames
   href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_GetMemberNames_
@@ -1849,6 +1829,15 @@ references:
   fullName.vb: SearchAThing.UtilToolkit.GetMemberNames(Of T)(T, Expression(Of Func(Of T, System.Object)))
   nameWithType: UtilToolkit.GetMemberNames<T>(T, Expression<Func<T, Object>>)
   nameWithType.vb: UtilToolkit.GetMemberNames(Of T)(T, Expression(Of Func(Of T, Object)))
+- uid: SearchAThing.UtilToolkit.GetMemberNames``1(Expression{Func{``0,System.Object}})
+  name: GetMemberNames<T>(Expression<Func<T, Object>>)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_GetMemberNames__1_Expression_Func___0_System_Object___
+  commentId: M:SearchAThing.UtilToolkit.GetMemberNames``1(Expression{Func{``0,System.Object}})
+  name.vb: GetMemberNames(Of T)(Expression(Of Func(Of T, Object)))
+  fullName: SearchAThing.UtilToolkit.GetMemberNames<T>(Expression<Func<T, System.Object>>)
+  fullName.vb: SearchAThing.UtilToolkit.GetMemberNames(Of T)(Expression(Of Func(Of T, System.Object)))
+  nameWithType: UtilToolkit.GetMemberNames<T>(Expression<Func<T, Object>>)
+  nameWithType.vb: UtilToolkit.GetMemberNames(Of T)(Expression(Of Func(Of T, Object)))
 - uid: SearchAThing.UtilToolkit.GetMemberNamesExt*
   name: GetMemberNamesExt
   href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_GetMemberNamesExt_
