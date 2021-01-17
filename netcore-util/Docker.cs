@@ -173,6 +173,7 @@ namespace SearchAThing.Util
                 "-d", "-ti",
                 $"-e TZ={tz}",
                 $"--name={containerName}",
+                $"-h \"{containerName}\"",
                 $"--network={containerNetwork}"
             });
             if (containerIp != null) args.Add($"--ip={containerIp}");
@@ -270,16 +271,19 @@ namespace SearchAThing.Util
         /// <summary>
         /// build docker image
         /// </summary>        
-        public static async Task BuildImage(string dockerImageName, string dockerSourceDir, CancellationToken ct, bool sudo = false, bool verbose = false)
+        public static async Task BuildImage(string dockerImageName, string dockerSourceDir, CancellationToken ct, bool sudo = false, bool verbose = false, string[] extra_args = null)
         {
             System.Console.WriteLine($"Creating [{dockerImageName}] docker image...");
-            var cmdres = await Toolkit.ExecNoRedirect("docker", new[] {
+            var args = new List<string>()
+            {
                 "build",
-                "--network=build",
-                "-t", dockerImageName,
-                "-f", $"{dockerSourceDir}/Dockerfile",
-                dockerSourceDir
-            }, ct, sudo, verbose);
+                "-t", dockerImageName
+            };
+            if (extra_args != null) args.AddRange(extra_args);
+            args.Add("-f");
+            args.Add($"{dockerSourceDir}/Dockerfile");
+            args.Add(dockerSourceDir);
+            var cmdres = await Toolkit.ExecNoRedirect("docker", args, ct, sudo, verbose);
             if (cmdres.exitcode != 0)
             {
                 System.Console.WriteLine("ERROR");
