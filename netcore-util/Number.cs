@@ -320,6 +320,22 @@ namespace SearchAThing
         }
 
         /// <summary>
+        /// returns 0,+1,-1 depending on the sign.
+        /// (0) : if given number EqualsTol(zeroTol, 0)
+        /// (+1) : if given number positive;
+        /// (-1) : if given number negative;                
+        /// </summary>
+        /// <param name="n">number to test</param>
+        /// <param name="zeroTol">tolerance to consider it zero</param>
+        /// <returns>0,+1,-1</returns>
+        public static int Sign(this double n, double zeroTol)
+        {
+            if (n.EqualsTol(zeroTol, 0)) return 0;
+            if (n > 0) return 1;
+            return -1;
+        }
+
+        /// <summary>
         /// return clamped number between [min,max] interval
         /// </summary>
         /// <param name="n">number</param>
