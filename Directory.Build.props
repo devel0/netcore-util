@@ -1,0 +1,10 @@
+<!--Directory.Build.props: MSBuild properties that are included in every project--><!--Info: https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2019#directorybuildprops-and-directorybuildtargets-->
+<Project>
+    <PropertyGroup>
+        <MicrosoftCSharpVersion>4.7.0</MicrosoftCSharpVersion>
+        <MicrosoftEntityFrameworkCoreVersion>5.0.1</MicrosoftEntityFrameworkCoreVersion>
+        <NewtonsoftJsonVersion>13.0.1</NewtonsoftJsonVersion>
+        <NpgsqlEntityFrameworkCorePostgreSQLVersion>5.0.0</NpgsqlEntityFrameworkCorePostgreSQLVersion>
+        <UnitsNetVersion>4.74.0</UnitsNetVersion>
+    </PropertyGroup>
+</Project>
