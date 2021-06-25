@@ -12,6 +12,7 @@
 <!-- TOC -->
 * [Quickstart](#quickstart)
 * [Examples](#examples)
+  + [tail like](#tail-like)
   + [with-index-is-last](#with-index-is-last)
   + [exec](#exec)
   + [exec-bash-redirect](#exec-bash-redirect)
@@ -38,6 +39,26 @@ using static SearchAThing.UtilToolkit;
 ```
 
 ## Examples
+
+### tail like
+
+```cs
+using static SearchAThing.UtilToolkit;
+
+namespace mytest
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            foreach (var x in TailLike("/var/log/syslog"))
+            {
+                System.Console.WriteLine(x);
+            }
+        }
+    }
+}
+```
 
 ### with-index-is-last
 
