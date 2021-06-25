@@ -1259,6 +1259,12 @@ references:
   commentId: M:SearchAThing.UtilExt.Sign(System.Double)
   fullName: SearchAThing.UtilExt.Sign(System.Double)
   nameWithType: UtilExt.Sign(Double)
+- uid: SearchAThing.UtilExt.Sign(System.Double,System.Double)
+  name: Sign(Double, Double)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_Sign_System_Double_System_Double_
+  commentId: M:SearchAThing.UtilExt.Sign(System.Double,System.Double)
+  fullName: SearchAThing.UtilExt.Sign(System.Double, System.Double)
+  nameWithType: UtilExt.Sign(Double, Double)
 - uid: SearchAThing.UtilExt.Sign(System.Int32)
   name: Sign(Int32)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_Sign_System_Int32_
@@ -2110,6 +2116,22 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilToolkit.StopContainer
   nameWithType: UtilToolkit.StopContainer
+- uid: SearchAThing.UtilToolkit.TailLike(System.String,System.Boolean,System.Nullable{CancellationToken},System.Int32)
+  name: TailLike(String, Boolean, Nullable<CancellationToken>, Int32)
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_TailLike_System_String_System_Boolean_System_Nullable_CancellationToken__System_Int32_
+  commentId: M:SearchAThing.UtilToolkit.TailLike(System.String,System.Boolean,System.Nullable{CancellationToken},System.Int32)
+  name.vb: TailLike(String, Boolean, Nullable(Of CancellationToken), Int32)
+  fullName: SearchAThing.UtilToolkit.TailLike(System.String, System.Boolean, System.Nullable<CancellationToken>, System.Int32)
+  fullName.vb: SearchAThing.UtilToolkit.TailLike(System.String, System.Boolean, System.Nullable(Of CancellationToken), System.Int32)
+  nameWithType: UtilToolkit.TailLike(String, Boolean, Nullable<CancellationToken>, Int32)
+  nameWithType.vb: UtilToolkit.TailLike(String, Boolean, Nullable(Of CancellationToken), Int32)
+- uid: SearchAThing.UtilToolkit.TailLike*
+  name: TailLike
+  href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_TailLike_
+  commentId: Overload:SearchAThing.UtilToolkit.TailLike
+  isSpec: "True"
+  fullName: SearchAThing.UtilToolkit.TailLike
+  nameWithType: UtilToolkit.TailLike
 - uid: SearchAThing.UtilToolkit.ToExpando(System.Object)
   name: ToExpando(Object)
   href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ToExpando_System_Object_

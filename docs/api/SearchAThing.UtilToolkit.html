@@ -2194,6 +2194,74 @@ a cancellation token can be supplied to cancel underlying process</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilToolkit_TailLike_System_String_System_Boolean_System_Nullable_CancellationToken__System_Int32_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilToolkit.TailLike(System.String%2CSystem.Boolean%2CSystem.Nullable%7BCancellationToken%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/devel0/netcore-util/blob/master/netcore-util/Stream.cs/#L20">View Source</a>
+  </span>
+  <a id="SearchAThing_UtilToolkit_TailLike_" data-uid="SearchAThing.UtilToolkit.TailLike*"></a>
+  <h4 id="SearchAThing_UtilToolkit_TailLike_System_String_System_Boolean_System_Nullable_CancellationToken__System_Int32_" data-uid="SearchAThing.UtilToolkit.TailLike(System.String,System.Boolean,System.Nullable{CancellationToken},System.Int32)">TailLike(String, Boolean, Nullable&lt;CancellationToken&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Tail-like method to gather file incoming lines</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; TailLike(string pathfilename, bool seekEnd = true, CancellationToken? ct = null, int BUFSIZE = 1024)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pathfilename</span></td>
+        <td><p>source pathfilename to tail</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">seekEnd</span></td>
+        <td><p>if false read from beginning (default:true)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">CancellationToken</span>&gt;</td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>optional cancellation token to control stop of tail loop</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">BUFSIZE</span></td>
+        <td><p>read buffer size (default:1024)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>return incoming lines from given file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/devel0/netcore-util/new/master/apiSpec/new?filename=SearchAThing_UtilToolkit_ToExpando_System_Object_.md&amp;value=---%0Auid%3A%20SearchAThing.UtilToolkit.ToExpando(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
