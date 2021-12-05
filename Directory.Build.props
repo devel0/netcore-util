@@ -2,9 +2,9 @@
 <Project>
     <PropertyGroup>
         <MicrosoftCSharpVersion>4.7.0</MicrosoftCSharpVersion>
-        <MicrosoftEntityFrameworkCoreVersion>5.0.1</MicrosoftEntityFrameworkCoreVersion>
+        <MicrosoftEntityFrameworkCoreVersion>6.0.0</MicrosoftEntityFrameworkCoreVersion>
         <NewtonsoftJsonVersion>13.0.1</NewtonsoftJsonVersion>
-        <NpgsqlEntityFrameworkCorePostgreSQLVersion>5.0.0</NpgsqlEntityFrameworkCorePostgreSQLVersion>
-        <UnitsNetVersion>4.74.0</UnitsNetVersion>
+        <NpgsqlEntityFrameworkCorePostgreSQLVersion>6.0.1</NpgsqlEntityFrameworkCorePostgreSQLVersion>
+        <UnitsNetVersion>4.109.0</UnitsNetVersion>
     </PropertyGroup>
 </Project>

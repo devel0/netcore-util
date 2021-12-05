@@ -53,7 +53,7 @@ namespace SearchAThing
                 {
                     var pex = ex as Npgsql.PostgresException;
 
-                    res.Message = $"{pex.Message} [table:{pex.TableName}] [constraint:{pex.ConstraintName}] [stmt:{pex.Statement}]";
+                    res.Message = $"{pex.Message} [table:{pex.TableName}] [constraint:{pex.ConstraintName}] [routine:{pex.Routine}]";
                     res.ExceptionType = pex.GetType().ToString();
                     res.Stacktrace = pex.StackTrace.ToString();
                 }
