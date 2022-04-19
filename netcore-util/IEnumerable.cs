@@ -219,6 +219,38 @@ namespace SearchAThing
             }
         }
 
+        /// <summary>
+        /// from given elements return the sequence starting from wantedFirstElement
+        /// and continue until end then restart from begin until wantedFirstElement excluded
+        /// pre: wantedFirstElement must in the list
+        /// [unit test](https://github.com/devel0/netcore-util/tree/master/test/Enumerable/EnumerableTest_0006.cs)
+        /// </summary>        
+        public static IEnumerable<T> RouteFirst<T>(this IEnumerable<T> lst, T wantedFirstElement)
+        {
+            var backingStore = new List<T>();
+
+            bool firstFound =false;
+            foreach (var x in lst)
+            {
+                if (firstFound)
+                {
+                    yield return x;
+                    continue;
+                }
+                else if (x.Equals(wantedFirstElement))
+                {
+                    firstFound = true;
+                    yield return x;
+                }
+                else backingStore.Add(x);
+            }
+
+            foreach (var x in backingStore)
+            {
+                yield return x;
+            }         
+        }
+
     }
 
 }
