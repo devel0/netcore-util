@@ -1,12 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFrameworks>net6.0</TargetFrameworks>
+        <LangVersion>10</LangVersion>        
+        <Nullable>enable</Nullable>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>        
         <PackageId>netcore-util</PackageId>   
         <PackageVersion>1.21.0</PackageVersion>
         <Title>net core util</Title>
-        <Description></Description>
-        <LangVersion>9</LangVersion>        
+        <Description></Description>        
         <Authors>Lorenzo Delana</Authors>
         <PackageTags>netcore util</PackageTags>
         <PackageProjectUrl>https://github.com/devel0/netcore-util</PackageProjectUrl>
