@@ -21,10 +21,7 @@ namespace SearchAThing
         /// can consume cpu;
         /// eg. myobj.Eval((x) => (x == null) ? "" : x)
         /// </summary>
-        public static U Eval<T, U>(this T obj, Func<T, U> fn)
-        {
-            return fn(obj);
-        }
+        public static U Eval<T, U>(this T obj, Func<T, U> fn) => fn(obj);
 
     }
 
@@ -35,10 +32,7 @@ namespace SearchAThing
         /// returns true if only one of given objects is null;
         /// returns false if all objects null or all objects not null;
         /// </summary>
-        public static bool XorNull(object a, object b)
-        {
-            return a == null ^ b == null;
-        }
+        public static bool XorNull(object a, object b) => a == null ^ b == null;
 
     }
 

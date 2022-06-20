@@ -11,16 +11,14 @@ namespace SearchAThing
         /// <summary>
         /// distinct with lambda
         /// </summary>
-        public static IEnumerable<T> Distinct<T, TKey>(this IEnumerable<T> lst, Func<T, TKey> keySelector)
-        {
-            return lst.GroupBy(keySelector).Select(w => w.First());
-        }
+        public static IEnumerable<T> Distinct<T, TKey>(this IEnumerable<T> lst, Func<T, TKey> keySelector) =>
+            lst.GroupBy(keySelector).Select(w => w.First());
 
         /// <summary>
         /// enumerable extension to enumerate itself into an (item, idx) set
         /// </summary>
-        public static IEnumerable<(T item, int idx)> WithIndex<T>(this IEnumerable<T> en)
-            => en.Select((item, idx) => (item, idx));
+        public static IEnumerable<(T item, int idx)> WithIndex<T>(this IEnumerable<T> en) =>
+            en.Select((item, idx) => (item, idx));
 
         /// <summary>
         /// enumerable extension to enumerate itself into an (item, idx, isLast) set
@@ -45,58 +43,40 @@ namespace SearchAThing
         /// <summary>
         /// enumerate given items returning a tuple with nullable ( for first hit ) prev element
         /// </summary>
-        public static IEnumerable<(T? prev, T item)> WithPrevPrimitive<T>(this IEnumerable<T> en) where T : struct
+        public static IEnumerable<(T? prev, T item, int itemIdx)> WithPrevPrimitive<T>(this IEnumerable<T> en) where T : struct
         {
             var enm = en.GetEnumerator();
 
             T? prev = null;
             var item = default(T);
+            var idx = 0;
             while (enm.MoveNext())
             {
                 item = enm.Current;
-                yield return (prev, item);
+                yield return (prev, item, idx);
                 prev = item;
+                ++idx;
             }
         }
 
         /// <summary>
         /// enumerate given items returning a tuple with null ( for first hit ) prev element
         /// </summary>
-        public static IEnumerable<(T prev, T item)> WithPrev<T>(this IEnumerable<T> en) where T : class
+        public static IEnumerable<(T? prev, T item, int itemIdx)> WithPrev<T>(this IEnumerable<T> en) where T : class
         {
             var enm = en.GetEnumerator();
 
-            T prev = null;
+            T? prev = null;
             var item = default(T);
+            var idx = 0;
             while (enm.MoveNext())
             {
                 item = enm.Current;
-                yield return (prev, item);
+                yield return (prev, item, idx);
                 prev = item;
+                ++idx;
             }
         }
-
-        /*
-        // compiler err:
-        // A nullable type parameter must be known to be a value type or non-nullable reference type. Consider adding a 'class', 'struct', or type constraint.        
-
-        /// <summary>
-        /// enumerate given items returning a tuple with null ( for first hit ) prev element
-        /// </summary>
-        public static IEnumerable<(T? prev, T item)> WithPrevX<T>(this IEnumerable<T> en)
-        {
-            var enm = en.GetEnumerator();
-
-            T prev = null;
-            var item = default(T);
-            while (enm.MoveNext())
-            {
-                item = enm.Current;
-                yield return (prev, item);
-                prev = item;
-            }
-        }
-        */
 
         /// <summary>
         /// enumerate given items returning a tuple with null ( for last hit ) next element
@@ -104,7 +84,8 @@ namespace SearchAThing
         /// <remarks>        
         /// [unit test](https://github.com/devel0/netcore-util/tree/master/test/Enumerable/EnumerableTest_0002.cs)
         /// </remarks>
-        public static IEnumerable<(T item, T? next, bool isLast)> WithNextPrimitive<T>(this IEnumerable<T> en, bool repeatFirstAtEnd = false) where T : struct
+        public static IEnumerable<(T item, T? next, int itemIdx, bool isLast)>
+            WithNextPrimitive<T>(this IEnumerable<T> en, bool repeatFirstAtEnd = false) where T : struct
         {
             var enm = en.GetEnumerator();
 
@@ -112,6 +93,7 @@ namespace SearchAThing
             T? prev = null;
             var item = default(T?);
             var isLast = !enm.MoveNext();
+            var idx = 0;
             while (!isLast)
             {
                 item = enm.Current;
@@ -120,17 +102,19 @@ namespace SearchAThing
                 if (first == null)
                 {
                     first = prev = item;
-                    if (isLast) yield return (item.Value, repeatFirstAtEnd ? first : null, true);
+                    if (isLast) yield return (item.Value, repeatFirstAtEnd ? first : null, idx, true);
                 }
                 else
                 {
-                    yield return (prev.Value, item, false);
+                    yield return (prev!.Value, item, idx, false);
                     if (isLast)
                     {
-                        yield return (item.Value, repeatFirstAtEnd ? first : null, true);
+                        yield return (item.Value, repeatFirstAtEnd ? first : null, idx + 1, true);
                         yield break;
                     }
+
                     prev = item;
+                    ++idx;
                 }
             }
         }
@@ -144,9 +128,10 @@ namespace SearchAThing
         /// <remarks>
         /// [unit test](https://github.com/devel0/netcore-util/tree/master/test/Enumerable/EnumerableTest_0004.cs)
         /// </remarks>
-        public static IEnumerable<(T? prev, T item, T? next, bool isLast)> WithPrevNextPrimitive<T>(
+        public static IEnumerable<(T? prev, T item, T? next, int itemIdx, bool isLast)> WithPrevNextPrimitive<T>(
             this IEnumerable<T> en, bool repeatFirstAtEnd = false) where T : struct
         {
+            int idx = 0;
             foreach (var x in en.WithNextPrimitive(repeatFirstAtEnd).WithPrevPrimitive())
             {
                 var item = x.item.item;
@@ -154,7 +139,9 @@ namespace SearchAThing
                 T? next = x.item.next;
                 var isLast = x.item.isLast;
 
-                yield return (prev, item, next, isLast);
+                yield return (prev, item, next, x.itemIdx, isLast);
+
+                ++idx;
             }
         }
 
@@ -165,14 +152,16 @@ namespace SearchAThing
         /// <remarks>
         /// [unit test](https://github.com/devel0/netcore-util/tree/master/test/Enumerable/EnumerableTest_0001.cs)
         /// </remarks>
-        public static IEnumerable<(T item, T next, bool isLast)> WithNext<T>(this IEnumerable<T> en, bool repeatFirstAtEnd = false) where T : class
+        public static IEnumerable<(T item, T? next, int itemIdx, bool isLast)>
+            WithNext<T>(this IEnumerable<T> en, bool repeatFirstAtEnd = false) where T : class
         {
             var enm = en.GetEnumerator();
 
-            T first = null;
-            T prev = null;
+            T? first = null;
+            T? prev = null;
             var item = default(T);
             var isLast = !enm.MoveNext();
+            int idx = 0;
             while (!isLast)
             {
                 item = enm.Current;
@@ -181,17 +170,18 @@ namespace SearchAThing
                 if (first == null)
                 {
                     first = prev = item;
-                    if (isLast) yield return (item, repeatFirstAtEnd ? first : null, true);
+                    if (isLast) yield return (item, repeatFirstAtEnd ? first : null, idx, true);
                 }
                 else
                 {
-                    yield return (prev, item, false);
+                    yield return (prev!, item, idx, false);
                     if (isLast)
                     {
-                        yield return (item, repeatFirstAtEnd ? first : null, true);
+                        yield return (item, repeatFirstAtEnd ? first : null, idx, true);
                         yield break;
                     }
                     prev = item;
+                    ++idx;
                 }
             }
         }
@@ -205,17 +195,17 @@ namespace SearchAThing
         /// <remarks>
         /// [unit test](https://github.com/devel0/netcore-util/tree/master/test/Enumerable/EnumerableTest_0003.cs)
         /// </remarks>
-        public static IEnumerable<(T prev, T item, T next, bool isLast)> WithPrevNext<T>(
+        public static IEnumerable<(T? prev, T item, T? next, int itemIdx, bool isLast)> WithPrevNext<T>(
             this IEnumerable<T> en, bool repeatFirstAtEnd = false) where T : class
         {
             foreach (var x in en.WithNext(repeatFirstAtEnd).WithPrevPrimitive())
             {
                 var item = x.item.item;
-                T prev = x.prev.HasValue ? x.prev.Value.item : null;
-                T next = x.item.next;
+                T? prev = x.prev.HasValue ? x.prev.Value.item : null;
+                T? next = x.item.next;
                 var isLast = x.item.isLast;
 
-                yield return (prev, item, next, isLast);
+                yield return (prev, item, next, x.itemIdx, isLast);
             }
         }
 
@@ -229,7 +219,7 @@ namespace SearchAThing
         {
             var backingStore = new List<T>();
 
-            bool firstFound =false;
+            bool firstFound = false;
             foreach (var x in lst)
             {
                 if (firstFound)
@@ -248,7 +238,7 @@ namespace SearchAThing
             foreach (var x in backingStore)
             {
                 yield return x;
-            }         
+            }
         }
 
     }

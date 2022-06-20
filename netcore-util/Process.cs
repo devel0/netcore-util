@@ -20,6 +20,7 @@ namespace SearchAThing
             Output = output;
             Error = error;
         }
+
         /// <summary>
         /// exitcode of process execuition
         /// </summary>        
@@ -38,7 +39,6 @@ namespace SearchAThing
 
     public static partial class UtilToolkit
     {
-
 
         /// <summary>
         /// start a process in background without redirecting standard output, error;

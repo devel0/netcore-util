@@ -63,19 +63,14 @@ namespace SearchAThing
         /// <summary>
         /// retrieve list of member names from a functor like `x=>new {x.membername1, x.membername2, ...}` or `x=>x.membername`
         /// </summary>
-        public static HashSet<string> GetMemberNames<T>(T obj, Expression<Func<T, object>> membersExpr)
-        {
-            return new HashSet<string>(GetMemberNamesExt(membersExpr).ToArray());
-        }
+        public static HashSet<string> GetMemberNames<T>(T obj, Expression<Func<T, object>> membersExpr) =>
+            new HashSet<string>(GetMemberNamesExt(membersExpr).ToArray());
 
         /// <summary>
         /// retrieve list of member names from a functor like `x=>new {x.membername1, x.membername2, ...}` or `x=>x.membername`
         /// </summary>
-        public static HashSet<string> GetMemberNames<T>(Expression<Func<T, object>> membersExpr)
-        {
-            return new HashSet<string>(GetMemberNamesExt(membersExpr).ToArray());
-        }
-
+        public static HashSet<string> GetMemberNames<T>(Expression<Func<T, object>> membersExpr) =>
+            new HashSet<string>(GetMemberNamesExt(membersExpr).ToArray());
 
         /// <summary>
         /// retrieve member name from a functor like `x=>x.membername1

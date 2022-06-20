@@ -66,18 +66,14 @@ namespace SearchAThing
         /// <summary>
         /// copy properties from other object excluding those with given names
         /// </summary>        
-        public static T CopyFromExclude<T>(T obj, T other, params string[] exclude_names)
-        {
-            return CopyFrom(obj, other, (p) => !exclude_names.Any(exclude_name => exclude_name == p.Name));
-        }
+        public static T CopyFromExclude<T>(T obj, T other, params string[] exclude_names) =>
+            CopyFrom(obj, other, (p) => !exclude_names.Any(exclude_name => exclude_name == p.Name));
 
         /// <summary>
         /// copy properties from other object including only those with given names
         /// </summary>        
-        public static T CopyFromInclude<T>(T obj, T other, params string[] include_names)
-        {
-            return CopyFrom(obj, other, (p) => include_names.Any(include_name => include_name == p.Name));
-        }
+        public static T CopyFromInclude<T>(T obj, T other, params string[] include_names) =>
+        CopyFrom(obj, other, (p) => include_names.Any(include_name => include_name == p.Name));
 
     }
 

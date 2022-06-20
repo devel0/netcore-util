@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Runtime.CompilerServices;
 using UnitsNet;
 using static System.Math;
+using static System.FormattableString;
 
 namespace SearchAThing
 {
@@ -14,10 +15,8 @@ namespace SearchAThing
         /// <summary>
         /// Returns true if two numbers are equals using a default tolerance of 1e-6 about the smaller one.
         /// </summary>        
-        public static bool EqualsAutoTol(this double x, double y, double precision = 1e-6)
-        {
-            return Abs(x - y) <= Abs(Min(x, y) * precision);
-        }
+        public static bool EqualsAutoTol(this double x, double y, double precision = 1e-6) =>
+            Abs(x - y) <= Abs(Min(x, y) * precision);
 
         /// <summary>
         /// Round the given value using the multiple basis
@@ -86,10 +85,7 @@ namespace SearchAThing
 
         /// <summary>
         /// Return an invariant string representation rounded to given dec.        
-        public static string Stringify(this double x, int dec)
-        {
-            return string.Format(CultureInfo.InvariantCulture, "{0}", Round(x, dec));
-        }
+        public static string Stringify(this double x, int dec) => Invariant($"{Round(x, dec)}");
 
         /// <summary>
         /// Magnitude of given number. (eg. 190 -> 1.9e2 -> 2)
@@ -107,10 +103,7 @@ namespace SearchAThing
         /// <summary>
         /// Invariant culture double parse
         /// </summary>        
-        public static double InvDoubleParse(this string str)
-        {
-            return double.Parse(str, CultureInfo.InvariantCulture);
-        }
+        public static double InvDoubleParse(this string str) => double.Parse(str, CultureInfo.InvariantCulture);
 
         /// <summary>
         /// parse string that represent number without knowing current culture
@@ -177,10 +170,7 @@ namespace SearchAThing
         /// <summary>
         /// true if (x > y) AND NOT ( |x-y| <= tol )
         /// </summary>        
-        public static bool GreatThanTol(this double x, double tol, double y)
-        {
-            return x > y && !x.EqualsTol(tol, y);
-        }
+        public static bool GreatThanTol(this double x, double tol, double y) => x > y && !x.EqualsTol(tol, y);
 
         /// <summary>
         /// true if (x > y) AND NOT ( |x-y| <= tol )
@@ -195,10 +185,7 @@ namespace SearchAThing
         /// <summary>
         /// true if (x > y) AND ( |x-y| <= tol )
         /// </summary>        
-        public static bool GreatThanOrEqualsTol(this double x, double tol, double y)
-        {
-            return x > y || x.EqualsTol(tol, y);
-        }
+        public static bool GreatThanOrEqualsTol(this double x, double tol, double y) => x > y || x.EqualsTol(tol, y);
 
         /// <summary>
         /// true if (x > y) AND ( |x-y| <= tol )
@@ -213,10 +200,7 @@ namespace SearchAThing
         /// <summary>
         /// true if (x < y) AND NOT ( |x-y| <= tol )
         /// </summary>     
-        public static bool LessThanTol(this double x, double tol, double y)
-        {
-            return x < y && !x.EqualsTol(tol, y);
-        }
+        public static bool LessThanTol(this double x, double tol, double y) => x < y && !x.EqualsTol(tol, y);
 
         /// <summary>
         /// true if (x < y) AND NOT ( |x-y| <= tol )
@@ -231,10 +215,7 @@ namespace SearchAThing
         /// <summary>
         /// true if (x < y) AND ( |x-y| <= tol )
         /// </summary>     
-        public static bool LessThanOrEqualsTol(this double x, double tol, double y)
-        {
-            return x < y || x.EqualsTol(tol, y);
-        }
+        public static bool LessThanOrEqualsTol(this double x, double tol, double y) => x < y || x.EqualsTol(tol, y);
 
         /// <summary>
         /// true if (x < y) AND ( |x-y| <= tol )
@@ -303,21 +284,13 @@ namespace SearchAThing
         /// returns 1.0 if n>=0
         /// -1 otherwise
         /// </summary>        
-        public static double Sign(this int n)
-        {
-            if (n >= 0) return 1.0;
-            return -1.0;
-        }
+        public static double Sign(this int n) => (n >= 0) ? 1d : -1d;
 
         /// <summary>
         /// returns 1.0 if n>=0
         /// -1 otherwise
         /// </summary>        
-        public static double Sign(this double n)
-        {
-            if (n >= 0) return 1.0;
-            return -1.0;
-        }
+        public static double Sign(this double n) => (n >= 0) ? 1d : -1d;
 
         /// <summary>
         /// returns 0,+1,-1 depending on the sign.

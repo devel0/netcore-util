@@ -10,14 +10,10 @@ namespace SearchAThing
         /// <summary>
         /// {AppData}/{namespace}/{assembly_name}
         /// </summary>
-        public static string AppDataFolder(string ns)
-        {
-            return EnsureFolder(System.IO.Path.Combine(
-                System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ns),
-                Assembly.GetCallingAssembly().GetName().Name));
-
-        }
-
+        public static string AppDataFolder(string ns) => EnsureFolder(System.IO.Path.Combine(
+            System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ns),
+            Assembly.GetCallingAssembly().GetName().Name));            
+            
         /// <summary>
         /// Ensure given folder path exists.
         /// </summary>        
@@ -31,7 +27,7 @@ namespace SearchAThing
         /// Search given filename in the PATH
         /// </summary>
         /// <returns>null if not found</returns>
-        public static string SearchInPath(this string filename)
+        public static string? SearchInPath(this string filename)
         {
             if (File.Exists(filename)) return System.IO.Path.GetFullPath(filename);
 

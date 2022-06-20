@@ -38,10 +38,8 @@ namespace SearchAThing
         /// <summary>
         /// stringify docker network obj
         /// </summary>
-        public override string ToString()
-        {
-            return $"name:{Name} subnet:{Subnet}";
-        }
+        public override string ToString() => $"name:{Name} subnet:{Subnet}";
+
     }
 
     /// <summary>
@@ -73,10 +71,7 @@ namespace SearchAThing
         /// <summary>
         /// stringify container obj
         /// </summary>
-        public override string ToString()
-        {
-            return $"name:{Name} ip:{IPAddress}";
-        }
+        public override string ToString() => $"name:{Name} ip:{IPAddress}";        
     }
 
     public static partial class UtilToolkit

@@ -36,10 +36,8 @@ namespace SearchAThing
     public static partial class UtilExt
     {
 
-        public static string Details(this Exception ex, bool includeStackTrace = true)
-        {
-            return DetailsObject(ex).ToString(includeStackTrace);
-        }
+        public static string Details(this Exception ex, bool includeStackTrace = true) =>
+            DetailsObject(ex).ToString(includeStackTrace);
 
         public static ErrorInfo DetailsObject(this Exception _ex)
         {

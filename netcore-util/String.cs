@@ -181,10 +181,10 @@ namespace SearchAThing
         /// <summary>
         /// extract line from string buffer
         /// </summary>        
-        public static string NextLine(this string txt, ref int off)
-        {
-            return null;
-        }
+        // public static string NextLine(this string txt, ref int off)
+        // {
+        //     return null;
+        // }
 
         /// <summary>
         /// Smart line splitter that split a text into lines whatever unix or windows line ending style.
@@ -242,10 +242,8 @@ namespace SearchAThing
         /// the asterisk '*' character replace any group of chars
         /// the question '?' character replace any single character
         /// </summary>        
-        public static string WildcardToRegex(this string pattern)
-        {
-            return $"^{Regex.Escape(pattern).Replace("\\*", ".*").Replace('?', '.')}$";
-        }
+        public static string WildcardToRegex(this string pattern) =>
+            $"^{Regex.Escape(pattern).Replace("\\*", ".*").Replace('?', '.')}$";
 
         /// <summary>
         /// return true if given string matches the given pattern
@@ -268,18 +266,12 @@ namespace SearchAThing
         /// <summary>
         /// split string with given separator string
         /// </summary>        
-        public static string[] Split(this string str, string sepStr)
-        {
-            return str.Split(sepStr.ToArray(), StringSplitOptions.None);
-        }
+        public static string[] Split(this string str, string sepStr) => str.Split(sepStr.ToArray(), StringSplitOptions.None);
 
         /// <summary>
         /// return dynamic array from given [[xx],[yy],...] json array
         /// </summary>        
-        public static dynamic GetJsonArray(this string jsonDumps)
-        {
-            return ((dynamic)JObject.Parse($"{{a:{jsonDumps}}}")).a;
-        }
+        public static dynamic GetJsonArray(this string jsonDumps) => ((dynamic)JObject.Parse($"{{a:{jsonDumps}}}")).a;
 
         /// <summary>
         /// parse given array of doubles ( invariant ) comma separated
@@ -321,18 +313,13 @@ namespace SearchAThing
         /// <summary>
         /// check if given string contains the part ( ignoring case )
         /// </summary>        
-        public static bool ContainsIgnoreCase(this string str, string part)
-        {
-            return str.ToUpper().Contains(part.ToUpper());
-        }
+        public static bool ContainsIgnoreCase(this string str, string part) => str.ToUpper().Contains(part.ToUpper());
 
         /// <summary>
         /// convert invalid worksheet characters :\/?*[]' into underscore
         /// </summary>        
-        public static string NormalizeWorksheetName(this string s)
-        {
-            return Regex.Replace(s, $"[{Regex.Escape(@":\/?*[]'").Replace("]", "\\]")}]", "_");
-        }
+        public static string NormalizeWorksheetName(this string s) =>
+            Regex.Replace(s, $"[{Regex.Escape(@":\/?*[]'").Replace("]", "\\]")}]", "_");
 
         public static string NormalizeFilename(this string filename, char subst = '_')
         {
@@ -349,10 +336,7 @@ namespace SearchAThing
             return res;
         }
 
-        public static StringWrapper ToStringWrapper(this StringBuilder sb)
-        {
-            return new StringWrapper() { str = sb.ToString() };
-        }
+        public static StringWrapper ToStringWrapper(this StringBuilder sb) => new StringWrapper() { str = sb.ToString() };
 
         /// <summary>
         /// removes all characters that aren't 0-9 dot or comma
@@ -369,39 +353,31 @@ namespace SearchAThing
             return res;
         }
 
-        public static int ParseInt(this string s) { return int.Parse(s); }
+        public static int ParseInt(this string s) => int.Parse(s);
 
         /// <summary>
         /// return yyyy-MM-dd HH:mm.ss representation
         /// </summary>        
-        public static string InvarianteDateTime(this DateTime dt, string datesep = "-", string timesep = ":")
-        {
-            return $"{dt.InvariantDate(datesep)} {dt.InvariantTime(timesep)}";
-        }
+        public static string InvarianteDateTime(this DateTime dt, string datesep = "-", string timesep = ":") =>
+            $"{dt.InvariantDate(datesep)} {dt.InvariantTime(timesep)}";
 
         /// <summary>
         /// return yyyy-MM-dd representation
         /// </summary>        
-        public static string InvariantDate(this DateTime dt, string sep = "-")
-        {
-            return string.Format("{0:0000}{1}{2:00}{3}{4:00}", dt.Year, sep, dt.Month, sep, dt.Day);
-        }
+        public static string InvariantDate(this DateTime dt, string sep = "-") =>
+            string.Format("{0:0000}{1}{2:00}{3}{4:00}", dt.Year, sep, dt.Month, sep, dt.Day);
 
         /// <summary>
         /// return HH:mm:ss representation
         /// </summary>        
-        public static string InvariantTime(this DateTime dt, string sep = ":")
-        {
-            return string.Format("{0:00}{1}{2:00}{3}{4:00}", dt.Hour, sep, dt.Minute, sep, dt.Second);
-        }
+        public static string InvariantTime(this DateTime dt, string sep = ":") =>
+            string.Format("{0:00}{1}{2:00}{3}{4:00}", dt.Hour, sep, dt.Minute, sep, dt.Second);
 
         /// <summary>
         /// retrieve nr. of occurrence of given pattern through regex
         /// </summary>        
-        public static int RegexMatch(this string s, string pattern, RegexOptions opt = RegexOptions.None)
-        {
-            return Regex.Matches(s, pattern, opt).Count;
-        }
+        public static int RegexMatch(this string s, string pattern, RegexOptions opt = RegexOptions.None) =>
+            Regex.Matches(s, pattern, opt).Count;
 
         /// <summary>
         /// Checks whatever fields matches given filter all words in any of inputs.
@@ -432,10 +408,7 @@ namespace SearchAThing
 
     public static partial class UtilToolkit
     {
-        public static string ToJson(object o)
-        {
-            return JsonConvert.SerializeObject(o);
-        }
+        public static string ToJson(object o) => JsonConvert.SerializeObject(o);
     }
 
     public class StringWrapperLineReader
@@ -456,7 +429,7 @@ namespace SearchAThing
             has_next = en.MoveNext();
         }
 
-        public bool HasNext() { return has_next; }
+        public bool HasNext() => has_next;
 
         public StringWrapper GetNext()
         {
@@ -474,10 +447,7 @@ namespace SearchAThing
     {
         public string str;
 
-        public StringWrapperLineReader LineReader()
-        {
-            return new StringWrapperLineReader(this);
-        }
+        public StringWrapperLineReader LineReader() => new StringWrapperLineReader(this);
 
         public IEnumerable<string> Lines()
         {
@@ -520,11 +490,8 @@ namespace SearchAThing
 
         }
 
-        public override string ToString()
-        {
-            return str;
-        }
-
+        public override string ToString() => str;
+        
     }
 
 }
