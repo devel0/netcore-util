@@ -33,6 +33,12 @@ namespace SearchAThing.Util.Tests
             }
 
             {
+                var qq = new[] { 1, 2 }.WithNextPrimitive().ToList();
+                Assert.True(qq[0].itemIdx == 0);
+                Assert.True(qq[1].itemIdx == 1);
+            }
+
+            {
                 var a = new[] { 1, 2, 3, 4, 5 };
 
                 foreach (var rfe in new[] { false, true })
