@@ -6,5 +6,6 @@
         <NewtonsoftJsonVersion>13.0.1</NewtonsoftJsonVersion>
         <NpgsqlEntityFrameworkCorePostgreSQLVersion>6.0.1</NpgsqlEntityFrameworkCorePostgreSQLVersion>
         <UnitsNetVersion>4.109.0</UnitsNetVersion>
+        <xunitVersion>2.3.1</xunitVersion>
     </PropertyGroup>
 </Project>

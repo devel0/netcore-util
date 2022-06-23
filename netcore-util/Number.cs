@@ -155,7 +155,7 @@ namespace SearchAThing
             var d = UnitsNet.Length.FromCentimeters(3);
 
             return Abs(x - y) <= tol;
-        }
+        }       
 
         /// <summary>
         /// true if ( |x-y| <= tol )

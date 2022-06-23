@@ -1172,22 +1172,6 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.MRound
   nameWithType: UtilExt.MRound
-- uid: SearchAThing.UtilExt.NextLine(System.String,System.Int32@)
-  name: NextLine(String, ref Int32)
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_NextLine_System_String_System_Int32__
-  commentId: M:SearchAThing.UtilExt.NextLine(System.String,System.Int32@)
-  name.vb: NextLine(String, ByRef Int32)
-  fullName: SearchAThing.UtilExt.NextLine(System.String, ref System.Int32)
-  fullName.vb: SearchAThing.UtilExt.NextLine(System.String, ByRef System.Int32)
-  nameWithType: UtilExt.NextLine(String, ref Int32)
-  nameWithType.vb: UtilExt.NextLine(String, ByRef Int32)
-- uid: SearchAThing.UtilExt.NextLine*
-  name: NextLine
-  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_NextLine_
-  commentId: Overload:SearchAThing.UtilExt.NextLine
-  isSpec: "True"
-  fullName: SearchAThing.UtilExt.NextLine
-  nameWithType: UtilExt.NextLine
 - uid: SearchAThing.UtilExt.NormalizeFilename(System.String,System.Char)
   name: NormalizeFilename(String, Char)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_NormalizeFilename_System_String_System_Char_
@@ -1253,6 +1237,22 @@ references:
   isSpec: "True"
   fullName: SearchAThing.UtilExt.Repeat
   nameWithType: UtilExt.Repeat
+- uid: SearchAThing.UtilExt.RouteFirst*
+  name: RouteFirst
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_RouteFirst_
+  commentId: Overload:SearchAThing.UtilExt.RouteFirst
+  isSpec: "True"
+  fullName: SearchAThing.UtilExt.RouteFirst
+  nameWithType: UtilExt.RouteFirst
+- uid: SearchAThing.UtilExt.RouteFirst``1(IEnumerable{``0},``0)
+  name: RouteFirst<T>(IEnumerable<T>, T)
+  href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_RouteFirst__1_IEnumerable___0____0_
+  commentId: M:SearchAThing.UtilExt.RouteFirst``1(IEnumerable{``0},``0)
+  name.vb: RouteFirst(Of T)(IEnumerable(Of T), T)
+  fullName: SearchAThing.UtilExt.RouteFirst<T>(IEnumerable<T>, T)
+  fullName.vb: SearchAThing.UtilExt.RouteFirst(Of T)(IEnumerable(Of T), T)
+  nameWithType: UtilExt.RouteFirst<T>(IEnumerable<T>, T)
+  nameWithType.vb: UtilExt.RouteFirst(Of T)(IEnumerable(Of T), T)
 - uid: SearchAThing.UtilExt.Sign(System.Double)
   name: Sign(Double)
   href: api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_Sign_System_Double_
@@ -2013,11 +2013,11 @@ references:
   name: MakeDynamic((String name, Object value)[])
   href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_MakeDynamic_System_ValueTuple_System_String_System_Object____
   commentId: M:SearchAThing.UtilToolkit.MakeDynamic(System.ValueTuple{System.String,System.Object}[])
-  name.vb: MakeDynamic((name As String, value As Object)())
+  name.vb: MakeDynamic((name As String, value As Object)(Of String, Object)())
   fullName: SearchAThing.UtilToolkit.MakeDynamic(System.ValueTuple<System.String, System.Object>[])
   fullName.vb: SearchAThing.UtilToolkit.MakeDynamic(System.ValueTuple(Of System.String, System.Object)())
   nameWithType: UtilToolkit.MakeDynamic((String name, Object value)[])
-  nameWithType.vb: UtilToolkit.MakeDynamic((name As String, value As Object)())
+  nameWithType.vb: UtilToolkit.MakeDynamic((name As String, value As Object)(Of String, Object)())
 - uid: SearchAThing.UtilToolkit.MakeDynamic*
   name: MakeDynamic
   href: api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_MakeDynamic_
