@@ -23,6 +23,16 @@ namespace SearchAThing
         /// </summary>
         public static U Eval<T, U>(this T obj, Func<T, U> fn) => fn(obj);
 
+        /// <summary>
+        /// allow to call on the fly an action on the given object
+        /// </summary>        
+        /// <returns>object argument</returns>
+        public static T Set<T>(this T obj, Action<T> setter)
+        {
+            setter(obj);
+            return obj;
+        }
+
     }
 
     public static partial class UtilToolkit
