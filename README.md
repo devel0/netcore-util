@@ -4,7 +4,7 @@
 
 .NET core utilities
 
-- [API Documentation](https://devel0.github.io/netcore-util/api/SearchAThing.UtilExt.html)
+- [API Documentation](https://devel0.github.io/netcore-util/html/annotated.html)
 - [Changelog](https://github.com/devel0/netcore-util/commits/master)
 
 <hr/>
@@ -26,13 +26,13 @@
 
 - [nuget package](https://www.nuget.org/packages/netcore-util/)
 
-- [extension methods](https://devel0.github.io/netcore-util/api/SearchAThing.UtilExt.html)
+- [extension methods](https://devel0.github.io/netcore-util/html/class_search_a_thing_1_1_util_ext.html)
 
 ```csharp
 using SearchAThing;
 ```
 
-- [toolkit methods](https://devel0.github.io/netcore-util/api/SearchAThing.UtilToolkit.html)
+- [toolkit methods](https://devel0.github.io/netcore-util/html/class_search_a_thing_1_1_util_toolkit.html)
 
 ```csharp
 using static SearchAThing.UtilToolkit;
@@ -62,7 +62,7 @@ namespace mytest
 
 ### with-index-is-last
 
-- [WithIndexIsLast](https://devel0.github.io/netcore-util/api/SearchAThing.UtilExt.html#SearchAThing_UtilExt_WithIndexIsLast__1_IEnumerable___0__)
+- [WithIndexIsLast](https://devel0.github.io/netcore-util/html/class_search_a_thing_1_1_util_ext.html#a17c5dc6f76a3fcce1f5d2a567f9db3ef)
 
 ```csharp
 using SearchAThing;
@@ -100,7 +100,7 @@ namespace with_index_is_last
 
 ### exec
 
-- [Exec](https://devel0.github.io/netcore-util/api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_Exec_System_String_IEnumerable_System_String__CancellationToken_System_Boolean_System_Boolean_System_Boolean_System_Boolean_)
+- [Exec](https://devel0.github.io/netcore-util/html/class_search_a_thing_1_1_util_toolkit.html#a2aa4cf2d7debacfc62deacf9d1f93313)
 
 ```csharp
 using System.Threading;
@@ -152,7 +152,7 @@ namespace exec
 
 ### exec-bash-redirect
 
-- [ExecBashRedirect](https://devel0.github.io/netcore-util/api/SearchAThing.UtilToolkit.html#SearchAThing_UtilToolkit_ExecBashRedirect_System_String_CancellationToken_System_Boolean_System_Boolean_)
+- [ExecBashRedirect](https://devel0.github.io/netcore-util/html/class_search_a_thing_1_1_util_toolkit.html#ae6def815d3b04c0e3296dd2c5e3d717d)
 
 ```csharp
 using System.Threading;
