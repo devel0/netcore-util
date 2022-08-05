@@ -150,12 +150,7 @@ namespace SearchAThing
         /// <summary>
         /// true if ( |x-y| <= tol )
         /// </summary>        
-        public static bool EqualsTol(this double x, double tol, double y)
-        {
-            var d = UnitsNet.Length.FromCentimeters(3);
-
-            return Abs(x - y) <= tol;
-        }       
+        public static bool EqualsTol(this double x, double tol, double y) => Abs(x - y) <= tol;
 
         /// <summary>
         /// true if ( |x-y| <= tol )
