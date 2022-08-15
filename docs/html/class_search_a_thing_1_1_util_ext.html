@@ -221,12 +221,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a57c5047fcb996c205fb153ac907bd199"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a57c5047fcb996c205fb153ac907bd199">Clamp</a> (this double n, double min, double max)</td></tr>
 <tr class="memdesc:a57c5047fcb996c205fb153ac907bd199"><td class="mdescLeft">&#160;</td><td class="mdescRight">return clamped number between [min,max] interval  <a href="class_search_a_thing_1_1_util_ext.html#a57c5047fcb996c205fb153ac907bd199">More...</a><br /></td></tr>
 <tr class="separator:a57c5047fcb996c205fb153ac907bd199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba8fd99a7ad240f0f82f80ba89b73a59"><td class="memItemLeft" align="right" valign="top">static U&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#aba8fd99a7ad240f0f82f80ba89b73a59">Eval&lt; T, U &gt;</a> (this T obj, Func&lt; T, U &gt; fn)</td></tr>
-<tr class="memdesc:aba8fd99a7ad240f0f82f80ba89b73a59"><td class="mdescLeft">&#160;</td><td class="mdescRight">useful to decide action checking for nullity when object retrieval can consume cpu; eg. myobj.Eval((x) =&gt; (x == null) ? "" : x)  <a href="class_search_a_thing_1_1_util_ext.html#aba8fd99a7ad240f0f82f80ba89b73a59">More...</a><br /></td></tr>
-<tr class="separator:aba8fd99a7ad240f0f82f80ba89b73a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b82b2ebc7a99564e5fe02d05e0fb2d4"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a0b82b2ebc7a99564e5fe02d05e0fb2d4">Set&lt; T &gt;</a> (this T obj, Action&lt; T &gt; setter)</td></tr>
-<tr class="memdesc:a0b82b2ebc7a99564e5fe02d05e0fb2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">allow to call on the fly an action on the given object  <a href="class_search_a_thing_1_1_util_ext.html#a0b82b2ebc7a99564e5fe02d05e0fb2d4">More...</a><br /></td></tr>
-<tr class="separator:a0b82b2ebc7a99564e5fe02d05e0fb2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a5e6b16b69b4f5fd7e2632a2138a596"><td class="memItemLeft" align="right" valign="top">static U&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a8a5e6b16b69b4f5fd7e2632a2138a596">Fn&lt; T, U &gt;</a> (this T obj, Func&lt; T, U &gt; fn)</td></tr>
+<tr class="memdesc:a8a5e6b16b69b4f5fd7e2632a2138a596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow to tranform the object into other type. <br  />
+ eg. <code>intvar.Fn((x) =&gt; (x == 0) ? "zero" : "non-zero")</code>  <a href="class_search_a_thing_1_1_util_ext.html#a8a5e6b16b69b4f5fd7e2632a2138a596">More...</a><br /></td></tr>
+<tr class="separator:a8a5e6b16b69b4f5fd7e2632a2138a596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d153e81de091f29ddc5f8662db38ca5"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a4d153e81de091f29ddc5f8662db38ca5">Act&lt; T &gt;</a> (this T obj, Action&lt; T &gt; setter)</td></tr>
+<tr class="memdesc:a4d153e81de091f29ddc5f8662db38ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow to apply some action on the object inline returning the same object.  <a href="class_search_a_thing_1_1_util_ext.html#a4d153e81de091f29ddc5f8662db38ca5">More...</a><br /></td></tr>
+<tr class="separator:a4d153e81de091f29ddc5f8662db38ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a3c1b09e111cee6cd0c65eed39d23b6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a2a3c1b09e111cee6cd0c65eed39d23b6">Sort&lt; TSource, TKey &gt;</a> (this ObservableCollection&lt; TSource &gt; obc, Func&lt; TSource, TKey &gt; keySelector, bool descending=false)</td></tr>
 <tr class="memdesc:a2a3c1b09e111cee6cd0c65eed39d23b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">sort obc  <a href="class_search_a_thing_1_1_util_ext.html#a2a3c1b09e111cee6cd0c65eed39d23b6">More...</a><br /></td></tr>
 <tr class="separator:a2a3c1b09e111cee6cd0c65eed39d23b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -316,6 +317,48 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:af34acf106f7089fc830d96ae7304b9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4d153e81de091f29ddc5f8662db38ca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d153e81de091f29ddc5f8662db38ca5">&#9670;&nbsp;</a></span>Act&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T Act&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">this T&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>setter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allow to apply some action on the object inline returning the same object. </p>
+<p>eg <code>dxf.Entities.Add(new Line3D().DxfEntity.Act(ent =&gt; ent.Color = AciColor.Red))</code> <br  />
+</p>
+<p><br  />
+ </p>
+
+</div>
+</div>
 <a id="aea8bda2c4996b069d1f403113327a100"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea8bda2c4996b069d1f403113327a100">&#9670;&nbsp;</a></span>Align()</h2>
 
@@ -828,44 +871,6 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aba8fd99a7ad240f0f82f80ba89b73a59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba8fd99a7ad240f0f82f80ba89b73a59">&#9670;&nbsp;</a></span>Eval&lt; T, U &gt;()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static U Eval&lt; T, U &gt; </td>
-          <td>(</td>
-          <td class="paramtype">this T&#160;</td>
-          <td class="paramname"><em>obj</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Func&lt; T, U &gt;&#160;</td>
-          <td class="paramname"><em>fn</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>useful to decide action checking for nullity when object retrieval can consume cpu; eg. myobj.Eval((x) =&gt; (x == null) ? "" : x) </p>
-
-</div>
-</div>
 <a id="a73d0958349a5f070a18833c91e5079f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73d0958349a5f070a18833c91e5079f0">&#9670;&nbsp;</a></span>Export()</h2>
 
@@ -893,6 +898,45 @@ Static Public Attributes</h2></td></tr>
 <p>export to a string ( invariant ) comma separated </p>
 <p><br  />
  </p>
+
+</div>
+</div>
+<a id="a8a5e6b16b69b4f5fd7e2632a2138a596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a5e6b16b69b4f5fd7e2632a2138a596">&#9670;&nbsp;</a></span>Fn&lt; T, U &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static U Fn&lt; T, U &gt; </td>
+          <td>(</td>
+          <td class="paramtype">this T&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Func&lt; T, U &gt;&#160;</td>
+          <td class="paramname"><em>fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allow to tranform the object into other type. <br  />
+ eg. <code>intvar.Fn((x) =&gt; (x == 0) ? "zero" : "non-zero")</code> </p>
 
 </div>
 </div>
@@ -2168,46 +2212,6 @@ Static Public Attributes</h2></td></tr>
 <p>from given elements return the sequence starting from wantedFirstElement and continue until end then restart from begin until wantedFirstElement excluded pre: wantedFirstElement must in the list <a href="https://github.com/devel0/netcore-util/tree/master/test/Enumerable/EnumerableTest_0006.cs">unit test</a> </p>
 <p><br  />
  </p>
-
-</div>
-</div>
-<a id="a0b82b2ebc7a99564e5fe02d05e0fb2d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b82b2ebc7a99564e5fe02d05e0fb2d4">&#9670;&nbsp;</a></span>Set&lt; T &gt;()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static T Set&lt; T &gt; </td>
-          <td>(</td>
-          <td class="paramtype">this T&#160;</td>
-          <td class="paramname"><em>obj</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Action&lt; T &gt;&#160;</td>
-          <td class="paramname"><em>setter</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>allow to call on the fly an action on the given object </p>
-<p><br  />
- </p><dl class="section return"><dt>Returns</dt><dd>object argument</dd></dl>
 
 </div>
 </div>

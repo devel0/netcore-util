@@ -1,11 +1,13 @@
 var searchData=
 [
-  ['magnitude_82',['Magnitude',['../class_search_a_thing_1_1_util_ext.html#a295a3554073edabbb48b18701741ab78',1,'SearchAThing::UtilExt']]],
-  ['makedynamic_83',['MakeDynamic',['../class_search_a_thing_1_1_util_toolkit.html#af6d33c151431df8be77ef1ec5a9c4196',1,'SearchAThing::UtilToolkit']]],
-  ['matchesfilter_84',['MatchesFilter',['../class_search_a_thing_1_1_util_ext.html#a5c26b1fdca2e0bbbcf9973e801f704a7',1,'SearchAThing::UtilExt']]],
-  ['maxspecial_85',['MaxSpecial',['../class_search_a_thing_1_1_random_password_options.html#a1f3cc533d634204e2147c26d44f9e030',1,'SearchAThing::RandomPasswordOptions']]],
-  ['maxwidth_86',['MaxWidth',['../class_search_a_thing_1_1_true_type_nfo.html#a48571ac711af98803f3d902de6d65ec7',1,'SearchAThing::TrueTypeNfo']]],
-  ['mean_87',['Mean',['../class_search_a_thing_1_1_util_ext.html#a536179acfe874c4a326dd8de3cfb6eec',1,'SearchAThing::UtilExt']]],
-  ['message_88',['Message',['../class_search_a_thing_1_1_error_info.html#a40e8debace0cc6f4f7baa0fdd309c103',1,'SearchAThing::ErrorInfo']]],
-  ['mround_89',['MRound',['../class_search_a_thing_1_1_util_ext.html#adc263c6771b17ec5a4008221ff72460a',1,'SearchAThing.UtilExt.MRound(this double value, double multiple)'],['../class_search_a_thing_1_1_util_ext.html#aed558c297c3fb8cc49fc35f0d110aab0',1,'SearchAThing.UtilExt.MRound(this double? value, double multiple)'],['../class_search_a_thing_1_1_util_ext.html#a1b05c62ff86900916d44b27971bb5635',1,'SearchAThing.UtilExt.MRound(this double value, double? multiple)']]]
+  ['latest_73',['Latest',['../class_search_a_thing_1_1_util_ext.html#a72c90b77170d13d6fe6eb418c0231185',1,'SearchAThing::UtilExt']]],
+  ['left_74',['left',['../namespace_search_a_thing.html#aa41f231b5cf59d9c325b53c1be02556fa811882fecd5c7618d7099ebbd39ea254',1,'SearchAThing']]],
+  ['length_75',['Length',['../class_search_a_thing_1_1_random_password_options.html#a9fde862c8bc443d7a6872a487ec265a3',1,'SearchAThing::RandomPasswordOptions']]],
+  ['lessthanorequalstol_76',['LessThanOrEqualsTol',['../class_search_a_thing_1_1_util_ext.html#ae336ce39d916c105e4b9df205015bd3f',1,'SearchAThing.UtilExt.LessThanOrEqualsTol(this double x, double tol, double y)'],['../class_search_a_thing_1_1_util_ext.html#afe74dff6c766932037ff234bd02144ae',1,'SearchAThing.UtilExt.LessThanOrEqualsTol(this IQuantity x, IQuantity tol, IQuantity y)']]],
+  ['lessthantol_77',['LessThanTol',['../class_search_a_thing_1_1_util_ext.html#a7f096b99aaa7646ffc59d525effae2b4',1,'SearchAThing.UtilExt.LessThanTol(this double x, double tol, double y)'],['../class_search_a_thing_1_1_util_ext.html#a6af8f4dd7b731c90ead43bae70199de9',1,'SearchAThing.UtilExt.LessThanTol(this IQuantity x, IQuantity tol, IQuantity y)']]],
+  ['linereader_78',['LineReader',['../class_search_a_thing_1_1_string_wrapper.html#a4d0abbc218387bd8e2d4358fb9dd6788',1,'SearchAThing::StringWrapper']]],
+  ['lines_79',['Lines',['../class_search_a_thing_1_1_util_ext.html#af3444050f566875bf01f41a9543933b2',1,'SearchAThing.UtilExt.Lines()'],['../class_search_a_thing_1_1_string_wrapper.html#aa436f67525847a1884e009f4aacd5ffc',1,'SearchAThing.StringWrapper.Lines()']]],
+  ['listcontainers_80',['ListContainers',['../class_search_a_thing_1_1_util_toolkit.html#ae88462dc1606d4d3126d4cd1f7f28b91',1,'SearchAThing::UtilToolkit']]],
+  ['listnetworks_81',['ListNetworks',['../class_search_a_thing_1_1_util_toolkit.html#a0e8bce624b6e6a9ec4a1553e9c925272',1,'SearchAThing::UtilToolkit']]],
+  ['loopcount_82',['LoopCount',['../class_search_a_thing_1_1_random_password_options.html#aab567ac25e5165e0d709abe93d543127',1,'SearchAThing::RandomPasswordOptions']]]
 ];

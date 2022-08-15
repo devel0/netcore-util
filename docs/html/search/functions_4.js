@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['ensurefolder_185',['EnsureFolder',['../class_search_a_thing_1_1_util_toolkit.html#ab06d080b5cfbdefbcefb1e90795356ca',1,'SearchAThing::UtilToolkit']]],
-  ['equalsautotol_186',['EqualsAutoTol',['../class_search_a_thing_1_1_util_ext.html#a8797726f2b68c7bea2dbfcc66a00f65a',1,'SearchAThing::UtilExt']]],
-  ['equalstol_187',['EqualsTol',['../class_search_a_thing_1_1_util_ext.html#a6caef3cf1f82ce9b456604d361152fff',1,'SearchAThing.UtilExt.EqualsTol(this double x, double tol, double y)'],['../class_search_a_thing_1_1_util_ext.html#ac2bec8b9591c3e17e18d1875dbc334b2',1,'SearchAThing.UtilExt.EqualsTol(this IQuantity x, IQuantity tol, IQuantity y)']]],
-  ['eval_3c_20t_2c_20u_20_3e_188',['Eval&lt; T, U &gt;',['../class_search_a_thing_1_1_util_ext.html#aba8fd99a7ad240f0f82f80ba89b73a59',1,'SearchAThing::UtilExt']]],
+  ['ensurefolder_186',['EnsureFolder',['../class_search_a_thing_1_1_util_toolkit.html#ab06d080b5cfbdefbcefb1e90795356ca',1,'SearchAThing::UtilToolkit']]],
+  ['equalsautotol_187',['EqualsAutoTol',['../class_search_a_thing_1_1_util_ext.html#a8797726f2b68c7bea2dbfcc66a00f65a',1,'SearchAThing::UtilExt']]],
+  ['equalstol_188',['EqualsTol',['../class_search_a_thing_1_1_util_ext.html#a6caef3cf1f82ce9b456604d361152fff',1,'SearchAThing.UtilExt.EqualsTol(this double x, double tol, double y)'],['../class_search_a_thing_1_1_util_ext.html#ac2bec8b9591c3e17e18d1875dbc334b2',1,'SearchAThing.UtilExt.EqualsTol(this IQuantity x, IQuantity tol, IQuantity y)']]],
   ['exec_189',['Exec',['../class_search_a_thing_1_1_util_toolkit.html#a2aa4cf2d7debacfc62deacf9d1f93313',1,'SearchAThing::UtilToolkit']]],
   ['execbashredirect_190',['ExecBashRedirect',['../class_search_a_thing_1_1_util_toolkit.html#ae6def815d3b04c0e3296dd2c5e3d717d',1,'SearchAThing::UtilToolkit']]],
   ['execcontainercmd_191',['ExecContainerCmd',['../class_search_a_thing_1_1_util_toolkit.html#aee6f5bac4d505a4bd335d233bde02051',1,'SearchAThing::UtilToolkit']]],

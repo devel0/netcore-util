@@ -1,14 +1,4 @@
 var searchData=
 [
-  ['getembeddedfilecontent_3c_20t_20_3e_50',['GetEmbeddedFileContent&lt; T &gt;',['../class_search_a_thing_1_1_util_ext.html#a8603cd1a6e8abb9ebc6d5f0883c1aa41',1,'SearchAThing::UtilExt']]],
-  ['getembeddedresourcenames_51',['GetEmbeddedResourceNames',['../class_search_a_thing_1_1_util_toolkit.html#a917e37970cb4ddcad76361c8d34beeff',1,'SearchAThing::UtilToolkit']]],
-  ['getembeddedresourceslist_3c_20t_20_3e_52',['GetEmbeddedResourcesList&lt; T &gt;',['../class_search_a_thing_1_1_util_toolkit.html#a54647fed3a79d5bfb44c150d588828d8',1,'SearchAThing::UtilToolkit']]],
-  ['getjsonarray_53',['GetJsonArray',['../class_search_a_thing_1_1_util_ext.html#a620e9893ef5a42b14ac5ef83f069d88e',1,'SearchAThing::UtilExt']]],
-  ['getmembername_3c_20t_20_3e_54',['GetMemberName&lt; T &gt;',['../class_search_a_thing_1_1_util_toolkit.html#a2d84fbe27034293d2a0660e5a5b7ebf8',1,'SearchAThing.UtilToolkit.GetMemberName&lt; T &gt;(Expression&lt; Func&lt; T, object &gt;&gt; membersExpr)'],['../class_search_a_thing_1_1_util_toolkit.html#ad341eec3d4fc661cfce5e4380a5ce755',1,'SearchAThing.UtilToolkit.GetMemberName&lt; T &gt;(T obj, Expression&lt; Func&lt; T, object &gt;&gt; membersExpr)']]],
-  ['getmembernames_3c_20t_20_3e_55',['GetMemberNames&lt; T &gt;',['../class_search_a_thing_1_1_util_toolkit.html#abef880ca992608c7a16c209cf6926e45',1,'SearchAThing.UtilToolkit.GetMemberNames&lt; T &gt;(T obj, Expression&lt; Func&lt; T, object &gt;&gt; membersExpr)'],['../class_search_a_thing_1_1_util_toolkit.html#a9c43a2d425ad67ff19dcb2d1e335a1be',1,'SearchAThing.UtilToolkit.GetMemberNames&lt; T &gt;(Expression&lt; Func&lt; T, object &gt;&gt; membersExpr)']]],
-  ['getmembernamesext_3c_20t_20_3e_56',['GetMemberNamesExt&lt; T &gt;',['../class_search_a_thing_1_1_util_toolkit.html#a2d8f0c8be03c5ab3aad332eee986fae1',1,'SearchAThing::UtilToolkit']]],
-  ['getnext_57',['GetNext',['../class_search_a_thing_1_1_string_wrapper_line_reader.html#a04b2ca8ce59ec5a9f850fe49887bcb0d',1,'SearchAThing::StringWrapperLineReader']]],
-  ['getter_58',['getter',['../class_search_a_thing_1_1_util_ext.html#af34acf106f7089fc830d96ae7304b9a1',1,'SearchAThing::UtilExt']]],
-  ['greatthanorequalstol_59',['GreatThanOrEqualsTol',['../class_search_a_thing_1_1_util_ext.html#a447cbda8ab3936babf02e5ae61fb6f09',1,'SearchAThing.UtilExt.GreatThanOrEqualsTol(this double x, double tol, double y)'],['../class_search_a_thing_1_1_util_ext.html#a4554c1fe0c3eebfdd3f760e1fc76eb11',1,'SearchAThing.UtilExt.GreatThanOrEqualsTol(this IQuantity x, IQuantity tol, IQuantity y)']]],
-  ['greatthantol_60',['GreatThanTol',['../class_search_a_thing_1_1_util_ext.html#a07ed7ed7cb1786a707edb5f1322310af',1,'SearchAThing.UtilExt.GreatThanTol(this double x, double tol, double y)'],['../class_search_a_thing_1_1_util_ext.html#a880bdbae55f76ce5e364b06353ea9557',1,'SearchAThing.UtilExt.GreatThanTol(this IQuantity x, IQuantity tol, IQuantity y)']]]
+  ['fn_3c_20t_2c_20u_20_3e_50',['Fn&lt; T, U &gt;',['../class_search_a_thing_1_1_util_ext.html#a8a5e6b16b69b4f5fd7e2632a2138a596',1,'SearchAThing::UtilExt']]]
 ];

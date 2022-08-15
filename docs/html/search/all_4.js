@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['ensurefolder_34',['EnsureFolder',['../class_search_a_thing_1_1_util_toolkit.html#ab06d080b5cfbdefbcefb1e90795356ca',1,'SearchAThing::UtilToolkit']]],
-  ['equalsautotol_35',['EqualsAutoTol',['../class_search_a_thing_1_1_util_ext.html#a8797726f2b68c7bea2dbfcc66a00f65a',1,'SearchAThing::UtilExt']]],
-  ['equalstol_36',['EqualsTol',['../class_search_a_thing_1_1_util_ext.html#a6caef3cf1f82ce9b456604d361152fff',1,'SearchAThing.UtilExt.EqualsTol(this double x, double tol, double y)'],['../class_search_a_thing_1_1_util_ext.html#ac2bec8b9591c3e17e18d1875dbc334b2',1,'SearchAThing.UtilExt.EqualsTol(this IQuantity x, IQuantity tol, IQuantity y)']]],
-  ['error_37',['Error',['../class_search_a_thing_1_1_exec_result.html#a103401a9be7315c9eb92e30c9946b296',1,'SearchAThing::ExecResult']]],
-  ['errorinfo_38',['ErrorInfo',['../class_search_a_thing_1_1_error_info.html',1,'SearchAThing']]],
-  ['eval_3c_20t_2c_20u_20_3e_39',['Eval&lt; T, U &gt;',['../class_search_a_thing_1_1_util_ext.html#aba8fd99a7ad240f0f82f80ba89b73a59',1,'SearchAThing::UtilExt']]],
+  ['ensurefolder_35',['EnsureFolder',['../class_search_a_thing_1_1_util_toolkit.html#ab06d080b5cfbdefbcefb1e90795356ca',1,'SearchAThing::UtilToolkit']]],
+  ['equalsautotol_36',['EqualsAutoTol',['../class_search_a_thing_1_1_util_ext.html#a8797726f2b68c7bea2dbfcc66a00f65a',1,'SearchAThing::UtilExt']]],
+  ['equalstol_37',['EqualsTol',['../class_search_a_thing_1_1_util_ext.html#a6caef3cf1f82ce9b456604d361152fff',1,'SearchAThing.UtilExt.EqualsTol(this double x, double tol, double y)'],['../class_search_a_thing_1_1_util_ext.html#ac2bec8b9591c3e17e18d1875dbc334b2',1,'SearchAThing.UtilExt.EqualsTol(this IQuantity x, IQuantity tol, IQuantity y)']]],
+  ['error_38',['Error',['../class_search_a_thing_1_1_exec_result.html#a103401a9be7315c9eb92e30c9946b296',1,'SearchAThing::ExecResult']]],
+  ['errorinfo_39',['ErrorInfo',['../class_search_a_thing_1_1_error_info.html',1,'SearchAThing']]],
   ['exceptiontype_40',['ExceptionType',['../class_search_a_thing_1_1_error_info.html#a02eecec5ef9df0e750aac04eade053da',1,'SearchAThing::ErrorInfo']]],
   ['exec_41',['Exec',['../class_search_a_thing_1_1_util_toolkit.html#a2aa4cf2d7debacfc62deacf9d1f93313',1,'SearchAThing::UtilToolkit']]],
   ['execbashredirect_42',['ExecBashRedirect',['../class_search_a_thing_1_1_util_toolkit.html#ae6def815d3b04c0e3296dd2c5e3d717d',1,'SearchAThing::UtilToolkit']]],
