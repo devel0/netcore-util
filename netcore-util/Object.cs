@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SearchAThing
 {
@@ -17,18 +18,18 @@ namespace SearchAThing
     {
 
         /// <summary>
-        /// useful to decide action checking for nullity when object retrieval
-        /// can consume cpu;
-        /// eg. myobj.Eval((x) => (x == null) ? "" : x)
+        /// Allow to tranform the object into other type.        
+        /// eg. `intvar.Fn((x) => (x == 0) ? "zero" : "non-zero")`
         /// </summary>
-        public static U Eval<T, U>(this T obj, Func<T, U> fn) => fn(obj);
+        public static U Fn<T, U>(this T obj, Func<T, U> fn) => fn(obj);
 
         /// <summary>
-        /// allow to call on the fly an action on the given object
-        /// </summary>        
-        /// <returns>object argument</returns>
-        public static T Set<T>(this T obj, Action<T> setter)
-        {
+        /// Allow to apply some action on the object inline returning the same object.
+        /// 
+        /// eg `dxf.Entities.Add(new Line3D().DxfEntity.Act(ent => ent.Color = AciColor.Red))`        
+        /// </summary>                
+        public static T Act<T>(this T obj, Action<T> setter)
+        {            
             setter(obj);
             return obj;
         }
