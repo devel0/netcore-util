@@ -234,6 +234,22 @@ namespace SearchAThing
             }
         }
 
+        /// <summary>
+        /// Convert given IEnumerable into IReadOnlyList
+        /// with type convert if given argument was already a IReadOnlyList
+        /// or creating a new object List and returning as IReadOnlyList
+        /// </summary>
+        /// <param name="en">enumerable to convert to IReadOnlyList</param>
+        /// <typeparam name="T">typename</typeparam>
+        /// <returns>IReadOnlyList ( may the same object reference or a new depending if the argument was already a IReadOnlyList or not )</returns>
+        public static IReadOnlyList<T> ToReadOnlyList<T>(this IEnumerable<T> en)
+        {
+            if (en is IReadOnlyList<T> roLst)
+                return roLst;
+
+            return new List<T>(en);
+        }
+
     }
 
 }
