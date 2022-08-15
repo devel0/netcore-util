@@ -125,6 +125,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1e813bfbb79b2098ca78e0291b877965"><td class="memItemLeft" align="right" valign="top">static IEnumerable&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a1e813bfbb79b2098ca78e0291b877965">RouteFirst&lt; T &gt;</a> (this IEnumerable&lt; T &gt; lst, T wantedFirstElement)</td></tr>
 <tr class="memdesc:a1e813bfbb79b2098ca78e0291b877965"><td class="mdescLeft">&#160;</td><td class="mdescRight">from given elements return the sequence starting from wantedFirstElement and continue until end then restart from begin until wantedFirstElement excluded pre: wantedFirstElement must in the list <a href="https://github.com/devel0/netcore-util/tree/master/test/Enumerable/EnumerableTest_0006.cs">unit test</a>  <a href="class_search_a_thing_1_1_util_ext.html#a1e813bfbb79b2098ca78e0291b877965">More...</a><br /></td></tr>
 <tr class="separator:a1e813bfbb79b2098ca78e0291b877965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502eeaf82e0fbf63353e867f0da68f04"><td class="memItemLeft" align="right" valign="top">static IReadOnlyList&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a502eeaf82e0fbf63353e867f0da68f04">ToReadOnlyList&lt; T &gt;</a> (this IEnumerable&lt; T &gt; en)</td></tr>
+<tr class="memdesc:a502eeaf82e0fbf63353e867f0da68f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert given IEnumerable into IReadOnlyList with type convert if given argument was already a IReadOnlyList or creating a new object List and returning as IReadOnlyList  <a href="class_search_a_thing_1_1_util_ext.html#a502eeaf82e0fbf63353e867f0da68f04">More...</a><br /></td></tr>
+<tr class="separator:a502eeaf82e0fbf63353e867f0da68f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8797726f2b68c7bea2dbfcc66a00f65a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a8797726f2b68c7bea2dbfcc66a00f65a">EqualsAutoTol</a> (this double x, double y, double precision=1e-6)</td></tr>
 <tr class="memdesc:a8797726f2b68c7bea2dbfcc66a00f65a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if two numbers are equals using a default tolerance of 1e-6 about the smaller one.  <a href="class_search_a_thing_1_1_util_ext.html#a8797726f2b68c7bea2dbfcc66a00f65a">More...</a><br /></td></tr>
 <tr class="separator:a8797726f2b68c7bea2dbfcc66a00f65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2854,6 +2857,47 @@ Static Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>angle (radians)</dd></dl>
+
+</div>
+</div>
+<a id="a502eeaf82e0fbf63353e867f0da68f04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a502eeaf82e0fbf63353e867f0da68f04">&#9670;&nbsp;</a></span>ToReadOnlyList&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static IReadOnlyList&lt;T&gt; ToReadOnlyList&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">this IEnumerable&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>en</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert given IEnumerable into IReadOnlyList with type convert if given argument was already a IReadOnlyList or creating a new object List and returning as IReadOnlyList </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">en</td><td>enumerable to convert to IReadOnlyList</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>typename</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>IReadOnlyList ( may the same object reference or a new depending if the argument was already a IReadOnlyList or not )</dd></dl>
 
 </div>
 </div>
