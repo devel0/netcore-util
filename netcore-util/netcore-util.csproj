@@ -5,7 +5,7 @@
         <Nullable>enable</Nullable>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>        
         <PackageId>netcore-util</PackageId>   
-        <PackageVersion>3.1.0</PackageVersion>
+        <PackageVersion>3.2.0</PackageVersion>
         <Title>net core util</Title>
         <Description></Description>        
         <Authors>Lorenzo Delana</Authors>
