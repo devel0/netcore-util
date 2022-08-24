@@ -96,6 +96,12 @@ namespace SearchAThing
             return res;
         }
 
+        /// <summary>
+        /// retrieve name of var at runtime with GetVarName(() => variable)
+        /// </summary>        
+        public static string GetVarName<T>(Expression<Func<T>> varNameExpression) =>
+            ((MemberExpression)varNameExpression.Body).Member.Name;
+
     }
 
     public static partial class UtilExt
