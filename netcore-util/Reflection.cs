@@ -25,8 +25,11 @@ namespace SearchAThing
 
         /// <summary>
         /// copy properties from other object ; if match functor specified it copies only matched properties
-        /// </summary>        
-        public static T CopyFrom<T>(T obj, T other, Func<PropertyInfo, bool> match = null)
+        /// </summary>
+        /// <param name="obj">destination</param>
+        /// <param name="other">source</param>
+        /// <param name="match">if specified allow to copy only matching props</param>        
+        public static T CopyFrom<T>(T obj, T other, Func<PropertyInfo, bool>? match = null)
         {
             var type = typeof(T);
 
