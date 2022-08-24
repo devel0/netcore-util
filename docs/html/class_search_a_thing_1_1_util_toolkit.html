@@ -138,6 +138,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad341eec3d4fc661cfce5e4380a5ce755"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_toolkit.html#ad341eec3d4fc661cfce5e4380a5ce755">GetMemberName&lt; T &gt;</a> (T obj, Expression&lt; Func&lt; T, object &gt;&gt; membersExpr)</td></tr>
 <tr class="memdesc:ad341eec3d4fc661cfce5e4380a5ce755"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve member name from a functor like `x=&gt;x.membername1  <a href="class_search_a_thing_1_1_util_toolkit.html#ad341eec3d4fc661cfce5e4380a5ce755">More...</a><br /></td></tr>
 <tr class="separator:ad341eec3d4fc661cfce5e4380a5ce755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae929ae73991085d9205b4c6343dd5880"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_toolkit.html#ae929ae73991085d9205b4c6343dd5880">GetVarName&lt; T &gt;</a> (Expression&lt; Func&lt; T &gt;&gt; varNameExpression)</td></tr>
+<tr class="memdesc:ae929ae73991085d9205b4c6343dd5880"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve name of var at runtime with GetVarName(() =&gt; variable)  <a href="class_search_a_thing_1_1_util_toolkit.html#ae929ae73991085d9205b4c6343dd5880">More...</a><br /></td></tr>
+<tr class="separator:ae929ae73991085d9205b4c6343dd5880"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa39e1f1203072a24dfbba3883397d7d0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_toolkit.html#aa39e1f1203072a24dfbba3883397d7d0">XorNull</a> (object a, object b)</td></tr>
 <tr class="memdesc:aa39e1f1203072a24dfbba3883397d7d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if only one of given objects is null; returns false if all objects null or all objects not null;  <a href="class_search_a_thing_1_1_util_toolkit.html#aa39e1f1203072a24dfbba3883397d7d0">More...</a><br /></td></tr>
 <tr class="separator:aa39e1f1203072a24dfbba3883397d7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1269,6 +1272,36 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>retrieve list of member names from a functor like <code>x=&gt;new {x.membername1, x.membername2, ...}</code> or <code>x=&gt;x.membername</code> </p>
+
+</div>
+</div>
+<a id="ae929ae73991085d9205b4c6343dd5880"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae929ae73991085d9205b4c6343dd5880">&#9670;&nbsp;</a></span>GetVarName&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string GetVarName&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">Expression&lt; Func&lt; T &gt;&gt;&#160;</td>
+          <td class="paramname"><em>varNameExpression</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>retrieve name of var at runtime with GetVarName(() =&gt; variable) </p>
+<p><br  />
+ </p>
 
 </div>
 </div>

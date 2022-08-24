@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['val_138',['val',['../namespace_search_a_thing.html#a96ace5d9876b47d3cad24c09fb387705',1,'SearchAThing']]],
-  ['value_139',['Value',['../class_search_a_thing_1_1_value_obj.html#adbfa996292c448f754363aa83d4be8e6',1,'SearchAThing::ValueObj']]],
-  ['valueobj_140',['ValueObj',['../class_search_a_thing_1_1_value_obj.html',1,'ValueObj&lt; T &gt;'],['../class_search_a_thing_1_1_value_obj.html#aa71c5977b8362f1b9c3ceb10e9a8c03d',1,'SearchAThing.ValueObj.ValueObj()']]]
+  ['val_139',['val',['../namespace_search_a_thing.html#a96ace5d9876b47d3cad24c09fb387705',1,'SearchAThing']]],
+  ['value_140',['Value',['../class_search_a_thing_1_1_value_obj.html#adbfa996292c448f754363aa83d4be8e6',1,'SearchAThing::ValueObj']]],
+  ['valueobj_141',['ValueObj',['../class_search_a_thing_1_1_value_obj.html',1,'ValueObj&lt; T &gt;'],['../class_search_a_thing_1_1_value_obj.html#aa71c5977b8362f1b9c3ceb10e9a8c03d',1,'SearchAThing.ValueObj.ValueObj()']]]
 ];

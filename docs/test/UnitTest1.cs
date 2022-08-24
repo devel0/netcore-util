@@ -196,7 +196,7 @@ namespace SearchAThing
 
             // 1.3 < 1.31
             Assert.True(a.LessThanTol(Length.FromMicrometers(10), d));
-            
+
             // 1.31 <= 1.3
             Assert.True(d.LessThanOrEqualsTol(Length.FromMillimeters(0.011), a));
             Assert.False(d.LessThanOrEqualsTol(Length.FromMillimeters(0.009), a));
@@ -264,6 +264,19 @@ namespace SearchAThing
                     var res = GetMemberName(obj, x => new { x.a, x.b });
                 });
             }
+        }
+
+        [Fact]
+        public void GetVarNameTest()
+        {
+            var obj = new MemberTest1();
+
+            {
+                var myvar = 1d;
+                var q = GetVarName(() => myvar);
+                Assert.True(q == "myvar");
+            }
+
         }
 
         void CreateGetterSetterTestFn<T>(T dst, T src, Expression<Func<T, object>> memberExpr)
