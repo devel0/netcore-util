@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['utilext_162',['UtilExt',['../class_search_a_thing_1_1_util_ext.html',1,'SearchAThing']]],
-  ['utiltoolkit_163',['UtilToolkit',['../class_search_a_thing_1_1_util_toolkit.html',1,'SearchAThing']]]
+  ['stringwrapper_185',['StringWrapper',['../class_search_a_thing_1_1_string_wrapper.html',1,'SearchAThing']]],
+  ['stringwrapperlinereader_186',['StringWrapperLineReader',['../class_search_a_thing_1_1_string_wrapper_line_reader.html',1,'SearchAThing']]]
 ];

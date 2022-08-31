@@ -78,8 +78,8 @@ Collaboration diagram for UtilExt:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_search_a_thing_1_1_util_ext__coll__graph.png" border="0" usemap="#a_util_ext_coll__map" alt="Collaboration graph"/></div>
 <map name="a_util_ext_coll__map" id="a_util_ext_coll__map">
-<area shape="rect" title=" " alt="" coords="5,95,72,121"/>
-<area shape="rect" title=" " alt="" coords="9,5,68,32"/>
+<area shape="rect" title=" " alt="" coords="5,95,68,121"/>
+<area shape="rect" title=" " alt="" coords="9,5,64,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -234,6 +234,55 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a3c1b09e111cee6cd0c65eed39d23b6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a2a3c1b09e111cee6cd0c65eed39d23b6">Sort&lt; TSource, TKey &gt;</a> (this ObservableCollection&lt; TSource &gt; obc, Func&lt; TSource, TKey &gt; keySelector, bool descending=false)</td></tr>
 <tr class="memdesc:a2a3c1b09e111cee6cd0c65eed39d23b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">sort obc  <a href="class_search_a_thing_1_1_util_ext.html#a2a3c1b09e111cee6cd0c65eed39d23b6">More...</a><br /></td></tr>
 <tr class="separator:a2a3c1b09e111cee6cd0c65eed39d23b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e804315feaaea1ae6dbc4c50dc3a57"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#ab6e804315feaaea1ae6dbc4c50dc3a57">MMToPt</a> (this double mm)</td></tr>
+<tr class="memdesc:ab6e804315feaaea1ae6dbc4c50dc3a57"><td class="mdescLeft">&#160;</td><td class="mdescRight">font size<br  />
+ half_point = hp = 1/144 inch = 25.4/144 mm<br  />
+ pt = hp/2<br  />
+ pt = 2*25.4/144*mm  <a href="class_search_a_thing_1_1_util_ext.html#ab6e804315feaaea1ae6dbc4c50dc3a57">More...</a><br /></td></tr>
+<tr class="separator:ab6e804315feaaea1ae6dbc4c50dc3a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94c4cec504f8e0ecc285d5b421e34ed"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#ac94c4cec504f8e0ecc285d5b421e34ed">PtToMM</a> (this double pt)</td></tr>
+<tr class="memdesc:ac94c4cec504f8e0ecc285d5b421e34ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">font size<br  />
+ half_point = hp = 1/144 inch = 25.4/144 mm<br  />
+ pt = hp/2<br  />
+ <br  />
+ mm = 144/(2*25.4) pt<br  />
+ <br  />
+  <a href="class_search_a_thing_1_1_util_ext.html#ac94c4cec504f8e0ecc285d5b421e34ed">More...</a><br /></td></tr>
+<tr class="separator:ac94c4cec504f8e0ecc285d5b421e34ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9447f190663c6ae236c646cac6fb9939"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a9447f190663c6ae236c646cac6fb9939">PtToHalfPoint</a> (this double pt)</td></tr>
+<tr class="memdesc:a9447f190663c6ae236c646cac6fb9939"><td class="mdescLeft">&#160;</td><td class="mdescRight">font size<br  />
+ hp = 2*pt  <a href="class_search_a_thing_1_1_util_ext.html#a9447f190663c6ae236c646cac6fb9939">More...</a><br /></td></tr>
+<tr class="separator:a9447f190663c6ae236c646cac6fb9939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e1a6068ea814d41d667b2bb50883f00"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a5e1a6068ea814d41d667b2bb50883f00">MMToTwip</a> (this double mm)</td></tr>
+<tr class="memdesc:a5e1a6068ea814d41d667b2bb50883f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert mm to twip<br  />
+ twip = 1/20 pp = 1/20 * 1/72 in = 1/1440 in = 1/1440 * 25.4 mm<br  />
+ mm = 1440/25.4 twip  <a href="class_search_a_thing_1_1_util_ext.html#a5e1a6068ea814d41d667b2bb50883f00">More...</a><br /></td></tr>
+<tr class="separator:a5e1a6068ea814d41d667b2bb50883f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba51e03cf35aa3fdfb2be4baac1dec96"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#aba51e03cf35aa3fdfb2be4baac1dec96">MMToTwip</a> (this int mm)</td></tr>
+<tr class="memdesc:aba51e03cf35aa3fdfb2be4baac1dec96"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert mm to twip<br  />
+ twip = 1/20 pp = 1/20 * 1/72 in = 1/1440 in = 1/1440 * 25.4 mm<br  />
+ mm = 1440/25.4 twip  <a href="class_search_a_thing_1_1_util_ext.html#aba51e03cf35aa3fdfb2be4baac1dec96">More...</a><br /></td></tr>
+<tr class="separator:aba51e03cf35aa3fdfb2be4baac1dec96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157c189204509bca368c2b2c78d26dfe"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a157c189204509bca368c2b2c78d26dfe">MMToEMU</a> (this int mm)</td></tr>
+<tr class="memdesc:a157c189204509bca368c2b2c78d26dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
+ 10mm = 360000 EMU<br  />
+ mm = 36000 EMU  <a href="class_search_a_thing_1_1_util_ext.html#a157c189204509bca368c2b2c78d26dfe">More...</a><br /></td></tr>
+<tr class="separator:a157c189204509bca368c2b2c78d26dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0abe5e3e7f5c847d6ec4896c4e0489f2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a0abe5e3e7f5c847d6ec4896c4e0489f2">MMToEMU</a> (this double mm)</td></tr>
+<tr class="memdesc:a0abe5e3e7f5c847d6ec4896c4e0489f2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
+ 10mm = 360000 EMU<br  />
+ mm = 36000 EMU  <a href="class_search_a_thing_1_1_util_ext.html#a0abe5e3e7f5c847d6ec4896c4e0489f2">More...</a><br /></td></tr>
+<tr class="separator:a0abe5e3e7f5c847d6ec4896c4e0489f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0547e20b81fe64df961f95381ebff3"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#aaa0547e20b81fe64df961f95381ebff3">TwipToMM</a> (this uint twip)</td></tr>
+<tr class="memdesc:aaa0547e20b81fe64df961f95381ebff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert twip to mm<br  />
+ mm = 1440/25.4 twip<br  />
+ twip = 25.4/1440 mm  <a href="class_search_a_thing_1_1_util_ext.html#aaa0547e20b81fe64df961f95381ebff3">More...</a><br /></td></tr>
+<tr class="separator:aaa0547e20b81fe64df961f95381ebff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d45510398d50110386c3b8f2100fb4f"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a0d45510398d50110386c3b8f2100fb4f">TwipToMM</a> (this int twip)</td></tr>
+<tr class="memdesc:a0d45510398d50110386c3b8f2100fb4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert twip to mm<br  />
+ mm = 1440/25.4 twip<br  />
+ twip = 25.4/1440 mm  <a href="class_search_a_thing_1_1_util_ext.html#a0d45510398d50110386c3b8f2100fb4f">More...</a><br /></td></tr>
+<tr class="separator:a0d45510398d50110386c3b8f2100fb4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea8bda2c4996b069d1f403113327a100"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#aea8bda2c4996b069d1f403113327a100">Align</a> (this string str, int size, <a class="el" href="namespace_search_a_thing.html#aa41f231b5cf59d9c325b53c1be02556f">ColumnAlignment</a> align=<a class="el" href="namespace_search_a_thing.html#aa41f231b5cf59d9c325b53c1be02556fa811882fecd5c7618d7099ebbd39ea254">ColumnAlignment.left</a>)</td></tr>
 <tr class="memdesc:aea8bda2c4996b069d1f403113327a100"><td class="mdescLeft">&#160;</td><td class="mdescRight">align given string into given size with alignment specified. resulting string will fit into given size with spaces or truncated if not enough for given size vs str length  <a href="class_search_a_thing_1_1_util_ext.html#aea8bda2c4996b069d1f403113327a100">More...</a><br /></td></tr>
 <tr class="separator:aea8bda2c4996b069d1f403113327a100"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1880,6 +1929,163 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0abe5e3e7f5c847d6ec4896c4e0489f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0abe5e3e7f5c847d6ec4896c4e0489f2">&#9670;&nbsp;</a></span>MMToEMU() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int MMToEMU </td>
+          <td>(</td>
+          <td class="paramtype">this double&#160;</td>
+          <td class="paramname"><em>mm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><br  />
+ 10mm = 360000 EMU<br  />
+ mm = 36000 EMU </p>
+
+</div>
+</div>
+<a id="a157c189204509bca368c2b2c78d26dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a157c189204509bca368c2b2c78d26dfe">&#9670;&nbsp;</a></span>MMToEMU() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int MMToEMU </td>
+          <td>(</td>
+          <td class="paramtype">this int&#160;</td>
+          <td class="paramname"><em>mm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><br  />
+ 10mm = 360000 EMU<br  />
+ mm = 36000 EMU </p>
+
+</div>
+</div>
+<a id="ab6e804315feaaea1ae6dbc4c50dc3a57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6e804315feaaea1ae6dbc4c50dc3a57">&#9670;&nbsp;</a></span>MMToPt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double MMToPt </td>
+          <td>(</td>
+          <td class="paramtype">this double&#160;</td>
+          <td class="paramname"><em>mm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>font size<br  />
+ half_point = hp = 1/144 inch = 25.4/144 mm<br  />
+ pt = hp/2<br  />
+ pt = 2*25.4/144*mm </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="a5e1a6068ea814d41d667b2bb50883f00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e1a6068ea814d41d667b2bb50883f00">&#9670;&nbsp;</a></span>MMToTwip() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int MMToTwip </td>
+          <td>(</td>
+          <td class="paramtype">this double&#160;</td>
+          <td class="paramname"><em>mm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>convert mm to twip<br  />
+ twip = 1/20 pp = 1/20 * 1/72 in = 1/1440 in = 1/1440 * 25.4 mm<br  />
+ mm = 1440/25.4 twip </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="aba51e03cf35aa3fdfb2be4baac1dec96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba51e03cf35aa3fdfb2be4baac1dec96">&#9670;&nbsp;</a></span>MMToTwip() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int MMToTwip </td>
+          <td>(</td>
+          <td class="paramtype">this int&#160;</td>
+          <td class="paramname"><em>mm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>convert mm to twip<br  />
+ twip = 1/20 pp = 1/20 * 1/72 in = 1/1440 in = 1/1440 * 25.4 mm<br  />
+ mm = 1440/25.4 twip </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
 <a id="adc263c6771b17ec5a4008221ff72460a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adc263c6771b17ec5a4008221ff72460a">&#9670;&nbsp;</a></span>MRound() <span class="overload">[1/3]</span></h2>
 
@@ -2089,6 +2295,73 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9447f190663c6ae236c646cac6fb9939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9447f190663c6ae236c646cac6fb9939">&#9670;&nbsp;</a></span>PtToHalfPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double PtToHalfPoint </td>
+          <td>(</td>
+          <td class="paramtype">this double&#160;</td>
+          <td class="paramname"><em>pt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>font size<br  />
+ hp = 2*pt </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="ac94c4cec504f8e0ecc285d5b421e34ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac94c4cec504f8e0ecc285d5b421e34ed">&#9670;&nbsp;</a></span>PtToMM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double PtToMM </td>
+          <td>(</td>
+          <td class="paramtype">this double&#160;</td>
+          <td class="paramname"><em>pt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>font size<br  />
+ half_point = hp = 1/144 inch = 25.4/144 mm<br  />
+ pt = hp/2<br  />
+ <br  />
+ mm = 144/(2*25.4) pt<br  />
+ <br  />
+ </p>
+<p><br  />
+ </p>
 
 </div>
 </div>
@@ -2997,6 +3270,66 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0d45510398d50110386c3b8f2100fb4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d45510398d50110386c3b8f2100fb4f">&#9670;&nbsp;</a></span>TwipToMM() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double TwipToMM </td>
+          <td>(</td>
+          <td class="paramtype">this int&#160;</td>
+          <td class="paramname"><em>twip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>convert twip to mm<br  />
+ mm = 1440/25.4 twip<br  />
+ twip = 25.4/1440 mm </p>
+
+</div>
+</div>
+<a id="aaa0547e20b81fe64df961f95381ebff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa0547e20b81fe64df961f95381ebff3">&#9670;&nbsp;</a></span>TwipToMM() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double TwipToMM </td>
+          <td>(</td>
+          <td class="paramtype">this uint&#160;</td>
+          <td class="paramname"><em>twip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>convert twip to mm<br  />
+ mm = 1440/25.4 twip<br  />
+ twip = 25.4/1440 mm </p>
+
+</div>
+</div>
 <a id="a1c4e56cfd5cf7f6f2b8455504d901a26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c4e56cfd5cf7f6f2b8455504d901a26">&#9670;&nbsp;</a></span>UnspecifiedAsUTCDateTime()</h2>
 
@@ -3481,6 +3814,7 @@ Static Public Attributes</h2></td></tr>
 <li>netcore-util/Number.cs</li>
 <li>netcore-util/Object.cs</li>
 <li>netcore-util/ObservableCollection.cs</li>
+<li>netcore-util/PaperSize.cs</li>
 <li>netcore-util/String.cs</li>
 </ul>
 </div><!-- contents -->

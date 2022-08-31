@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['left_281',['left',['../namespace_search_a_thing.html#aa41f231b5cf59d9c325b53c1be02556fa811882fecd5c7618d7099ebbd39ea254',1,'SearchAThing']]]
+  ['center_337',['center',['../namespace_search_a_thing.html#aa41f231b5cf59d9c325b53c1be02556faadb115059e28d960fa8badfac5516667',1,'SearchAThing']]],
+  ['custom_338',['Custom',['../namespace_search_a_thing.html#a3fa8f0a080f624c5212337559ef94025a90589c47f06eb971d548591f23c285af',1,'SearchAThing']]]
 ];

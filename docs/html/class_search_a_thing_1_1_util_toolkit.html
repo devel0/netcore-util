@@ -178,9 +178,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:acd0afd190eca2c0a21277ac9e86c938a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_toolkit.html#acd0afd190eca2c0a21277ac9e86c938a">Assign&lt; T &gt;</a> (T src, T dst, Func&lt; PropertyInfo, bool &gt; exclude=null)</td></tr>
 <tr class="memdesc:acd0afd190eca2c0a21277ac9e86c938a"><td class="mdescLeft">&#160;</td><td class="mdescRight">assign public properties of src to dst object  <a href="class_search_a_thing_1_1_util_toolkit.html#acd0afd190eca2c0a21277ac9e86c938a">More...</a><br /></td></tr>
 <tr class="separator:acd0afd190eca2c0a21277ac9e86c938a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a2796646212d6878700f027b902ff76"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_toolkit.html#a1a2796646212d6878700f027b902ff76">CopyFrom&lt; T &gt;</a> (T obj, T other, Func&lt; PropertyInfo, bool &gt; match=null)</td></tr>
-<tr class="memdesc:a1a2796646212d6878700f027b902ff76"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy properties from other object ; if match functor specified it copies only matched properties  <a href="class_search_a_thing_1_1_util_toolkit.html#a1a2796646212d6878700f027b902ff76">More...</a><br /></td></tr>
-<tr class="separator:a1a2796646212d6878700f027b902ff76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f134e57749e0dd64c5ae4b13e17526"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_toolkit.html#af9f134e57749e0dd64c5ae4b13e17526">CopyFrom&lt; T &gt;</a> (T obj, T other, Func&lt; PropertyInfo, bool &gt;? match=null)</td></tr>
+<tr class="memdesc:af9f134e57749e0dd64c5ae4b13e17526"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy properties from other object ; if match functor specified it copies only matched properties  <a href="class_search_a_thing_1_1_util_toolkit.html#af9f134e57749e0dd64c5ae4b13e17526">More...</a><br /></td></tr>
+<tr class="separator:af9f134e57749e0dd64c5ae4b13e17526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0da9d944d04a7d0cc80d562cb00576d"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_toolkit.html#aa0da9d944d04a7d0cc80d562cb00576d">CopyFromCustom&lt; T &gt;</a> (T obj, T other, CopyFromCustomDelegate custom=null)</td></tr>
 <tr class="memdesc:aa0da9d944d04a7d0cc80d562cb00576d"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy properties from other object ; a custom non null delegate function can be passed to specify if include a property and if to assign a custom value ( useful for complex, array types )  <a href="class_search_a_thing_1_1_util_toolkit.html#aa0da9d944d04a7d0cc80d562cb00576d">More...</a><br /></td></tr>
 <tr class="separator:aa0da9d944d04a7d0cc80d562cb00576d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -335,8 +335,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1a2796646212d6878700f027b902ff76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a2796646212d6878700f027b902ff76">&#9670;&nbsp;</a></span>CopyFrom&lt; T &gt;()</h2>
+<a id="af9f134e57749e0dd64c5ae4b13e17526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f134e57749e0dd64c5ae4b13e17526">&#9670;&nbsp;</a></span>CopyFrom&lt; T &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -359,7 +359,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Func&lt; PropertyInfo, bool &gt;&#160;</td>
+          <td class="paramtype">Func&lt; PropertyInfo, bool &gt;?&#160;</td>
           <td class="paramname"><em>match</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
@@ -376,6 +376,14 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>copy properties from other object ; if match functor specified it copies only matched properties </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>destination</td></tr>
+    <tr><td class="paramname">other</td><td>source</td></tr>
+    <tr><td class="paramname">match</td><td>if specified allow to copy only matching props</td></tr>
+  </table>
+  </dd>
+</dl>
 <p><br  />
  </p>
 

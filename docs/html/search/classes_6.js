@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['valueobj_164',['ValueObj',['../class_search_a_thing_1_1_value_obj.html',1,'SearchAThing']]]
+  ['truetypenfo_187',['TrueTypeNfo',['../class_search_a_thing_1_1_true_type_nfo.html',1,'SearchAThing']]]
 ];
