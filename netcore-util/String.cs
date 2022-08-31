@@ -64,8 +64,8 @@ namespace SearchAThing
         /// optional column spacing and alignment can be specified.
         /// </summary>
         public static string TableFormat(this IEnumerable<IEnumerable<string>> src,
-            IEnumerable<string> headers = null,
-            IEnumerable<ColumnAlignment> aligns = null,
+            IEnumerable<string>? headers = null,
+            IEnumerable<ColumnAlignment>? aligns = null,
             int columnSpacing = 3)
         {
             var sb = new StringBuilder();
@@ -93,7 +93,7 @@ namespace SearchAThing
             }
 
             // default align left
-            List<ColumnAlignment> a = null;
+            List<ColumnAlignment>? a = null;
             if (aligns == null)
             {
                 a = new List<ColumnAlignment>();
@@ -177,20 +177,13 @@ namespace SearchAThing
             else
                 return str;
         }
-
-        /// <summary>
-        /// extract line from string buffer
-        /// </summary>        
-        // public static string NextLine(this string txt, ref int off)
-        // {
-        //     return null;
-        // }
-
+         
         /// <summary>
         /// Smart line splitter that split a text into lines whatever unix or windows line ending style.
         /// By default its remove empty lines.
         /// </summary>        
         /// <param name="removeEmptyLines">If true remove empty lines.</param>        
+        /// <param name="txt">string to split into lines</param>        
         public static IEnumerable<string> Lines(this string txt, bool removeEmptyLines = true)
         {
             var q = txt.Replace("\r\n", "\n").Split('\n');
@@ -254,7 +247,7 @@ namespace SearchAThing
         {
             var regexStr = pattern.WildcardToRegex();
 
-            Regex regex = null;
+            Regex? regex = null;
             if (caseSentitive)
                 regex = new Regex(regexStr);
             else
@@ -268,10 +261,12 @@ namespace SearchAThing
         /// </summary>        
         public static string[] Split(this string str, string sepStr) => str.Split(sepStr.ToArray(), StringSplitOptions.None);
 
+#if NET6_0_OR_GREATER
         /// <summary>
         /// return dynamic array from given [[xx],[yy],...] json array
         /// </summary>        
         public static dynamic GetJsonArray(this string jsonDumps) => ((dynamic)JObject.Parse($"{{a:{jsonDumps}}}")).a;
+#endif
 
         /// <summary>
         /// parse given array of doubles ( invariant ) comma separated
@@ -336,7 +331,8 @@ namespace SearchAThing
             return res;
         }
 
-        public static StringWrapper ToStringWrapper(this StringBuilder sb) => new StringWrapper() { str = sb.ToString() };
+        public static StringWrapper ToStringWrapper(this StringBuilder sb) =>
+            new StringWrapper(sb.ToString());
 
         /// <summary>
         /// removes all characters that aren't 0-9 dot or comma
@@ -416,7 +412,7 @@ namespace SearchAThing
 
         public StringWrapper Strw { get; private set; }
 
-        IEnumerator<string> en = null;
+        IEnumerator<string> en;
 
         bool has_next = false;
 
@@ -432,8 +428,8 @@ namespace SearchAThing
         public bool HasNext() => has_next;
 
         public StringWrapper GetNext()
-        {
-            var res = new StringWrapper() { str = en.Current };
+        {            
+            var res = new StringWrapper(en.Current);
             has_next = en.MoveNext();
             return res;
         }
@@ -446,6 +442,11 @@ namespace SearchAThing
     public class StringWrapper
     {
         public string str;
+
+        public StringWrapper(string str)
+        {
+            this.str = str;
+        }        
 
         public StringWrapperLineReader LineReader() => new StringWrapperLineReader(this);
 

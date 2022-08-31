@@ -19,14 +19,14 @@ namespace SearchAThing
 
         XElement xml;
 
-        List<int> widths = null;
+        List<int>? widths = null;
 
-        public IReadOnlyList<int> Widths => widths;
+        public IReadOnlyList<int>? Widths => widths;
 
         public int Ascent { get; private set; }
         public int Descent { get; private set; }
         public int ItalicAngle { get; private set; }
-        public string Name { get; private set; }
+        public string Name { get; private set; } = "";
         public int MaxWidth { get; private set; }
         public int AvgWidth { get; private set; }
 
@@ -40,29 +40,62 @@ namespace SearchAThing
 
             var hhea = xml.Descendants("hhea");
 
-            Ascent = (int)hhea.Elements("ascent").Select(x => x.Attribute("value")).First();
-            Descent = (int)hhea.Elements("descent").Select(x => x.Attribute("value")).First();
-
-            var post = xml.Descendants("post");
-            ItalicAngle = (int)(double)post.Elements("italicAngle").Select(x => x.Attribute("value")).First();
-
-            var name = xml.Descendants("name");
-            Name = (string)name.Elements("namerecord").First(x => (int)x.Attribute("nameID") == 1).Value.Trim();
-
-            var hmtx = xml.Descendants("hmtx");
-
-            widths = new List<int>();
-            MaxWidth = 0;
-            int wSum = 0;
-            foreach (var mtx in hmtx.Elements("mtx"))
+            if (hhea != null)
             {
-                var w = (int)mtx.Attribute("width");
-                if (w > MaxWidth) MaxWidth = w;
-                wSum += w;
-                widths.Add(w);
-            }
 
-            AvgWidth = wSum / widths.Count;
+                var ascent = hhea.Elements("ascent");
+                var descent = hhea.Elements("descent");
+
+                if (ascent != null && descent != null)
+                {
+                    var qascent = ascent.Select(x => x.Attribute("value")).Where(r => r != null).Select(r => r!);
+                    var qdescent = descent.Select(x => x.Attribute("value")).Where(r => r != null).Select(r => r!);
+
+                    if (qascent != null && qdescent != null)
+                    {
+                        Ascent = (int)qascent.First();
+                        Descent = (int)qdescent.First();
+                    }
+                }
+
+                var post = xml.Descendants("post");
+                if (post != null)
+                {
+                    var qitalic = post.Elements("italicAngle").Select(x => x.Attribute("value")).Where(r => r != null).Select(r => r!);
+                    ItalicAngle = (int)(double)qitalic.First();
+                }
+
+                var name = xml.Descendants("name");
+                if (name != null)
+                {
+                    var qname = name.Elements("namerecord")?.Select(x => x.Attribute("nameID"))
+                        .Where(r => r != null).Select(r => r!)
+                        .FirstOrDefault(r => (int)r == 1);
+
+                    if (qname != null)
+                        Name = (string)qname.Value.Trim();
+                }
+
+                var hmtx = xml.Descendants("hmtx");
+
+                widths = new List<int>();
+                MaxWidth = 0;
+                int wSum = 0;
+                foreach (var mtx in hmtx.Elements("mtx"))
+                {
+                    var qw = mtx.Attribute("width");
+
+                    if (qw != null)
+                    {
+                        var w = (int)qw;
+                        if (w > MaxWidth) MaxWidth = w;
+                        wSum += w;
+                        widths.Add(w);
+                    }
+                }
+
+                AvgWidth = wSum / widths.Count;
+            }
         }
 
     };

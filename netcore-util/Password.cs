@@ -49,7 +49,7 @@ namespace SearchAThing
         /// for example : new[] { 'l', 'I', 'O', '0' }
         /// default: null
         /// </summary>            
-        public char[] AvoidChars { get; set; } = null;
+        public char[] AvoidChars { get; set; } = { };
 
         /// <summary>
         /// default: true
@@ -78,7 +78,7 @@ namespace SearchAThing
         /// <summary>
         /// Generate random password using defaults ( allow numbers, lowercase, uppercase, 12 of length, no special symbol )
         /// </summary>        
-        public static string RandomPassword(RandomPasswordOptions opts = null)
+        public static string RandomPassword(RandomPasswordOptions? opts = null)
         {
             if (opts == null) opts = new RandomPasswordOptions();
 

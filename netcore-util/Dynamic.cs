@@ -1,25 +1,34 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using System.Linq;
 using System.Collections.Generic;
 using System.Dynamic;
+using System;
+
 namespace SearchAThing
 {
 
     public static partial class UtilToolkit
     {
 
+#pragma warning disable CS8619
         /// <summary>
         /// create an expando object by copying given src
         /// </summary>        
-        public static ExpandoObject ToExpando(object src)
+        public static ExpandoObject? ToExpando(object src)
         {
-            IDictionary<string, object> expando = new ExpandoObject();
+            IDictionary<string, object> expando = (new ExpandoObject())!;
 
             var type = src.GetType();
 
-            foreach (var property in type.GetProperties()) expando.Add(property.Name, property.GetValue(src));
+            foreach (var property in type.GetProperties())
+            {
+                var v = property.GetValue(src);
+                if (v != null)
+                    expando.Add(property.Name, v);
+            }
 
-            return expando as ExpandoObject;
+            return (ExpandoObject)expando;
         }
+#pragma warning restore CS8619
 
         /// <summary>
         /// create a dynamic object containing given set of properties
@@ -33,17 +42,19 @@ namespace SearchAThing
             return fieldeo as dynamic;
         }
 
+#if NET6_0_OR_GREATER
         /// <summary>
         /// convert given dynamic object into a dictionary string,object for its properties
         /// </summary>        
-        public static IDictionary<string, object> DynamicMakeDictionary(dynamic obj)
+        public static IDictionary<string, object>? DynamicMakeDictionary(dynamic obj)
         {
-            if (obj is JObject)
-                return ((JObject)obj).ToObject<IDictionary<string, object>>();
+            if (obj is Newtonsoft.Json.Linq.JObject)
+                return ((Newtonsoft.Json.Linq.JObject)obj).ToObject<IDictionary<string, object>>();
             else
                 return (IDictionary<string, object>)obj;
         }
+#endif
 
-    }       
+    }
 
 }

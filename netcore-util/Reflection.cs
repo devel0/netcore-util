@@ -5,7 +5,8 @@ using System.Reflection;
 namespace SearchAThing
 {
 
-    public delegate (bool include, bool customValue, object valueIfCustom) CopyFromCustomDelegate(PropertyInfo pi, object val);
+    public delegate (bool include, bool customValue, object valueIfCustom) 
+        CopyFromCustomDelegate(PropertyInfo pi, object? val);
 
     public static partial class UtilToolkit
     {
@@ -13,9 +14,12 @@ namespace SearchAThing
         /// <summary>
         /// assign public properties of src to dst object
         /// </summary>        
-        public static void Assign<T>(T src, T dst, Func<PropertyInfo, bool> exclude = null)
+        public static void Assign<T>(T src, T dst, Func<PropertyInfo, bool>? exclude = null)
         {
-            foreach (var item in src.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.GetProperty))
+            if (src == null) return;
+
+            foreach (var item in src.GetType()
+                .GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.GetProperty))
             {
                 if (exclude != null && exclude(item)) continue;
                 if (!item.CanRead || !item.CanWrite) continue;
@@ -43,7 +47,7 @@ namespace SearchAThing
         /// copy properties from other object ; a custom non null delegate function can be passed to specify
         /// if include a property and if to assign a custom value ( useful for complex, array types )
         /// </summary>        
-        public static T CopyFromCustom<T>(T obj, T other, CopyFromCustomDelegate custom = null)
+        public static T CopyFromCustom<T>(T obj, T other, CopyFromCustomDelegate? custom = null)
         {
             var type = typeof(T);
 

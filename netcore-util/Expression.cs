@@ -34,9 +34,8 @@ namespace SearchAThing
 
                     foreach (var arg in body.Arguments)
                     {
-                        var expr = arg as MemberExpression;
-
-                        yield return expr.Member.Name;
+                        if (arg is MemberExpression expr)
+                            yield return expr.Member.Name;
                     }
 
                     yield break;
@@ -49,9 +48,8 @@ namespace SearchAThing
                 {
                     var body = (UnaryExpression)membersExpr.Body;
 
-                    var expr = body.Operand as MemberExpression;
-
-                    yield return expr.Member.Name;
+                    if (body.Operand is MemberExpression expr)
+                        yield return expr.Member.Name;
                 }
 
                 yield break;
@@ -112,24 +110,23 @@ namespace SearchAThing
         /// </summary>
         public static (Func<T, V> getter, Action<T, V> setter) CreateGetterSetter<T, V>(this Expression<Func<T, V>> expr)
         {
-            MemberExpression mExpr = null;
+            MemberExpression mExpr;
 
-            var cvtExpr = expr.Body as UnaryExpression;
-            if (cvtExpr != null)
-                mExpr = cvtExpr.Operand as MemberExpression;
+            if (expr.Body is UnaryExpression cvtExpr)
+                mExpr = (MemberExpression)cvtExpr.Operand;
             else
-                mExpr = expr.Body as MemberExpression;
+                mExpr = (MemberExpression)expr.Body;
 
             Func<T, V> getter = expr.Compile();
 
-            Action<T, V> setter = null;
+            Action<T, V> setter = (t, v) => { };
 
             var paramT = Expression.Parameter(typeof(T));
             var paramV = Expression.Parameter(typeof(V));
 
             if (mExpr.Member.MemberType == MemberTypes.Field)
             {
-                var field = mExpr.Member as FieldInfo;
+                var field = (FieldInfo)mExpr.Member;
                 var fExpr = Expression.Field(paramT, field);
                 var rExpr = paramV.Type == field.FieldType ? (Expression)paramV : Expression.Convert(paramV, field.FieldType);
                 var aExpr = Expression.Assign(fExpr, rExpr);
@@ -137,10 +134,12 @@ namespace SearchAThing
             }
             else if (mExpr.Member.MemberType == MemberTypes.Property)
             {
-                var prop = mExpr.Member as PropertyInfo;
+                var prop = (PropertyInfo)mExpr.Member;
                 if (!prop.CanWrite) throw new ArgumentException($"readonly prop given; can't build setter");
-                var pExpr = paramV.Type == prop.PropertyType ? (Expression)paramV : Expression.Convert(paramV, prop.PropertyType);
-                var cExpr = Expression.Call(paramT, prop.SetMethod, pExpr);
+                var pExpr = paramV.Type == prop.PropertyType ?
+                    (Expression)paramV :
+                     Expression.Convert(paramV, prop.PropertyType);
+                var cExpr = Expression.Call(paramT, prop.SetMethod!, pExpr);
                 setter = Expression.Lambda<Action<T, V>>(cExpr, paramT, paramV).Compile();
             }
 

@@ -119,7 +119,8 @@ namespace SearchAThing
         /// enumerate given items returning a tuple (prev,item,next,isLast) 
         /// with prev=null for first element
         /// with next=null for last element or next=first if repeatFirstAtEnd=true on latest el
-        /// </summary>                
+        /// </summary>                        
+        /// <param name="en">input set</param>        
         /// <param name="repeatFirstAtEnd">last enumerated result will (last,first,true)</param>        
         /// <remarks>
         /// [unit test](https://github.com/devel0/netcore-util/tree/master/test/Enumerable/EnumerableTest_0004.cs)
@@ -141,6 +142,7 @@ namespace SearchAThing
         /// <summary>
         /// enumerate given items returning a tuple (item,next,isLast) with next=null for last element or next=first if repeatFirstAtEnd=true on latest el
         /// </summary>                
+        /// <param name="en">input set</param>        
         /// <param name="repeatFirstAtEnd">last enumerated result will (last,first,true)</param>        
         /// <remarks>
         /// [unit test](https://github.com/devel0/netcore-util/tree/master/test/Enumerable/EnumerableTest_0001.cs)
@@ -183,7 +185,8 @@ namespace SearchAThing
         /// enumerate given items returning a tuple (prev,item,next,isLast) 
         /// with prev=null for first element
         /// with next=null for last element or next=first if repeatFirstAtEnd=true on latest el
-        /// </summary>                
+        /// </summary>           
+        /// <param name="en">input set</param>             
         /// <param name="repeatFirstAtEnd">last enumerated result will (last,first,true)</param>        
         /// <remarks>
         /// [unit test](https://github.com/devel0/netcore-util/tree/master/test/Enumerable/EnumerableTest_0003.cs)
@@ -220,7 +223,7 @@ namespace SearchAThing
                     yield return x;
                     continue;
                 }
-                else if (x.Equals(wantedFirstElement))
+                else if (x != null && x.Equals(wantedFirstElement))
                 {
                     firstFound = true;
                     yield return x;

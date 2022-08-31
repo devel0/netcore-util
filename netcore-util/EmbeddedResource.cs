@@ -22,10 +22,11 @@ namespace SearchAThing
             string res = "";
             using (var resource = assembly.GetManifestResourceStream(resourceName))
             {
-                using (var sr = new StreamReader(resource))
-                {
-                    res = sr.ReadToEnd();
-                }
+                if (resource != null)
+                    using (var sr = new StreamReader(resource))
+                    {
+                        res = sr.ReadToEnd();
+                    }
             }
             return res;
         }
@@ -38,33 +39,40 @@ namespace SearchAThing
         /// <summary>
         /// deflate embedded resource
         /// </summary>
-        public static Stream DeflateEmbeddedResource(Assembly assembly, string resource)
+        public static Stream? DeflateEmbeddedResource(Assembly assembly, string resource)
         {
             using (var s = assembly.GetManifestResourceStream(resource))
             {
-                var ms = new MemoryStream();
-                using (var ds = new DeflateStream(s, CompressionMode.Decompress, true))
+                if (s != null)
                 {
-                    var buf = new byte[4096];
-                    int read;
-                    while ((read = ds.Read(buf, 0, buf.Length)) != 0)
-                        ms.Write(buf, 0, read);
+                    var ms = new MemoryStream();
+                    using (var ds = new DeflateStream(s, CompressionMode.Decompress, true))
+                    {
+                        var buf = new byte[4096];
+                        int read;
+                        while ((read = ds.Read(buf, 0, buf.Length)) != 0)
+                            ms.Write(buf, 0, read);
+                    }
+                    ms.Seek(0, SeekOrigin.Begin);
+                    return ms;
                 }
-                ms.Seek(0, SeekOrigin.Begin);
-                return ms;
             }
+
+            return null;
         }
 
         /// <summary>
         /// save given embedded resource to file
         /// </summary>
-        public static void SaveEmbeddedResourceToFile(string resource, string dstPathfilename, bool deflate = false)
+        public static bool SaveEmbeddedResourceToFile(string resource, string dstPathfilename, bool deflate = false)
         {
             var assembly = Assembly.GetCallingAssembly();
             if (deflate)
             {
                 using (var fs = DeflateEmbeddedResource(assembly, resource))
                 {
+                    if (fs == null) return false;
+
                     using (var dstfs = new FileStream(dstPathfilename, FileMode.Create))
                     {
                         fs.CopyTo(dstfs);
@@ -75,12 +83,16 @@ namespace SearchAThing
             {
                 using (var s = assembly.GetManifestResourceStream(resource))
                 {
+                    if (s == null) return false;
+
                     using (var dstfs = new FileStream(dstPathfilename, FileMode.Create))
                     {
                         s.CopyTo(dstfs);
                     }
                 }
             }
+
+            return true;
         }
 
         /// <summary>

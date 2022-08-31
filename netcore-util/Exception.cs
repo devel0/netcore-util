@@ -10,10 +10,10 @@ namespace SearchAThing
     public class ErrorInfo
     {
 
-        public string Message { get; set; }
-        public string ExceptionType { get; set; }
-        public string Stacktrace { get; set; }
-        public string InnerException { get; set; }
+        public string Message { get; set; } = "";
+        public string ExceptionType { get; set; } = "";
+        public string Stacktrace { get; set; } = "";
+        public string InnerException { get; set; } = "";
 
         public override string ToString()
         {
@@ -47,13 +47,13 @@ namespace SearchAThing
             {
                 var ex = _ex;
 
-#if NET6_0
+#if NET6_0_OR_GREATER
                 if (_ex.InnerException is Npgsql.PostgresException pex)
-                {                    
+                {
                     res.Message = $"{pex.Message} [table:{pex.TableName}] [constraint:{pex.ConstraintName}] [routine:{pex.Routine}]";
                     res.ExceptionType = pex.GetType().ToString();
-                    res.Stacktrace = pex.StackTrace.ToString();
-                }                
+                    res.Stacktrace = pex.StackTrace.Fn(w => w == null ? "" : w.ToString());
+                }
                 else
 #endif
 
@@ -62,7 +62,7 @@ namespace SearchAThing
 
                     res.Message = ex.Message;
                     res.ExceptionType = ex.GetType().ToString();
-                    res.Stacktrace = ex.StackTrace.ToString();
+                    res.Stacktrace = ex.StackTrace.Fn(w => w == null ? "" : w.ToString());
                     res.InnerException = ex.InnerException != null ? ex.InnerException.Message : "";
                 }
 

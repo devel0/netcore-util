@@ -71,7 +71,7 @@ namespace SearchAThing
         /// <summary>
         /// stringify container obj
         /// </summary>
-        public override string ToString() => $"name:{Name} ip:{IPAddress}";        
+        public override string ToString() => $"name:{Name} ip:{IPAddress}";
     }
 
     public static partial class UtilToolkit
@@ -95,10 +95,10 @@ namespace SearchAThing
                 if (cmdres.ExitCode != 0) throw new Exception($"docker execution error: [{cmdres.Error}]");
 
                 var jsonObj = JObject.Parse("{cnf: " + cmdres.Output + "}");
-                var q = jsonObj["cnf"][0]["IPAM"]["Config"];
+                var q = jsonObj!["cnf"]![0]!["IPAM"]!["Config"]!;
                 if (q.Count() > 0)
                 {
-                    var subnet = (string)q[0]["Subnet"];
+                    var subnet = (string)q[0]!["Subnet"]!;
                     res.Add(new DockerNetworkNfo(network, subnet));
                 }
             }
@@ -123,11 +123,11 @@ namespace SearchAThing
                 cmdres = await UtilToolkit.ExecRedirect("docker", new[] { "inspect", container }, ct, sudo, verbose);
                 if (cmdres.ExitCode != 0) throw new Exception($"docker execution error: [{cmdres.Error}]");
 
-                var jsonObj = JObject.Parse("{cnf: " + cmdres.Output + "}");
-                var q = jsonObj["cnf"][0]["NetworkSettings"]["Networks"];
+                var jsonObj = JObject.Parse("{cnf: " + cmdres.Output + "}")!;
+                var q = jsonObj["cnf"]![0]!["NetworkSettings"]!["Networks"]!;
                 if (q.Count() > 0)
-                {
-                    var ipaddress = (string)q.First().Children()["IPAddress"].First();
+                {                    
+                    var ipaddress = (string)q!.First()!.Children()["IPAddress"]!.First()!;
                     res.Add(new DockerContainerNfo(container, ipaddress));
                 }
             }
@@ -267,7 +267,8 @@ namespace SearchAThing
         /// <summary>
         /// build docker image
         /// </summary>        
-        public static async Task BuildImage(string dockerImageName, string dockerSourceDir, CancellationToken ct, bool sudo = false, bool verbose = false, string[] extra_args = null)
+        public static async Task BuildImage(string dockerImageName, string dockerSourceDir, CancellationToken ct, 
+            bool sudo = false, bool verbose = false, string[]? extra_args = null)
         {
             System.Console.WriteLine($"Creating [{dockerImageName}] docker image...");
 

@@ -85,6 +85,7 @@ namespace SearchAThing
 
         /// <summary>
         /// Return an invariant string representation rounded to given dec.        
+        /// </summary>
         public static string Stringify(this double x, int dec) => Invariant($"{Round(x, dec)}");
 
         /// <summary>
@@ -148,12 +149,12 @@ namespace SearchAThing
         }
 
         /// <summary>
-        /// true if ( |x-y| <= tol )
+        /// true if ( |x-y| LTE tol )
         /// </summary>        
         public static bool EqualsTol(this double x, double tol, double y) => Abs(x - y) <= tol;
 
         /// <summary>
-        /// true if ( |x-y| <= tol )
+        /// true if ( |x-y| LTE tol )
         /// </summary>        
         public static bool EqualsTol(this IQuantity x, IQuantity tol, IQuantity y)
         {
@@ -163,12 +164,12 @@ namespace SearchAThing
         }
 
         /// <summary>
-        /// true if (x > y) AND NOT ( |x-y| <= tol )
+        /// true if (x GT y) AND NOT ( |x-y| LTE tol )
         /// </summary>        
         public static bool GreatThanTol(this double x, double tol, double y) => x > y && !x.EqualsTol(tol, y);
 
         /// <summary>
-        /// true if (x > y) AND NOT ( |x-y| <= tol )
+        /// true if (x GT y) AND NOT ( |x-y| LTE tol )
         /// </summary>        
         public static bool GreatThanTol(this IQuantity x, IQuantity tol, IQuantity y)
         {
@@ -178,12 +179,12 @@ namespace SearchAThing
         }
 
         /// <summary>
-        /// true if (x > y) AND ( |x-y| <= tol )
+        /// true if (x GT y) AND ( |x-y| LTE tol )
         /// </summary>        
         public static bool GreatThanOrEqualsTol(this double x, double tol, double y) => x > y || x.EqualsTol(tol, y);
 
         /// <summary>
-        /// true if (x > y) AND ( |x-y| <= tol )
+        /// true if (x GT y) AND ( |x-y| LTE tol )
         /// </summary>     
         public static bool GreatThanOrEqualsTol(this IQuantity x, IQuantity tol, IQuantity y)
         {
@@ -193,12 +194,12 @@ namespace SearchAThing
         }
 
         /// <summary>
-        /// true if (x < y) AND NOT ( |x-y| <= tol )
+        /// true if (x LT y) AND NOT ( |x-y| LTE tol )
         /// </summary>     
         public static bool LessThanTol(this double x, double tol, double y) => x < y && !x.EqualsTol(tol, y);
 
         /// <summary>
-        /// true if (x < y) AND NOT ( |x-y| <= tol )
+        /// true if (x LT y) AND NOT ( |x-y| LTE tol )
         /// </summary>     
         public static bool LessThanTol(this IQuantity x, IQuantity tol, IQuantity y)
         {
@@ -208,12 +209,12 @@ namespace SearchAThing
         }
 
         /// <summary>
-        /// true if (x < y) AND ( |x-y| <= tol )
+        /// true if (x LT y) AND ( |x-y| LTE tol )
         /// </summary>     
         public static bool LessThanOrEqualsTol(this double x, double tol, double y) => x < y || x.EqualsTol(tol, y);
 
         /// <summary>
-        /// true if (x < y) AND ( |x-y| <= tol )
+        /// true if (x LT y) AND ( |x-y| LTE tol )
         /// </summary>     
         public static bool LessThanOrEqualsTol(this IQuantity x, IQuantity tol, IQuantity y)
         {
