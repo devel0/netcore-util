@@ -6,7 +6,8 @@
 
         <MicrosoftCSharpVersion>4.7.0</MicrosoftCSharpVersion>
         <NewtonsoftJsonVersion>13.0.1</NewtonsoftJsonVersion>
-        <UnitsNetVersion>4.144.0</UnitsNetVersion>
+        <UnitsNetVersion>4.144.0</UnitsNetVersion>        
+        <MagickNETVersion>12.1.0</MagickNETVersion>
 
         <MicrosoftNETTestSdkVersion>17.3.1</MicrosoftNETTestSdkVersion>
         <xunitVersion>2.4.2</xunitVersion>

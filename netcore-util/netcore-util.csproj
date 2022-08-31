@@ -2,10 +2,10 @@
     <PropertyGroup>
         <TargetFrameworks>net6.0;netstandard2.1</TargetFrameworks>
         <LangVersion>10</LangVersion>
-        <Nullable>enable</Nullable>
+        <Nullable>enable</Nullable>        
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PackageId>netcore-util</PackageId>
-        <PackageVersion>4.0.0</PackageVersion>
+        <PackageVersion>4.1.0</PackageVersion>
         <Title>net core util</Title>
         <Description></Description>
         <Authors>Lorenzo Delana</Authors>
@@ -16,13 +16,14 @@
     </PropertyGroup>
 
     <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
-        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="$(NpgsqlEntityFrameworkCorePostgreSQLVersion)"/>
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="$(MicrosoftEntityFrameworkCoreVersion)"/>
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="$(NpgsqlEntityFrameworkCorePostgreSQLVersion)" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="$(MicrosoftEntityFrameworkCoreVersion)" />
         <PackageReference Include="Microsoft.CSharp" Version="$(MicrosoftCSharpVersion)" />
     </ItemGroup>
 
-    <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonVersion)" />
+    <ItemGroup>        
+        <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="$(MagickNETVersion)" />                
+        <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonVersion)" />        
         <PackageReference Include="UnitsNet" Version="$(UnitsNetVersion)" />
     </ItemGroup>
 </Project>
