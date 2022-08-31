@@ -274,6 +274,14 @@ namespace SearchAThing
             return ((uint)twip).TwipToMM();
         }
 
+        /// <summary>
+        /// convert given percent 0..100 to fiftieths of a Percent
+        /// </summary>
+        public static int Pct(this double percent)
+        {            
+            return (int)(percent * 50);
+        }
+
     }
 
 }
