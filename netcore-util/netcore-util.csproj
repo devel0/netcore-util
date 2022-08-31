@@ -1,23 +1,27 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net6.0</TargetFrameworks>
-        <LangVersion>10</LangVersion>        
+        <TargetFrameworks>netstandard2.1;net6.0</TargetFrameworks>
+        <LangVersion>10</LangVersion>
         <Nullable>enable</Nullable>
-        <GenerateDocumentationFile>true</GenerateDocumentationFile>        
-        <PackageId>netcore-util</PackageId>   
-        <PackageVersion>3.3.0</PackageVersion>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageId>netcore-util</PackageId>
+        <PackageVersion>3.4.0</PackageVersion>
         <Title>net core util</Title>
-        <Description></Description>        
+        <Description></Description>
         <Authors>Lorenzo Delana</Authors>
         <PackageTags>netcore util</PackageTags>
         <PackageProjectUrl>https://github.com/devel0/netcore-util</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
-    <ItemGroup>        
-        <PackageReference Include="Microsoft.CSharp" Version="$(MicrosoftCSharpVersion)" />        
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="$(MicrosoftEntityFrameworkCoreVersion)" />
-        <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonVersion)" />
+
+    <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="$(NpgsqlEntityFrameworkCorePostgreSQLVersion)" />
-        <PackageReference Include="UnitsNet" Version="$(UnitsNetVersion)" />                
-    </ItemGroup>    
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="$(MicrosoftEntityFrameworkCoreVersion)" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CSharp" Version="$(MicrosoftCSharpVersion)" />        
+        <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonVersion)" />
+        <PackageReference Include="UnitsNet" Version="$(UnitsNetVersion)" />
+    </ItemGroup>
 </Project>

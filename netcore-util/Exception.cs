@@ -45,17 +45,19 @@ namespace SearchAThing
 
             try
             {
-                var ex = ((_ex.InnerException as Npgsql.PostgresException) != null) ? _ex.InnerException : _ex;
+                var ex = _ex;
 
-                if (ex is Npgsql.PostgresException)
-                {
-                    var pex = ex as Npgsql.PostgresException;
-
+#if NET6_0
+                if (_ex.InnerException is Npgsql.PostgresException pex)
+                {                    
                     res.Message = $"{pex.Message} [table:{pex.TableName}] [constraint:{pex.ConstraintName}] [routine:{pex.Routine}]";
                     res.ExceptionType = pex.GetType().ToString();
                     res.Stacktrace = pex.StackTrace.ToString();
-                }
+                }                
                 else
+#endif
+
+
                 {
 
                     res.Message = ex.Message;
@@ -72,6 +74,23 @@ namespace SearchAThing
             }
 
             return res;
+        }
+
+    }
+
+    /// <summary>
+    /// InternalError exception
+    /// </summary>
+    public class InternalError : Exception
+    {
+
+        /// <summary>
+        /// Internal exception constructor, some assert failed
+        /// </summary>
+        /// <param name="msg">assert fail msg</param>
+        public InternalError(string msg) : base(msg)
+        {
+
         }
 
     }
