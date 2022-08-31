@@ -24,9 +24,7 @@
         <PackageReference Include="Xunit.SkippableFact" Version="$(xunitSkippableFactVersion)" />        
     </ItemGroup>
 
-    <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonVersion)" />
-        <PackageReference Include="UnitsNet" Version="$(UnitsNetVersion)" />
+    <ItemGroup>        
         <ProjectReference Include="..\netcore-util\netcore-util.csproj" />
     </ItemGroup>
 </Project>
