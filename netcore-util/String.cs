@@ -76,7 +76,7 @@ namespace SearchAThing
             {
                 foreach (var (_cell, idx) in row.WithIndex())
                 {
-                    var cell = (_cell == null) ? "" : _cell;
+                    var cell = (_cell is null) ? "" : _cell;
                     var l = cell.Length;
                     if (widths.Count - 1 < idx) widths.Add(l);
                     else widths[idx] = Max(widths[idx], l);
@@ -94,7 +94,7 @@ namespace SearchAThing
 
             // default align left
             List<ColumnAlignment>? a = null;
-            if (aligns == null)
+            if (aligns is null)
             {
                 a = new List<ColumnAlignment>();
                 for (int i = 0; i < widths.Count; ++i) a.Add(ColumnAlignment.left);
@@ -122,7 +122,7 @@ namespace SearchAThing
                 foreach (var (_cell, idx) in row.WithIndex())
                 {
                     if (idx > 0 && columnSpacing > 0) sb.Append(" ".Repeat(columnSpacing));
-                    var cell = (_cell == null) ? "" : _cell;
+                    var cell = (_cell is null) ? "" : _cell;
                     sb.Append(cell.Align(widths[idx], a[idx]));
                 }
                 sb.AppendLine();
@@ -392,7 +392,7 @@ namespace SearchAThing
             var matches = 0;
             foreach (var x in fields)
             {
-                if (x == null) continue;
+                if (x is null) continue;
                 if (ss.Any(w => ignoreCase ? x.ContainsIgnoreCase(w) : x.Contains(w))) ++matches;
                 if (matches == ss.Count) return true;
             }

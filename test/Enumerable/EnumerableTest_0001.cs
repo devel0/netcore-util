@@ -61,7 +61,7 @@ namespace SearchAThing.Util.Tests
                     if (rfe)
                         Assert.True(q[4].Fn(y => y.item.Value == 5 && y.next.Value == 1 && y.isLast == true && y.itemIdx == 4));
                     else
-                        Assert.True(q[4].Fn(y => y.item.Value == 5 && y.next == null && y.isLast == true && y.itemIdx == 4));
+                        Assert.True(q[4].Fn(y => y.item.Value == 5 && y.next is null && y.isLast == true && y.itemIdx == 4));
                 }
             }
         }

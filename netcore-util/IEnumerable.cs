@@ -96,7 +96,7 @@ namespace SearchAThing
                 item = enm.Current;
                 isLast = !enm.MoveNext();
 
-                if (first == null)
+                if (first is null)
                 {
                     first = prev = item;
                     if (isLast) yield return (item.Value, repeatFirstAtEnd ? first : null, idx++, true);
@@ -162,7 +162,7 @@ namespace SearchAThing
                 item = enm.Current;
                 isLast = !enm.MoveNext();
 
-                if (first == null)
+                if (first is null)
                 {
                     first = prev = item;
                     if (isLast) yield return (item, repeatFirstAtEnd ? first : null, idx++, true);

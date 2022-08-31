@@ -80,7 +80,7 @@ namespace SearchAThing
         /// </summary>        
         public static string RandomPassword(RandomPasswordOptions? opts = null)
         {
-            if (opts == null) opts = new RandomPasswordOptions();
+            if (opts is null) opts = new RandomPasswordOptions();
 
             var sb = new StringBuilder();
 

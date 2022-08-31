@@ -52,7 +52,7 @@ namespace SearchAThing
                 {
                     res.Message = $"{pex.Message} [table:{pex.TableName}] [constraint:{pex.ConstraintName}] [routine:{pex.Routine}]";
                     res.ExceptionType = pex.GetType().ToString();
-                    res.Stacktrace = pex.StackTrace.Fn(w => w == null ? "" : w.ToString());
+                    res.Stacktrace = pex.StackTrace.Fn(w => w is null ? "" : w.ToString());
                 }
                 else
 #endif
@@ -62,7 +62,7 @@ namespace SearchAThing
 
                     res.Message = ex.Message;
                     res.ExceptionType = ex.GetType().ToString();
-                    res.Stacktrace = ex.StackTrace.Fn(w => w == null ? "" : w.ToString());
+                    res.Stacktrace = ex.StackTrace.Fn(w => w is null ? "" : w.ToString());
                     res.InnerException = ex.InnerException != null ? ex.InnerException.Message : "";
                 }
 

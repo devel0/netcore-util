@@ -71,7 +71,7 @@ namespace SearchAThing
             {
                 using (var fs = DeflateEmbeddedResource(assembly, resource))
                 {
-                    if (fs == null) return false;
+                    if (fs is null) return false;
 
                     using (var dstfs = new FileStream(dstPathfilename, FileMode.Create))
                     {
@@ -83,7 +83,7 @@ namespace SearchAThing
             {
                 using (var s = assembly.GetManifestResourceStream(resource))
                 {
-                    if (s == null) return false;
+                    if (s is null) return false;
 
                     using (var dstfs = new FileStream(dstPathfilename, FileMode.Create))
                     {

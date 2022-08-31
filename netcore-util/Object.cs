@@ -43,7 +43,7 @@ namespace SearchAThing
         /// returns true if only one of given objects is null;
         /// returns false if all objects null or all objects not null;
         /// </summary>
-        public static bool XorNull(object a, object b) => a == null ^ b == null;
+        public static bool XorNull(object a, object b) => a is null ^ b is null;
 
     }
 

@@ -16,7 +16,7 @@ namespace SearchAThing
         /// </summary>        
         public static void Assign<T>(T src, T dst, Func<PropertyInfo, bool>? exclude = null)
         {
-            if (src == null) return;
+            if (src is null) return;
 
             foreach (var item in src.GetType()
                 .GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.GetProperty))
@@ -37,7 +37,7 @@ namespace SearchAThing
         {
             var type = typeof(T);
 
-            foreach (var p in type.GetProperties().Where(x => match == null ? true : match(x)))
+            foreach (var p in type.GetProperties().Where(x => match is null ? true : match(x)))
                 p.SetValue(obj, p.GetValue(other));
 
             return obj;
