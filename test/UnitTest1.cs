@@ -28,6 +28,8 @@ namespace SearchAThing
 
         #region Dynamic
 
+#if NET6_0_OR_GREATER
+
         [Fact]
         public void DynamicTest1()
         {
@@ -64,6 +66,8 @@ namespace SearchAThing
             var expobj = ToExpando(((object)dynobj));
             Assert.True(expobj.GetType() == typeof(ExpandoObject));
         }
+
+#endif
 
         #endregion
 
@@ -239,7 +243,7 @@ namespace SearchAThing
             {
                 var lst = GetMemberNames(obj, x => x.a);
                 Assert.True(lst.Count == 1);
-                Assert.True(lst.Contains("a"));
+                Assert.Contains("a", lst);
             }
 
             {
