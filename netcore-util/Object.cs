@@ -44,6 +44,12 @@ namespace SearchAThing
             return en;
         }
 
+
+    }
+
+    public static partial class UtilToolkit
+    {
+
         /// <summary>
         /// swap x, y values
         /// </summary>
@@ -53,11 +59,6 @@ namespace SearchAThing
             x = y;
             y = _x;
         }
-
-    }
-
-    public static partial class UtilToolkit
-    {
 
         /// <summary>
         /// returns true if only one of given objects is null;
