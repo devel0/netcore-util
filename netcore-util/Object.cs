@@ -34,6 +34,26 @@ namespace SearchAThing
             return obj;
         }
 
+        /// <summary>
+        /// Allow to apply an action foreach enum objects
+        /// </summary>                
+        public static IEnumerable<T> Foreach<T>(this IEnumerable<T> en, Action<T> action)
+        {            
+            foreach (var x in en) action(x);
+
+            return en;
+        }
+
+        /// <summary>
+        /// swap x, y values
+        /// </summary>
+        public static void Swap<T>(ref T x, ref T y)
+        {
+            var _x = x;
+            x = y;
+            y = _x;
+        }
+
     }
 
     public static partial class UtilToolkit

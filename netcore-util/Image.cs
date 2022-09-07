@@ -19,7 +19,7 @@ namespace SearchAThing
         /// <summary>
         /// retrieve image nfo
         /// </summary>
-        public static MagickImageInfo GetImageNfo(Stream stream) => new MagickImageInfo(stream);
+        public static MagickImageInfo GetImageNfoFromStream(Stream stream) => new MagickImageInfo(stream);
 
         /// <summary>
         /// retrieve image size width (mm) x height (mm);
