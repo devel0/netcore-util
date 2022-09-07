@@ -231,6 +231,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4d153e81de091f29ddc5f8662db38ca5"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a4d153e81de091f29ddc5f8662db38ca5">Act&lt; T &gt;</a> (this T obj, Action&lt; T &gt; setter)</td></tr>
 <tr class="memdesc:a4d153e81de091f29ddc5f8662db38ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow to apply some action on the object inline returning the same object.  <a href="class_search_a_thing_1_1_util_ext.html#a4d153e81de091f29ddc5f8662db38ca5">More...</a><br /></td></tr>
 <tr class="separator:a4d153e81de091f29ddc5f8662db38ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1443d843563ec9074a5f561cf33f30a1"><td class="memItemLeft" align="right" valign="top">static IEnumerable&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a1443d843563ec9074a5f561cf33f30a1">Foreach&lt; T &gt;</a> (this IEnumerable&lt; T &gt; en, Action&lt; T &gt; action)</td></tr>
+<tr class="memdesc:a1443d843563ec9074a5f561cf33f30a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow to apply an action foreach enum objects  <a href="class_search_a_thing_1_1_util_ext.html#a1443d843563ec9074a5f561cf33f30a1">More...</a><br /></td></tr>
+<tr class="separator:a1443d843563ec9074a5f561cf33f30a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c8b902ffd6b8c4a6f31e1dd85ea5be6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a0c8b902ffd6b8c4a6f31e1dd85ea5be6">Swap&lt; T &gt;</a> (ref T x, ref T y)</td></tr>
+<tr class="memdesc:a0c8b902ffd6b8c4a6f31e1dd85ea5be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">swap x, y values  <a href="class_search_a_thing_1_1_util_ext.html#a0c8b902ffd6b8c4a6f31e1dd85ea5be6">More...</a><br /></td></tr>
+<tr class="separator:a0c8b902ffd6b8c4a6f31e1dd85ea5be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a3c1b09e111cee6cd0c65eed39d23b6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_ext.html#a2a3c1b09e111cee6cd0c65eed39d23b6">Sort&lt; TSource, TKey &gt;</a> (this ObservableCollection&lt; TSource &gt; obc, Func&lt; TSource, TKey &gt; keySelector, bool descending=false)</td></tr>
 <tr class="memdesc:a2a3c1b09e111cee6cd0c65eed39d23b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">sort obc  <a href="class_search_a_thing_1_1_util_ext.html#a2a3c1b09e111cee6cd0c65eed39d23b6">More...</a><br /></td></tr>
 <tr class="separator:a2a3c1b09e111cee6cd0c65eed39d23b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -989,6 +995,46 @@ Static Public Attributes</h2></td></tr>
 
 <p>Allow to tranform the object into other type. <br  />
  eg. <code>intvar.Fn((x) =&gt; (x == 0) ? "zero" : "non-zero")</code> </p>
+
+</div>
+</div>
+<a id="a1443d843563ec9074a5f561cf33f30a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1443d843563ec9074a5f561cf33f30a1">&#9670;&nbsp;</a></span>Foreach&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static IEnumerable&lt;T&gt; Foreach&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">this IEnumerable&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>en</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>action</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allow to apply an action foreach enum objects </p>
+<p><br  />
+ </p>
 
 </div>
 </div>
@@ -2943,6 +2989,44 @@ Static Public Attributes</h2></td></tr>
 <p>Returns the given string stripped from the given part if exists at end. </p>
 <p><br  />
  </p>
+
+</div>
+</div>
+<a id="a0c8b902ffd6b8c4a6f31e1dd85ea5be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c8b902ffd6b8c4a6f31e1dd85ea5be6">&#9670;&nbsp;</a></span>Swap&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Swap&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">ref T&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref T&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>swap x, y values </p>
 
 </div>
 </div>
