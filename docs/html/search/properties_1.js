@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['descent_361',['Descent',['../class_search_a_thing_1_1_true_type_nfo.html#aa32e4f9d2b92d06edc94047540c43a85',1,'SearchAThing::TrueTypeNfo']]]
+  ['count_373',['Count',['../class_search_a_thing_1_1_read_only_hash_set.html#aad462966ed963f892117056de1eba502',1,'SearchAThing::ReadOnlyHashSet']]]
 ];

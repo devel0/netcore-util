@@ -130,6 +130,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a54647fed3a79d5bfb44c150d588828d8"><td class="memItemLeft" align="right" valign="top">static string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_toolkit.html#a54647fed3a79d5bfb44c150d588828d8">GetEmbeddedResourcesList&lt; T &gt;</a> ()</td></tr>
 <tr class="memdesc:a54647fed3a79d5bfb44c150d588828d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the list of embedded resource names from given Type  <a href="class_search_a_thing_1_1_util_toolkit.html#a54647fed3a79d5bfb44c150d588828d8">More...</a><br /></td></tr>
 <tr class="separator:a54647fed3a79d5bfb44c150d588828d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb17ce8e3ecb93c8cf17476f88635f03"><td class="memItemLeft" align="right" valign="top">static IComparer&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_toolkit.html#aeb17ce8e3ecb93c8cf17476f88635f03">CreateComparer&lt; T &gt;</a> (T sample, Comparison&lt; T &gt; comparison)</td></tr>
+<tr class="memdesc:aeb17ce8e3ecb93c8cf17476f88635f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Anonymous Comparer. create an IComparer from given comparison expression. first dummy argument used to infer the type T.  <a href="class_search_a_thing_1_1_util_toolkit.html#aeb17ce8e3ecb93c8cf17476f88635f03">More...</a><br /></td></tr>
+<tr class="separator:aeb17ce8e3ecb93c8cf17476f88635f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d8f0c8be03c5ab3aad332eee986fae1"><td class="memItemLeft" align="right" valign="top">static IEnumerable&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_toolkit.html#a2d8f0c8be03c5ab3aad332eee986fae1">GetMemberNamesExt&lt; T &gt;</a> (Expression&lt; Func&lt; T, object &gt;&gt; membersExpr)</td></tr>
 <tr class="memdesc:a2d8f0c8be03c5ab3aad332eee986fae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve list of member names from a functor like <code>x=&gt;new {x.membername1, x.membername2, ...}</code> or <code>x=&gt;x.membername</code>  <a href="class_search_a_thing_1_1_util_toolkit.html#a2d8f0c8be03c5ab3aad332eee986fae1">More...</a><br /></td></tr>
 <tr class="separator:a2d8f0c8be03c5ab3aad332eee986fae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,6 +157,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac53392b8650e50ec3ef2fdf2109553e4"><td class="memItemLeft" align="right" valign="top">static MagickImageInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_toolkit.html#ac53392b8650e50ec3ef2fdf2109553e4">GetImageNfoFromStream</a> (Stream stream)</td></tr>
 <tr class="memdesc:ac53392b8650e50ec3ef2fdf2109553e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve image nfo  <a href="class_search_a_thing_1_1_util_toolkit.html#ac53392b8650e50ec3ef2fdf2109553e4">More...</a><br /></td></tr>
 <tr class="separator:ac53392b8650e50ec3ef2fdf2109553e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c8b902ffd6b8c4a6f31e1dd85ea5be6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_toolkit.html#a0c8b902ffd6b8c4a6f31e1dd85ea5be6">Swap&lt; T &gt;</a> (ref T x, ref T y)</td></tr>
+<tr class="memdesc:a0c8b902ffd6b8c4a6f31e1dd85ea5be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">swap x, y values  <a href="class_search_a_thing_1_1_util_toolkit.html#a0c8b902ffd6b8c4a6f31e1dd85ea5be6">More...</a><br /></td></tr>
+<tr class="separator:a0c8b902ffd6b8c4a6f31e1dd85ea5be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa39e1f1203072a24dfbba3883397d7d0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_search_a_thing_1_1_util_toolkit.html#aa39e1f1203072a24dfbba3883397d7d0">XorNull</a> (object a, object b)</td></tr>
 <tr class="memdesc:aa39e1f1203072a24dfbba3883397d7d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if only one of given objects is null; returns false if all objects null or all objects not null;  <a href="class_search_a_thing_1_1_util_toolkit.html#aa39e1f1203072a24dfbba3883397d7d0">More...</a><br /></td></tr>
 <tr class="separator:aa39e1f1203072a24dfbba3883397d7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -541,6 +547,53 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>copy properties from other object including only those with given names </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
+<a id="aeb17ce8e3ecb93c8cf17476f88635f03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb17ce8e3ecb93c8cf17476f88635f03">&#9670;&nbsp;</a></span>CreateComparer&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static IComparer&lt;T&gt; CreateComparer&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>sample</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Comparison&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>comparison</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Anonymous Comparer. create an IComparer from given comparison expression. first dummy argument used to infer the type T. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sample</td><td>dummy element to infer the type T</td></tr>
+    <tr><td class="paramname">comparison</td><td>(a,b) =&gt; { -1, 0, 1 }</td></tr>
+  </table>
+  </dd>
+</dl>
 <p><br  />
  </p>
 
@@ -1818,6 +1871,44 @@ Static Public Attributes</h2></td></tr>
 <p>stop container </p>
 <p><br  />
  </p>
+
+</div>
+</div>
+<a id="a0c8b902ffd6b8c4a6f31e1dd85ea5be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c8b902ffd6b8c4a6f31e1dd85ea5be6">&#9670;&nbsp;</a></span>Swap&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Swap&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">ref T&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref T&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>swap x, y values </p>
 
 </div>
 </div>
