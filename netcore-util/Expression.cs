@@ -10,6 +10,15 @@ namespace SearchAThing
 
     public static partial class UtilToolkit
     {
+       
+        /// <summary>
+        /// Anonymous Comparer.
+        /// create an IComparer from given comparison expression.
+        /// first dummy argument used to infer the type T.
+        /// </summary>
+        /// <param name="sample">dummy element to infer the type T</param>
+        /// <param name="comparison">(a,b) => { -1, 0, 1 }</param>                
+        public static IComparer<T> CreateComparer<T>(T sample, Comparison<T> comparison) => Comparer<T>.Create(comparison);
 
         /// <summary>
         /// retrieve list of member names from a functor like `x=>new {x.membername1, x.membername2, ...}` or `x=>x.membername`
