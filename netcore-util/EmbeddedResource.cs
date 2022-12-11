@@ -8,7 +8,7 @@ using System.Reflection;
 namespace SearchAThing
 {
 
-    public static partial class UtilExt
+    public static partial class UtilToolkit
     {
 
         /// <summary>
@@ -16,9 +16,16 @@ namespace SearchAThing
         /// </summary>
         /// <param name="resourceName">name of resource (eg. namespace.filename.ext)</param>
         /// <typeparam name="T">Type for which lookup assembly (eg. namespace.classname)</typeparam>
-        public static string GetEmbeddedFileContent<T>(this string resourceName) where T : class
+        public static string GetEmbeddedFileContentString<T>(string resourceName) where T : class =>
+            GetEmbeddedFileContentString(typeof(T).GetTypeInfo().Assembly, resourceName);
+
+        /// <summary>
+        /// retrieve embedded resource file content and read into a string
+        /// </summary>
+        /// <param name="resourceName">name of resource (eg. namespace.filename.ext)</param>
+        /// <param name="assembly">assembly that contains given resourceName</param>
+        public static string GetEmbeddedFileContentString(Assembly assembly, string resourceName)
         {
-            var assembly = typeof(T).GetTypeInfo().Assembly;
             string res = "";
             using (var resource = assembly.GetManifestResourceStream(resourceName))
             {
@@ -31,10 +38,27 @@ namespace SearchAThing
             return res;
         }
 
-    }
+        /// <summary>
+        /// retrieve embedded resource file content and read into a byte array
+        /// </summary>
+        /// <param name="resourceName">name of resource (eg. namespace.filename.ext)</param>
+        /// <param name="assembly">assembly that contains given resourceName</param>
+        public static byte[]? GetEmbeddedFileContentBytes(Assembly assembly, string resourceName)
+        {
+            using (var resource = assembly.GetManifestResourceStream(resourceName))
+            {
+                if (resource != null)
+                {
+                    var buf = new byte[resource.Length];
+                    if (resource.Read(buf, 0, (int)resource.Length) == resource.Length)
+                        return buf;
 
-    public static partial class UtilToolkit
-    {
+                    return null;
+                }
+            }
+
+            return null;
+        }
 
         /// <summary>
         /// deflate embedded resource
@@ -96,11 +120,13 @@ namespace SearchAThing
         }
 
         /// <summary>
-        /// retrieve current executing assembly resource names
+        /// retrieve calling assembly resource names
         /// </summary>
-        public static IEnumerable<string> GetEmbeddedResourceNames()
+        public static IEnumerable<string> GetEmbeddedResourceNames(Assembly? assembly = null)
         {
-            var assembly = Assembly.GetCallingAssembly();
+            if (assembly is null)
+                assembly = Assembly.GetCallingAssembly();
+
             return assembly.GetManifestResourceNames();
         }
 
