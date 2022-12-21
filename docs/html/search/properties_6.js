@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['length_382',['Length',['../class_search_a_thing_1_1_random_password_options.html#a9fde862c8bc443d7a6872a487ec265a3',1,'SearchAThing::RandomPasswordOptions']]],
-  ['loopcount_383',['LoopCount',['../class_search_a_thing_1_1_random_password_options.html#aab567ac25e5165e0d709abe93d543127',1,'SearchAThing::RandomPasswordOptions']]]
+  ['stacktrace_65',['Stacktrace',['../class_search_a_thing_1_1_error_info.html#a5f9193c303aee4b6b9f07a687f5b159d',1,'SearchAThing::ErrorInfo']]]
 ];

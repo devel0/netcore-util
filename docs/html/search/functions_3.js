@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['deflateembeddedresource_220',['DeflateEmbeddedResource',['../class_search_a_thing_1_1_util_toolkit.html#acadaeeb08b197d11531ecd151f10c13d',1,'SearchAThing::UtilToolkit']]],
-  ['delegate_221',['delegate',['../namespace_search_a_thing.html#a6a44bb3e98b2b7e661d4588f87b086d8',1,'SearchAThing']]],
-  ['details_222',['Details',['../class_search_a_thing_1_1_util_ext.html#a12b4d46c641dc463244fb39818953eb9',1,'SearchAThing::UtilExt']]],
-  ['detailsobject_223',['DetailsObject',['../class_search_a_thing_1_1_util_ext.html#ac2b6177b75925ce74c36c0d78a29de56',1,'SearchAThing::UtilExt']]],
-  ['distinct_3c_20t_2c_20tkey_20_3e_224',['Distinct&lt; T, TKey &gt;',['../class_search_a_thing_1_1_util_ext.html#a8c37a7da6aa0e5eb44da73d873443095',1,'SearchAThing::UtilExt']]],
-  ['dockercontainernfo_225',['DockerContainerNfo',['../class_search_a_thing_1_1_docker_container_nfo.html#a3a368e000fc3b143e33712e2e7eea626',1,'SearchAThing::DockerContainerNfo']]],
-  ['dockernetworknfo_226',['DockerNetworkNfo',['../class_search_a_thing_1_1_docker_network_nfo.html#ae99ae4500576175e5d9e00f7069bb56f',1,'SearchAThing::DockerNetworkNfo']]]
+  ['getimagenfo_43',['GetImageNfo',['../class_search_a_thing_1_1_util_toolkit.html#a13fdeaa046895090bda5917b939fd9ae',1,'SearchAThing::UtilToolkit']]],
+  ['getimagenfofromstream_44',['GetImageNfoFromStream',['../class_search_a_thing_1_1_util_toolkit.html#ac53392b8650e50ec3ef2fdf2109553e4',1,'SearchAThing::UtilToolkit']]],
+  ['greatthanorequalstol_45',['GreatThanOrEqualsTol',['../class_search_a_thing_1_1_util_ext.html#a4554c1fe0c3eebfdd3f760e1fc76eb11',1,'SearchAThing::UtilExt']]],
+  ['greatthantol_46',['GreatThanTol',['../class_search_a_thing_1_1_util_ext.html#a880bdbae55f76ce5e364b06353ea9557',1,'SearchAThing::UtilExt']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['fn_3c_20t_2c_20u_20_3e_238',['Fn&lt; T, U &gt;',['../class_search_a_thing_1_1_util_ext.html#a8a5e6b16b69b4f5fd7e2632a2138a596',1,'SearchAThing::UtilExt']]],
-  ['foreach_3c_20t_20_3e_239',['Foreach&lt; T &gt;',['../class_search_a_thing_1_1_util_ext.html#a1443d843563ec9074a5f561cf33f30a1',1,'SearchAThing::UtilExt']]]
+  ['lessthanorequalstol_48',['LessThanOrEqualsTol',['../class_search_a_thing_1_1_util_ext.html#afe74dff6c766932037ff234bd02144ae',1,'SearchAThing::UtilExt']]],
+  ['lessthantol_49',['LessThanTol',['../class_search_a_thing_1_1_util_ext.html#a6af8f4dd7b731c90ead43bae70199de9',1,'SearchAThing::UtilExt']]]
 ];

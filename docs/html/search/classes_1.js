@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['errorinfo_190',['ErrorInfo',['../class_search_a_thing_1_1_error_info.html',1,'SearchAThing']]],
-  ['execresult_191',['ExecResult',['../class_search_a_thing_1_1_exec_result.html',1,'SearchAThing']]]
+  ['internalerror_34',['InternalError',['../class_search_a_thing_1_1_internal_error.html',1,'SearchAThing']]]
 ];

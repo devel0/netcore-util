@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['buildimage_26',['BuildImage',['../class_search_a_thing_1_1_util_toolkit.html#a3168e738db6de8ec976107f851e27cfe',1,'SearchAThing::UtilToolkit']]]
+  ['comparetol_2',['CompareTol',['../class_search_a_thing_1_1_util_ext.html#a3df8f859a0ae32858f426c11cf9e7345',1,'SearchAThing::UtilExt']]]
 ];

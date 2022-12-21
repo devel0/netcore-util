@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['hasnext_80',['HasNext',['../class_search_a_thing_1_1_string_wrapper_line_reader.html#a3551d22502a58cdc93b15d14f3fb87c2',1,'SearchAThing::StringWrapperLineReader']]],
-  ['heightmm_81',['HeightMM',['../class_search_a_thing_1_1_paper_size.html#a15d074a5f9697c5036c4332b7edf0ca7',1,'SearchAThing::PaperSize']]],
-  ['humanreadable_82',['HumanReadable',['../class_search_a_thing_1_1_util_ext.html#a883f091af38323ee42490280a132f017',1,'SearchAThing::UtilExt']]]
+  ['makedynamic_18',['MakeDynamic',['../class_search_a_thing_1_1_util_toolkit.html#af6d33c151431df8be77ef1ec5a9c4196',1,'SearchAThing::UtilToolkit']]],
+  ['maxwidth_19',['MaxWidth',['../class_search_a_thing_1_1_true_type_nfo.html#a48571ac711af98803f3d902de6d65ec7',1,'SearchAThing::TrueTypeNfo']]],
+  ['message_20',['Message',['../class_search_a_thing_1_1_error_info.html#a40e8debace0cc6f4f7baa0fdd309c103',1,'SearchAThing::ErrorInfo']]]
 ];
