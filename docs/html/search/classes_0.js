@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['errorinfo_33',['ErrorInfo',['../class_search_a_thing_1_1_error_info.html',1,'SearchAThing']]]
+  ['dockercontainernfo_38',['DockerContainerNfo',['../class_docker_container_nfo.html',1,'']]],
+  ['dockernetworknfo_39',['DockerNetworkNfo',['../class_docker_network_nfo.html',1,'']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['innerexception_60',['InnerException',['../class_search_a_thing_1_1_error_info.html#a72ce4330bab6969594424a789b747ca0',1,'SearchAThing::ErrorInfo']]],
-  ['italicangle_61',['ItalicAngle',['../class_search_a_thing_1_1_true_type_nfo.html#ac69f9376020821b7a37d84ce7690587a',1,'SearchAThing::TrueTypeNfo']]]
+  ['name_76',['Name',['../class_docker_network_nfo.html#a7ee9065718e6628dc7791b756fa6c0f9',1,'DockerNetworkNfo.Name()'],['../class_docker_container_nfo.html#a7ee9065718e6628dc7791b756fa6c0f9',1,'DockerContainerNfo.Name()']]]
 ];

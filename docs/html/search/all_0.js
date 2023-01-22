@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['ascent_0',['Ascent',['../class_search_a_thing_1_1_true_type_nfo.html#aadc7619066cee06380b31871d48629d8',1,'SearchAThing::TrueTypeNfo']]],
-  ['avgwidth_1',['AvgWidth',['../class_search_a_thing_1_1_true_type_nfo.html#a76970cafd5f5665eefdeec5740e662d6',1,'SearchAThing::TrueTypeNfo']]]
+  ['buildimage_0',['BuildImage',['../class_toolkit.html#a3168e738db6de8ec976107f851e27cfe',1,'Toolkit']]]
 ];

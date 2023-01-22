@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['descent_58',['Descent',['../class_search_a_thing_1_1_true_type_nfo.html#aa32e4f9d2b92d06edc94047540c43a85',1,'SearchAThing::TrueTypeNfo']]]
+  ['innerexception_73',['InnerException',['../class_error_info.html#a72ce4330bab6969594424a789b747ca0',1,'ErrorInfo']]],
+  ['ipaddress_74',['IPAddress',['../class_docker_container_nfo.html#a7d95a07d68f081c6363697469e1c117f',1,'DockerContainerNfo']]]
 ];

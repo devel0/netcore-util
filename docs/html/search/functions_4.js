@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['internalerror_47',['InternalError',['../class_search_a_thing_1_1_internal_error.html#a74e6e802749551afe67b97498e085777',1,'SearchAThing::InternalError']]]
+  ['getimagenfo_54',['GetImageNfo',['../class_toolkit.html#a13fdeaa046895090bda5917b939fd9ae',1,'Toolkit']]],
+  ['getimagenfofromstream_55',['GetImageNfoFromStream',['../class_toolkit.html#ac53392b8650e50ec3ef2fdf2109553e4',1,'Toolkit']]],
+  ['greatthanorequalstol_56',['GreatThanOrEqualsTol',['../class_util_ext.html#a4554c1fe0c3eebfdd3f760e1fc76eb11',1,'UtilExt']]],
+  ['greatthantol_57',['GreatThanTol',['../class_util_ext.html#a880bdbae55f76ce5e364b06353ea9557',1,'UtilExt']]]
 ];

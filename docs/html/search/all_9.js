@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['searchathing_22',['SearchAThing',['../namespace_search_a_thing.html',1,'']]],
-  ['stacktrace_23',['Stacktrace',['../class_search_a_thing_1_1_error_info.html#a5f9193c303aee4b6b9f07a687f5b159d',1,'SearchAThing::ErrorInfo']]]
+  ['removecontainer_26',['RemoveContainer',['../class_toolkit.html#af1e40baed3b76d95cbaa3452cd2cff5d',1,'Toolkit']]],
+  ['removenetwork_27',['RemoveNetwork',['../class_toolkit.html#ab4f9b1099f770571d4cab3f13ad5b1d9',1,'Toolkit']]],
+  ['runcontainer_28',['RunContainer',['../class_toolkit.html#a0ed7bc911f66e77bdce7580f879d645c',1,'Toolkit']]]
 ];
