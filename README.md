@@ -12,6 +12,8 @@
 <!-- TOC -->
 * [Quickstart](#quickstart)
 * [Unit tests](#unit-tests)
+* [Examples](#examples)
+  + [exec-bash-redirect](#exec-bash-redirect)
 * [How this project was built](#how-this-project-was-built)
 <!-- TOCEND -->
 
