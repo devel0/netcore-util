@@ -2,7 +2,7 @@
 
 namespace SearchAThing.Util;
 
-public static partial class UtilExt
+public static partial class Ext
 {
 
     /// <summary>

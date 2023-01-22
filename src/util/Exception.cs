@@ -26,7 +26,7 @@ public class ErrorInfo
 
 }
 
-public static partial class UtilExt
+public static partial class Ext
 {
 
     public static string Details(this Exception ex, bool includeStackTrace = true) =>
