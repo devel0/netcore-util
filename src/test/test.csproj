@@ -24,6 +24,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\netcore-util\netcore-util.csproj" />
-	</ItemGroup>
+		<Compile Include="../util/usings.util.cs" />
+	
+		<ProjectReference Include="..\util\netcore-util.csproj" />
+	  </ItemGroup>
 </Project>

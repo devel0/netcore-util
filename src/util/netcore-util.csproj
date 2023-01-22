@@ -1,21 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net6.0;netstandard2.1</TargetFrameworks>
-		<LangVersion>10</LangVersion>
+		<TargetFrameworks>net7.0;netstandard2.1</TargetFrameworks>
+		<LangVersion>11</LangVersion>
+		<RootNamespace>SearchAThing.Util</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
+		<noWarn>1591</noWarn>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<PackageId>netcore-util</PackageId>
-		<PackageVersion>5.0.0</PackageVersion>
+		<PackageVersion>5.1.0</PackageVersion>
 		<Title>net core util</Title>
 		<Description></Description>
 		<Authors>Lorenzo Delana</Authors>
 		<PackageTags>netcore util</PackageTags>
 		<PackageProjectUrl>https://github.com/devel0/netcore-util</PackageProjectUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<NoWarn>1591</NoWarn>
 	</PropertyGroup>
 
-	<ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
+	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0'">
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.1" />
 		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.1" />
 	</ItemGroup>
@@ -23,12 +25,12 @@
 	<ItemGroup>
 		<PackageReference Include="Magick.NET-Q16-AnyCPU" Version="12.2.2" />
 		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />		
-		<PackageReference Include="UnitsNet" Version="5.0.0-rc005" />
-		<PackageReference Include="netcore-ext" Version="1.0.0" />
+		<PackageReference Include="UnitsNet" Version="5.0.0-rc011" />
+		<PackageReference Include="netcore-ext" Version="1.1.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<!-- <ProjectReference Include="..\..\netcore-ext\netcore-ext\netcore-ext.csproj" /> -->
+		<!-- <ProjectReference Include="..\..\..\netcore-ext\src\ext\netcore-ext.csproj" /> -->
 	</ItemGroup>
 
 </Project>

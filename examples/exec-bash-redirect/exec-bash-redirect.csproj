@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net7.0</TargetFramework>
+		<RootNamespace>examples</RootNamespace>
+		<AssemblyName>example</AssemblyName>
+		<LangVersion>10</LangVersion>
+		<Nullable>enable</Nullable>
+		<IsPackable>false</IsPackable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="../../src/util/usings.util.cs" />
+
+		<ProjectReference Include="..\..\src\util\netcore-util.csproj" />
+	</ItemGroup>
+</Project>

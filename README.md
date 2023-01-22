@@ -19,18 +19,25 @@
 
 ## Quickstart
 
-- [nuget package](https://www.nuget.org/packages/netcore-util/)
+```sh
+dotnet new console --use-program-main -n test
+cd test
+dotnet add package netcore-util
+dotnet run
+```
+
+- copy [usings.util.cs](src/ext/usings.util.cs) global usings to the source folder
 
 - [extension methods](https://devel0.github.io/netcore-util/html/class_search_a_thing_1_1_util_ext.html)
 
 ```csharp
-using SearchAThing;
+using SearchAThing.Util;
 ```
 
 - [toolkit methods](https://devel0.github.io/netcore-util/html/class_search_a_thing_1_1_util_toolkit.html)
 
 ```csharp
-using static SearchAThing.UtilToolkit;
+using static SearchAThing.Util.Toolkit;
 ```
 
 ## Unit tests
@@ -41,6 +48,44 @@ dotnet test
 
 - to debug from vscode just run debug test from code lens balloon
 
+## Examples
+
+### exec-bash-redirect
+
+```csharp
+namespace SearchAThing.Util.Examples;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Task.Run(async () =>
+        {
+            var q = await ExecBashRedirect("i=0; while (($i < 5)); do echo $i; let i=$i+1; done",
+                CancellationToken.None,
+                sudo: false,
+                verbose: false);
+
+            if (q.ExitCode == 0)
+            {
+                System.Console.WriteLine($"output[{q.Output}]");
+            }
+
+            // RESULT:
+            //
+            // output[0
+            // 1
+            // 2
+            // 3
+            // 4
+
+            // ]
+
+        }).Wait();
+    }
+}
+```
+
 ## How this project was built
 
 ```sh
@@ -48,24 +93,20 @@ mkdir netcore-util
 cd netcore-util
 
 dotnet new sln
+
+mkdir -p examples src/util
+
+cd src/util
 dotnet new classlib -n netcore-util
+# add packages ( https://nuget.org )
 
-cd netcore-util
-dotnet add package Microsoft.CSharp --version 4.7.0
-dotnet add package Microsoft.EntityFrameworkCore --version 5.0.1
-dotnet add package Newtonsoft.Json --version 12.0.3
-dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 5.0.0
-dotnet add package UnitsNet --version 4.74.0
 cd ..
-
 dotnet new xunit -n test
 cd test
-dotnet add reference ../netcore-util/netcore-util.csproj
+dotnet add reference ../util/netcore-util.csproj
 cd ..
 
-dotnet sln netcore-util.sln add netcore-util/netcore-util.csproj
-dotnet sln netcore-util.sln add test/test.csproj
-dotnet restore
+dotnet sln add src/util src/test examples/example01
 dotnet build
-dotnet test test/test.csproj
+dotnet test
 ```
