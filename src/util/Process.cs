@@ -1,6 +1,4 @@
-﻿using System.Runtime.Versioning;
-
-namespace SearchAThing.Util;
+﻿namespace SearchAThing.Util;
 
 public static partial class Toolkit
 {
