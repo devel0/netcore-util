@@ -7,11 +7,35 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/netcore-util.sln",
+                "${workspaceFolder}/examples/exec-bash-redirect/exec-bash-redirect.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
-        }         
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/examples/exec-bash-redirect/exec-bash-redirect.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/examples/exec-bash-redirect/exec-bash-redirect.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
     ]
 }
