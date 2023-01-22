@@ -120,6 +120,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac53392b8650e50ec3ef2fdf2109553e4"><td class="memItemLeft" align="right" valign="top">static MagickImageInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_toolkit.html#ac53392b8650e50ec3ef2fdf2109553e4">GetImageNfoFromStream</a> (Stream stream)</td></tr>
 <tr class="memdesc:ac53392b8650e50ec3ef2fdf2109553e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve image nfo  <a href="class_toolkit.html#ac53392b8650e50ec3ef2fdf2109553e4">More...</a><br /></td></tr>
 <tr class="separator:ac53392b8650e50ec3ef2fdf2109553e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca19d038c75790a62a9aae6e9c5f07cb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_toolkit.html#aca19d038c75790a62a9aae6e9c5f07cb">IsFilePermissionSafe</a> (string pathfilename, int mode=448)</td></tr>
+<tr class="memdesc:aca19d038c75790a62a9aae6e9c5f07cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if given file has required mode ( default = 700 ) to specify mode from octal eg. Convert.ToInt32("700", 8)  <a href="class_toolkit.html#aca19d038c75790a62a9aae6e9c5f07cb">More...</a><br /></td></tr>
+<tr class="separator:aca19d038c75790a62a9aae6e9c5f07cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e916b4952f80d99ea74aca05488e10a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_toolkit.html#a8e916b4952f80d99ea74aca05488e10a">SetFilePermission</a> (string pathfilename, int mode)</td></tr>
+<tr class="memdesc:a8e916b4952f80d99ea74aca05488e10a"><td class="mdescLeft">&#160;</td><td class="mdescRight">set file permission of given pathfilename ( eg. Convert.ToInt32("700", 8) )  <a href="class_toolkit.html#a8e916b4952f80d99ea74aca05488e10a">More...</a><br /></td></tr>
+<tr class="separator:a8e916b4952f80d99ea74aca05488e10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6def815d3b04c0e3296dd2c5e3d717d"><td class="memItemLeft" align="right" valign="top">static async Task&lt; ExecResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_toolkit.html#ae6def815d3b04c0e3296dd2c5e3d717d">ExecBashRedirect</a> (string script, CancellationToken ct, bool sudo=false, bool verbose=false)</td></tr>
 <tr class="memdesc:ae6def815d3b04c0e3296dd2c5e3d717d"><td class="mdescLeft">&#160;</td><td class="mdescRight">start a bash process in background redirecting standard output, error; given script can contains pipe and other shell related redirections. a cancellation token can be supplied to cancel underlying process <br  />
   <a href="class_toolkit.html#ae6def815d3b04c0e3296dd2c5e3d717d">More...</a><br /></td></tr>
@@ -433,6 +439,46 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aca19d038c75790a62a9aae6e9c5f07cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca19d038c75790a62a9aae6e9c5f07cb">&#9670;&nbsp;</a></span>IsFilePermissionSafe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool IsFilePermissionSafe </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>pathfilename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em> = <code>448</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>check if given file has required mode ( default = 700 ) to specify mode from octal eg. Convert.ToInt32("700", 8) </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
 <a id="ae88462dc1606d4d3126d4cd1f7f28b91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae88462dc1606d4d3126d4cd1f7f28b91">&#9670;&nbsp;</a></span>ListContainers()</h2>
 
@@ -741,6 +787,46 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a8e916b4952f80d99ea74aca05488e10a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e916b4952f80d99ea74aca05488e10a">&#9670;&nbsp;</a></span>SetFilePermission()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int SetFilePermission </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>pathfilename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set file permission of given pathfilename ( eg. Convert.ToInt32("700", 8) ) </p>
+<p><br  />
+ </p>
+
+</div>
+</div>
 <a id="af0c30707c8216dacfde4f02fb0220cfc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af0c30707c8216dacfde4f02fb0220cfc">&#9670;&nbsp;</a></span>StopContainer()</h2>
 
@@ -893,6 +979,7 @@ Static Public Attributes</h2></td></tr>
 <li>src/util/Docker.cs</li>
 <li>src/util/Image.cs</li>
 <li>src/util/Dynamic.cs</li>
+<li>src/util/Linux.cs</li>
 <li>src/util/Process.cs</li>
 <li>src/util/String.cs</li>
 </ul>
