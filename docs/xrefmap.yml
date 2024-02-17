@@ -1,3 +1,653 @@
 ### YamlMime:XRefMap
 sorted: true
-references: []
+references:
+- uid: SearchAThing.Util
+  name: SearchAThing.Util
+  href: api/SearchAThing.Util.html
+  commentId: N:SearchAThing.Util
+  fullName: SearchAThing.Util
+  nameWithType: SearchAThing.Util
+- uid: SearchAThing.Util.DockerContainerNfo
+  name: DockerContainerNfo
+  href: api/SearchAThing.Util.DockerContainerNfo.html
+  commentId: T:SearchAThing.Util.DockerContainerNfo
+  fullName: SearchAThing.Util.DockerContainerNfo
+  nameWithType: DockerContainerNfo
+- uid: SearchAThing.Util.DockerContainerNfo.#ctor(System.String,System.String)
+  name: DockerContainerNfo(string, string)
+  href: api/SearchAThing.Util.DockerContainerNfo.html#SearchAThing_Util_DockerContainerNfo__ctor_System_String_System_String_
+  commentId: M:SearchAThing.Util.DockerContainerNfo.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: SearchAThing.Util.DockerContainerNfo.DockerContainerNfo(string, string)
+  fullName.vb: SearchAThing.Util.DockerContainerNfo.New(String, String)
+  nameWithType: DockerContainerNfo.DockerContainerNfo(string, string)
+  nameWithType.vb: DockerContainerNfo.New(String, String)
+- uid: SearchAThing.Util.DockerContainerNfo.#ctor*
+  name: DockerContainerNfo
+  href: api/SearchAThing.Util.DockerContainerNfo.html#SearchAThing_Util_DockerContainerNfo__ctor_
+  commentId: Overload:SearchAThing.Util.DockerContainerNfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SearchAThing.Util.DockerContainerNfo.DockerContainerNfo
+  fullName.vb: SearchAThing.Util.DockerContainerNfo.New
+  nameWithType: DockerContainerNfo.DockerContainerNfo
+  nameWithType.vb: DockerContainerNfo.New
+- uid: SearchAThing.Util.DockerContainerNfo.IPAddress
+  name: IPAddress
+  href: api/SearchAThing.Util.DockerContainerNfo.html#SearchAThing_Util_DockerContainerNfo_IPAddress
+  commentId: P:SearchAThing.Util.DockerContainerNfo.IPAddress
+  fullName: SearchAThing.Util.DockerContainerNfo.IPAddress
+  nameWithType: DockerContainerNfo.IPAddress
+- uid: SearchAThing.Util.DockerContainerNfo.IPAddress*
+  name: IPAddress
+  href: api/SearchAThing.Util.DockerContainerNfo.html#SearchAThing_Util_DockerContainerNfo_IPAddress_
+  commentId: Overload:SearchAThing.Util.DockerContainerNfo.IPAddress
+  isSpec: "True"
+  fullName: SearchAThing.Util.DockerContainerNfo.IPAddress
+  nameWithType: DockerContainerNfo.IPAddress
+- uid: SearchAThing.Util.DockerContainerNfo.Name
+  name: Name
+  href: api/SearchAThing.Util.DockerContainerNfo.html#SearchAThing_Util_DockerContainerNfo_Name
+  commentId: P:SearchAThing.Util.DockerContainerNfo.Name
+  fullName: SearchAThing.Util.DockerContainerNfo.Name
+  nameWithType: DockerContainerNfo.Name
+- uid: SearchAThing.Util.DockerContainerNfo.Name*
+  name: Name
+  href: api/SearchAThing.Util.DockerContainerNfo.html#SearchAThing_Util_DockerContainerNfo_Name_
+  commentId: Overload:SearchAThing.Util.DockerContainerNfo.Name
+  isSpec: "True"
+  fullName: SearchAThing.Util.DockerContainerNfo.Name
+  nameWithType: DockerContainerNfo.Name
+- uid: SearchAThing.Util.DockerContainerNfo.ToString
+  name: ToString()
+  href: api/SearchAThing.Util.DockerContainerNfo.html#SearchAThing_Util_DockerContainerNfo_ToString
+  commentId: M:SearchAThing.Util.DockerContainerNfo.ToString
+  fullName: SearchAThing.Util.DockerContainerNfo.ToString()
+  nameWithType: DockerContainerNfo.ToString()
+- uid: SearchAThing.Util.DockerContainerNfo.ToString*
+  name: ToString
+  href: api/SearchAThing.Util.DockerContainerNfo.html#SearchAThing_Util_DockerContainerNfo_ToString_
+  commentId: Overload:SearchAThing.Util.DockerContainerNfo.ToString
+  isSpec: "True"
+  fullName: SearchAThing.Util.DockerContainerNfo.ToString
+  nameWithType: DockerContainerNfo.ToString
+- uid: SearchAThing.Util.DockerNetworkNfo
+  name: DockerNetworkNfo
+  href: api/SearchAThing.Util.DockerNetworkNfo.html
+  commentId: T:SearchAThing.Util.DockerNetworkNfo
+  fullName: SearchAThing.Util.DockerNetworkNfo
+  nameWithType: DockerNetworkNfo
+- uid: SearchAThing.Util.DockerNetworkNfo.#ctor(System.String,System.String)
+  name: DockerNetworkNfo(string, string)
+  href: api/SearchAThing.Util.DockerNetworkNfo.html#SearchAThing_Util_DockerNetworkNfo__ctor_System_String_System_String_
+  commentId: M:SearchAThing.Util.DockerNetworkNfo.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: SearchAThing.Util.DockerNetworkNfo.DockerNetworkNfo(string, string)
+  fullName.vb: SearchAThing.Util.DockerNetworkNfo.New(String, String)
+  nameWithType: DockerNetworkNfo.DockerNetworkNfo(string, string)
+  nameWithType.vb: DockerNetworkNfo.New(String, String)
+- uid: SearchAThing.Util.DockerNetworkNfo.#ctor*
+  name: DockerNetworkNfo
+  href: api/SearchAThing.Util.DockerNetworkNfo.html#SearchAThing_Util_DockerNetworkNfo__ctor_
+  commentId: Overload:SearchAThing.Util.DockerNetworkNfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SearchAThing.Util.DockerNetworkNfo.DockerNetworkNfo
+  fullName.vb: SearchAThing.Util.DockerNetworkNfo.New
+  nameWithType: DockerNetworkNfo.DockerNetworkNfo
+  nameWithType.vb: DockerNetworkNfo.New
+- uid: SearchAThing.Util.DockerNetworkNfo.Name
+  name: Name
+  href: api/SearchAThing.Util.DockerNetworkNfo.html#SearchAThing_Util_DockerNetworkNfo_Name
+  commentId: P:SearchAThing.Util.DockerNetworkNfo.Name
+  fullName: SearchAThing.Util.DockerNetworkNfo.Name
+  nameWithType: DockerNetworkNfo.Name
+- uid: SearchAThing.Util.DockerNetworkNfo.Name*
+  name: Name
+  href: api/SearchAThing.Util.DockerNetworkNfo.html#SearchAThing_Util_DockerNetworkNfo_Name_
+  commentId: Overload:SearchAThing.Util.DockerNetworkNfo.Name
+  isSpec: "True"
+  fullName: SearchAThing.Util.DockerNetworkNfo.Name
+  nameWithType: DockerNetworkNfo.Name
+- uid: SearchAThing.Util.DockerNetworkNfo.Subnet
+  name: Subnet
+  href: api/SearchAThing.Util.DockerNetworkNfo.html#SearchAThing_Util_DockerNetworkNfo_Subnet
+  commentId: P:SearchAThing.Util.DockerNetworkNfo.Subnet
+  fullName: SearchAThing.Util.DockerNetworkNfo.Subnet
+  nameWithType: DockerNetworkNfo.Subnet
+- uid: SearchAThing.Util.DockerNetworkNfo.Subnet*
+  name: Subnet
+  href: api/SearchAThing.Util.DockerNetworkNfo.html#SearchAThing_Util_DockerNetworkNfo_Subnet_
+  commentId: Overload:SearchAThing.Util.DockerNetworkNfo.Subnet
+  isSpec: "True"
+  fullName: SearchAThing.Util.DockerNetworkNfo.Subnet
+  nameWithType: DockerNetworkNfo.Subnet
+- uid: SearchAThing.Util.DockerNetworkNfo.ToString
+  name: ToString()
+  href: api/SearchAThing.Util.DockerNetworkNfo.html#SearchAThing_Util_DockerNetworkNfo_ToString
+  commentId: M:SearchAThing.Util.DockerNetworkNfo.ToString
+  fullName: SearchAThing.Util.DockerNetworkNfo.ToString()
+  nameWithType: DockerNetworkNfo.ToString()
+- uid: SearchAThing.Util.DockerNetworkNfo.ToString*
+  name: ToString
+  href: api/SearchAThing.Util.DockerNetworkNfo.html#SearchAThing_Util_DockerNetworkNfo_ToString_
+  commentId: Overload:SearchAThing.Util.DockerNetworkNfo.ToString
+  isSpec: "True"
+  fullName: SearchAThing.Util.DockerNetworkNfo.ToString
+  nameWithType: DockerNetworkNfo.ToString
+- uid: SearchAThing.Util.ErrorInfo
+  name: ErrorInfo
+  href: api/SearchAThing.Util.ErrorInfo.html
+  commentId: T:SearchAThing.Util.ErrorInfo
+  fullName: SearchAThing.Util.ErrorInfo
+  nameWithType: ErrorInfo
+- uid: SearchAThing.Util.ErrorInfo.ExceptionType
+  name: ExceptionType
+  href: api/SearchAThing.Util.ErrorInfo.html#SearchAThing_Util_ErrorInfo_ExceptionType
+  commentId: P:SearchAThing.Util.ErrorInfo.ExceptionType
+  fullName: SearchAThing.Util.ErrorInfo.ExceptionType
+  nameWithType: ErrorInfo.ExceptionType
+- uid: SearchAThing.Util.ErrorInfo.ExceptionType*
+  name: ExceptionType
+  href: api/SearchAThing.Util.ErrorInfo.html#SearchAThing_Util_ErrorInfo_ExceptionType_
+  commentId: Overload:SearchAThing.Util.ErrorInfo.ExceptionType
+  isSpec: "True"
+  fullName: SearchAThing.Util.ErrorInfo.ExceptionType
+  nameWithType: ErrorInfo.ExceptionType
+- uid: SearchAThing.Util.ErrorInfo.InnerException
+  name: InnerException
+  href: api/SearchAThing.Util.ErrorInfo.html#SearchAThing_Util_ErrorInfo_InnerException
+  commentId: P:SearchAThing.Util.ErrorInfo.InnerException
+  fullName: SearchAThing.Util.ErrorInfo.InnerException
+  nameWithType: ErrorInfo.InnerException
+- uid: SearchAThing.Util.ErrorInfo.InnerException*
+  name: InnerException
+  href: api/SearchAThing.Util.ErrorInfo.html#SearchAThing_Util_ErrorInfo_InnerException_
+  commentId: Overload:SearchAThing.Util.ErrorInfo.InnerException
+  isSpec: "True"
+  fullName: SearchAThing.Util.ErrorInfo.InnerException
+  nameWithType: ErrorInfo.InnerException
+- uid: SearchAThing.Util.ErrorInfo.Message
+  name: Message
+  href: api/SearchAThing.Util.ErrorInfo.html#SearchAThing_Util_ErrorInfo_Message
+  commentId: P:SearchAThing.Util.ErrorInfo.Message
+  fullName: SearchAThing.Util.ErrorInfo.Message
+  nameWithType: ErrorInfo.Message
+- uid: SearchAThing.Util.ErrorInfo.Message*
+  name: Message
+  href: api/SearchAThing.Util.ErrorInfo.html#SearchAThing_Util_ErrorInfo_Message_
+  commentId: Overload:SearchAThing.Util.ErrorInfo.Message
+  isSpec: "True"
+  fullName: SearchAThing.Util.ErrorInfo.Message
+  nameWithType: ErrorInfo.Message
+- uid: SearchAThing.Util.ErrorInfo.Stacktrace
+  name: Stacktrace
+  href: api/SearchAThing.Util.ErrorInfo.html#SearchAThing_Util_ErrorInfo_Stacktrace
+  commentId: P:SearchAThing.Util.ErrorInfo.Stacktrace
+  fullName: SearchAThing.Util.ErrorInfo.Stacktrace
+  nameWithType: ErrorInfo.Stacktrace
+- uid: SearchAThing.Util.ErrorInfo.Stacktrace*
+  name: Stacktrace
+  href: api/SearchAThing.Util.ErrorInfo.html#SearchAThing_Util_ErrorInfo_Stacktrace_
+  commentId: Overload:SearchAThing.Util.ErrorInfo.Stacktrace
+  isSpec: "True"
+  fullName: SearchAThing.Util.ErrorInfo.Stacktrace
+  nameWithType: ErrorInfo.Stacktrace
+- uid: SearchAThing.Util.ErrorInfo.ToString
+  name: ToString()
+  href: api/SearchAThing.Util.ErrorInfo.html#SearchAThing_Util_ErrorInfo_ToString
+  commentId: M:SearchAThing.Util.ErrorInfo.ToString
+  fullName: SearchAThing.Util.ErrorInfo.ToString()
+  nameWithType: ErrorInfo.ToString()
+- uid: SearchAThing.Util.ErrorInfo.ToString(System.Boolean)
+  name: ToString(bool)
+  href: api/SearchAThing.Util.ErrorInfo.html#SearchAThing_Util_ErrorInfo_ToString_System_Boolean_
+  commentId: M:SearchAThing.Util.ErrorInfo.ToString(System.Boolean)
+  name.vb: ToString(Boolean)
+  fullName: SearchAThing.Util.ErrorInfo.ToString(bool)
+  fullName.vb: SearchAThing.Util.ErrorInfo.ToString(Boolean)
+  nameWithType: ErrorInfo.ToString(bool)
+  nameWithType.vb: ErrorInfo.ToString(Boolean)
+- uid: SearchAThing.Util.ErrorInfo.ToString*
+  name: ToString
+  href: api/SearchAThing.Util.ErrorInfo.html#SearchAThing_Util_ErrorInfo_ToString_
+  commentId: Overload:SearchAThing.Util.ErrorInfo.ToString
+  isSpec: "True"
+  fullName: SearchAThing.Util.ErrorInfo.ToString
+  nameWithType: ErrorInfo.ToString
+- uid: SearchAThing.Util.Ext
+  name: Ext
+  href: api/SearchAThing.Util.Ext.html
+  commentId: T:SearchAThing.Util.Ext
+  fullName: SearchAThing.Util.Ext
+  nameWithType: Ext
+- uid: SearchAThing.Util.Ext.CompareTol(UnitsNet.IQuantity,UnitsNet.IQuantity,UnitsNet.IQuantity)
+  name: CompareTol(IQuantity, IQuantity, IQuantity)
+  href: api/SearchAThing.Util.Ext.html#SearchAThing_Util_Ext_CompareTol_UnitsNet_IQuantity_UnitsNet_IQuantity_UnitsNet_IQuantity_
+  commentId: M:SearchAThing.Util.Ext.CompareTol(UnitsNet.IQuantity,UnitsNet.IQuantity,UnitsNet.IQuantity)
+  fullName: SearchAThing.Util.Ext.CompareTol(UnitsNet.IQuantity, UnitsNet.IQuantity, UnitsNet.IQuantity)
+  nameWithType: Ext.CompareTol(IQuantity, IQuantity, IQuantity)
+- uid: SearchAThing.Util.Ext.CompareTol*
+  name: CompareTol
+  href: api/SearchAThing.Util.Ext.html#SearchAThing_Util_Ext_CompareTol_
+  commentId: Overload:SearchAThing.Util.Ext.CompareTol
+  isSpec: "True"
+  fullName: SearchAThing.Util.Ext.CompareTol
+  nameWithType: Ext.CompareTol
+- uid: SearchAThing.Util.Ext.Details(System.Exception,System.Boolean)
+  name: Details(Exception, bool)
+  href: api/SearchAThing.Util.Ext.html#SearchAThing_Util_Ext_Details_System_Exception_System_Boolean_
+  commentId: M:SearchAThing.Util.Ext.Details(System.Exception,System.Boolean)
+  name.vb: Details(Exception, Boolean)
+  fullName: SearchAThing.Util.Ext.Details(System.Exception, bool)
+  fullName.vb: SearchAThing.Util.Ext.Details(System.Exception, Boolean)
+  nameWithType: Ext.Details(Exception, bool)
+  nameWithType.vb: Ext.Details(Exception, Boolean)
+- uid: SearchAThing.Util.Ext.Details*
+  name: Details
+  href: api/SearchAThing.Util.Ext.html#SearchAThing_Util_Ext_Details_
+  commentId: Overload:SearchAThing.Util.Ext.Details
+  isSpec: "True"
+  fullName: SearchAThing.Util.Ext.Details
+  nameWithType: Ext.Details
+- uid: SearchAThing.Util.Ext.DetailsObject(System.Exception)
+  name: DetailsObject(Exception)
+  href: api/SearchAThing.Util.Ext.html#SearchAThing_Util_Ext_DetailsObject_System_Exception_
+  commentId: M:SearchAThing.Util.Ext.DetailsObject(System.Exception)
+  fullName: SearchAThing.Util.Ext.DetailsObject(System.Exception)
+  nameWithType: Ext.DetailsObject(Exception)
+- uid: SearchAThing.Util.Ext.DetailsObject*
+  name: DetailsObject
+  href: api/SearchAThing.Util.Ext.html#SearchAThing_Util_Ext_DetailsObject_
+  commentId: Overload:SearchAThing.Util.Ext.DetailsObject
+  isSpec: "True"
+  fullName: SearchAThing.Util.Ext.DetailsObject
+  nameWithType: Ext.DetailsObject
+- uid: SearchAThing.Util.Ext.EqualsTol(UnitsNet.IQuantity,UnitsNet.IQuantity,UnitsNet.IQuantity)
+  name: EqualsTol(IQuantity, IQuantity, IQuantity)
+  href: api/SearchAThing.Util.Ext.html#SearchAThing_Util_Ext_EqualsTol_UnitsNet_IQuantity_UnitsNet_IQuantity_UnitsNet_IQuantity_
+  commentId: M:SearchAThing.Util.Ext.EqualsTol(UnitsNet.IQuantity,UnitsNet.IQuantity,UnitsNet.IQuantity)
+  fullName: SearchAThing.Util.Ext.EqualsTol(UnitsNet.IQuantity, UnitsNet.IQuantity, UnitsNet.IQuantity)
+  nameWithType: Ext.EqualsTol(IQuantity, IQuantity, IQuantity)
+- uid: SearchAThing.Util.Ext.EqualsTol*
+  name: EqualsTol
+  href: api/SearchAThing.Util.Ext.html#SearchAThing_Util_Ext_EqualsTol_
+  commentId: Overload:SearchAThing.Util.Ext.EqualsTol
+  isSpec: "True"
+  fullName: SearchAThing.Util.Ext.EqualsTol
+  nameWithType: Ext.EqualsTol
+- uid: SearchAThing.Util.Ext.GreatThanOrEqualsTol(UnitsNet.IQuantity,UnitsNet.IQuantity,UnitsNet.IQuantity)
+  name: GreatThanOrEqualsTol(IQuantity, IQuantity, IQuantity)
+  href: api/SearchAThing.Util.Ext.html#SearchAThing_Util_Ext_GreatThanOrEqualsTol_UnitsNet_IQuantity_UnitsNet_IQuantity_UnitsNet_IQuantity_
+  commentId: M:SearchAThing.Util.Ext.GreatThanOrEqualsTol(UnitsNet.IQuantity,UnitsNet.IQuantity,UnitsNet.IQuantity)
+  fullName: SearchAThing.Util.Ext.GreatThanOrEqualsTol(UnitsNet.IQuantity, UnitsNet.IQuantity, UnitsNet.IQuantity)
+  nameWithType: Ext.GreatThanOrEqualsTol(IQuantity, IQuantity, IQuantity)
+- uid: SearchAThing.Util.Ext.GreatThanOrEqualsTol*
+  name: GreatThanOrEqualsTol
+  href: api/SearchAThing.Util.Ext.html#SearchAThing_Util_Ext_GreatThanOrEqualsTol_
+  commentId: Overload:SearchAThing.Util.Ext.GreatThanOrEqualsTol
+  isSpec: "True"
+  fullName: SearchAThing.Util.Ext.GreatThanOrEqualsTol
+  nameWithType: Ext.GreatThanOrEqualsTol
+- uid: SearchAThing.Util.Ext.GreatThanTol(UnitsNet.IQuantity,UnitsNet.IQuantity,UnitsNet.IQuantity)
+  name: GreatThanTol(IQuantity, IQuantity, IQuantity)
+  href: api/SearchAThing.Util.Ext.html#SearchAThing_Util_Ext_GreatThanTol_UnitsNet_IQuantity_UnitsNet_IQuantity_UnitsNet_IQuantity_
+  commentId: M:SearchAThing.Util.Ext.GreatThanTol(UnitsNet.IQuantity,UnitsNet.IQuantity,UnitsNet.IQuantity)
+  fullName: SearchAThing.Util.Ext.GreatThanTol(UnitsNet.IQuantity, UnitsNet.IQuantity, UnitsNet.IQuantity)
+  nameWithType: Ext.GreatThanTol(IQuantity, IQuantity, IQuantity)
+- uid: SearchAThing.Util.Ext.GreatThanTol*
+  name: GreatThanTol
+  href: api/SearchAThing.Util.Ext.html#SearchAThing_Util_Ext_GreatThanTol_
+  commentId: Overload:SearchAThing.Util.Ext.GreatThanTol
+  isSpec: "True"
+  fullName: SearchAThing.Util.Ext.GreatThanTol
+  nameWithType: Ext.GreatThanTol
+- uid: SearchAThing.Util.Ext.LessThanOrEqualsTol(UnitsNet.IQuantity,UnitsNet.IQuantity,UnitsNet.IQuantity)
+  name: LessThanOrEqualsTol(IQuantity, IQuantity, IQuantity)
+  href: api/SearchAThing.Util.Ext.html#SearchAThing_Util_Ext_LessThanOrEqualsTol_UnitsNet_IQuantity_UnitsNet_IQuantity_UnitsNet_IQuantity_
+  commentId: M:SearchAThing.Util.Ext.LessThanOrEqualsTol(UnitsNet.IQuantity,UnitsNet.IQuantity,UnitsNet.IQuantity)
+  fullName: SearchAThing.Util.Ext.LessThanOrEqualsTol(UnitsNet.IQuantity, UnitsNet.IQuantity, UnitsNet.IQuantity)
+  nameWithType: Ext.LessThanOrEqualsTol(IQuantity, IQuantity, IQuantity)
+- uid: SearchAThing.Util.Ext.LessThanOrEqualsTol*
+  name: LessThanOrEqualsTol
+  href: api/SearchAThing.Util.Ext.html#SearchAThing_Util_Ext_LessThanOrEqualsTol_
+  commentId: Overload:SearchAThing.Util.Ext.LessThanOrEqualsTol
+  isSpec: "True"
+  fullName: SearchAThing.Util.Ext.LessThanOrEqualsTol
+  nameWithType: Ext.LessThanOrEqualsTol
+- uid: SearchAThing.Util.Ext.LessThanTol(UnitsNet.IQuantity,UnitsNet.IQuantity,UnitsNet.IQuantity)
+  name: LessThanTol(IQuantity, IQuantity, IQuantity)
+  href: api/SearchAThing.Util.Ext.html#SearchAThing_Util_Ext_LessThanTol_UnitsNet_IQuantity_UnitsNet_IQuantity_UnitsNet_IQuantity_
+  commentId: M:SearchAThing.Util.Ext.LessThanTol(UnitsNet.IQuantity,UnitsNet.IQuantity,UnitsNet.IQuantity)
+  fullName: SearchAThing.Util.Ext.LessThanTol(UnitsNet.IQuantity, UnitsNet.IQuantity, UnitsNet.IQuantity)
+  nameWithType: Ext.LessThanTol(IQuantity, IQuantity, IQuantity)
+- uid: SearchAThing.Util.Ext.LessThanTol*
+  name: LessThanTol
+  href: api/SearchAThing.Util.Ext.html#SearchAThing_Util_Ext_LessThanTol_
+  commentId: Overload:SearchAThing.Util.Ext.LessThanTol
+  isSpec: "True"
+  fullName: SearchAThing.Util.Ext.LessThanTol
+  nameWithType: Ext.LessThanTol
+- uid: SearchAThing.Util.Toolkit
+  name: Toolkit
+  href: api/SearchAThing.Util.Toolkit.html
+  commentId: T:SearchAThing.Util.Toolkit
+  fullName: SearchAThing.Util.Toolkit
+  nameWithType: Toolkit
+- uid: SearchAThing.Util.Toolkit.BuildImage(System.String,System.String,System.Threading.CancellationToken,System.Boolean,System.Boolean,System.String[])
+  name: BuildImage(string, string, CancellationToken, bool, bool, string[]?)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_BuildImage_System_String_System_String_System_Threading_CancellationToken_System_Boolean_System_Boolean_System_String___
+  commentId: M:SearchAThing.Util.Toolkit.BuildImage(System.String,System.String,System.Threading.CancellationToken,System.Boolean,System.Boolean,System.String[])
+  name.vb: BuildImage(String, String, CancellationToken, Boolean, Boolean, String())
+  fullName: SearchAThing.Util.Toolkit.BuildImage(string, string, System.Threading.CancellationToken, bool, bool, string[]?)
+  fullName.vb: SearchAThing.Util.Toolkit.BuildImage(String, String, System.Threading.CancellationToken, Boolean, Boolean, String())
+  nameWithType: Toolkit.BuildImage(string, string, CancellationToken, bool, bool, string[]?)
+  nameWithType.vb: Toolkit.BuildImage(String, String, CancellationToken, Boolean, Boolean, String())
+- uid: SearchAThing.Util.Toolkit.BuildImage*
+  name: BuildImage
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_BuildImage_
+  commentId: Overload:SearchAThing.Util.Toolkit.BuildImage
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.BuildImage
+  nameWithType: Toolkit.BuildImage
+- uid: SearchAThing.Util.Toolkit.CreateNetwork(System.String,System.String,System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name: CreateNetwork(string, string, CancellationToken, bool, bool)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_CreateNetwork_System_String_System_String_System_Threading_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.Util.Toolkit.CreateNetwork(System.String,System.String,System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name.vb: CreateNetwork(String, String, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.CreateNetwork(string, string, System.Threading.CancellationToken, bool, bool)
+  fullName.vb: SearchAThing.Util.Toolkit.CreateNetwork(String, String, System.Threading.CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.CreateNetwork(string, string, CancellationToken, bool, bool)
+  nameWithType.vb: Toolkit.CreateNetwork(String, String, CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.Util.Toolkit.CreateNetwork*
+  name: CreateNetwork
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_CreateNetwork_
+  commentId: Overload:SearchAThing.Util.Toolkit.CreateNetwork
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.CreateNetwork
+  nameWithType: Toolkit.CreateNetwork
+- uid: SearchAThing.Util.Toolkit.DynamicMakeDictionary(System.Object)
+  name: DynamicMakeDictionary(dynamic)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_DynamicMakeDictionary_System_Object_
+  commentId: M:SearchAThing.Util.Toolkit.DynamicMakeDictionary(System.Object)
+  name.vb: DynamicMakeDictionary(Object)
+  fullName: SearchAThing.Util.Toolkit.DynamicMakeDictionary(dynamic)
+  fullName.vb: SearchAThing.Util.Toolkit.DynamicMakeDictionary(Object)
+  nameWithType: Toolkit.DynamicMakeDictionary(dynamic)
+  nameWithType.vb: Toolkit.DynamicMakeDictionary(Object)
+- uid: SearchAThing.Util.Toolkit.DynamicMakeDictionary*
+  name: DynamicMakeDictionary
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_DynamicMakeDictionary_
+  commentId: Overload:SearchAThing.Util.Toolkit.DynamicMakeDictionary
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.DynamicMakeDictionary
+  nameWithType: Toolkit.DynamicMakeDictionary
+- uid: SearchAThing.Util.Toolkit.ExecBashRedirect(System.String,System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name: ExecBashRedirect(string, CancellationToken, bool, bool)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ExecBashRedirect_System_String_System_Threading_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.Util.Toolkit.ExecBashRedirect(System.String,System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name.vb: ExecBashRedirect(String, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.ExecBashRedirect(string, System.Threading.CancellationToken, bool, bool)
+  fullName.vb: SearchAThing.Util.Toolkit.ExecBashRedirect(String, System.Threading.CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.ExecBashRedirect(string, CancellationToken, bool, bool)
+  nameWithType.vb: Toolkit.ExecBashRedirect(String, CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.Util.Toolkit.ExecBashRedirect*
+  name: ExecBashRedirect
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ExecBashRedirect_
+  commentId: Overload:SearchAThing.Util.Toolkit.ExecBashRedirect
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.ExecBashRedirect
+  nameWithType: Toolkit.ExecBashRedirect
+- uid: SearchAThing.Util.Toolkit.ExecContainerCmd(System.String,System.String,System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name: ExecContainerCmd(string, string, CancellationToken, bool, bool)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ExecContainerCmd_System_String_System_String_System_Threading_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.Util.Toolkit.ExecContainerCmd(System.String,System.String,System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name.vb: ExecContainerCmd(String, String, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.ExecContainerCmd(string, string, System.Threading.CancellationToken, bool, bool)
+  fullName.vb: SearchAThing.Util.Toolkit.ExecContainerCmd(String, String, System.Threading.CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.ExecContainerCmd(string, string, CancellationToken, bool, bool)
+  nameWithType.vb: Toolkit.ExecContainerCmd(String, String, CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.Util.Toolkit.ExecContainerCmd*
+  name: ExecContainerCmd
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ExecContainerCmd_
+  commentId: Overload:SearchAThing.Util.Toolkit.ExecContainerCmd
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.ExecContainerCmd
+  nameWithType: Toolkit.ExecContainerCmd
+- uid: SearchAThing.Util.Toolkit.GetImageNfo(System.String)
+  name: GetImageNfo(string)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_GetImageNfo_System_String_
+  commentId: M:SearchAThing.Util.Toolkit.GetImageNfo(System.String)
+  name.vb: GetImageNfo(String)
+  fullName: SearchAThing.Util.Toolkit.GetImageNfo(string)
+  fullName.vb: SearchAThing.Util.Toolkit.GetImageNfo(String)
+  nameWithType: Toolkit.GetImageNfo(string)
+  nameWithType.vb: Toolkit.GetImageNfo(String)
+- uid: SearchAThing.Util.Toolkit.GetImageNfo*
+  name: GetImageNfo
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_GetImageNfo_
+  commentId: Overload:SearchAThing.Util.Toolkit.GetImageNfo
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.GetImageNfo
+  nameWithType: Toolkit.GetImageNfo
+- uid: SearchAThing.Util.Toolkit.GetImageNfoFromStream(System.IO.Stream)
+  name: GetImageNfoFromStream(Stream)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_GetImageNfoFromStream_System_IO_Stream_
+  commentId: M:SearchAThing.Util.Toolkit.GetImageNfoFromStream(System.IO.Stream)
+  fullName: SearchAThing.Util.Toolkit.GetImageNfoFromStream(System.IO.Stream)
+  nameWithType: Toolkit.GetImageNfoFromStream(Stream)
+- uid: SearchAThing.Util.Toolkit.GetImageNfoFromStream*
+  name: GetImageNfoFromStream
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_GetImageNfoFromStream_
+  commentId: Overload:SearchAThing.Util.Toolkit.GetImageNfoFromStream
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.GetImageNfoFromStream
+  nameWithType: Toolkit.GetImageNfoFromStream
+- uid: SearchAThing.Util.Toolkit.GetJsonArray(System.String)
+  name: GetJsonArray(string)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_GetJsonArray_System_String_
+  commentId: M:SearchAThing.Util.Toolkit.GetJsonArray(System.String)
+  name.vb: GetJsonArray(String)
+  fullName: SearchAThing.Util.Toolkit.GetJsonArray(string)
+  fullName.vb: SearchAThing.Util.Toolkit.GetJsonArray(String)
+  nameWithType: Toolkit.GetJsonArray(string)
+  nameWithType.vb: Toolkit.GetJsonArray(String)
+- uid: SearchAThing.Util.Toolkit.GetJsonArray*
+  name: GetJsonArray
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_GetJsonArray_
+  commentId: Overload:SearchAThing.Util.Toolkit.GetJsonArray
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.GetJsonArray
+  nameWithType: Toolkit.GetJsonArray
+- uid: SearchAThing.Util.Toolkit.ImageSizeMM(ImageMagick.MagickImageInfo,System.Double)
+  name: ImageSizeMM(MagickImageInfo, double)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ImageSizeMM_ImageMagick_MagickImageInfo_System_Double_
+  commentId: M:SearchAThing.Util.Toolkit.ImageSizeMM(ImageMagick.MagickImageInfo,System.Double)
+  name.vb: ImageSizeMM(MagickImageInfo, Double)
+  fullName: SearchAThing.Util.Toolkit.ImageSizeMM(ImageMagick.MagickImageInfo, double)
+  fullName.vb: SearchAThing.Util.Toolkit.ImageSizeMM(ImageMagick.MagickImageInfo, Double)
+  nameWithType: Toolkit.ImageSizeMM(MagickImageInfo, double)
+  nameWithType.vb: Toolkit.ImageSizeMM(MagickImageInfo, Double)
+- uid: SearchAThing.Util.Toolkit.ImageSizeMM*
+  name: ImageSizeMM
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ImageSizeMM_
+  commentId: Overload:SearchAThing.Util.Toolkit.ImageSizeMM
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.ImageSizeMM
+  nameWithType: Toolkit.ImageSizeMM
+- uid: SearchAThing.Util.Toolkit.IsFilePermissionSafe(System.String,System.Int32)
+  name: IsFilePermissionSafe(string, int)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_IsFilePermissionSafe_System_String_System_Int32_
+  commentId: M:SearchAThing.Util.Toolkit.IsFilePermissionSafe(System.String,System.Int32)
+  name.vb: IsFilePermissionSafe(String, Integer)
+  fullName: SearchAThing.Util.Toolkit.IsFilePermissionSafe(string, int)
+  fullName.vb: SearchAThing.Util.Toolkit.IsFilePermissionSafe(String, Integer)
+  nameWithType: Toolkit.IsFilePermissionSafe(string, int)
+  nameWithType.vb: Toolkit.IsFilePermissionSafe(String, Integer)
+- uid: SearchAThing.Util.Toolkit.IsFilePermissionSafe*
+  name: IsFilePermissionSafe
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_IsFilePermissionSafe_
+  commentId: Overload:SearchAThing.Util.Toolkit.IsFilePermissionSafe
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.IsFilePermissionSafe
+  nameWithType: Toolkit.IsFilePermissionSafe
+- uid: SearchAThing.Util.Toolkit.ListContainers(System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name: ListContainers(CancellationToken, bool, bool)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ListContainers_System_Threading_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.Util.Toolkit.ListContainers(System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name.vb: ListContainers(CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.ListContainers(System.Threading.CancellationToken, bool, bool)
+  fullName.vb: SearchAThing.Util.Toolkit.ListContainers(System.Threading.CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.ListContainers(CancellationToken, bool, bool)
+  nameWithType.vb: Toolkit.ListContainers(CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.Util.Toolkit.ListContainers*
+  name: ListContainers
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ListContainers_
+  commentId: Overload:SearchAThing.Util.Toolkit.ListContainers
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.ListContainers
+  nameWithType: Toolkit.ListContainers
+- uid: SearchAThing.Util.Toolkit.ListNetworks(System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name: ListNetworks(CancellationToken, bool, bool)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ListNetworks_System_Threading_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.Util.Toolkit.ListNetworks(System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name.vb: ListNetworks(CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.ListNetworks(System.Threading.CancellationToken, bool, bool)
+  fullName.vb: SearchAThing.Util.Toolkit.ListNetworks(System.Threading.CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.ListNetworks(CancellationToken, bool, bool)
+  nameWithType.vb: Toolkit.ListNetworks(CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.Util.Toolkit.ListNetworks*
+  name: ListNetworks
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ListNetworks_
+  commentId: Overload:SearchAThing.Util.Toolkit.ListNetworks
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.ListNetworks
+  nameWithType: Toolkit.ListNetworks
+- uid: SearchAThing.Util.Toolkit.MakeDynamic(System.ValueTuple{System.String,System.Object}[])
+  name: MakeDynamic(params (string name, object value)[])
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_MakeDynamic_System_ValueTuple_System_String_System_Object____
+  commentId: M:SearchAThing.Util.Toolkit.MakeDynamic(System.ValueTuple{System.String,System.Object}[])
+  name.vb: MakeDynamic(ParamArray (name As String, value As Object)())
+  fullName: SearchAThing.Util.Toolkit.MakeDynamic(params (string name, object value)[])
+  fullName.vb: SearchAThing.Util.Toolkit.MakeDynamic(ParamArray (name As String, value As Object)())
+  nameWithType: Toolkit.MakeDynamic(params (string name, object value)[])
+  nameWithType.vb: Toolkit.MakeDynamic(ParamArray (name As String, value As Object)())
+- uid: SearchAThing.Util.Toolkit.MakeDynamic*
+  name: MakeDynamic
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_MakeDynamic_
+  commentId: Overload:SearchAThing.Util.Toolkit.MakeDynamic
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.MakeDynamic
+  nameWithType: Toolkit.MakeDynamic
+- uid: SearchAThing.Util.Toolkit.RemoveContainer(System.String,System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name: RemoveContainer(string, CancellationToken, bool, bool)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_RemoveContainer_System_String_System_Threading_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.Util.Toolkit.RemoveContainer(System.String,System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name.vb: RemoveContainer(String, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.RemoveContainer(string, System.Threading.CancellationToken, bool, bool)
+  fullName.vb: SearchAThing.Util.Toolkit.RemoveContainer(String, System.Threading.CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.RemoveContainer(string, CancellationToken, bool, bool)
+  nameWithType.vb: Toolkit.RemoveContainer(String, CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.Util.Toolkit.RemoveContainer*
+  name: RemoveContainer
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_RemoveContainer_
+  commentId: Overload:SearchAThing.Util.Toolkit.RemoveContainer
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.RemoveContainer
+  nameWithType: Toolkit.RemoveContainer
+- uid: SearchAThing.Util.Toolkit.RemoveNetwork(System.String,System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name: RemoveNetwork(string, CancellationToken, bool, bool)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_RemoveNetwork_System_String_System_Threading_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.Util.Toolkit.RemoveNetwork(System.String,System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name.vb: RemoveNetwork(String, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.RemoveNetwork(string, System.Threading.CancellationToken, bool, bool)
+  fullName.vb: SearchAThing.Util.Toolkit.RemoveNetwork(String, System.Threading.CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.RemoveNetwork(string, CancellationToken, bool, bool)
+  nameWithType.vb: Toolkit.RemoveNetwork(String, CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.Util.Toolkit.RemoveNetwork*
+  name: RemoveNetwork
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_RemoveNetwork_
+  commentId: Overload:SearchAThing.Util.Toolkit.RemoveNetwork
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.RemoveNetwork
+  nameWithType: Toolkit.RemoveNetwork
+- uid: SearchAThing.Util.Toolkit.RunContainer(System.String,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name: RunContainer(string, string, string, string, string, string, CancellationToken, bool, bool)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_RunContainer_System_String_System_String_System_String_System_String_System_String_System_String_System_Threading_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.Util.Toolkit.RunContainer(System.String,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name.vb: RunContainer(String, String, String, String, String, String, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.RunContainer(string, string, string, string, string, string, System.Threading.CancellationToken, bool, bool)
+  fullName.vb: SearchAThing.Util.Toolkit.RunContainer(String, String, String, String, String, String, System.Threading.CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.RunContainer(string, string, string, string, string, string, CancellationToken, bool, bool)
+  nameWithType.vb: Toolkit.RunContainer(String, String, String, String, String, String, CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.Util.Toolkit.RunContainer*
+  name: RunContainer
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_RunContainer_
+  commentId: Overload:SearchAThing.Util.Toolkit.RunContainer
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.RunContainer
+  nameWithType: Toolkit.RunContainer
+- uid: SearchAThing.Util.Toolkit.SetFilePermission(System.String,System.Int32)
+  name: SetFilePermission(string, int)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_SetFilePermission_System_String_System_Int32_
+  commentId: M:SearchAThing.Util.Toolkit.SetFilePermission(System.String,System.Int32)
+  name.vb: SetFilePermission(String, Integer)
+  fullName: SearchAThing.Util.Toolkit.SetFilePermission(string, int)
+  fullName.vb: SearchAThing.Util.Toolkit.SetFilePermission(String, Integer)
+  nameWithType: Toolkit.SetFilePermission(string, int)
+  nameWithType.vb: Toolkit.SetFilePermission(String, Integer)
+- uid: SearchAThing.Util.Toolkit.SetFilePermission*
+  name: SetFilePermission
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_SetFilePermission_
+  commentId: Overload:SearchAThing.Util.Toolkit.SetFilePermission
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.SetFilePermission
+  nameWithType: Toolkit.SetFilePermission
+- uid: SearchAThing.Util.Toolkit.StopContainer(System.String,System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name: StopContainer(string, CancellationToken, bool, bool)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_StopContainer_System_String_System_Threading_CancellationToken_System_Boolean_System_Boolean_
+  commentId: M:SearchAThing.Util.Toolkit.StopContainer(System.String,System.Threading.CancellationToken,System.Boolean,System.Boolean)
+  name.vb: StopContainer(String, CancellationToken, Boolean, Boolean)
+  fullName: SearchAThing.Util.Toolkit.StopContainer(string, System.Threading.CancellationToken, bool, bool)
+  fullName.vb: SearchAThing.Util.Toolkit.StopContainer(String, System.Threading.CancellationToken, Boolean, Boolean)
+  nameWithType: Toolkit.StopContainer(string, CancellationToken, bool, bool)
+  nameWithType.vb: Toolkit.StopContainer(String, CancellationToken, Boolean, Boolean)
+- uid: SearchAThing.Util.Toolkit.StopContainer*
+  name: StopContainer
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_StopContainer_
+  commentId: Overload:SearchAThing.Util.Toolkit.StopContainer
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.StopContainer
+  nameWithType: Toolkit.StopContainer
+- uid: SearchAThing.Util.Toolkit.ToExpando(System.Object)
+  name: ToExpando(object)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ToExpando_System_Object_
+  commentId: M:SearchAThing.Util.Toolkit.ToExpando(System.Object)
+  name.vb: ToExpando(Object)
+  fullName: SearchAThing.Util.Toolkit.ToExpando(object)
+  fullName.vb: SearchAThing.Util.Toolkit.ToExpando(Object)
+  nameWithType: Toolkit.ToExpando(object)
+  nameWithType.vb: Toolkit.ToExpando(Object)
+- uid: SearchAThing.Util.Toolkit.ToExpando*
+  name: ToExpando
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ToExpando_
+  commentId: Overload:SearchAThing.Util.Toolkit.ToExpando
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.ToExpando
+  nameWithType: Toolkit.ToExpando
+- uid: SearchAThing.Util.Toolkit.ToJson(System.Object)
+  name: ToJson(object)
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ToJson_System_Object_
+  commentId: M:SearchAThing.Util.Toolkit.ToJson(System.Object)
+  name.vb: ToJson(Object)
+  fullName: SearchAThing.Util.Toolkit.ToJson(object)
+  fullName.vb: SearchAThing.Util.Toolkit.ToJson(Object)
+  nameWithType: Toolkit.ToJson(object)
+  nameWithType.vb: Toolkit.ToJson(Object)
+- uid: SearchAThing.Util.Toolkit.ToJson*
+  name: ToJson
+  href: api/SearchAThing.Util.Toolkit.html#SearchAThing_Util_Toolkit_ToJson_
+  commentId: Overload:SearchAThing.Util.Toolkit.ToJson
+  isSpec: "True"
+  fullName: SearchAThing.Util.Toolkit.ToJson
+  nameWithType: Toolkit.ToJson

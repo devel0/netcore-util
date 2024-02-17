@@ -21,6 +21,79 @@
       "version": ""
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Util.DockerContainerNfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Util.DockerContainerNfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Util.DockerNetworkNfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Util.DockerNetworkNfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Util.ErrorInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Util.ErrorInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Util.Ext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Util.Ext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Util.Toolkit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Util.Toolkit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SearchAThing.Util.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SearchAThing.Util.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
