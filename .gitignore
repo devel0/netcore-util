@@ -288,4 +288,5 @@ __pycache__/
 *.xsd.cs
 
 /_site
-/_api
+/api
+
